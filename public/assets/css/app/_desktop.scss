@@ -1,0 +1,109 @@
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) { 
+
+.app-header-content-logo {
+  height: auto;
+  padding-top: 0;
+}
+
+.app-header-logo {
+  width: 341px;
+  display: block;
+  margin: 177px 0 0 180px;
+}
+
+.header-animation-container {
+  padding-top: 0;
+  margin-left: 300px;
+  margin-top: -16px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.header-animation-a div {
+  font-size: 19px;
+  text-align: left;
+}
+
+.app-article-01 { 
+  min-height: 643px;
+}
+
+.app-article-01-content h2 {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 49px;
+  margin-left: 40px;
+  margin-top: 94px;
+  font-weight: 500;
+}
+
+.app-article-01-content p {
+  font-size: 15px;
+  margin-left: 40px;
+  line-height: 1.15;
+  margin-top: 26px;
+}
+
+.app-article-01-content p:nth-child(2) {
+  margin-top: 40px;
+}
+
+.app-article-01-content .read-more {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 18px;
+  font-size: 36px;
+}
+
+.app-article-01-title, 
+.app-article-01-link {
+  width: 100%;
+  display: block;
+}
+
+.line-black-01 {
+  vertical-align: top;
+  display: inline-block;
+  background-image: url('../img/bg_black_01.png');
+  width: 35%;
+  height: 2px;
+  margin-top: 125px;
+  margin-left: 30px;
+}
+
+.line-black-02 {
+  vertical-align: top;
+  margin-top: 46px;
+  margin-left: -30px;
+  display: inline-block;
+  background-image: url('../img/bg_black_01.png');
+  width: 40%;
+  height: 2px;
+}
+
+.app-article-03 .services:hover > .icon-service {
+  width: 96px;
+  height: 96px;
+} 
+
+.app-article-04 .offer-container-1,
+.app-article-04 .offer-container-2 {
+  height: 315px;//315
+}
+
+.app-article-04 .offer-container-3,
+.app-article-04 .offer-container-4 {
+  height: 459px;//592 459
+}
+
+.offer-inline {
+  display: inline-block !important;
+}
+
+.offer-margin-left {
+  margin-left: 70px !important;
+}
+
+}

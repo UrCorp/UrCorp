@@ -1,0 +1,584 @@
+{
+  "platform_types": [
+    {
+      "id": "iphone",
+      "icon": "apple",
+      "text": "iPhone"
+    },
+    {
+      "id": "ipad",
+      "icon": "apple",
+      "text": "iPad"
+    },
+    {
+      "id": "android-phone",
+      "icon": "android",
+      "text": "Android Phone"
+    },
+    {
+      "id": "android-tablet",
+      "icon": "android",
+      "text": "Android Tablet"
+    },
+    {
+      "id": "web",
+      "icon": "desktop",
+      "text": "Páginas web"
+    },
+    {
+      "id": "phonegap",
+      "icon": "mobile",
+      "text": "Phonegap"
+    }
+  ],
+  "platform_features": [
+    {
+      "id": "email-login",
+      "icon": "inbox",
+      "text": "Acceso via Email",
+      "price" : {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "social-login",
+      "icon": "facebook-official",
+      "text": "Acceso via Red Social",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "dashboard",
+      "icon": "tachometer",
+      "text": "Panel de control",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "activity-feed",
+      "icon": "thumbs-up",
+      "text": "Retroalimentación",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "raiting-system",
+      "icon": "star",
+      "text": "Sistema de Raiting",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "camera",
+      "icon": "camera",
+      "text": "Cámara / Fotos",
+      "price": {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "geolocation",
+      "icon": "location-arrow",
+      "text": "Geolocalización",
+      "price": {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "compass",
+      "icon": "compass",
+      "text": "Orientación / Brujúla",
+      "price": {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "custom-ui",
+      "icon": "area-chart",
+      "text": "Interfaz Personalizable",
+      "price": {
+        "iphone": 8250,
+        "ipad": 8250,
+        "android-phone": 7250,
+        "android-tablet": 6000,
+        "web": 6750,
+        "phonegap": 8250
+      }
+    },
+    {
+      "id": "payment",
+      "icon": "credit-card-alt",
+      "text": "Acepta Pago",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "sync-across-all-devices",
+      "icon": "cloud",
+      "text": "Sincronizar con la nube",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "user-profile",
+      "icon": "user",
+      "text": "Perfil de Usuario",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "video-camera",
+      "icon": "video-camera",
+      "text": "Cámara / Video",
+      "price": {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "audio-music",
+      "icon": "headphones",
+      "text": "Audio / Música",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "messaging",
+      "icon": "commenting",
+      "text": "Mensajería",
+      "price": {
+        "iphone": 4950,
+        "ipad": 4950,
+        "android-phone": 4500,
+        "android-tablet": 3600,
+        "web": 4050,
+        "phonegap": 4950
+      }
+    },
+    {
+      "id": "maps",
+      "icon": "map",
+      "text": "Mapas",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "shopping-cart",
+      "icon": "shopping-cart",
+      "text": "Carrito de compras",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "tasks",
+      "icon": "tasks",
+      "text": "Lista de tareas",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "search",
+      "icon": "search",
+      "text": "Buscador",
+      "price": {
+        "iphone": 4950,
+        "ipad": 4950,
+        "android-phone": 4500,
+        "android-tablet": 3600,
+        "web": 4050,
+        "phonegap": 4950
+      }
+    },
+    {
+      "id": "barcode",
+      "icon": "barcode",
+      "text": "Código de barras",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "qrcode",
+      "icon": "qrcode",
+      "text": "Código QR",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "picture",
+      "icon": "picture-o",
+      "text": "Galeria - Fotos / Video",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "calendar",
+      "icon": "calendar",
+      "text": "Integración de calendario",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "social-sharing",
+      "icon": "share",
+      "text": "Compartiendo socialmente",
+      "price": {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "api",
+      "icon": "exchange",
+      "text": "Integración de API con terceros",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "user-privacy",
+      "icon": "user-secret",
+      "text": "Privacidad de Usuario",
+      "price": {
+        "iphone": 2475,
+        "ipad": 2475,
+        "android-phone": 2250,
+        "android-tablet": 1800,
+        "web": 2025,
+        "phonegap": 2475
+      }
+    },
+    {
+      "id": "sms-integration",
+      "icon": "comment",
+      "text": "Integración SMS",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "notifications",
+      "icon": "globe",
+      "text": "Notificaciones",
+      "price": {
+        "iphone": 3300,
+        "ipad": 3300,
+        "android-phone": 3000,
+        "android-tablet": 2400,
+        "web": 2700,
+        "phonegap": 3300
+      }
+    },
+    {
+      "id": "auto-learning-feed",
+      "icon": "repeat",
+      "text": "Alimentación de aprendizaje automático",
+      "price": {
+        "iphone": 13200,
+        "ipad": 13200,
+        "android-phone": 12000,
+        "android-tablet": 9600,
+        "web": 10800,
+        "phonegap": 13200
+      }
+    },
+    {
+      "id": "dynamic-content",
+      "icon": "columns",
+      "text": "Contenido dinámico",
+      "price": {
+        "iphone": 4950,
+        "ipad": 4950,
+        "android-phone": 4500,
+        "android-tablet": 3600,
+        "web": 4050,
+        "phonegap": 4950
+      }
+    },
+    {
+      "id": "menu-ordering",
+      "icon": "check-square",
+      "text": "Menú / Ordenamiento",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "contact-info",
+      "icon": "info-circle",
+      "text": "Información de contacto",
+      "price" : {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    },
+    {
+      "id": "reservations",
+      "icon": "tasks",
+      "text": "Reservaciones",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "event-listing",
+      "icon": "calendar",
+      "text": "Lista de eventos",
+      "price": {
+        "iphone": 4950,
+        "ipad": 4950,
+        "android-phone": 4500,
+        "android-tablet": 3600,
+        "web": 4050,
+        "phonegap": 4950
+      }
+    },
+    {
+      "id": "mailing",
+      "icon": "envelope",
+      "text": "Email / Lista de mails",
+      "price" : {
+        "iphone": 1650,
+        "ipad": 1650,
+        "android-phone": 1500,
+        "android-tablet": 1200,
+        "web": 1350,
+        "phonegap": 1650
+      }
+    }
+  ],
+  "admin_features": [
+    {
+      "id": "moderation",
+      "icon": "thumbs-up",
+      "text": "Moderación (Redes Sociales)",
+      "price": {
+        "iphone": 4950,
+        "ipad": 4950,
+        "android-phone": 4500,
+        "android-tablet": 3600,
+        "web": 4050,
+        "phonegap": 4950
+      }
+    },
+    {
+      "id": "reporting",
+      "icon": "file-o",
+      "text": "Reportes",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "cms",
+      "icon": "sitemap",
+      "text": "Sistema Gestor de Contenidos",
+      "price": {
+        "iphone": 16500,
+        "ipad": 16500,
+        "android-phone": 15000,
+        "android-tablet": 12000,
+        "web": 13500,
+        "phonegap": 16500
+      }
+    },
+    {
+      "id": "admin-payment",
+      "icon": "money",
+      "text": "Administración de pagos",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      }
+    },
+    {
+      "id": "admin-users",
+      "icon": "users",
+      "text": "Administración de usuarios",
+      "price": {
+        "iphone": 9900,
+        "ipad": 9900,
+        "android-phone": 9000,
+        "android-tablet": 7200,
+        "web": 8100,
+        "phonegap": 9900
+      }
+    },
+    {
+      "id": "ticket-system",
+      "icon": "ticket",
+      "text": "Sistema de Tickets",
+      "price": {
+        "iphone": 13200,
+        "ipad": 13200,
+        "android-phone": 12000,
+        "android-tablet": 9600,
+        "web": 10800,
+        "phonegap": 13200
+      }
+    },
+    {
+      "id": "feedback-system",
+      "icon": "bug",
+      "text": "Sistema de Retroalimentación",
+      "price": {
+        "iphone": 9900,
+        "ipad": 9900,
+        "android-phone": 9000,
+        "android-tablet": 7200,
+        "web": 8100,
+        "phonegap": 9900
+      }
+    }
+  ]
+}

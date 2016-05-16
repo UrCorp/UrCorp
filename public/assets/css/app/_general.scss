@@ -1,0 +1,296 @@
+/* Inicio [Estilos de uso general] */
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.app-bg-black-1 {
+  background-color: #292929;
+}
+
+.divisor-vertical {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  font-family: "Gidolinya-Regular", arial, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+
+}
+
+.row div {
+  word-wrap: break-word;
+}
+
+.content-96pp {
+  display: block;
+  margin: auto;
+  width: 96%;
+}
+
+.content-92pp {
+  display: block;
+  margin: auto;
+  width: 92%;
+}
+
+.bg-03 {
+  background-image: url('../img/bg_04.png');
+}
+
+.margin-top-5px {
+  margin-top: 5px;
+}
+
+.margin-top-10px {
+  margin-top: 10px;
+}
+
+.margin-top-20px {
+  margin-top: 20px;
+}
+
+.margin-top-30px {
+  margin-top: 30px;
+}
+
+.margin-top-50px,
+.margin-top-60px,
+.margin-top-70px,
+.margin-top-80px,
+.margin-top-90px,
+.margin-top-100px,
+.margin-top-110px,
+.margin-top-120px,
+.margin-top-180px {
+  margin-top: 12px;
+}
+
+.margin-center {
+  display: block;
+  margin: auto;
+}
+
+.bottom-margin {
+  margin-bottom: 15px;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 30px;
+}
+
+.default-display {
+  display: inline !important;
+}
+
+.not-padding {
+  padding: 0 !important;
+}
+
+.not-padding-side {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.not-visible {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.no-link,
+.no-link:hover,
+.no-link:focus,
+.no-link:visited {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.no-link:hover {
+  text-shadow: 0 0 3px rgba(255,255,255,0.4);
+}
+
+.btnDownScroll img {
+  -webkit-transition: all .4s; 
+  -moz-transition: all .4s;
+  -o-transition: all .4s;  
+  transition: all .4s;
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  top: -5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.btnDownScroll img:hover,
+.btnDownScroll img:focus {
+  -webkit-transition: all .4s; 
+  -moz-transition: all .4s;
+  -o-transition: all .4s;  
+  transition: all .4s;
+  width: 51px;
+  height: 51px;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+  font-size: 70%;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-large {
+  font-size: 110%;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.navbar-input-search {
+  width: 220px !important;
+  background-color: inherit !important;
+  background-image: url('../img/dark-transparent-03.png');
+  border: none !important;
+}
+
+.t-input {
+  width: 100%;
+}
+
+.input-phone {
+  width: 190px;
+}
+
+.decimal-numbers,
+.input-number {
+  text-align: right;
+}
+
+.input-lada {
+  width: 144px;
+}
+
+.input-phone-ext {
+  width: 120px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.white-space-nowrap{
+  white-space: nowrap;
+}
+
+.app-navbar-li-last {
+  margin-right: 0;
+}
+
+.app-navbar-brand {
+  padding: 2px 6px;
+}
+
+.app-navbar-brand img { 
+  height: 46px;
+  width: 123px;
+}
+
+.hidden {
+  -webkit-transition: all 1.4s; 
+  -moz-transition: all 1.4s;
+  -o-transition: all 1.4s;  
+  transition: all 1.4s;
+  display: block !important;
+}
+
+input.error,
+textarea.error {
+  border-bottom: 2px solid #A94442 !important;
+}
+
+label.error {
+  display: block;
+  margin: auto;
+  width: 92%;
+  color: #FF4D49;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.app-backdrop {
+  background-image: url('../img/dark-transparent-04.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100002;
+}
+
+.img-ajax-loading-1 {
+  z-index: 100003;
+  width: 86px;
+}
+
+.app-backdrop-content {
+  width: 96%;
+}
+
+.backdrop-text-success {
+  color: #FFFFFF;
+  font-size: 22px;
+  text-align: center;
+}
+
+.not-border-radius {
+  border-radius: 0 !important;
+}
+
+/* Fin [Estilos de uso general] */

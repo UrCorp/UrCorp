@@ -1,0 +1,45 @@
+ /* Escritorios muy anchos
+   ------------------------------------------------------------------------- */
+@media (min-width: 1200px) { 
+
+.app-article-01-content h2,
+.app-article-01-content p {
+  margin-left: 73px;
+}
+
+.app-article-01-content p {
+  font-size: 19px;
+}
+
+.line-black-01 {
+  width: 37%;
+}
+
+.app-article-01-content .read-more {
+  margin-right: 420px;
+}
+
+.line-black-02 {
+  width: 40%;
+}
+
+.app-article-03 .services .icon-service {
+  width: 124px;
+  height: 124px;
+}
+
+.app-article-03 .services h3 {
+  font-size: 38px;
+}
+
+.app-article-03 .services:nth-child(3) h3 {
+  margin-top: 6px;
+}
+
+.app-article-03 .services:hover > h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+}
