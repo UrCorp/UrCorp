@@ -185,7 +185,7 @@ $.fn.calculator = function (options) {
         tmpObj = settings.items[i];
         $container.append(
           '<div class="col-xs-4 col-sm-2 not-padding-side">'+
-          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-features animated" data-value="'+tmpObj.id+'">'+
+          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" data-placement="right" title="'+tmpObj.description+'">'+
           '\t\t<h3 class="text-center">'+
           '\t\t\t<span class="icon-calculator fa fa-'+tmpObj.icon+'"></span>'+
           '\t\t\t'+tmpObj.text+
@@ -216,7 +216,7 @@ $.fn.calculator = function (options) {
         tmpObj = settings.items[i];
         $container.append(
           '<div class="col-xs-4 col-sm-2 not-padding-side">'+
-          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-admin-features animated" data-value="'+tmpObj.id+'">'+
+          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-admin-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" data-placement="right" title="'+tmpObj.description+'">'+
           '\t\t<h3 class="text-center">'+
           '\t\t\t<span class="icon-calculator fa fa-'+tmpObj.icon+'"></span>'+
           '\t\t\t'+tmpObj.text+

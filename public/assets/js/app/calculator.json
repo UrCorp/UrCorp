@@ -43,7 +43,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Permite el acceso a través de un correo electrónico con la finalidad de registrarse como usuario."
     },
     {
       "id": "social-login",
@@ -56,7 +57,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Acceso a través de una red social, que permite identificarte como usuario en la página web o aplicación."
     },
     {
       "id": "dashboard",
@@ -69,12 +71,13 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Permite la gestión de información, configuraciones y características de la aplicación."
     },
     {
       "id": "activity-feed",
       "icon": "thumbs-up",
-      "text": "Retroalimentación",
+      "text": "Interacción con redes sociales",
       "price": {
         "iphone": 3300,
         "ipad": 3300,
@@ -82,7 +85,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Espacio de interacción con redes sociales para difundir en el medio, botón Me gusta, cometarios u opiniones."
     },
     {
       "id": "raiting-system",
@@ -95,7 +99,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sistema de evaluación o puntuación de un producto, publicación, etc."
     },
     {
       "id": "camera",
@@ -108,7 +113,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Poder hacer uso de la cámara de un dispositivo dentro de la página o aplicación, así como también subir fotografías."
     },
     {
       "id": "geolocation",
@@ -121,7 +127,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Ubicación de un dispositivo en un punto geográfico."
     },
     {
       "id": "compass",
@@ -134,7 +141,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Identificar la orientación de un dispositivo en los puntos cardinales."
     },
     {
       "id": "custom-ui",
@@ -147,7 +155,8 @@
         "android-tablet": 6000,
         "web": 6750,
         "phonegap": 8250
-      }
+      },
+      "description": "Sistema para personalizar (editar) la parte visual de la página o aplicación."
     },
     {
       "id": "payment",
@@ -160,7 +169,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Sistema de pago por medio de tarjeta de crédito, débito o PayPal"
     },
     {
       "id": "sync-across-all-devices",
@@ -173,7 +183,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sistema para compartir o transferir información y archivos en un espacio compartido en internet."
     },
     {
       "id": "user-profile",
@@ -186,7 +197,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sección de una página o aplicación que permite gestionar los datos de usuario."
     },
     {
       "id": "video-camera",
@@ -199,7 +211,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Hacer uso de la cámara de un dispositivo para grabar un video dentro de la página o aplicación."
     },
     {
       "id": "audio-music",
@@ -212,7 +225,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Reproducir canciones o sonido de fondo dentro de la página o aplicación."
     },
     {
       "id": "messaging",
@@ -225,7 +239,8 @@
         "android-tablet": 3600,
         "web": 4050,
         "phonegap": 4950
-      }
+      },
+      "description": "Sistema para envío de mensajes dentro de la página o aplicación."
     },
     {
       "id": "maps",
@@ -238,7 +253,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Permite desplegar un mapa (Google Maps) con una ubicación determinada (Negocio, Parque, Escuela, Hospital, etc.)"
     },
     {
       "id": "shopping-cart",
@@ -251,7 +267,8 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Sistema para almacenar en forma de lista productos elegidos por el usuario para realizar una transacción o compra por internet."
     },
     {
       "id": "tasks",
@@ -264,7 +281,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sección de la página para gestionar actividades pendientes de cualquier tipo."
     },
     {
       "id": "search",
@@ -277,7 +295,8 @@
         "android-tablet": 3600,
         "web": 4050,
         "phonegap": 4950
-      }
+      },
+      "description": "Sistema para buscar contenidos de una base de datos dentro de la página o aplicación."
     },
     {
       "id": "barcode",
@@ -290,7 +309,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Sistema para generar códigos de barras a través de un número de identificación de algún producto."
     },
     {
       "id": "qrcode",
@@ -303,7 +323,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Sistema para generar códigos QR a través de un link de enlace de una página web o banner publicitario (promoción)."
     },
     {
       "id": "picture",
@@ -316,7 +337,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Sección de la página o aplicación para mostrar fotos o videos."
     },
     {
       "id": "calendar",
@@ -329,7 +351,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Introducir un calendario dentro de la página web o aplicación para la visualización de fechas de eventos o actividades."
     },
     {
       "id": "social-sharing",
@@ -342,7 +365,8 @@
         "android-tablet": 1200,
         "web": 1350,
         "phonegap": 1650
-      }
+      },
+      "description": "Elemento para compartir contenido a través de las redes sociales."
     },
     {
       "id": "api",
@@ -355,7 +379,8 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Sistema de interacción y transferencia de datos de una aplicación a otra. "
     },
     {
       "id": "user-privacy",
@@ -368,7 +393,8 @@
         "android-tablet": 1800,
         "web": 2025,
         "phonegap": 2475
-      }
+      },
+      "description": "Sistema que regula la privacidad de publicación de contenidos de un usuario."
     },
     {
       "id": "sms-integration",
@@ -381,7 +407,8 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sistema de envío de mensajes SMS de una aplicación a un teléfono."
     },
     {
       "id": "notifications",
@@ -394,12 +421,13 @@
         "android-tablet": 2400,
         "web": 2700,
         "phonegap": 3300
-      }
+      },
+      "description": "Sistema que permite mostrar avisos sobre situaciones relevantes dentro de una aplicación."
     },
     {
-      "id": "auto-learning-feed",
+      "id": "feedback-db",
       "icon": "repeat",
-      "text": "Alimentación de aprendizaje automático",
+      "text": "Retroalimentación de base de datos",
       "price": {
         "iphone": 13200,
         "ipad": 13200,
@@ -407,7 +435,8 @@
         "android-tablet": 9600,
         "web": 10800,
         "phonegap": 13200
-      }
+      },
+      "description": "Sistema que permite alimentar la base de datos mediante formularios de búsqueda, creación de contenidos, etc."
     },
     {
       "id": "dynamic-content",
@@ -420,7 +449,8 @@
         "android-tablet": 3600,
         "web": 4050,
         "phonegap": 4950
-      }
+      },
+      "description": "Mostrar contenido interactivo por medio de animaciones, efectos y archivos multimedia."
     },
     {
       "id": "menu-ordering",
@@ -433,20 +463,22 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Lista ordenada para la visualización y selección de cualquier tipo de información. (Productos, mensajes, usuarios, etc.)"
     },
     {
       "id": "contact-info",
       "icon": "info-circle",
-      "text": "Información de contacto",
-      "price" : {
-        "iphone": 1650,
-        "ipad": 1650,
-        "android-phone": 1500,
-        "android-tablet": 1200,
-        "web": 1350,
-        "phonegap": 1650
-      }
+      "text": "Landing Page",
+      "price": {
+        "iphone": 6600,
+        "ipad": 6600,
+        "android-phone": 6000,
+        "android-tablet": 4800,
+        "web": 5400,
+        "phonegap": 6600
+      },
+      "description": "Sección de la página o aplicación dirigida al marketing digital para recaudar información de usuarios o clientes potenciales así como también publicar alguna oferta de interés."
     },
     {
       "id": "reservations",
@@ -459,33 +491,8 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
-    },
-    {
-      "id": "event-listing",
-      "icon": "calendar",
-      "text": "Lista de eventos",
-      "price": {
-        "iphone": 4950,
-        "ipad": 4950,
-        "android-phone": 4500,
-        "android-tablet": 3600,
-        "web": 4050,
-        "phonegap": 4950
-      }
-    },
-    {
-      "id": "mailing",
-      "icon": "envelope",
-      "text": "Email / Lista de mails",
-      "price" : {
-        "iphone": 1650,
-        "ipad": 1650,
-        "android-phone": 1500,
-        "android-tablet": 1200,
-        "web": 1350,
-        "phonegap": 1650
-      }
+      },
+      "description": "Sistema para realizar reservaciones en línea sobre algún servicio."
     }
   ],
   "admin_features": [
@@ -500,7 +507,8 @@
         "android-tablet": 3600,
         "web": 4050,
         "phonegap": 4950
-      }
+      },
+      "description": "Sistema para regular la publicación de contenido de la página en las redes sociales."
     },
     {
       "id": "reporting",
@@ -513,7 +521,8 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Sistema para generar reportes de inventario, nominas, productos, etc."
     },
     {
       "id": "cms",
@@ -526,7 +535,8 @@
         "android-tablet": 12000,
         "web": 13500,
         "phonegap": 16500
-      }
+      },
+      "description": "Sistema que permite crear, visualizar, editar y eliminar todo tipo de contenido de la página a través de administradores, editores y participantes, además permite la edición de la interfaz entre otros elementos."
     },
     {
       "id": "admin-payment",
@@ -539,7 +549,8 @@
         "android-tablet": 4800,
         "web": 5400,
         "phonegap": 6600
-      }
+      },
+      "description": "Sistema que permite gestionar los pagos realizados por los usuarios dentro de la página o aplicación."
     },
     {
       "id": "admin-users",
@@ -552,7 +563,8 @@
         "android-tablet": 7200,
         "web": 8100,
         "phonegap": 9900
-      }
+      },
+      "description": "Sistema que permite gestionar a los usuarios, dar de alta, modificar, realizar bloqueos o eliminarlos."
     },
     {
       "id": "ticket-system",
@@ -565,12 +577,13 @@
         "android-tablet": 9600,
         "web": 10800,
         "phonegap": 13200
-      }
+      },
+      "description": "Sistema que permite la gestión y organización de incidentes dentro de la página en cuestión de compras, soporte técnico, etc."
     },
     {
-      "id": "feedback-system",
-      "icon": "bug",
-      "text": "Sistema de Retroalimentación",
+      "id": "stadistics",
+      "icon": "bar-chart",
+      "text": "Métricas",
       "price": {
         "iphone": 9900,
         "ipad": 9900,
@@ -578,7 +591,22 @@
         "android-tablet": 7200,
         "web": 8100,
         "phonegap": 9900
-      }
+      },
+      "description": "Sistema para evaluar el rendimiento y funcionamiento de una o varias secciones de la página web. (Visitas, interacciones, # espectadores, etc.) "
+    },
+    {
+      "id": "newsletter-email",
+      "icon": "newspaper-o",
+      "text": "Sistema de publicidad por correo electrónico",
+      "price": {
+        "iphone": 9900,
+        "ipad": 9900,
+        "android-phone": 9000,
+        "android-tablet": 7200,
+        "web": 8100,
+        "phonegap": 9900
+      },
+      "description": "Sistema que permite dar promoción y difusión por medio de correo electrónico sobre productos, eventos o servicios a todos los usuarios registrados."
     }
   ]
 }

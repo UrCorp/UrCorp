@@ -34,6 +34,7 @@ $(document).ready(function() {
         admin_features: $('#admin-features'),
         allItems: data
       });
+      $('[data-toggle="tooltip"]').tooltip();
     },
     error: function (data) {
       alert("Error de conexión\nPor favor recargue la página web.");

@@ -48,9 +48,9 @@ Route::group(['as' => 'site.'], function () {
       'as'    => 'index'
     ]);
 
-    Route::post('/features', [
-      'uses'  => 'Calculator@features',
-      'as'    => 'features'
+    Route::match(['get', 'post'], '/features', [
+        'uses'  => 'Calculator@features',
+        'as'    => 'features'
     ]);
 
     Route::post('/send', [

@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * UrCorp Page
  *
- * @package  Laravel
- * @author   Taylor Otwell <taylorotwell@gmail.com>
+ * @author   Michael Serrato
  */
 
 /*

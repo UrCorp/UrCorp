@@ -60,6 +60,8 @@ $(document).on('ready', function() {
   $window       = $(window);
   $body         = $('body');
 
+  $('[data-toggle="tooltip"]').tooltip();
+
   $('body').on('activate.bs.scrollspy', function () {
       var activeSection =  $( this ).find("li.active a").attr("href");
       if( activeSection == '#inicio') {
