@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-3 not-padding-side">
+          <div class="col-xs-12 col-sm-3">
             <div class="col-xs-12 margin-top-30px well">
               {!! Form::open(['url' => '/calculator/send', 'id' => 'app-calc-form']) !!}
                 <div class="form-group">

@@ -32,7 +32,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{!! asset('public/assets/img/favicon/ms-icon-144x144.png') !!}">
   <meta name="theme-color" content="#ffffff">
-  <title>URCorp</title>
+  <title>Cotizador</title>
+
+  <!-- OPEN [META TAGS] -->
+  <meta name="description" content="Cotiza tu idea con nuestra nueva app que además te permitirá seleccionar de entre una gran variedad de características para implementar en tu proyecto.">
+  <meta name="keywords" content="Páginas web Querétaro, Aplicaciones, Plataformas, iPhone, iPad, Android, Tablet, PC, Web, UrCorp">
+  <!-- END [META TAGS] -->
+
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
@@ -45,7 +51,7 @@
   <nav class="navbar navbar-inverse not-border-radius app-bg-black-1">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand not-padding" href="{!! URL::to('/') !!}">
+        <a class="navbar-brand not-padding" href="{!! URL::to('/') !!}" hreflang="es">
           <div class="bg-logo logo-navbar"></div>
         </a>
       </div>
@@ -65,7 +71,7 @@
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <div class="col-xs-12 col-md-12 mail">
-            <a href="#">contacto@urcorp.mx</a>
+            <a href="mailto:contacto@urcorp.mx" hreflang="es">contacto@urcorp.mx</a>
           </div>
           <div class="col-xs-12 col-md-12 redes">
             <div class="icon-red icon-tw"></div>
@@ -77,15 +83,17 @@
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <h3> Nuestra app </h3>
+          <a href="{{ URL::to('/calculator') }}" hreflang="es">Cotiza tu idea</a>
           <h3> Portafolio </h3>
-          <a href="#"> Páginas web </a>
-          <a href="#"> Aplicaciones </a>
-          <a href="#"> Imagen corporativa </a> 
-          <a href="#"> Oferta exportable </a> 
+          <a href="#" hreflang="es"> Páginas web </a>
+          <a href="#" hreflang="es"> Aplicaciones </a>
+          <a href="#" hreflang="es"> Imagen corporativa </a>
+          <a href="#" hreflang="es"> Oferta exportable </a>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <h3> Plataforma de Negocios </h3>
-          <a href="#"> AEM Querétaro </a>
+          <a href="#" hreflang="es"> AEM Querétaro </a>
         </div>
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>  

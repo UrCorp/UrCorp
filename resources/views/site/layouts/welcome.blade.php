@@ -33,6 +33,12 @@
   <meta name="msapplication-TileImage" content="{{ asset('public/assets/img/favicon/ms-icon-144x144.png') }}">
   <meta name="theme-color" content="#ffffff">
   <title>URCorp</title>
+
+  <!-- OPEN [META TAGS] -->
+  <meta name="description" content="Creamos páginas web pensando en las necesidades de tu negocio, con una gran calidad en diseño 100% adaptables a dispositivos móviles, desarrollamos plataformas de comercio electrónico, marketing dígital e imagen corporativa, todo para tu negocio.">
+  <meta name="keywords" content="Páginas web en Querétaro, Aplicaciones web y móviles, E-Commerce, Diseño gráfico, Imagen Corporativa, Negocios, SEO, UrCorp">
+  <!-- END [META TAGS] -->
+
   <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/bootstrap.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/font-awesome.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/animate.css') }}">
@@ -48,20 +54,20 @@
         <div id="navbar-collapsed-icon-bar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>
         <div id="navbar-collapsed-icon-close" style="display:none;"> <span class="glyphicon glyphicon-remove navbar-icon-close animated rotateIn"></span> </div>
         </button>
-        <a class="navbar-brand app-navbar-brand" href="http://www.urcorp.mx/"><img id="logo-navbar" style="display:none;" src="{{ asset('public/assets/img/logo_transparente.png') }}" class="app-logo-navbar"></a> </div>
+        <a class="navbar-brand app-navbar-brand" href="{{ URL::to('/') }}"><img alt="Logotipo UrCorp" id="logo-navbar" style="display:none;" src="{{ asset('public/assets/img/logo_transparente.png') }}" class="app-logo-navbar"></a> </div>
       <div class="collapse navbar-collapse" id="bs-navbar-collapse-m1"> 
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="anchorLink hide" href="#inicio">Inicio</a></li>
-          <li><a class="anchorLink" href="#quienesomos">¿Quiénes somos?</a></li>
-          <li><a class="anchorLink" href="#estrategia">Estrategia</a></li>
-          <li><a class="anchorLink" href="#servicios">Servicios</a></li>
-          <li><a class="anchorLink" href="#clientes">Clientes</a></li>
-          <li><a class="anchorLink" href="#contacto">Contacto</a></li>
+          <li><a class="anchorLink hide" href="#inicio" hreflang="es">Inicio</a></li>
+          <li><a class="anchorLink" href="#quienesomos" hreflang="es">¿Quiénes somos?</a></li>
+          <li><a class="anchorLink" href="#estrategia" hreflang="es">Estrategia</a></li>
+          <li><a class="anchorLink" href="#servicios" hreflang="es">Servicios</a></li>
+          <li><a class="anchorLink" href="#clientes" hreflang="es">Clientes</a></li>
+          <li><a class="anchorLink" href="#contacto" hreflang="es">Contacto</a></li>
           <li class="divisor-vertical">|</li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle app-navbar-language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ES</a>
             <ul class="dropdown-menu">
-              <li><a href="#"><img src="{{ asset('public/assets/img/lang/es_mx.png') }}">&nbsp;&nbsp;Español (MX) </a></li>
-              <li><a href="#"><img src="{{ asset('public/assets/img/lang/en_usa.png') }}">&nbsp;&nbsp;Inglés (USA)</a></li>
+              <li><a href="#" hreflang="es"><img alt="Español" src="{{ asset('public/assets/img/lang/es_mx.png') }}">&nbsp;&nbsp;Español (MX) </a></li>
+              <li><a href="#" hreflang="en"><img alt="English" src="{{ asset('public/assets/img/lang/en_usa.png') }}">&nbsp;&nbsp;Inglés (USA)</a></li>
             </ul>
           </li>
         </ul>
@@ -82,7 +88,7 @@
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <div class="col-xs-12 col-md-12 mail">
-            <a href="#">contacto@urcorp.mx</a>
+            <a href="mailto:contacto@urcorp.mx" hreflang="es">contacto@urcorp.mx</a>
           </div>
           <div class="col-xs-12 col-md-12 redes">
             <div class="icon-red icon-tw"></div>
@@ -94,15 +100,16 @@
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+          <h3> Nuestra app </h3>
+          <a href="{{ URL::to('/calculator') }}">Cotiza tu idea</a>
           <h3> Portafolio </h3>
-          <a href="#"> Páginas web </a>
-          <a href="#"> Aplicaciones </a>
-          <a href="#"> Imagen corporativa </a> 
-          <a href="#"> Oferta exportable </a> 
+          <a href="#" hreflang="es"> Páginas web </a>
+          <a href="#" hreflang="es"> Aplicaciones </a>
+          <a href="#" hreflang="es"> Imagen corporativa </a>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <h3> Plataforma de Negocios </h3>
-          <a href="#"> AEM Querétaro </a>
+          <a href="#" hreflang="es"> AEM Querétaro </a>
         </div>
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>  

@@ -7,7 +7,7 @@
     <div class="col-xs-12 no-padding">
       <div class="col-xs-12 col-md-8">
         <div class="app-header-content-logo"> 
-          <img src="{{ asset('public/assets/img/logo_white.png') }}" id="app-header-logo" class="app-header-logo" alt="logo urcorp" /> 
+          <img alt="Logotipo UrCorp" src="{{ asset('public/assets/img/logo_white.png') }}" id="app-header-logo" class="app-header-logo" /> 
         </div>
         <div id="header-animation-a" class="header-animation-a header-animation-container">
           <div> Desarrollo de Oferta Exportable </div>

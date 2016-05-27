@@ -184,8 +184,8 @@ $.fn.calculator = function (options) {
       for (var i = 0; i < n; ++i) {
         tmpObj = settings.items[i];
         $container.append(
-          '<div class="col-xs-4 col-sm-2 not-padding-side">'+
-          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" data-placement="right" title="'+tmpObj.description+'">'+
+          '<div class="col-xs-6 col-sm-4 col-md-3 not-padding-side">'+
+          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" title="'+tmpObj.description+'">'+
           '\t\t<h3 class="text-center">'+
           '\t\t\t<span class="icon-calculator fa fa-'+tmpObj.icon+'"></span>'+
           '\t\t\t'+tmpObj.text+
@@ -201,10 +201,13 @@ $.fn.calculator = function (options) {
         var $element = $(this);
         if ($element.hasClass('active')) {
           $element.removeClass('bounceIn active').addClass('bounce');
-          $('#calc-option-' + $element.data('value')).prop('checked', false);          $('#calc-option-' + $element.data('value')).prop('checked', false);          $('#calc-option-' + $element.data('value')).prop('checked', false);
+          $('#calc-option-' + $element.data('value')).prop('checked', false); 
         } else {
           $element.addClass('bounceIn active');
           $('#calc-option-' + $element.data('value')).prop('checked', true);
+          if ($(window).width() > 480) {
+            $element.tooltip('show');
+          }
         }
       });
     break;
@@ -215,8 +218,8 @@ $.fn.calculator = function (options) {
       for (var i = 0; i < n; ++i) {
         tmpObj = settings.items[i];
         $container.append(
-          '<div class="col-xs-4 col-sm-2 not-padding-side">'+
-          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-admin-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" data-placement="right" title="'+tmpObj.description+'">'+
+          '<div class="col-xs-6 col-sm-4 col-md-3 not-padding-side">'+
+          '\t<div class="col-xs-11 col-xs-offset-1 btn-calc-admin-features animated" data-value="'+tmpObj.id+'" data-toggle="tooltip" title="'+tmpObj.description+'">'+
           '\t\t<h3 class="text-center">'+
           '\t\t\t<span class="icon-calculator fa fa-'+tmpObj.icon+'"></span>'+
           '\t\t\t'+tmpObj.text+
@@ -233,9 +236,15 @@ $.fn.calculator = function (options) {
         if ($element.hasClass('active')) {
           $element.removeClass('bounceIn active').addClass('bounce');
           $('#calc-option-' + $element.data('value')).prop('checked', false);
+          if ($(window).width() > 480) {
+            $element.tooltip('hide');
+          }
         } else {
           $element.addClass('bounceIn active');
           $('#calc-option-' + $element.data('value')).prop('checked', true);
+          if ($(window).width() > 480) {
+            $element.tooltip('show');
+          }
         }
       });
     break;

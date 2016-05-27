@@ -59,8 +59,14 @@ $(document).on('ready', function() {
   $data_origin  = $('body').attr('data-origin');
   $window       = $(window);
   $body         = $('body');
+  
+  $('[data-toggle="tooltip"]').each(function() {
+    $(this).data('placement', (($window.width() <= 480) ? 'top' : 'right'));
+  });
 
-  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]')
+    .data('placement', (($window.width() <= 480) ? 'top' : 'right'))
+    .tooltip();
 
   $('body').on('activate.bs.scrollspy', function () {
       var activeSection =  $( this ).find("li.active a").attr("href");

@@ -34,6 +34,9 @@ $(document).ready(function() {
         admin_features: $('#admin-features'),
         allItems: data
       });
+      $('[data-toggle="tooltip"]').each(function() {
+        $(this).data('placement', (($window.width() >= 748) ? 'right' : 'top'));
+      });
       $('[data-toggle="tooltip"]').tooltip();
     },
     error: function (data) {
