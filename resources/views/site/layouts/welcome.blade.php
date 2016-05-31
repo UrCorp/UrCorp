@@ -108,8 +108,10 @@
           <a href="#" hreflang="es"> Imagen corporativa </a>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <!--
           <h3> Plataforma de Negocios </h3>
           <a href="#" hreflang="es"> AEM Querétaro </a>
+          -->
         </div>
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>  

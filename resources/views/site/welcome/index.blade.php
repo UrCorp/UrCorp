@@ -239,11 +239,11 @@
       </div>
     </div>
     <div class="col-xs-12 col-md-12">
-      <div class="clients-container">
+      <div class="clients-container text-center">
         <div class="icon-client icon-aem">
         </div>
-        <div class="icon-client icon-wtc">
-        </div>
+        <!--<div class="icon-client icon-wtc">
+        </div>-->
         <div class="icon-client icon-cardom">
         </div>
         <div class="icon-client icon-trocal">
