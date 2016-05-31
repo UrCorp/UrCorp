@@ -72,7 +72,7 @@
           </div>
           <div class="app-article-01-link">
             <div class="line-black-02"></div>
-            <a href="#" class="read-more">Leer más</a>
+            <!--<a href="#" class="read-more">Leer más</a>-->
           </div>
         </div>
       </div>
@@ -83,11 +83,8 @@
     </div>
   </div>
 </div>
-<div class="container-fluid app-bg-black-1" id="estrategia">
+<div class="container-fluid app-bg-black-1" id="servicios">
   <div class="row app-article-03">
-    <!--<div class="col-xs-12 col-md-12">
-      <div class="clean-for-navbar"></div>
-    </div>-->
     <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 services service-1">
       <div class="icon-service icon-service-1"></div>
       <h3> Branding </h3>
@@ -134,92 +131,6 @@
     </div>
   </div>
 </div>
-<div class="container-fluid app-bg-black-1" id="servicios">
-  <div class="row app-article-04">
-    <div class="col-xs-12 col-md-12">
-      <div class="clean-for-navbar"></div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <h3> Para empresas: </h3>
-    </div>
-    <div class="col-xs-12 col-md-12 offer-container" id="offer-container-1">
-      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 offer-box offer-container-1">
-        <div class="icon-offer icon-offer-1"></div>
-        <div class="offer-list-container">
-          <ul class="offer-margin-left">
-            <li> Elaboración de perfil de la empresa </li>
-            <li> Elaboración de hojas descriptivas de productos y servicios </li>
-          </ul> 
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 offer-box offer-container-2">
-        <div class="icon-offer icon-offer-2 offer-inline"></div>
-        <div class="offer-list-container">
-          <ul>
-            <li> Taller de sensibilización a la exportación </li>
-            <li> Análisis de campo de la competencia </li>
-            <li> Muestreo internacional para la comercialización </li>
-            <li> Alternativas de comercialización </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-12 offer-container offer-container-final" id="offer-container-2">
-      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 offer-box offer-container-3">
-        <div class="icon-offer icon-offer-3"></div>
-        <div class="offer-list-container">
-          <ul class="offer-margin-left">
-            <li> Distribución de arranque para <br/>el mercado de Norte América </li> 
-            <li> Representación internacional </li> 
-            <li> Canales de venta al menudeo </li> 
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 offer-box offer-container-4">
-        <div class="icon-offer icon-offer-4 offer-inline"></div>
-        <div class="offer-list-container">
-          <ul>
-            <li> Branding fundamental </li>
-            <li> Condiciones de venta y costeo </li>
-            <li> Envío de muestras </li>
-            <li> Logística internacional </li>
-            <li> Traducciones </li>
-            <li> Edición de contenidos </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <h3> Para estados e instituciones: </h3>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="offer-list-container-2">
-          <ul>
-            <li> Servicio integral de internacionalización </li>
-            <li> Catálogo multiplataforma de productos y servicios </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      </div>
-    </div>
-  </div>
-</div>
 <div class="container-fluid app-bg-black-1" data-adjust-style="true" data-styles="min-height:100" id="clientes">
   <div class="row app-article-05">
     <div class="col-xs-12 col-md-12">
@@ -242,8 +153,6 @@
       <div class="clients-container text-center">
         <div class="icon-client icon-aem">
         </div>
-        <!--<div class="icon-client icon-wtc">
-        </div>-->
         <div class="icon-client icon-cardom">
         </div>
         <div class="icon-client icon-trocal">
@@ -266,8 +175,6 @@
         <h2> CONTACTO </h2>
       </div>
     </div>
-    <!--<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    </div>-->
   </div>
   <div class="col-xs-12 col-md-12">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
@@ -302,8 +209,6 @@
         <div class="vertical-line"></div>
       </div>
     </div>
-    <!--<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    </div>-->
   </div>
 </div>
 @endsection

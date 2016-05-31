@@ -59,7 +59,6 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a class="anchorLink hide" href="#inicio" hreflang="es">Inicio</a></li>
           <li><a class="anchorLink" href="#quienesomos" hreflang="es">¿Quiénes somos?</a></li>
-          <li><a class="anchorLink" href="#estrategia" hreflang="es">Estrategia</a></li>
           <li><a class="anchorLink" href="#servicios" hreflang="es">Servicios</a></li>
           <li><a class="anchorLink" href="#clientes" hreflang="es">Clientes</a></li>
           <li><a class="anchorLink" href="#contacto" hreflang="es">Contacto</a></li>
@@ -91,8 +90,12 @@
             <a href="mailto:contacto@urcorp.mx" hreflang="es">contacto@urcorp.mx</a>
           </div>
           <div class="col-xs-12 col-md-12 redes">
-            <div class="icon-red icon-tw"></div>
-            <div class="icon-red icon-fb"></div>
+            <a href="#" target="__blank">
+              <div class="icon-red icon-tw"></div>
+            </a>
+            <a href="https://www.facebook.com/urcorpmx" hreflang="es" target="__blank">
+              <div class="icon-red icon-fb"></div>
+            </a>
           </div>
         </div>
       </div>
@@ -108,10 +111,7 @@
           <a href="#" hreflang="es"> Imagen corporativa </a>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <!--
-          <h3> Plataforma de Negocios </h3>
-          <a href="#" hreflang="es"> AEM Querétaro </a>
-          -->
+          <!-- Something -->
         </div>
         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
         </div>  
