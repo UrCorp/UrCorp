@@ -32,11 +32,11 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ asset('public/assets/img/favicon/ms-icon-144x144.png') }}">
   <meta name="theme-color" content="#ffffff">
-  <title>URCorp</title>
+  <title>UrCorp | Diseñamos páginas web e imagen corporativa para tu empresa</title>
 
   <!-- OPEN [META TAGS] -->
   <meta name="description" content="Creamos páginas web pensando en las necesidades de tu negocio, con una gran calidad en diseño 100% adaptables a dispositivos móviles, desarrollamos plataformas de comercio electrónico, marketing dígital e imagen corporativa, todo para tu negocio.">
-  <meta name="keywords" content="Páginas web en Querétaro, Aplicaciones web y móviles, E-Commerce, Diseño gráfico, Imagen Corporativa, Negocios, SEO, UrCorp">
+  <meta name="keywords" content="Páginas web, Páginas web en Querétaro, Aplicaciones web y móviles, E-Commerce, Diseño gráfico, Imagen Corporativa, Negocios, SEO, UrCorp">
   <!-- END [META TAGS] -->
 
   <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/bootstrap.css') }}">

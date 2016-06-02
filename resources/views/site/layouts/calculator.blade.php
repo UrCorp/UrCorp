@@ -32,11 +32,11 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{!! asset('public/assets/img/favicon/ms-icon-144x144.png') !!}">
   <meta name="theme-color" content="#ffffff">
-  <title>Cotizador</title>
+  <title>Cotizador de páginas web</title>
 
   <!-- OPEN [META TAGS] -->
   <meta name="description" content="Cotiza tu idea con nuestra nueva app que además te permitirá seleccionar de entre una gran variedad de características para implementar en tu proyecto.">
-  <meta name="keywords" content="Páginas web Querétaro, Aplicaciones, Plataformas, iPhone, iPad, Android, Tablet, PC, Web, UrCorp">
+  <meta name="keywords" content="Páginas web, Páginas web Querétaro, Aplicaciones, Plataformas, iPhone, iPad, Android, Tablet, PC, Web, UrCorp">
   <!-- END [META TAGS] -->
 
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.css') !!}">
