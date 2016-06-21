@@ -149,8 +149,9 @@ class Calculator extends Controller
       $m->from('contacto@urcorp.mx', 'Contacto UrCorp');
       $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
 
-      $m->to($quotation['contact']['email'], $quotation['contact']['name'])
-        ->subject('Cotización de Aplicaciones | UrCorp');
+      $m->to($quotation['contact']['email'], $quotation['contact']['name']);
+      $m->cc('contacto@urcorp.mx', 'Contacto UrCorp');
+      $m->subject('Cotización de Aplicaciones | UrCorp');
     });
 
     Flash::overlay('Su cotización ha sido enviada a su correo electrónico de forma exitosa!', 'Cotización enviada');
