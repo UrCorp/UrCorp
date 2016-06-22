@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
-
 use Laracasts\Flash\Flash;
+use Route;
 
 class Calculator extends Controller
 {
@@ -33,22 +32,22 @@ class Calculator extends Controller
   }
 
   public function index() {
-    $this->params['controller'] = \Route::current()->getController();
-    $this->params['view']       = \Route::current()->getView();
+    $this->params['controller'] = appGetController(Route::current());
+    $this->params['view']       = appGetView(Route::current());
     
     return view('site.calculator.index')->with($this->params);
   }
 
   public function features() {
-    $this->params['controller'] = \Route::current()->getController();
-    $this->params['view']       = \Route::current()->getView();
+    $this->params['controller'] = appGetController(Route::current());
+    $this->params['view']       = appGetView(Route::current());
 
     return view('site.calculator.features')->with($this->params);
   }
 
   public function send(Request $request) {
-    $this->params['controller'] = \Route::current()->getController();
-    $this->params['view']       = \Route::current()->getView();
+    $this->params['controller'] = appGetController(Route::current());
+    $this->params['view']       = appGetView(Route::current());
 
     $total = 0.00;
     $platforms      = $request->input('p');
@@ -144,6 +143,8 @@ class Calculator extends Controller
     $this->contact->quotation = json_encode($tmpQuotation);
 
     $this->contact->update();
+
+    return view('site.emails.calculator')->with(['q' => $quotation]);
 
     $email_sent = \Mail::send('site.emails.calculator', ['q' => $quotation], function ($m) use ($quotation) {
       $m->from('contacto@urcorp.mx', 'Contacto UrCorp');

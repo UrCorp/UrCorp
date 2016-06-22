@@ -22,8 +22,8 @@
         <?php 
           $list_platforms   = $q["platforms"];
           $n_list_platforms = count($list_platforms);
-          $list_feaatures   = $q["list"];
-          $n_list_features  = count($list_feaatures);
+          $list_features    = $q["list"];
+          $n_list_features  = count($list_features);
         ?>
         <h3 style="font-size:20px;font-weight: lighter;margin: 0 0 15px 0;display:inline-block;">
           Plataformas: &nbsp;
@@ -43,9 +43,9 @@
           <ul style="margin-top:30px;">
           @for ($i = 0; $i < $n_list_features; ++$i)
             <li style="font-size: 18px;">
-              {{ $list_feaatures[$i]['name'] }}  
+              {{ $list_features[$i]['name'] }}  
               <div style="float:right;display:block;">
-                {{ '$'.number_format($list_feaatures[$i]['price'], 2) }}
+                {{ '$'.number_format($list_features[$i]['price'], 2) }}
               </div>
             </li>
             <br/>

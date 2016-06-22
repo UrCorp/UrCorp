@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Route;
 
 class Welcome extends Controller
 {
@@ -13,8 +14,8 @@ class Welcome extends Controller
   public function index(Request $request) {
 
     $this->params = [
-      'controller'      => \Route::current()->getController(),
-      'view'            => \Route::current()->getView(),
+      'controller'      => appGetController(Route::current()),
+      'view'            => appGetView(Route::current()),
       'exists_contact'  => false
     ];
 

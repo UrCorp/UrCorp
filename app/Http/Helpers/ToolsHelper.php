@@ -1,6 +1,6 @@
 <?php 
-  // Archivo: GeneralControl.php
-  // Ubicación: App/Helpers/GeneralControl.php
+  // Archivo: ToolsHelper.php
+  // Ubicación: App/Helpers/ToolsHelper.php
   // Descripción: Implementa una gran variedad de
   // funciones útiles para el desarrollo de
   // la aplicación.
