@@ -37,7 +37,7 @@ class Contact extends Controller
         $contact['comment'] = nl2br($contact['comment']);
 
         $email_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
-          $m->from($contact['email'], $contact['name']);
+          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
           $m->replyTo($contact['email'], $contact['name']);
 
           $m->to('contacto@urcorp.mx', 'Contacto UrCorp')

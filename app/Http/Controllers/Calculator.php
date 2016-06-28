@@ -147,11 +147,12 @@ class Calculator extends Controller
     return view('site.emails.calculator')->with(['q' => $quotation]);
 
     $email_sent = \Mail::send('site.emails.calculator', ['q' => $quotation], function ($m) use ($quotation) {
-      $m->from('contacto@urcorp.mx', 'Contacto UrCorp');
+      $m->from('urcorp@urcorp.mx', 'UrCorp Server');
       $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
 
-      $m->to($quotation['contact']['email'], $quotation['contact']['name']);
-      $m->cc('contacto@urcorp.mx', 'Contacto UrCorp');
+      $m->to($quotation['contact']['email'], $quotation['contact']['name'])
+        ->cc('contacto@urcorp.mx', 'Contacto UrCorp');
+        
       $m->subject('Cotización de Aplicaciones | UrCorp');
     });
 
