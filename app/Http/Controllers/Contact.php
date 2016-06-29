@@ -38,7 +38,7 @@ class Contact extends Controller
 
         $email_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
-          $m->replyTo($contact['email'], $contact['name']);
+          $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
 
           $m->to('contacto@urcorp.mx', 'Contacto UrCorp')
             ->subject('[UrCorp] Mensaje de contacto | ' . $contact['name']);
