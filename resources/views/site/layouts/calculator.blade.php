@@ -114,7 +114,7 @@
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/app/generic.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/app/calculator.js') !!}"></script>
-  @if (!empty($controller) && !empty($view) && File::exists('public/assets/js/app'.cstrtolower($controller).'.'.cstrtolower($view).'.js'))
+  @if (!empty($controller) && !empty($view) && File::exists('public/assets/js/app/'.cstrtolower($controller).'.'.cstrtolower($view).'.js'))
     <script type="text/javascript" src="{!! asset('public/assets/js/app/'.cstrtolower($controller).'.'.cstrtolower($view).'.js') !!}"></script>
   @endif
 
