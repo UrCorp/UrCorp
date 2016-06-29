@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Mexico_City',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -159,7 +159,8 @@ return [
          * External Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
-        Laracasts\Flash\FlashServiceProvider::class
+        Laracasts\Flash\FlashServiceProvider::class,
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
 
     /*

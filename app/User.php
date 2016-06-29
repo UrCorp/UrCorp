@@ -23,4 +23,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function getFullNameAttribute() {
+        $first_name = current(explode(" ", $this->first_name));
+        $last_name = current(explode(" ", $this->last_name));
+        $full_name = cucfirst($first_name).' '.cucfirst($last_name);
+        
+        return $full_name;
+    }
 }
