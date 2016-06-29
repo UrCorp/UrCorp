@@ -143,9 +143,7 @@ class Calculator extends Controller
     $this->contact->quotation = json_encode($tmpQuotation);
 
     $this->contact->update();
-
-    return view('site.emails.calculator')->with(['q' => $quotation]);
-
+    
     $email_sent = \Mail::send('site.emails.calculator', ['q' => $quotation], function ($m) use ($quotation) {
       $m->from('urcorp@urcorp.mx', 'UrCorp Server');
       $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
