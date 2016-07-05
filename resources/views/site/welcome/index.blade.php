@@ -1,214 +1,369 @@
 @extends('site.layouts.welcome')
 @section('content')
-@include('flash::message')
-<div class="container-fluid app-header" data-adjust-style="true" data-styles="min-height:100" id="inicio">
-  <div class="row">
-    <div class="clean-for-navbar"></div>
-    <div class="col-xs-12 no-padding">
-      <div class="col-xs-12 col-md-8">
-        <div class="app-header-content-logo"> 
-          <img alt="Logotipo UrCorp" src="{{ asset('public/assets/img/logo_white.png') }}" id="app-header-logo" class="app-header-logo" /> 
-        </div>
-        <div id="header-animation-a" class="header-animation-a header-animation-container">
-          <div> Desarrollo de Oferta Exportable </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 no-padding">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 landing-section">
-        <div class="landing-section-header">
-          <h2 class="text-center"> Cotiza tu idea gratis </h2>
-        </div>
-        <div class="landing-section-form">
-          {!! Form::open(['url' => 'contact/save']) !!}
-            <div class="form-group">
-              {!! Form::text('client[name]', null, ['class' => 'form-control', 'placeholder' => 'NOMBRE / EMPRESA', 'required' => 'required']) !!}
-            </div>
-            <div class="form-group">
-              {!! Form::text('client[email]', null, ['class' => 'form-control', 'placeholder' => 'E-MAIL']) !!}
-            </div>
-            <div class="text-center">
-              <button class="btn btn-success inline-block"> 
-                COTIZAR &nbsp;
-                <span class="fa fa-chevron-right"></span>
-              </button>
-              @if ($exists_contact)
-                <a href="{!! URL::to('calculator') !!}" class="btn btn-warning inline-block"> 
-                  IR DIRECTO &nbsp;
-                  <span class="fa fa-chevron-right"></span>
-                </a>
-              @endif
-            </div>
-          {!! Form::close() !!}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid" id="quienesomos">
-  <div class="row app-article-01">
-    <div class="col-xs-12 col-md-12">
-      <div class="clean-for-navbar"></div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <div class="col-xs-12 col-md-11">
-        <div class="app-article-01-content">
-          <div class="app-article-01-title">
-            <h2 id="quienesomos-title" class="animated"> ¿Quiénes somos? </h2>
-            <div class="line-black-01"></div>
-          </div>
-          <div id="quienesomos-content">
-            <p class="animated"> 
-              Somos una empresa que busca mejorar la economía del Estado de Querétaro, ayudando al <br/>
-              desarrollo, crecimiento, creación de pequeñas y medianas empresas. Para la<br/> 
-              generación como la conservación de empleo a través del desarrollo de la tecnología e<br/>
-              imagen corporativa para las empresas.<br/>
-            </p>
-            <p class="animated"> Buscamos destacar y hacer notar el potencial que una empresa proyecta al tener<br/>
-              una imagen profesional y el desarrollo adecuado de los servicios tecnológicos<br/> 
-              de la misma, generando así un gran impacto ante clientes potenciales<br/> 
-              nacionales e internacionales. 
-            </p>
-          </div>
-          <div class="app-article-01-link">
-            <div class="line-black-02"></div>
-            <!--<a href="#" class="read-more">Leer más</a>-->
+  @include('flash::message')
+  <div class="container-fluid">
+    <div class="row">
+      <header>
+        <div class="col-lg-12 app-header">
+          <div class="col-lg-3 col-md-3 app-logo-container">
+            <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo">
+          </div> 
+          <div class="col-lg-9 col-md-9">
+            <nav class="app-nav">
+              <ul>
+                <li>
+                  <a href="#">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#">COTIZADOR INTELIGENTE</a>
+                </li>
+                <li>
+                  <a href="#">PAQUETES</a>
+                </li>
+                <li>
+                  <a href="#">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-1"> </div>
-      <div class="col-xs-12 col-md-12">
-        <div class="clean-for-navbar"></div>
-      </div>
+      </header>
+      <section>
+        <div class="col-lg-12 no-padding app-jumbotron">
+          <div class="row app-slogan-container">
+            <div class="col-lg-12">
+              <img src="{!! asset('public/assets/img/v2/urcorp-slogan.png') !!}" alt="UrCorp eslogan" title="UrCorp eslogan" class="app-slogan" />
+            </div>
+            <div class="col-lg-12 app-arrow-container">
+              <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" alt="Flecha hacia abajo" title="Ir Abajo" />
+            </div>
+          </div>
+          <video autoplay muted loop>
+            <source src="{!! asset('public/assets/video/welcome.mp4') !!}" type="video/mp4" >
+            <source src="{!! asset('public/assets/video/welcome.ogg') !!}" type="video/ogg" >
+            <source src="{!! asset('public/assets/video/welcome.webm') !!}" type="video/webm" >
+          </video>
+          <div class="col-lg-12 bg-black app-clients-container">
+            <div class="col-lg-3">
+              <img src="{!! asset('public/assets/img/v2/logo-client-1.svg') !!}" class="logo-client logo-client-1" alt="Pecha Kucha Night" title="Pecha Kucha Night">
+            </div>
+            <div class="col-lg-3">
+              <img src="{!! asset('public/assets/img/v2/logo-client-2.svg') !!}" class="logo-client logo-client-2" alt="EmprendeYA" title="EmprendeYA">
+            </div>
+            <div class="col-lg-3">
+              <img src="{!! asset('public/assets/img/v2/logo-client-3.svg') !!}" class="logo-client logo-client-3" alt="Kanpai" title="Kanpai">
+            </div>
+            <div class="col-lg-3">
+              <img src="{!! asset('public/assets/img/v2/logo-client-4.svg') !!}" class="logo-client logo-client-4" alt="WTC" title="WTC">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <article>
+          <div class="col-lg-12 app-well no-border app-description-container">
+            <div class="col-lg-6 col-lg-offset-3">
+              <h1 class="text-center title ">Desarrollamos soluciones dígitales a tu medida</h1>
+              <p class="text-center content ">
+                Diseñamos marcas y estrategias de posicionamiento que te acercan a tus clientes transformando ideas en aplicaciones y páginas web.<br/>
+                En internet no hay fronteras, crecemos tu negocio pensando global.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <div class="col-lg-12 app-services-container">
+          <div class="col-lg-12">
+            <h2 class="text-center title ">NUESTROS SERVICIOS</h2>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1 articles no-side-padding">
+            <article>
+              <div class="col-lg-4">
+                <div class="text-center">
+                  <img src="{!! asset('public/assets/img/v2/img-service-1.svg') !!}" alt="Páginas web" title="Páginas web" class="img-service-1" />
+                  <h3 class="title title-1 ">PÁGINAS WEB</h3>
+                </div>
+                <div>
+                  <p class="content text-justify">
+                    Tú eliges desde una página informativa
+                    hasta una plataforma multimedia 
+                    interactiva.<br/>
+                    Analizamos el objetivo, función y sector
+                    de tu empresa para desarrollar el
+                    concepto que tus clientes necesitan.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="col-lg-4">
+                <div class="text-center">
+                  <img src="{!! asset('public/assets/img/v2/img-service-2.svg') !!}" alt="Branding" title="Branding" class="img-service-2" />
+                  <h3 class="title title-2">BRANDING</h3>
+                </div>
+                <div>
+                  <p class="content text-justify">
+                    Tú eliges desde una página informativa
+                    hasta una plataforma multimedia 
+                    interactiva.<br/>
+                    Analizamos el objetivo, función y sector
+                    de tu empresa para desarrollar el
+                    concepto que tus clientes necesitan.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="col-lg-4">
+                <div class="text-center">
+                  <img src="{!! asset('public/assets/img/v2/img-service-3.svg') !!}" alt="Apps" title="Apps" class="img-service-3" />
+                  <h3 class="title title-3">APPS</h3>
+                </div>
+                <div>
+                  <p class="content text-justify">
+                    Tú eliges desde una página informativa
+                    hasta una plataforma multimedia 
+                    interactiva.<br/>
+                    Analizamos el objetivo, función y sector
+                    de tu empresa para desarrollar el
+                    concepto que tus clientes necesitan.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="col-lg-12 app-calculators-container no-side-padding">
+          <div class="col-lg-12 title-container">
+            <h2 class="title text-center fc-white">COTIZA TU IDEA EN MENOS DE 1 MINUTO</h2>
+          </div>
+          <div class="col-lg-12 no-side-padding articles">
+            <article>
+              <div class="col-lg-6">
+                <div class="col-lg-10 col-lg-offset-1 content">
+                  <p class="text-center description">
+                    Cotiza todas las funciones y características de tu página web o aplicación en menos de 1 minuto:
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="col-lg-6">
+                <div class="col-lg-10 col-lg-offset-1 content">
+                  <p class="text-center description">
+                    Cotiza la imagen de tu empresa en menos de 1 minuto,<br/> sólo elige lo que necesites:
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="col-lg-12 app-packages-container no-side-padding">
+          <div class="col-lg-12 app-well title-container">
+            <h2 class="title text-center ">PAQUETES</h2>
+          </div>
+          <div class="col-lg-12 packages-table">
+            <div class="col-lg-3 package">
+              <h3 class="text-center title">Diseño WEB</h3>
+              <h4 class="text-center description">Ideal para pequeñas empresas</h4>
+              <div class="price-container text-center">
+                <span class="price">5,500 <sup>00 MXN</sup></span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn-chose">Elegir</a>
+              </div>
+              <div class="features-container">
+                <ul class="features-list">
+                  <li>
+                    <b>Diseño personalizado sobre plantilla premium</b>
+                  </li>
+                  <li>
+                    Incluye 5 screenings.
+                  </li>
+                  <li>
+                    Con servidor y dominio conjunto
+                  </li>
+                  <li class="fc-faded">
+                    *Este plan muestra banners de publicidad
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 package">
+              <h3 class="text-center title">Branding</h3>
+              <h4 class="text-center description">Ideal para pequeñas empresas</h4>
+              <div class="price-container text-center">
+                <span class="price">8,000 <sup>00 MXN</sup></span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn-chose">Elegir</a>
+              </div>
+              <div class="features-container">
+                <ul class="features-list">
+                  <li>
+                    3 Propuestas de logotipo
+                  </li>
+                  <li>
+                    Aplicaciones de papelería con archivos para imprimir
+                  </li>
+                  <li>
+                    Archivo de logotipo (.ai, .eps, .jpg y .png)
+                  </li>
+                  <li>
+                    Tipografías corporativas listas para instalar en PC/Mac
+                  </li>
+                  <li>
+                    Desarrollo de naming con disponibilidad en IMPI
+                  </li>
+                  <li>
+                    Manual de identidad (logotipo, paletas de color, mockups de papelería)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 package">
+              <h3 class="text-center title">PyME Básico</h3>
+              <h4 class="text-center description">Ideal para pequeñas empresas</h4>
+              <div class="price-container text-center">
+                <span class="price">10,000 <sup>00 MXN</sup></span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn-chose">Elegir</a>
+              </div>
+              <div class="features-container">
+                <ul class="features-list">
+                  <li>
+                    1 Propuesta de logotipo
+                  </li>
+                  <li>
+                    Diseño personalizado sobre plantilla premium
+                  </li>
+                  <li>
+                    Aplicaciones de papelería con archivos para imprimir
+                  </li>
+                  <li>
+                    Archivo de logotipo (.ai, .eps, .jpg y .png)
+                  </li>
+                  <li>
+                    Manual de identidad (logotipo, papeletas de color, mockups de papelería)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 package">
+              <h3 class="text-center title">PyME Pro</h3>
+              <h4 class="text-center description">Ideal para pequeñas empresas</h4>
+              <div class="price-container text-center">
+                <span class="price">12,000 <sup>00 MXN</sup></span>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn-chose">Elegir</a>
+              </div>
+              <div class="features-container">
+                <ul class="features-list">
+                  <li>
+                    3 Propuestas de logotipo
+                  </li>
+                  <li>
+                    Diseño web personalizado y codificación desde cero
+                  </li>
+                  <li>
+                    Aplicaciones de papelería con archivos para imprimir
+                  </li>
+                  <li>
+                    Archivo de logotipo (.ai, .eps, .jpg y .png)
+                  </li>
+                  <li>
+                    Tipografías corporativas listas para instalar en PC/Mac
+                  </li>
+                  <li>
+                    Desarrollo de naming con disponibilidad en IMPI
+                  </li>
+                  <li>
+                    Manual de identidad (logotipo, paletas de color, mockups de papelería)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 app-premium-services-container">
+            <div class="col-lg-12">
+              <h3 class="text-center title">Los paquetes premium incluyen</h3>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="col-lg-3 text-center premium-service">
+                <img src="{!! asset('public/assets/img/v2/img-service-premium-1.svg') !!}" alt="Dominio" title="Dominio" class="img-premium-service-1">
+                <h4 class="title title-1">Dominio</h4>
+              </div>
+              <div class="col-lg-3 text-center premium-service">
+                <img src="{!! asset('public/assets/img/v2/img-service-premium-2.svg') !!}" alt="Hosting" title="Hosting" class="img-premium-service-2">
+                <h4 class="title title-2">Hosting</h4>
+              </div>
+              <div class="col-lg-3 text-center premium-service">
+                <img src="{!! asset('public/assets/img/v2/img-service-premium-3.svg') !!}" alt="Google Analytics" title="Google Analytics" class="img-premium-service-3">
+                <h4 class="title title-3">Google Analytics</h4>
+              </div>
+              <div class="col-lg-3 text-center premium-service">
+                <img src="{!! asset('public/assets/img/v2/img-service-premium-4.svg') !!}" alt="Soporte" title="Soporte" class="img-premium-service-4">
+                <h4 class="title title-4">Soporte</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="col-lg-12 app-contact-form-container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-12">
+              <h2 class="text-center title">CONTACTO</h2>
+            </div>
+            <div class="col-lg-12 contact-form">
+              {!! Form::open(['url' => '/', 'method' => 'POST']) !!}
+                <div class="form-group">
+                  {!! Form::label('name', 'Nombre / Empresa') !!}
+                  {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
+                  {!! Form::label('name', 'eMail') !!}
+                  {!! Form::email('email', null, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
+                  {!! Form::label('name', 'Teléfono') !!}
+                  {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+                </div>
+                <div class="form-group">
+                  <button class="btn-send-contact">
+                    ENVIAR
+                  </button>
+                </div>
+              {!! Form::close() !!}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="col-lg-12 app-footer">
+          <div class="col-lg-12">
+            <div class="col-lg-3 no-side-padding links-list">
+              <h2>AYUDA</h2>
+              <h3>Aviso de privacidad</h3>
+              <h3>PressKit</h3>
+              <h3>Centro de Ayuda</h3>
+            </div>
+            <div class="col-lg-3 col-lg-offset-6 text-center">
+              <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="logo" title="UrCorp logo">
+            </div>
+          </div>
+          <div class="col-lg-12 copyright">
+            <h3>TODOS LOS DERECHOS RESERVADOS | URCORP &copy; 2016</h3>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-</div>
-<div class="container-fluid app-bg-black-1" id="servicios">
-  <div class="row app-article-03">
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 services service-1">
-      <div class="icon-service icon-service-1"></div>
-      <h3> Branding </h3>
-      <div class="hide-service">
-        <p> Diseño de logotipo </p>
-        <p> Imagen corporativa </p>
-        <p> Registro de marca </p>
-      </div>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 services service-2">
-      <div class="icon-service icon-service-2"></div>
-      <h3> Diseño gráfico </h3>
-      <div class="hide-service">
-        <p> Diseño de catálogos </p>
-        <p> Diseño de banners </p>
-        <p> Edición de manuales </p>
-      </div>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 services service-3">
-      <div class="icon-service icon-service-3"></div>
-      <h3> Desarrollo y <br/>diseño web </h3>
-      <div class="hide-service">
-        <p> Páginas Informativas </p>
-        <p> Landing Page </p>
-        <p> Plataformas ecommerce y de negocios </p>
-      </div>
-    </div>
-    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 services service-4">
-      <div class="icon-service icon-service-4"></div>
-      <h3> Apps móviles </h3>
-    </div>
-    <div class="col-xs-12 col-md-12 block-services">
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <div class="title-services">
-          <div class="ur-icon"></div>
-          <div class="vertical-line"></div>
-          <h2> SERVICIOS </h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid app-bg-black-1" data-adjust-style="true" data-styles="min-height:100" id="clientes">
-  <div class="row app-article-05">
-    <div class="col-xs-12 col-md-12">
-      <div class="clean-for-navbar"></div>
-    </div>
-    <div class="col-xs-12 col-md-12 block-clients">
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-        <div class="title-clients">
-          <div class="ur-icon"></div>
-          <div class="vertical-line"></div>
-          <h2> CLIENTES </h2>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <div class="clients-container text-center">
-        <div class="icon-client icon-aem">
-        </div>
-        <div class="icon-client icon-cardom">
-        </div>
-        <div class="icon-client icon-trocal">
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-12">
-      <div class="clean-for-navbar"></div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid app-article-06" id="contacto">
-  <div class="col-xs-12 col-md-12 block-contact">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    </div>
-    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-      <div class="title-contact">
-        <div class="ur-icon"></div>
-        <div class="vertical-line"></div>
-        <h2> CONTACTO </h2>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-12">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    </div>
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-contact-container">
-      <div class="col-xs-12 col-md-12">
-        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
-        </div>
-        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 form-contact">
-          {!! Form::open(['url' => '/contact/send', 'id' => 'form-contact']) !!}
-            {!! Form::text('contact[name]', null, ['id' => 'contact-name', 'placeholder' => 'Tu nombre completo...', 'class' => 'form-control', 'maxlength' => '45', 'required' => 'required']) !!}
-            {!! Form::email('contact[email]', null, ['id' => 'contact-email', 'placeholder' => 'Tu correo electrónico...', 'class' => 'form-control', 'maxlength' => '250', 'required' => 'required']) !!}
-            {!! Form::textarea('contact[comment]', null, ['id' => 'contact-comment', 'placeholder' => 'Escribe un comentario...', 'class' => 'form-control', 'maxlength' => '250', 'required' => 'required']) !!}
-            <button name="contact[submit]" id="contact-submit" class="button-xlarge pure-button pure-button-primary margin-center hvr-bounce-to-top" style="margin-top:20px;">
-                Enviar
-            </button>
-          {!! Form::close() !!}
-        </div>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-12 block-contact">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    </div>
-    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-      <div class="title-contact">
-        <div class="icon-space"></div>
-        <div class="vertical-line"></div>
-      </div>
-    </div>
-  </div>
-</div>
 @endsection
