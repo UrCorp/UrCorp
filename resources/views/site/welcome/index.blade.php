@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <div class="row">
       <header>
-        <div class="col-lg-12 app-header">
+        <div class="col-md-12 app-header">
           <div class="col-lg-3 col-md-3 app-logo-container">
             <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo">
           </div> 
@@ -29,12 +29,12 @@
         </div>
       </header>
       <section>
-        <div class="col-lg-12 no-padding app-jumbotron">
+        <div class="col-md-12 no-padding app-jumbotron">
           <div class="row app-slogan-container">
-            <div class="col-lg-12">
+            <div class="col-md-12">
               <img src="{!! asset('public/assets/img/v2/urcorp-slogan.png') !!}" alt="UrCorp eslogan" title="UrCorp eslogan" class="app-slogan" />
             </div>
-            <div class="col-lg-12 app-arrow-container">
+            <div class="col-md-12 app-arrow-container">
               <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" alt="Flecha hacia abajo" title="Ir Abajo" />
             </div>
           </div>
@@ -43,17 +43,17 @@
             <source src="{!! asset('public/assets/video/welcome.ogg') !!}" type="video/ogg" >
             <source src="{!! asset('public/assets/video/welcome.webm') !!}" type="video/webm" >
           </video>
-          <div class="col-lg-12 bg-black app-clients-container">
-            <div class="col-lg-3">
+          <div class="col-md-12 bg-black app-clients-container">
+            <div class="col-md-3">
               <img src="{!! asset('public/assets/img/v2/logo-client-1.svg') !!}" class="logo-client logo-client-1" alt="Pecha Kucha Night" title="Pecha Kucha Night">
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-3">
               <img src="{!! asset('public/assets/img/v2/logo-client-2.svg') !!}" class="logo-client logo-client-2" alt="EmprendeYA" title="EmprendeYA">
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-3">
               <img src="{!! asset('public/assets/img/v2/logo-client-3.svg') !!}" class="logo-client logo-client-3" alt="Kanpai" title="Kanpai">
             </div>
-            <div class="col-lg-3">
+            <div class="col-md-3">
               <img src="{!! asset('public/assets/img/v2/logo-client-4.svg') !!}" class="logo-client logo-client-4" alt="WTC" title="WTC">
             </div>
           </div>
@@ -61,8 +61,8 @@
       </section>
       <section>
         <article>
-          <div class="col-lg-12 app-well no-border app-description-container">
-            <div class="col-lg-6 col-lg-offset-3">
+          <div class="col-md-12 app-well no-border app-description-container">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
               <h1 class="text-center title ">Desarrollamos soluciones dígitales a tu medida</h1>
               <p class="text-center content ">
                 Diseñamos marcas y estrategias de posicionamiento que te acercan a tus clientes transformando ideas en aplicaciones y páginas web.<br/>
@@ -73,13 +73,13 @@
         </article>
       </section>
       <section>
-        <div class="col-lg-12 app-services-container">
-          <div class="col-lg-12">
+        <div class="col-md-12 app-services-container">
+          <div class="col-md-12">
             <h2 class="text-center title ">NUESTROS SERVICIOS</h2>
           </div>
           <div class="col-lg-10 col-lg-offset-1 articles no-side-padding">
             <article>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="text-center">
                   <img src="{!! asset('public/assets/img/v2/img-service-1.svg') !!}" alt="Páginas web" title="Páginas web" class="img-service-1" />
                   <h3 class="title title-1 ">PÁGINAS WEB</h3>
@@ -97,7 +97,7 @@
               </div>
             </article>
             <article>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="text-center">
                   <img src="{!! asset('public/assets/img/v2/img-service-2.svg') !!}" alt="Branding" title="Branding" class="img-service-2" />
                   <h3 class="title title-2">BRANDING</h3>
@@ -115,7 +115,7 @@
               </div>
             </article>
             <article>
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="text-center">
                   <img src="{!! asset('public/assets/img/v2/img-service-3.svg') !!}" alt="Apps" title="Apps" class="img-service-3" />
                   <h3 class="title title-3">APPS</h3>
@@ -136,13 +136,13 @@
         </div>
       </section>
       <section>
-        <div class="col-lg-12 app-calculators-container no-side-padding">
-          <div class="col-lg-12 title-container">
+        <div class="col-md-12 app-calculators-container no-side-padding">
+          <div class="col-md-12 title-container">
             <h2 class="title text-center fc-white">COTIZA TU IDEA EN MENOS DE 1 MINUTO</h2>
           </div>
-          <div class="col-lg-12 no-side-padding articles">
+          <div class="col-md-12 no-side-padding articles">
             <article>
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <div class="col-lg-10 col-lg-offset-1 content">
                   <p class="text-center description">
                     Cotiza todas las funciones y características de tu página web o aplicación en menos de 1 minuto:
@@ -151,7 +151,7 @@
               </div>
             </article>
             <article>
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <div class="col-lg-10 col-lg-offset-1 content">
                   <p class="text-center description">
                     Cotiza la imagen de tu empresa en menos de 1 minuto,<br/> sólo elige lo que necesites:
@@ -163,12 +163,12 @@
         </div>
       </section>
       <section>
-        <div class="col-lg-12 app-packages-container no-side-padding">
-          <div class="col-lg-12 app-well title-container">
+        <div class="col-md-12 app-packages-container no-side-padding">
+          <div class="col-md-12 app-well title-container">
             <h2 class="title text-center ">PAQUETES</h2>
           </div>
-          <div class="col-lg-12 packages-table">
-            <div class="col-lg-3 package">
+          <div class="col-md-12 packages-table">
+            <div class="col-md-3 package">
               <h3 class="text-center title">Diseño WEB</h3>
               <h4 class="text-center description">Ideal para pequeñas empresas</h4>
               <div class="price-container text-center">
@@ -194,7 +194,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 package">
+            <div class="col-md-3 package">
               <h3 class="text-center title">Branding</h3>
               <h4 class="text-center description">Ideal para pequeñas empresas</h4>
               <div class="price-container text-center">
@@ -226,7 +226,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 package">
+            <div class="col-md-3 package">
               <h3 class="text-center title">PyME Básico</h3>
               <h4 class="text-center description">Ideal para pequeñas empresas</h4>
               <div class="price-container text-center">
@@ -255,7 +255,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 package">
+            <div class="col-md-3 package">
               <h3 class="text-center title">PyME Pro</h3>
               <h4 class="text-center description">Ideal para pequeñas empresas</h4>
               <div class="price-container text-center">
@@ -291,24 +291,24 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12 app-premium-services-container">
-            <div class="col-lg-12">
+          <div class="col-md-12 app-premium-services-container">
+            <div class="col-md-12">
               <h3 class="text-center title">Los paquetes premium incluyen</h3>
             </div>
             <div class="col-lg-8 col-lg-offset-2">
-              <div class="col-lg-3 text-center premium-service">
+              <div class="col-md-3 text-center premium-service">
                 <img src="{!! asset('public/assets/img/v2/img-service-premium-1.svg') !!}" alt="Dominio" title="Dominio" class="img-premium-service-1">
                 <h4 class="title title-1">Dominio</h4>
               </div>
-              <div class="col-lg-3 text-center premium-service">
+              <div class="col-md-3 text-center premium-service">
                 <img src="{!! asset('public/assets/img/v2/img-service-premium-2.svg') !!}" alt="Hosting" title="Hosting" class="img-premium-service-2">
                 <h4 class="title title-2">Hosting</h4>
               </div>
-              <div class="col-lg-3 text-center premium-service">
+              <div class="col-md-3 text-center premium-service">
                 <img src="{!! asset('public/assets/img/v2/img-service-premium-3.svg') !!}" alt="Google Analytics" title="Google Analytics" class="img-premium-service-3">
                 <h4 class="title title-3">Google Analytics</h4>
               </div>
-              <div class="col-lg-3 text-center premium-service">
+              <div class="col-md-3 text-center premium-service">
                 <img src="{!! asset('public/assets/img/v2/img-service-premium-4.svg') !!}" alt="Soporte" title="Soporte" class="img-premium-service-4">
                 <h4 class="title title-4">Soporte</h4>
               </div>
@@ -317,12 +317,12 @@
         </div>
       </section>
       <section>
-        <div class="col-lg-12 app-contact-form-container">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="col-lg-12">
+        <div class="col-md-12 app-contact-form-container">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-md-12">
               <h2 class="text-center title">CONTACTO</h2>
             </div>
-            <div class="col-lg-12 contact-form">
+            <div class="col-md-12 contact-form">
               {!! Form::open(['url' => '/', 'method' => 'POST']) !!}
                 <div class="form-group">
                   {!! Form::label('name', 'Nombre / Empresa') !!}
@@ -347,19 +347,19 @@
         </div>
       </section>
       <section>
-        <div class="col-lg-12 app-footer">
-          <div class="col-lg-12">
-            <div class="col-lg-3 no-side-padding links-list">
+        <div class="col-md-12 app-footer">
+          <div class="col-md-12">
+            <div class="col-lg-3 col-md-3 no-side-padding links-list">
               <h2>AYUDA</h2>
               <h3>Aviso de privacidad</h3>
               <h3>PressKit</h3>
               <h3>Centro de Ayuda</h3>
             </div>
-            <div class="col-lg-3 col-lg-offset-6 text-center">
+            <div class="col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6 text-center">
               <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="logo" title="UrCorp logo">
             </div>
           </div>
-          <div class="col-lg-12 copyright">
+          <div class="col-md-12 copyright">
             <h3>TODOS LOS DERECHOS RESERVADOS | URCORP &copy; 2016</h3>
           </div>
         </div>

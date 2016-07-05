@@ -2,59 +2,26 @@
    ------------------------------------------------------------------------- */
 @media (min-width: 1200px) { 
 
-.app-header {
-  display: block;
-  position: absolute;
-  z-index: 9999999;
-}
-
 .app-logo-container .app-logo {
-  display: block;
-}
-
-.app-logo-container .app-logo {
-  display: block;
-  margin: 65px 0 25px 60px;
+  margin: 55px 0 25px 60px;
   width: 240px;
   height: 80px;
 }
 
 .app-nav {
-  margin-top: 90px;
-}
-
-.app-nav ul {
-  text-align: right;
-  list-style: none;
+  margin-top: 80px;
 }
 
 .app-nav ul li {
-  display: inline-block;
   padding-right: 50px;
 }
 
 .app-nav ul li a {
   font-size: 20px;
-  display: inline-block;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.app-jumbotron {
-  width: 100%;
-  overflow: hidden;
 }
 
 .app-jumbotron .app-slogan-container {
-  position:  absolute;
   margin-top: 300px;
-  width: 100%;
-  text-align: center;
-  -webkit-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
-  -moz-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
-  -ms-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
-  -o-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
-  transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
 }
 
 .app-jumbotron .app-arrow-container {
@@ -62,7 +29,6 @@
 }
 
 .app-clients-container {
-  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -101,7 +67,6 @@
 
 .app-description-container .title {
   font-size: 26px;
-  font-weight: bold;
 }
 
 .app-description-container .content {
@@ -116,7 +81,6 @@
 
 .app-services-container .title {
   font-size: 24px;
-  font-weight: bold;
 }
 
 .app-services-container .articles {
@@ -142,7 +106,6 @@
 
 .app-services-container .articles .title {
   font-size: 22px;
-  font-weight: bold;
 }
 
 .app-services-container .articles .title-1 {
@@ -162,21 +125,14 @@
   font-size: 18px;
 }
 
-.app-calculators-container .title-container {
-  background-color: #E21E79;
-  padding: 15px;
-}
-
 .app-calculators-container .title-container .title {
   font-size: 28px;
-  font-weight: bold;
   margin-top: 17px;
   margin-bottom: 17px;
 }
 
 .app-calculators-container .articles .description {
   font-size: 18px;
-  font-weight: bold;
 }
 
 .app-calculators-container .articles .content {
@@ -189,10 +145,6 @@
   padding-bottom: 400px;
 }
 
-.app-packages-container .title-container .title {
-  font-weight: bold;
-}
-
 .app-packages-container .packages-table {
   margin-top: -360px;
   padding-left: 60px;
@@ -200,21 +152,17 @@
 }
 
 .app-packages-container .packages-table .package {
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
   padding: 20px 15px 30px 15px;
   min-height: 950px;
 }
 
 .app-packages-container .packages-table .package .title {
   font-size: 32px;
-  font-weight: bold;
   margin-bottom: 15px;
 }
 
 .app-packages-container .packages-table .package .description {
   font-size: 18px;
-  font-weight: bold;
   margin-bottom: 15px;
 }
 
@@ -224,29 +172,16 @@
 
 .app-packages-container .packages-table .package .price {
   font-size: 56px;
-  font-weight: bold;
 }
 
 .app-packages-container .packages-table .package .price sup {
   font-size: 22px;
-  font-weight: normal;
   top: -0.8em;
-}
-
-.app-packages-container .packages-table .package a.btn-chose {
-  display: inline-block;
-}
-
-.app-packages-container .packages-table .package a.btn-chose:hover {
-  text-decoration: none;
 }
 
 .app-packages-container .packages-table .package .btn-chose {
   font-size: 22px;
   padding: 12px 72px;
-  color: #3FB254;
-  background-color: #FFFFFF;
-  border: 1px solid #3FB254;
 }
 
 .app-packages-container .packages-table .package .features-list {
@@ -255,7 +190,6 @@
 }
 
 .app-packages-container .packages-table .package .features-list li {
-  list-style: none;
   font-size: 19px;
   margin-bottom: 30px;
 }
@@ -288,13 +222,12 @@
   height: 72px;
 }
 
-.app-premium-services-container .premium-service .img-premium-service-3 {
+.app-premium-services-container .premium-service .img-premium-service-4 {
   width: 63px;
   height: 83px;
 }
 
 .app-premium-services-container .premium-service .title {
-  font-weight: bold;
   font-size: 22px;
 }
 
@@ -307,25 +240,17 @@
 }
 
 .app-premium-services-container .premium-service .title-3 {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .app-premium-services-container .premium-service .title-4 {
-  margin-top: 42px;
+  margin-top: 39px;
 }
 
 .app-contact-form-container {
-  background-image: url("../img/v2/bg-transparent-black.png"), url("../img/v2/bg-contact-form.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 610px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.app-contact-form-container .title {
-  color: #FFFFFF;
 }
 
 .app-contact-form-container .contact-form {
@@ -333,38 +258,22 @@
 }
 
 .app-contact-form-container .contact-form form label {
-  color: #FFFFFF;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
   font-size: 16px;
 }
 
 .app-contact-form-container .contact-form form input,
 .app-contact-form-container .contact-form form textarea,
 .app-contact-form-container .contact-form form select {
-  background-color: inherit;
-  color: #FFFFFF;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
   border-bottom: 4px solid #FFFFFF;
   font-size: 20px;
 }
 
 .app-contact-form-container .contact-form form .btn-send-contact {
-  display: inline-block;
-  background-color: #33CC00;
-  border: 0;
-  color: #FFFFFF;
-  width: 100%;
-  padding: 8px 12px;
   font-size: 22px;
 }
 
 .app-footer {
   padding: 30px 45px;
-  background-color: #000000;
-  color: #FFFFFF;
 }
 
 .app-footer .logo {
@@ -383,6 +292,10 @@
 
 .app-footer .copyright {
   margin-top: 50px;
+}
+
+.app-footer .copyright h3 {
+  font-size: 20px;
 }
 
 }
