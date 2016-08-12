@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Calculator;
-use App\Category;
+use App\Section;
 
-class Categories extends Controller
+class Sections extends Controller
 {
   /**
    * Display a listing of the resource.
@@ -29,7 +29,7 @@ class Categories extends Controller
   {
     $calculator = Calculator::findBySlug($slug);
 
-    return view('site.admin.calculator.categories.create')->with([
+    return view('site.admin.calculator.sections.create')->with([
       'calculator' => $calculator
     ]);
   }
@@ -44,9 +44,9 @@ class Categories extends Controller
   {
     $calculator = Calculator::findBySlug($slug);
 
-    $category = new Category($request->all());
-    $category->calculator_id =  $calculator->id;
-    $category->save();
+    $section = new Section($request->all());
+    $section->calculator_id =  $calculator->id;
+    $section->save();
 
     return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
   }
@@ -68,14 +68,14 @@ class Categories extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit($calculatorSlug, $categorySlug)
+  public function edit($calculatorSlug, $sectionSlug)
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
-    $category   = Category::findBySlug($categorySlug);
+    $section   = Section::findBySlug($sectionSlug);
 
-    return view('site.admin.calculator.categories.edit')->with([
+    return view('site.admin.calculator.sections.edit')->with([
       'calculator'  => $calculator,
-      'category'    => $category
+      'section'     => $section
     ]);
   }
 
@@ -86,13 +86,13 @@ class Categories extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, $calculatorSlug, $categorySlug)
+  public function update(Request $request, $calculatorSlug, $sectionSlug)
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
-    $category   = Category::findBySlug($categorySlug);
+    $section   = Section::findBySlug($sectionSlug);
 
-    $category->fill($request->all());
-    $category->update();
+    $section->fill($request->all());
+    $section->update();
 
     return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
   }
@@ -103,12 +103,12 @@ class Categories extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy($calculatorSlug, $categorySlug)
+  public function destroy($calculatorSlug, $sectionSlug)
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
-    $category   = Category::findBySlug($categorySlug);
+    $section   = Section::findBySlug($sectionSlug);
 
-    $category->delete();
+    $section->delete();
 
     return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
   }

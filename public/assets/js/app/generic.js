@@ -59,6 +59,8 @@ $(document).on('ready', function() {
   $data_origin  = $('body').attr('data-origin');
   $window       = $(window);
   $body         = $('body');
+
+  $('#flash-overlay-modal').modal('show');
   
   $('[data-toggle="tooltip"]').each(function() {
     $(this).data('placement', (($window.width() <= 480) ? 'top' : 'right'));

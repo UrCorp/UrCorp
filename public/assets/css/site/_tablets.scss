@@ -2,4 +2,74 @@
    ------------------------------------------------------------------------- */
 @media (min-width: 768px) {
 
+.app-header {
+  display: block;
+  position: absolute;
+  z-index: 9999999;
+}
+
+.app-logo-container .app-logo {
+  display: block;
+  margin: 16.4px 0 20.5px 0;
+  width: 196.8px;
+  height: 53.792px;
+}
+
+.app-nav {
+  margin-top: 32.8px;
+}
+
+.app-nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+.app-nav ul li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.app-nav ul li a {
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.app-jumbotron {
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-jumbotron .app-slogan-container {
+  position: absolute;
+  margin-top: 164px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+  -moz-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+  -ms-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+  -o-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+  transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+}
+
+.app-jumbotron .app-slogan-container .app-slogan {
+  width: 92%;
+  display: block;
+  margin: auto;
+}
+
+.app-jumbotron .app-arrow-container {
+  margin-top: 32.8px;
+}
+
+.app-jumbotron .app-arrow-container img {
+  width: 32px;
+}
+
+.app-clients-container {
+  text-align: center;
+  padding-bottom: 16.4px;
+}
+
 }

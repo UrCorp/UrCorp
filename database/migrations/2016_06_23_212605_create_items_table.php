@@ -18,16 +18,21 @@ class CreateItemsTable extends Migration
        * ============================================================= //
        */
       $table->increments('id');
-      $table->string('name', 45)->nullable();
+      $table->string('name', 45);
       $table->string('slug')->nullable();
-      $table->integer('category_id')->unsigned();
+      $table->integer('section_id')->unsigned();
+      $table->integer('icon_id')->unsigned();
       $table->timestamps();
       /**
        * Items - Foreign Keys
        * ============================================================= //
        */
-      $table->foreign('category_id')
-            ->references('id')->on('categories')
+      $table->foreign('section_id')
+            ->references('id')->on('sections')
+            ->onDelete('cascade');
+
+      $table->foreign('icon_id')
+            ->references('id')->on('icons')
             ->onDelete('cascade');
     });
 

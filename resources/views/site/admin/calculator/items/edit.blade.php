@@ -1,9 +1,9 @@
 @extends('site.admin.layouts.app')
 @include('site.admin.calculator.nav')
-@section('title', 'Agregar plataforma')
+@section('title', 'Artículo: '.$item->name)
 @section('content')
-<div class="col-md-8 col-md-offset-2">
-  @include('site.admin.calculator.platforms._form')
+<div class="col-md-8 col-md-offset-1">
+  @include('site.admin.calculator.items._form')
 </div>
 @endsection
 @section('scripts')

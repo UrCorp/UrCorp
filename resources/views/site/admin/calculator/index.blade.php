@@ -12,7 +12,7 @@
     <tr>
       <th># ID</th>
       <th class="text-center">Nombre</th>
-      <th class="text-center"># Categorías</th>
+      <th class="text-center"># Secciones</th>
       <th class="text-center"># Plataformas</th>
       <th class="text-center"># Artículos</th>
       <th class="text-center">Opciones</th>
@@ -28,7 +28,7 @@
           </a>
         </td>
         <td class="text-center">
-          {{ $calculator->categories->count() }}
+          {{ $calculator->sections->count() }}
         </td>
         <td class="text-center">
           {{ $calculator->platforms->count() }}

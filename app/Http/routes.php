@@ -76,30 +76,30 @@ Route::group(['as' => 'site.'], function () {
             'as'    => 'destroy'
           ]);
 
-          Route::group(['prefix' => '{calculator}/categories', 'as' => 'categories.'], function() {
+          Route::group(['prefix' => '{calculator}/sections', 'as' => 'sections.'], function() {
 
             Route::get('/create', [
-              'uses' => 'Admin\Categories@create',
+              'uses' => 'Admin\Sections@create',
               'as' => 'create'
             ]);
 
             Route::post('/', [
-              'uses'  => 'Admin\Categories@store',
+              'uses'  => 'Admin\Sections@store',
               'as'    => 'store'
             ]);
 
-            Route::get('/{category}/edit', [
-              'uses'  => 'Admin\Categories@edit',
+            Route::get('/{section}/edit', [
+              'uses'  => 'Admin\Sections@edit',
               'as'    => 'edit'
             ]);
 
-            Route::put('/{category}', [
-              'uses'  => 'Admin\Categories@update',
+            Route::put('/{section}', [
+              'uses'  => 'Admin\Sections@update',
               'as'    => 'update'
             ]);
 
-            Route::get('/{category}/destroy', [
-              'uses'  => 'Admin\Categories@destroy',
+            Route::get('/{section}/destroy', [
+              'uses'  => 'Admin\Sections@destroy',
               'as'    => 'destroy'
             ]);
           });
@@ -142,6 +142,21 @@ Route::group(['as' => 'site.'], function () {
             Route::post('/', [
               'uses'  => 'Admin\Items@store',
               'as'    => 'store'
+            ]);
+
+            Route::get('/{item}/edit', [
+              'uses'  => 'Admin\Items@edit',
+              'as'    => 'edit'
+            ]);
+
+            Route::put('/{item}', [
+              'uses'  => 'Admin\Items@update',
+              'as'    => 'update'
+            ]);
+
+            Route::get('/{item}/destroy', [
+              'uses'  => 'Admin\Items@destroy',
+              'as'    => 'destroy'
             ]);
           });
         });

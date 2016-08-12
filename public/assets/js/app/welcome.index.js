@@ -1,70 +1,14 @@
 $(document).on('ready' , function() {
 
   var $window = $(window),
-      $body   = $('body');
+      $body = $('body'),
+      $itemsContainer = $('#items-container');
 
-  $('#flash-overlay-modal').modal('show');
+  $('.item', $itemsContainer).click(function(event) {
+    var $this = $(this);
 
-  var animationFeaturesText = [ 
-    "Desarrollo de Oferta Exportable", 
-    "Desarrollo de Aplicaciones Web y Móviles",
-    "Imagen Corporativa" 
-  ],
-  animationContainer = $('#header-animation-a'),
-  idx = 1;
-
-  setInterval(function() {
-    animationContainer.html('');
-     
-    var a = $('<div>'),
-        b = $('<div>');
-
-        a.text(animationFeaturesText[ (idx - 1) < 0 ? (animationFeaturesText.length - 1) : (idx - 1) ]) .addClass('hideUp');
-        b.text(animationFeaturesText[ idx ]) .addClass('showUp');
-
-        animationContainer
-          .append(a)
-          .append(b);
-
-        idx = (idx + 1) % animationFeaturesText.length;
-  }, 2000);
-
-  $('a.anchorLink').anchorAnimate();
-
-  var max_height_service = 0;
-  $('.app-article-03 .services').each(function () { 
-    max_height_service = Math.max(max_height_service, $(this).height());
+    $this.toggleClass('bounce bounceIn active');
   });
-
-  $('.app-article-03 .services').each(function () { 
-    $(this).css({
-      'height' :  max_height_service + 'px'
-    });
-  });
-
-  $('#offer-container-1, #offer-container-2').on('scrollSpy:enter', function() {
-    var id = $(this).attr('id');
-    $('#' + id + ' .offer-box').each(function() { 
-      $(this).addClass('active');
-    });
-  });
-
-  $('#offer-container-1, #offer-container-2').on('scrollSpy:exit', function() {
-    var id = $(this).attr('id');
-    $('#' + id + ' .offer-box').each(function() { 
-      $(this).removeClass('active');
-    });
-  });
-
-  $('#quienesomos-content').on('scrollSpy:enter', function() {
-    var id = $(this).attr('id');
-    $('#' + id + ' p').each(function() { 
-      $(this).addClass('bounceInLeft');
-    });
-    $("#quienesomos-title").addClass('bounceInLeft');
-  });
-  
-  $('#offer-container-1, #offer-container-2, #quienesomos-content').scrollSpy();
 
   $('#form-contact').validate({
     submitHandler : function(form) {

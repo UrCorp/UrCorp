@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Calculator;
 use App\Platform;
 use App\Item;
+use App\Icon;
 
 class Items extends Controller
 {
@@ -30,9 +31,11 @@ class Items extends Controller
   public function create($calculatorSlug)
   { 
     $calculator = Calculator::findBySlug($calculatorSlug);
+    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
 
     return view('site.admin.calculator.items.create')->with([
-      'calculator' => $calculator
+      'calculator'  => $calculator,
+      'icons'       => $icons
     ]);
   }
 
@@ -51,17 +54,19 @@ class Items extends Controller
     if ($item->save()) {
       $platforms = $request->input('platforms');
 
-      $arr_prices = [];
-      foreach ($platforms as $slug => $price) {
-        $platform = Platform::findBySlug($slug);
+      if (!empty($platforms)) {
+        $arr_prices = [];
 
-        $arr_prices[$platform->id] = [
-          'price' => $price
-        ];
+        foreach ($platforms as $slug => $price) {
+          $platform = Platform::findBySlug($slug);
+
+          $arr_prices[$platform->id] = [
+            'price' => $price
+          ];
+        }
+        $item->platforms()->sync($arr_prices);
       }
-      if ($item->platforms()->sync($arr_prices)) {
-        return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
-      }
+      return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
     }
   }
 
@@ -82,9 +87,17 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit($id)
+  public function edit($calculatorSlug, $itemSlug)
   {
-      //
+    $calculator = Calculator::findBySlug($calculatorSlug);
+    $item       = Item::findBySlug($itemSlug);
+    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
+
+    return view('site.admin.calculator.items.edit')->with([
+      'calculator'  => $calculator,
+      'item'        => $item,
+      'icons'       => $icons
+    ]); 
   }
 
   /**
@@ -96,7 +109,29 @@ class Items extends Controller
    */
   public function update(Request $request, $calculatorSlug, $itemSlug)
   {
+    $calculator = Calculator::findBySlug($calculatorSlug);
+    $item       = Item::findBySlug($itemSlug);
 
+    $item->fill($request->all());
+
+    if ($item->update()) {
+      $platforms = $request->input('platforms');
+
+      if (!empty($platforms)) {
+        $arr_prices = [];
+
+        foreach ($platforms as $slug => $price) {
+          $platform = Platform::findBySlug($slug);
+
+          $arr_prices[$platform->id] = [
+            'price' => $price
+          ];
+        }
+        $item->platforms()->sync($arr_prices);
+      }
+    }
+
+    return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
   }
 
   /**
@@ -105,8 +140,13 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy($id)
+  public function destroy($calculatorSlug, $itemSlug)
   {
-      //
+    $calculator = Calculator::findBySlug($calculatorSlug);
+    $item       = Item::findBySlug($itemSlug);
+
+    $item->delete();
+
+    return redirect()->route('site.admin.panel.calculator.show', $calculator->slug);
   }
 }

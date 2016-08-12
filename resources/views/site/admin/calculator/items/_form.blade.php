@@ -9,9 +9,20 @@
     </div>
   </div>
   <div class="form-group">
-    {!! Form::label('name', 'Categoría', ['class' => 'col-md-4 control-label']) !!}
+    {!! Form::label('section_id', 'Sección', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::select('category_id', $calculator->categories->lists('name', 'id'),  isset($item) ? $item->category_id : null, ['class' => 'col-md-8 form-control', 'required' => 'required', 'placeholder' => 'Seleccionar...']) !!}
+      {!! Form::select('section_id', $calculator->sections->lists('name', 'id'),  isset($item) ? $item->section_id : null, ['class' => 'col-md-8 form-control', 'required' => 'required', 'placeholder' => 'Seleccionar...']) !!}
+    </div>
+  </div>
+  <div class="form-group">
+    {!! Form::label('icon', 'Icono', ['class' => 'col-md-4 control-label']) !!}
+    <div class="col-md-7">
+      {!! Form::select('icon_id', $icons->lists('name', 'id'), isset($item) ? $item->icon_id : null, ['id' => 'icon-select', 'class' => 'col-md-8 form-control', 'required' => 'required', 'placeholder' => 'Seleccionar...']) !!}
+    </div>
+    <div class="col-md-1 no-side-padding">
+      <button id="icon-view" class="btn btn-default btn-icon disabled" disabled="disabled">
+        <span class="fa fa-{!! isset($item) ? $item->icon->name : 'question' !!}"></span>
+      </button>
     </div>
   </div>
   <div class="form-group">
@@ -23,7 +34,7 @@
       <div class="col-md-8">
         <div class="input-group">
           <span class="input-group-addon">$</span>
-          {!! Form::number('platforms['.$platform->slug.']', isset($item) ? $item->name : null, ['class' => 'col-md-8 form-control text-right', 'required' => 'required', 'step' => 'any', 'min' => '0.00']) !!}
+          {!! Form::number('platforms['.$platform->slug.']', isset($item) ? number_format($item->platforms()->where('slug', '=', $platform->slug)->first()->pivot->price, 2, '.', '') : null, ['class' => 'col-md-8 form-control text-right', 'required' => 'required', 'step' => 'any', 'min' => '0.00']) !!}
         </div>
       </div>
     </div>

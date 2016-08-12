@@ -23,8 +23,8 @@ class Calculator extends Model implements SluggableInterface
     'slug'
   ];
 
-  public function categories() {
-    return $this->hasMany('App\Category');
+  public function sections() {
+    return $this->hasMany('App\Section');
   }
 
   public function platforms() {
@@ -32,7 +32,7 @@ class Calculator extends Model implements SluggableInterface
   }
 
   public function items() {
-    return $this->hasManyThrough('App\Item', 'App\Category');
+    return $this->hasManyThrough('App\Item', 'App\Section');
   }
 
   /**

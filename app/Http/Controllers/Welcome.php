@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Route;
+use App\Calculator;
+use App\Section;
+use App\Platform;
+use App\Item;
 
 class Welcome extends Controller
 {
@@ -36,6 +40,8 @@ class Welcome extends Controller
     }
 
     $this->params['quote_sent'] = false;
+
+    $this->params['calculator'] = Calculator::findBySlug('web');
 
     return view('site.welcome.index')->with($this->params);
   }

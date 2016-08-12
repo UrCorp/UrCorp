@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Category extends Model implements SluggableInterface
+class Section extends Model implements SluggableInterface
 {
   use SluggableTrait;
 
@@ -16,7 +16,7 @@ class Category extends Model implements SluggableInterface
     'on_update'   => true
   ];
 
-  protected $table = 'categories';
+  protected $table = 'sections';
 
   protected $fillable = [
     'name',
@@ -37,6 +37,6 @@ class Category extends Model implements SluggableInterface
    * ============================================================= //
    */
   public function setNameAttribute($value) {
-    $this->attributes['name'] = cstrtolower($value);
+    $this->attributes['name'] = $value;
   }
 }

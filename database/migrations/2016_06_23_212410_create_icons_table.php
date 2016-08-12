@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateContactTable extends Migration
+class CreateIconsTable extends Migration
 {
   /**
    * Run the migrations.
@@ -12,12 +12,14 @@ class CreateContactTable extends Migration
    */
   public function up()
   {
-    Schema::create('contacts', function (Blueprint $table) {
+    Schema::create('icons', function(Blueprint $table) {
+      /**
+       * Icons - Fields
+       * ============================================================= //
+       */
       $table->increments('id');
-      $table->string('id_session');
-      $table->string('name', 60);
-      $table->string('email');
-      $table->text('quotation');
+      $table->string('name', 45);
+      $table->string('slug')->nullable();
       $table->timestamps();
     });
   }
@@ -29,6 +31,6 @@ class CreateContactTable extends Migration
    */
   public function down()
   {
-    Schema::drop('contacts');
+    Schema::drop('icons');
   }
 }

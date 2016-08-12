@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Calculator;
 use App\Platform;
+use App\Icon;
 
 class Platforms extends Controller
 {
@@ -29,9 +30,11 @@ class Platforms extends Controller
   public function create($calculatorSlug)
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
+    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
 
     return view('site.admin.calculator.platforms.create')->with([
-      'calculator' => $calculator
+      'calculator' => $calculator,
+      'icons'      => $icons
     ]);
   }
 
@@ -73,10 +76,12 @@ class Platforms extends Controller
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
     $platform   = Platform::findBySlug($platformSlug);
+    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
 
     return view('site.admin.calculator.platforms.edit')->with([
       'calculator'  => $calculator,
-      'platform'    => $platform
+      'platform'    => $platform,
+      'icons'       => $icons
     ]); 
   }
 

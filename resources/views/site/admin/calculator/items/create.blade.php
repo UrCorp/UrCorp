@@ -6,3 +6,6 @@
   @include('site.admin.calculator.items._form')
 </div>
 @endsection
+@section('scripts')
+<script type="text/javascript" src="{!! asset('public/assets/js/app/admin/calculator.items.js') !!}"></script>
+@endsection

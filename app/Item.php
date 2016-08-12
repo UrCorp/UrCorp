@@ -21,15 +21,20 @@ class Item extends Model implements SluggableInterface
   protected $fillable = [
     'name',
     'slug',
-    'category_id'
+    'section_id',
+    'icon_id'
   ];
 
-  public function category() {
-    return $this->belongsTo('App\Category');
+  public function section() {
+    return $this->belongsTo('App\Section');
   }
 
   public function platforms() {
     return $this->belongsToMany('App\Platform', 'item_platform')->withPivot(['price'])->withTimestamps();
+  }
+
+  public function icon() {
+    return $this->belongsTo('App\Icon');
   }
 
   /**
@@ -37,6 +42,6 @@ class Item extends Model implements SluggableInterface
    * ============================================================= //
    */
   public function setNameAttribute($value) {
-    $this->attributes['name'] = cstrtolower($value);
+    $this->attributes['name'] = $value;
   }
 }

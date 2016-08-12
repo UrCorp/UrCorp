@@ -2,14 +2,7 @@
    ------------------------------------------------------------------------- */
 @media (min-width: 992px) { 
 
-.app-header {
-  display: block;
-  position: absolute;
-  z-index: 9999999;
-}
-
 .app-logo-container .app-logo {
-  display: block;
   margin: 20px 0 25px 30px;
   width: 240px;
   height: 65.6px;
@@ -19,26 +12,12 @@
   margin-top: 40px;
 }
 
-.app-nav ul {
-  text-align: right;
-  list-style: none;
-}
-
 .app-nav ul li {
-  display: inline-block;
   padding-right: 15px;
 }
 
 .app-nav ul li a {
   font-size: 16px;
-  display: inline-block;
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.app-jumbotron {
-  width: 100%;
-  overflow: hidden;
 }
 
 .app-jumbotron .app-slogan-container {
@@ -58,7 +37,6 @@
 }
 
 .app-clients-container {
-  text-align: center;
   padding-bottom: 20px;
 }
 
@@ -93,6 +71,8 @@
 .app-description-container {
   padding-top: 22.14px;
   padding-bottom: 28.7px;
+  background-color: #1B1F22;
+  color: #F9F9F9;
 }
 
 .app-description-container .title {
@@ -100,9 +80,33 @@
   font-weight: bold;
 }
 
+.app-description-container .subtitle {
+  color: #FFFF00;
+  font-size: 18px;
+  display: inline-block;
+  margin: 10px 0 0 0;
+}
+
+.app-description-container .divider {
+  display: inline-block;
+  height: 1px;
+  background-color: #FFFF00;
+  width: 44%;
+}
+
 .app-description-container .content {
-  margin-top: 24.6px;
+  margin-top: 20px;
+  margin-bottom: 16px;
   font-size: 16.4px;
+}
+
+.app-description-container .btn-learn-more {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #1B1F22;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .app-services-container {
@@ -111,12 +115,12 @@
 }
 
 .app-services-container .title {
-  font-size: 19.68px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .app-services-container .articles {
-  margin-top: 24.6px;
+  margin-top: 26px;
 }
 
 .app-services-container .img-service-1 {
@@ -146,8 +150,8 @@
   font-size: 16px;
 }
 
-.app-calculators-container .title-container {
-  background-color: #E21E79;
+.app-calculators-container {
+  background-color: #1B1F22;
   padding: 15px;
 }
 
@@ -158,23 +162,37 @@
   margin-bottom: 14px;
 }
 
-.app-calculators-container .articles .description {
-  font-size: 16px;
-  font-weight: bold;
+.app-calculators-container .title-container .subtitle {
+  color: #FFFF00;
 }
 
-.app-calculators-container .articles .content {
-  padding-top: 30.16px;
-  padding-bottom: 30.16px;
+.app-calculators-container .title-container .divider {
+  display: inline-block;
+  height: 2px;
+  background-color: #FFFF00;
+}
+
+.app-calculators-container .title-container .content {
+  color: #FFFFFF;
+}
+
+.app-packages-container {
+  background-color: #EDEDED;
+  padding-bottom: 40px;
 }
 
 .app-packages-container .title-container {
+  background-image: url("../img/v2/bg-packages.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 30.16px;
   padding-bottom: 328px;
 }
 
 .app-packages-container .title-container .title {
   font-weight: bold;
+  color: #FFFFFF;
 }
 
 .app-packages-container .packages-table {
@@ -185,21 +203,42 @@
 
 .app-packages-container .packages-table .package {
   background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  padding: 16.4px 12.3px 24.6px 12.3px;
   min-height: 986px;
 }
 
-.app-packages-container .packages-table .package .title {
+.app-packages-container .packages-table .package .header {
+  background-color: #1B1F22;
+  color: #FFFFFF;
+  padding: 11px 21px 14px 21px;
+}
+
+.app-packages-container .packages-table .package .header .title {
   font-size: 26.24px;
   font-weight: bold;
   margin-bottom: 12.3px;
 }
 
-.app-packages-container .packages-table .package .description {
+.app-packages-container .packages-table .package .header .description {
   font-size: 14.76px;
-  font-weight: bold;
   margin-bottom: 12.3px;
+}
+
+.app-packages-container .packages-table .package .header .offer-notice {
+  position: absolute;
+  left: 0;
+  top: -44px;
+  width: 100%;
+  background-color: #FFFF00;
+}
+
+.app-packages-container .packages-table .package .header .offer-notice .title {
+  color: #1B1F22;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.app-packages-container .packages-table .package .content {
+  padding: 0 25px;
 }
 
 .app-packages-container .packages-table .package .price-container {
@@ -207,7 +246,7 @@
 }
 
 .app-packages-container .packages-table .package .price {
-  font-size: 45.92px;
+  font-size: 42px;
   font-weight: bold;
 }
 
@@ -218,23 +257,56 @@
 }
 
 .app-packages-container .packages-table .package a.btn-chose {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   display: inline-block;
-}
-
-.app-packages-container .packages-table .package a.btn-chose:hover {
-  text-decoration: none;
-}
-
-.app-packages-container .packages-table .package .btn-chose {
+  width: 100%;
   font-size: 18px;
   padding: 9.84px 59.04px;
-  color: #3FB254;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #39B54A;
   border: 1px solid #3FB254;
 }
 
+.app-packages-container .packages-table .package a.btn-chose:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  background-color: inherit;
+  color: #39B54A;
+}
+
+.app-packages-container .packages-table .package a.btn-chose.offer {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #FFFF00;
+  border: 1px solid #FFFF00;
+  color: #1B1F22;
+}
+
+.app-packages-container .packages-table .package a.btn-chose.offer:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  text-decoration: none;
+  color: #6C1C7F;
+  border: 1px solid #9E86B6;
+}
+
 .app-packages-container .packages-table .package .features-list {
-  padding-left: 12.3px;
+  padding-left: 0;
   margin-top: 32.8px;
 }
 
@@ -340,8 +412,7 @@
   background-color: #33CC00;
   border: 0;
   color: #FFFFFF;
-  width: 100%;
-  padding: 8px 12px;
+  padding: 4px 32px;
   font-size: 18px;
 }
 
@@ -352,9 +423,13 @@
 }
 
 .app-footer .logo {
-  margin-top: 37.72px;
   width: 137.76px;
   height: 46.74px;
+}
+
+.app-footer a.link {
+  color: #FFFF00;
+  font-size: 18px;
 }
 
 .app-footer .links-list h2 {
@@ -363,10 +438,6 @@
 
 .app-footer .links-list h3 {
   font-size: 16.4px;
-}
-
-.app-footer .copyright {
-  margin-top: 41px;
 }
 
 .app-footer .copyright h3 {

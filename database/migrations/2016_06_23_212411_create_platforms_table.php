@@ -18,9 +18,10 @@ class CreatePlatformsTable extends Migration
        * ============================================================= //
        */
       $table->increments('id');
-      $table->string('name', 45)->nullable();
+      $table->string('name', 45);
       $table->string('slug')->nullable();
       $table->integer('calculator_id')->unsigned();
+      $table->integer('icon_id')->unsigned();
       $table->timestamps();
       /**
        * Platforms - Foreign Keys
@@ -28,6 +29,10 @@ class CreatePlatformsTable extends Migration
        */
       $table->foreign('calculator_id')
             ->references('id')->on('calculators')
+            ->onDelete('cascade');
+
+      $table->foreign('icon_id')
+            ->references('id')->on('icons')
             ->onDelete('cascade');
     });
   }

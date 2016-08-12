@@ -61,6 +61,7 @@
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js') }}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js') }}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/app/generic.js') }}"></script>
+  @yield('scripts')
   <!-- END [JavaScript Files] -->
 
   <!-- START [Google Analytics] -->

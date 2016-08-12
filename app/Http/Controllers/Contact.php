@@ -12,45 +12,21 @@ use Mail;
 class Contact extends Controller
 {
   public function send(Request $request) {
-    $response = ['status' => 'FAILED'];
 
     $contact = $request->input('contact');
 
-    if (!empty($contact)) {
+    if (isset($contact) and !empty($contact)) {
 
       $validation = Validator::make($contact, [
-        'name'    => 'required|max:45',
+        'name'    => 'required|max:60',
         'email'   => 'required|email|max:250',
-        'comment' => 'required|max:250'
+        'phone'   => 'required|phone'
       ]);
 
-      if ($validation->fails()) {
-        $arrMessages = $validation->errors()->getMessages();
-        $response['status'] = 'VALIDATION_ERROR';
-        $response['form_error'] = [];
-
-        foreach ($arrMessages as $input => $message) {
-          $response['form_error']['contact-' . $input] = current($message);
-        }
+      if (!$validation->fails()) {
+        
       } else {
-        $contact['name'] = cucwords($contact['name']);
-        $contact['comment'] = nl2br($contact['comment']);
 
-        $email_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
-          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
-          $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
-
-          $m->to('contacto@urcorp.mx', 'Contacto UrCorp')
-            ->subject('[UrCorp] Mensaje de contacto | ' . $contact['name']);
-        });
-
-        if ($email_sent) {
-          $response['status']       =   'SUCCESS';
-          $response['msg_server']   =   '¡Tu mensaje ha sido enviado exitosamente!';
-        } else {
-          $response['status']       =   'ERROR_CONNECTION';
-          $response['msg_server']   =   'Existe un error en la conexión <br/>¡Por favor, intente más tarde!';
-        }
       } 
     } 
 

@@ -124,6 +124,7 @@
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js')!!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>
+  @yield('scripts')
   {{-- <script src="{!! elixir('js/app.js') !!}"></script> --}}
 </body>
 </html>

@@ -21,7 +21,8 @@ class Platform extends Model implements SluggableInterface
   protected $fillable = [
     'name',
     'slug',
-    'calculator_id'
+    'calculator_id',
+    'icon_id'
   ];
 
   public function calculator() {
@@ -32,11 +33,15 @@ class Platform extends Model implements SluggableInterface
     return $this->belongsToMany('App\Item', 'item_platform')->withPivot(['price'])->withTimestamps();
   }
 
+  public function icon() {
+    return $this->belongsTo('App\Icon');
+  }
+
   /**
    * Platform - Mutators
    * ============================================================= //
    */
   public function setNameAttribute($value) {
-    $this->attributes['name'] = cstrtolower($value);
+    $this->attributes['name'] = $value;
   }
 }
