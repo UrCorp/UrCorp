@@ -52,6 +52,38 @@
   <!-- END [Cascade Style Sheet Files] -->
 </head>
 <body>
+  <header>
+    <div id="header" class="col-xs-12 app-header no-side-padding">
+      <div id="navbar" class="col-xs-12 no-side-padding">
+        <div class="col-sm-3 col-xs-12 app-logo-container no-side-padding">
+          <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo" />
+          <button id="btn-open-nav" class="btn-menu btn btn-primary pull-right visible-xs" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
+              <span class="fa fa-bars"></span>
+          </button>
+        </div> 
+        <div id="nav" class="col-sm-9 col-xs-12 collapse no-side-padding">
+          <div class="col-xs-12 no-side-padding">
+            <nav class="app-nav">
+              <ul>
+                <li>
+                  <a class="anchorLink" href="#services">SERVICIOS</a>
+                </li>
+                <li>
+                  <a class="anchorLink" href="#smart-calculator">COTIZADOR INTELIGENTE</a>
+                </li>
+                <li>
+                  <a class="anchorLink" href="#packages">PAQUETES</a>
+                </li>
+                <li>
+                  <a class="anchorLink" href="#contact">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   @yield('content')
   <!-- START [JavaScript Files] -->
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js') }}"></script>
@@ -60,7 +92,7 @@
   <script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.js') }}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js') }}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/app/generic.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/app/app.js') }}"></script>
   @yield('scripts')
   <!-- END [JavaScript Files] -->
 

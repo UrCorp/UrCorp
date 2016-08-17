@@ -8,6 +8,10 @@
   height: 80px;
 }
 
+#header {
+  min-height: 160px;
+}
+
 .app-nav {
   margin-top: 80px;
 }
@@ -18,6 +22,16 @@
 
 .app-nav ul li a {
   font-size: 20px;
+}
+
+.app-navbar-fixed .app-logo-container .app-logo {
+  margin: 12px 0 15px 90px;
+  width: 120px;
+  height: 40px;
+}
+
+.app-navbar-fixed .app-nav ul li a {
+  font-size: 18px;
 }
 
 .app-jumbotron .app-slogan-container {
@@ -164,18 +178,9 @@
   margin-bottom: 45px;
 }
 
-.app-calculators-container .calculator-wrap {
-  background-color: #EDEDED;
-}
-
 .app-calculators-container .calculator-wrap .calculator {
   padding: 15px;
 }
-
-.app-calculators-container .calculator-wrap .calculator-1 {
-  background-color: #FFFFFF;
-}
-
 
 .app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
   cursor: pointer;
@@ -183,16 +188,6 @@
   max-height: 125px;
   overflow: hidden;
   margin-top: 20px;
-}
-
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #039be5;
-  color: #FFFFFF;
 }
 
 .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
@@ -207,35 +202,14 @@
 }
 
 .app-calculators-container .calculator-wrap .calculator .header .title {
-  text-align: center;
-  color: #000000;
-  font-weight: bold;
   font-size: 26px;
   margin-top: 10;
 }
 
 .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
-  border: none;
-  display: inline-block;
-  background-color: #FFFF00;
-  color: #1B1F22;
   padding: 6px 32px;
   font-size: 18px;
-  font-weight: bold;
   margin-top: 20px;
-  border: 1px solid #FFFF00;
-}
-
-.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  text-decoration: none;
-  color: #6C1C7F;
-  border: 1px solid #9E86B6;
 }
 
 .app-packages-container {

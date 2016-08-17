@@ -7,10 +7,25 @@ jQuery.fn.anchorAnimate = function(settings) {
     var caller = this
     $(caller).click(function (event) {  
       event.preventDefault()
-      var locationHref = window.location.href
-      var elementClick = $(caller).attr("href")
+      var locationHref = window.location.href,
+          elementClick = $(caller).attr("href"),
+          destination = $(elementClick).offset().top,
+          $header = $('#header');
+
+      if ($header.length == 1) {
+        var windowWidth = window.innerWidth;
+
+        if (windowWidth >= 1024) {
+          destination -= 70;
+        }
+        else if (windowWidth >= 1024) {
+          destination -= 66;
+        }
+        else if (windowWidth >= 768) {
+          destination -= 62;
+        }
+      }
       
-      var destination = $(elementClick).offset().top;
       $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
         window.location.hash = elementClick
       });
