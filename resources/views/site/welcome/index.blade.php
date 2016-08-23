@@ -324,22 +324,22 @@
               <h2 class="text-center title">CONTACTO</h2>
             </div>
             <div class="col-xs-12 contact-form">
-              {!! Form::open(['route' => 'site.contact.send', 'method' => 'POST']) !!}
+              {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
                 <div class="form-group">
                   {!! Form::label('contact[name]', 'Nombre / Empresa') !!}
-                  {!! Form::text('contact[name]', null, ['class' => 'form-control']) !!}
+                  {!! Form::text('contact[name]', null, ['class' => 'form-control', 'maxlength' => 60, 'required' => 'required']) !!}
                 </div>
                 <div class="form-group">
                   {!! Form::label('contact[email]', 'eMail') !!}
-                  {!! Form::email('contact[email]', null, ['class' => 'form-control']) !!}
+                  {!! Form::email('contact[email]', null, ['class' => 'form-control', 'maxlength' => 250, 'required' => 'required']) !!}
                 </div>
                 <div class="form-group">
                   {!! Form::label('contact[phone]', 'Teléfono') !!}
-                  {!! Form::text('contact[phone]', null, ['class' => 'form-control']) !!}
+                  {!! Form::text('contact[phone]', null, ['class' => 'form-control', 'pattern' => '^[0-9]{10,10}$', 'required' => 'required']) !!}
                 </div>
                 <div class="form-group">
                   {!! Form::label('contact[msg]', 'Mensaje (Opcional)') !!}
-                  {!! Form::textarea('contact[msg]', null, ['class' => 'form-control', 'rows' => 3]) !!}
+                  {!! Form::textarea('contact[msg]', null, ['class' => 'form-control', 'maxlength' => 512, 'rows' => 3]) !!}
                 </div>
                 <div class="form-group text-center">
                   <button class="btn-send-contact">

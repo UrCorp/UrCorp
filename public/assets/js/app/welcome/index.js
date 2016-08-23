@@ -35,7 +35,39 @@ $(document).on('ready' , function() {
   });
 
   $('#form-contact').validate({
-    submitHandler : function(form) {
+    rules: {
+      "contact[name]": {
+        required: true,
+        maxlength: 60
+      },
+      "contact[email]": {
+        required: true,
+        email: true,
+        maxlength: 250
+      },
+      "contact[phone]": {
+        required: true,
+        regex: /^[0-9]{10,10}$/
+      },
+      "contact[msg]": {
+        maxlength: 60
+      }
+    },
+    messages: {
+      "contact[name]": {
+        required: "Por favor, introduzca su nombre."
+      },
+      "contact[email]": {
+        required: "Por favor, introduzca su correo electrónico.",
+        email: "Correo electrónico inválido.",
+      },
+      "contact[phone]": {
+        required: "Por favor, introduzca su número de teléfono o celular.",
+        regex: "El número telefónico únicamente debe estar conformado por dígitos."
+      }
+    },
+    submitHandler: function(form) {
+      alert("Validated");
       var $form = $(form);
       $.ajax({
         type: "POST",
@@ -55,7 +87,6 @@ $(document).on('ready' , function() {
             }
           });
         },
-
         success: function(res) {
           if (res.status == 'SUCCESS') {
             $('#form-contact input, #form-contact textarea').each(function() {
@@ -71,10 +102,10 @@ $(document).on('ready' , function() {
             });
             
             $body
-              .loading( 'toggle' )
+              .loading('toggle')
               .loading({
                 theme: 'dark',
-                message: res.msg_server,
+                message: res.msg,
                 onStart: function(loading) {
                   loading.overlay.slideDown(400);
                 },
@@ -83,30 +114,16 @@ $(document).on('ready' , function() {
                 }
               });
             setTimeout( function ( ) { 
-              $body.loading( 'stop' ); 
+              $body.loading('stop'); 
             }, 3200); 
 
           }
           else if (res.status == 'VALIDATION_ERROR') {
-            setTimeout(function(){
-              $body
-                .loading('stop');
-
-              $.each(res.form_error , function(element, message){
-                if(message != '') {
-                  $('#' + element)
-                    .addClass('error')
-                    .after('<label class="error" for="'+element+'" style="display: block;">'+message+'</label>');
-                }
-              });
-            }, 400);
-          } 
-          else if(res.status == 'ERROR_CONNECTION') {
             $body
-              .loading( 'toggle' )
+              .loading('toggle')
               .loading({
                 theme: 'dark',
-                message: res.msg_server,
+                message: res.msg,
                 onStart: function(loading) {
                   loading.overlay.slideDown(400);
                 },
@@ -115,14 +132,30 @@ $(document).on('ready' , function() {
                 }
               });
             setTimeout( function ( ) { 
-              $body.loading( 'stop' ); 
+              $body.loading('stop'); 
+            }, 3200); 
+          } 
+          else if(res.status == 'ERROR_CONNECTION') {
+            $body
+              .loading('toggle')
+              .loading({
+                theme: 'dark',
+                message: res.msg,
+                onStart: function(loading) {
+                  loading.overlay.slideDown(400);
+                },
+                onStop: function(loading) {
+                  loading.overlay.slideUp(400);
+                }
+              });
+            setTimeout( function ( ) { 
+              $body.loading('stop'); 
             }, 3200);     
           }
         },
-
         error: function(res, textstatus, jqxhr) {
           $body
-            .loading( 'toggle' )
+            .loading('toggle')
             .loading({
               theme: 'dark',
               message: 'Existe un error en la conexión <br/>¡Por favor, intente más tarde!',
@@ -134,10 +167,11 @@ $(document).on('ready' , function() {
               }
             });
           setTimeout( function ( ) { 
-            $body.loading( 'stop' ); 
+            $body.loading('stop'); 
           }, 3200);
         }
       });
+      return false;
     }
   });
 });

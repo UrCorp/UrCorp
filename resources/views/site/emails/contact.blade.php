@@ -25,7 +25,7 @@
             {{ $contact['email'] }}
           </a>
         </h4>
-        <p style="text-align: justify;margin-bottom: 15px;">{!! nl2br($contact['comment']) !!}</p>
+        <p style="text-align: justify;margin-bottom: 15px;">{!! nl2br($contact['msg']) !!}</p>
       </div>
     </div>
     <div style="width:92%;display:block;margin: auto auto 25px auto;">

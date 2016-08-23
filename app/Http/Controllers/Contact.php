@@ -12,6 +12,10 @@ use Mail;
 class Contact extends Controller
 {
   public function send(Request $request) {
+    $res = [
+      'status' => 'ERROR_CONNECTION',
+      'msg'    => 'Existe un error en la conexión <br/>¡Por favor, intente más tarde!'
+    ];
 
     $contact = $request->input('contact');
 
@@ -20,17 +24,31 @@ class Contact extends Controller
       $validation = Validator::make($contact, [
         'name'    => 'required|max:60',
         'email'   => 'required|email|max:250',
-        'phone'   => 'required|phone'
+        'phone'   => 'required|regex:/^[0-9]{10,10}$/',
+        'msg'     => 'max:512'
       ]);
 
-      if (!$validation->fails()) {
-        
+      if ($validation->fails()) {
+        $res['status'] = 'VALIDATION_ERROR';
+        $res['msg'] = 'Error de validación<br/>¡Los datos introducidos son incorrectos!';
       } else {
 
+        $mail_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
+          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
+          $m->replyTo($contact['email'], $contact['name']);
+
+          $m->to('contacto@urcorp.mx', 'Contacto UrCorp');
+
+          $m->subject('[contacto] '.$contact['name'].' | UrCorp');
+        });
+
+        if ($mail_sent) {
+          $res['status'] = 'SUCCESS';
+          $res['msg'] = '¡Mensaje enviado!';
+        }
       } 
     } 
-
-    echo json_encode($response);
+    echo json_encode($res);
   }
 
   public function save(Request $request) {
