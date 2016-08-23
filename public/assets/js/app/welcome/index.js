@@ -50,7 +50,7 @@ $(document).on('ready' , function() {
         regex: /^[0-9]{10,10}$/
       },
       "contact[msg]": {
-        maxlength: 60
+        maxlength: 512
       }
     },
     messages: {

@@ -25,6 +25,9 @@
             {{ $contact['email'] }}
           </a>
         </h4>
+        <h4 style="font-weight:lighter;margin:0;"> 
+          Teléfono: {{ $contact['phone'] }}
+        </h4>
         <p style="text-align: justify;margin-bottom: 15px;">{!! nl2br($contact['msg']) !!}</p>
       </div>
     </div>
