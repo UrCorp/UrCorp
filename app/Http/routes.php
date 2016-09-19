@@ -191,20 +191,27 @@ Route::group(['as' => 'site.'], function () {
       'uses'  => 'Calculator@index',
       'as'    => 'index'
     ]);
+  });
 
-    Route::get('/index', [
-      'uses'  => 'Calculator@index',
-      'as'    => 'index'
-    ]);
+  Route::group(['prefix' => 'api', 'as' => 'api.'], function () {
 
-    Route::match(['get', 'post'], '/features', [
-        'uses'  => 'Calculator@features',
-        'as'    => 'features'
-    ]);
+    Route::group(['prefix' => 'v1', 'as' => 'v1.'], function () {
 
-    Route::post('/send', [
-      'uses'  => 'Calculator@send',
-      'as'    => 'send'
-    ]);
+      Route::group(['prefix' => 'calculator', 'as' => 'calculator.'], function () {
+
+        Route::get('{calculator}/prices', [
+          'uses'  => 'Calculator@prices',
+          'as'    => 'prices'
+        ]);
+      
+        Route::group(['prefix' => '{calculator}', 'as' => 'item.'], function () {
+
+          Route::get('{item}/price', [
+            'uses'  => 'Calculator@itemPriceByPlatform',
+            'as'    => 'getPriceByPlatforms'
+          ]);
+        });
+      });
+    });
   });
 });

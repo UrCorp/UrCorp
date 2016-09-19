@@ -4,7 +4,8 @@ $(document).on('ready' , function() {
       $body = $('body'),
       $header = $('#header'),
       $navbar = $('#navbar'),
-      $itemsContainer = $('#items-container');
+      $itemsContainer = $('#items-container'),
+      $webCalculator = $('#web-calculator');
 
   if (window.innerWidth < 768) {
     $navbar.addClass('app-navbar-fixed');
@@ -28,10 +29,24 @@ $(document).on('ready' , function() {
     }
   });
 
-  $('.item', $itemsContainer).click(function(event) {
+  $('#items-selector option', $webCalculator).each(function() {
     var $this = $(this);
 
+    $this.prop('selected', false);
+  });
+
+  $('.item', $itemsContainer).click(function(event) {
+    var $this = $(this),
+        id = $this.data('id');
+
     $this.toggleClass('bounce bounceIn active');
+    
+    var $option = $('#items-selector option#platform-'+id, $webCalculator);
+    if ($option.is(':selected')) {
+      $option.prop('selected', false);
+    } else {
+      $option.prop('selected', true);
+    }
   });
 
   $('#form-contact').validate({
@@ -67,7 +82,6 @@ $(document).on('ready' , function() {
       }
     },
     submitHandler: function(form) {
-      alert("Validated");
       var $form = $(form);
       $.ajax({
         type: "POST",

@@ -1,3 +1,7 @@
+Number.prototype.toCurrency = function() {
+  return this.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+}
+
 $(function() {
   var $window = $(window),
       $body = $('body');

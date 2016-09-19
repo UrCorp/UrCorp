@@ -122,36 +122,43 @@
           <div class="col-xs-12 no-side-padding">
             <div class="calculator-wrap col-md-10 col-md-offset-1 col-xs-12 no-side-padding">
               <section>
-                <div class="col-md-6 col-xs-12 calculator calculator-1">
+                <div class="col-md-12 col-xs-12 calculator calculator-1">
                   <div class="header">
                     <header>
                       <h3 class="title">COTIZA DISEÑO WEB</h3>
                     </header>
                     <div id="items-container" class="items-container col-xs-12 no-side-padding">
-                      <div class="col-xs-12 no-side-padding">
-                        @foreach ($calculator->platforms as $platform)
-                          <div class="col-sm-4 col-xs-6 no-side-padding">
-                            <div class="item animated bounce col-xs-10 col-xs-offset-1">
-                              <h3 class="text-center">
-                                <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
-                                {!! $platform->name !!}
-                              </h3>
+                      {!! Form::open(['route' => 'site.calculator.index', 'id' => 'web-calculator', 'method' => 'GET']) !!}
+                        <select id="items-selector" name="p[]" class="hidden" multiple>
+                          @foreach ($calculator->platforms as $platform)
+                            <option id="platform-{{ $platform->slug }}" value="{{ $platform->slug }}">{{ $platform->name }}</option>
+                          @endforeach
+                        </select>
+                        <div class="col-xs-12 no-side-padding">
+                          @foreach ($calculator->platforms as $platform)
+                            <div class="col-sm-4 col-xs-6 no-side-padding">
+                              <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                                <h3 class="text-center">
+                                  <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
+                                  {!! $platform->name !!}
+                                </h3>
+                              </div>
                             </div>
-                          </div>
-                        @endforeach
-                      </div>
-                      <div class="text-center">
-                        <button class="btn-choose">ELEGIR</button>
-                      </div>
+                          @endforeach
+                        </div>
+                        <div class="text-center">
+                          <button class="btn-choose">ELEGIR</button>
+                        </div>
+                      {!! Form::close() !!}
                     </div>
                   </div>
                 </div>
               </section>
-              <section>
+              <!--<section>
                 <div class="col-md-6 col-xs-12 calculator calculator-2">
                   
                 </div>
-              </section>
+              </section>-->
             </div>
           </div>
         </div>

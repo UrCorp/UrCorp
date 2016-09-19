@@ -32,13 +32,10 @@ class Contact extends Controller
         $res['status'] = 'VALIDATION_ERROR';
         $res['msg'] = 'Error de validación<br/>¡Los datos introducidos son incorrectos!';
       } else {
-
         $mail_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
           $m->replyTo($contact['email'], $contact['name']);
-
           $m->to('contacto@urcorp.mx', 'Contacto UrCorp');
-
           $m->subject('[contacto] '.$contact['name'].' | UrCorp');
         });
 

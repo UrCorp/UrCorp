@@ -31,11 +31,65 @@ class Calculator extends Controller
     $this->contact = $results->first();
   }
 
-  public function index() {
+  public function index(Request $request) {
     $this->params['controller'] = appGetController(Route::current());
     $this->params['view']       = appGetView(Route::current());
-    
+    $this->params['calculator'] = \App\Calculator::findBySlug('web');
+    $this->params['p']  = $request->input('p');
+
     return view('site.calculator.index')->with($this->params);
+  }
+
+  public function prices($calculatorSlug) {
+    $resp = [
+      'status' => 'ERROR_CONNECTION',
+      'msg'    => 'Existe un error en la conexión <br/>¡Por favor, intente más tarde!'
+    ];
+
+    $calculator = \App\Calculator::findBySlug($calculatorSlug);
+
+    if ($calculator) {
+      $resp['data']['itemNames'] = [];
+      $resp['data']['prices'] = [];
+
+      foreach ($calculator->items as $item) {
+        $prices = [];
+
+        foreach ($item->platforms as $platform) {
+          $prices[$platform->slug] = (double) $platform->pivot->price;
+        }
+
+        $resp['data']['itemNames'][$item->slug] = $item->name;
+        $resp['data']['prices'][$item->slug] = $prices;
+      }
+
+      $resp['status'] = 'SUCCESS';
+      $resp['msg'] = 'Datos obtenidos de forma exitosa.';
+    } else {
+      $resp['status'] = 'VALIDATION_ERROR';
+      $resp['msg'] = 'Error de validación<br/>¡Los datos obtenidos son incorrectos!';
+    }
+
+    return response()->json($resp);
+  }
+
+  public function itemPriceByPlatform($calculatorSlug, $itemSlug, Request $request) {
+    
+    $data = [];
+    $calculator = \App\Calculator::findBySlug($calculatorSlug);
+    $results = $calculator->items()->where(['items.slug' => $itemSlug]);
+    $platformSlugs = $request->input('p');
+
+    if ($results->count() == 1) {
+      $item = $results->first();
+
+      $data['price'] = 0.0;
+      foreach ($platformSlugs as $platformSlug) {
+        $platform = $item->platforms()->where(['platforms.slug' => $platformSlug])->first();
+        $data['price'] += $platform->pivot->price;
+      }
+    }
+    return response()->json($data);
   }
 
   public function features() {

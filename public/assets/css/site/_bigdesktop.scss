@@ -12,6 +12,10 @@
   min-height: 160px;
 }
 
+#header.no-height {
+  min-height: initial;
+}
+
 .app-nav {
   margin-top: 80px;
 }
@@ -367,6 +371,85 @@
 
 .app-footer .copyright h3 {
   font-size: 20px;
+}
+
+.navbar-margin {
+  margin-top: 67px;
+}
+
+.app-calculator .platforms-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.app-calculator .platforms-container .platform {
+  cursor: pointer;
+  min-height: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.app-calculator .platforms-container .platform.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF;
+}
+
+.app-calculator .platforms-container .platform h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.app-calculator .platforms-container .platform h3 .icon {
+  display: block;
+  margin: auto;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.app-calculator .section-name:first-child h2 {
+  margin-top: 15px;
+}
+
+.app-calculator .section-name h2 {
+  margin-top: 30px;
+}
+
+.app-calculator .items-container .item {
+  cursor: pointer;
+  min-height: 154px;
+  max-height: 154px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.app-calculator .items-container .item.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF;
+}
+
+.app-calculator .items-container .item h3 {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.app-calculator .items-container .item h3 .icon {
+  display: block;
+  margin: auto;
+  font-size: 56px;
+  margin-bottom: 10px;
 }
 
 }
