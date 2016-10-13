@@ -130,21 +130,25 @@
                     <div id="items-container" class="items-container col-xs-12 no-side-padding">
                       {!! Form::open(['route' => 'site.calculator.index', 'id' => 'web-calculator', 'method' => 'GET']) !!}
                         <select id="items-selector" name="p[]" class="hidden" multiple>
-                          @foreach ($calculator->platforms as $platform)
-                            <option id="platform-{{ $platform->slug }}" value="{{ $platform->slug }}">{{ $platform->name }}</option>
-                          @endforeach
+                          @if (!is_null($calculator))
+                            @foreach ($calculator->platforms as $platform)
+                              <option id="platform-{{ $platform->slug }}" value="{{ $platform->slug }}">{{ $platform->name }}</option>
+                            @endforeach
+                          @endif
                         </select>
                         <div class="col-xs-12 no-side-padding">
-                          @foreach ($calculator->platforms as $platform)
-                            <div class="col-sm-4 col-xs-6 no-side-padding">
-                              <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
-                                <h3 class="text-center">
-                                  <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
-                                  {!! $platform->name !!}
-                                </h3>
+                          @if (!is_null($calculator))
+                            @foreach ($calculator->platforms as $platform)
+                              <div class="col-sm-4 col-xs-6 no-side-padding">
+                                <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                                  <h3 class="text-center">
+                                    <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
+                                    {!! $platform->name !!}
+                                  </h3>
+                                </div>
                               </div>
-                            </div>
-                          @endforeach
+                            @endforeach
+                          @endif
                         </div>
                         <div class="text-center">
                           <button class="btn-choose">ELEGIR</button>
