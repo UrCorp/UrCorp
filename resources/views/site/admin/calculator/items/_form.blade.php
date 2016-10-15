@@ -9,6 +9,12 @@
     </div>
   </div>
   <div class="form-group">
+    {!! Form::label('short_description', 'Breve descripción', ['class' => 'col-md-4 control-label']) !!}
+    <div class="col-md-8">
+      {!! Form::text('short_description', isset($item) ? $item->short_description : null, ['class' => 'col-md-8 form-control', 'required' => 'required']) !!}
+    </div>
+  </div>
+  <div class="form-group">
     {!! Form::label('section_id', 'Sección', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
       {!! Form::select('section_id', $calculator->sections->lists('name', 'id'),  isset($item) ? $item->section_id : null, ['class' => 'col-md-8 form-control', 'required' => 'required', 'placeholder' => 'Seleccionar...']) !!}

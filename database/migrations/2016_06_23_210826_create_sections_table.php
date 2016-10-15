@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Section;
 
 class CreateSectionsTable extends Migration
 {
@@ -31,6 +32,16 @@ class CreateSectionsTable extends Migration
             ->references('id')->on('calculators')
             ->onDelete('cascade');
     });
+
+    /**
+     * Categories - Foreign Keys
+     * ============================================================= //
+     */
+    $sections = config('init.sections');
+
+    foreach ($sections as $section) {
+      Section::create($section);
+    }
   }
 
   /**

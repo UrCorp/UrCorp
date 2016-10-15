@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Platform;
 
 class CreatePlatformsTable extends Migration
 {
@@ -35,6 +36,16 @@ class CreatePlatformsTable extends Migration
             ->references('id')->on('icons')
             ->onDelete('cascade');
     });
+
+    /**
+      * Platforms - Seeders
+      * ============================================================= //
+      */
+    $platforms = config('init.platforms');
+
+    foreach ($platforms as $platform) {
+      Platform::create($platform);
+    }
   }
 
   /**

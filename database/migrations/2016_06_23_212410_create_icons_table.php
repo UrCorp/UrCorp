@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Icon;
 
 class CreateIconsTable extends Migration
 {
@@ -22,6 +23,16 @@ class CreateIconsTable extends Migration
       $table->string('slug')->nullable();
       $table->timestamps();
     });
+    
+    /**
+     * Icons - Seeders
+     * ============================================================= //
+     */
+    $icons = config('init.icons');
+
+    foreach ($icons as $icon) {
+      Icon::create($icon);
+    }
   }
 
   /**

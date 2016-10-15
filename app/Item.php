@@ -21,6 +21,7 @@ class Item extends Model implements SluggableInterface
   protected $fillable = [
     'name',
     'slug',
+    'short_description',
     'section_id',
     'icon_id'
   ];
