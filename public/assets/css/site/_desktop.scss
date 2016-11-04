@@ -409,4 +409,68 @@
   font-size: 16px;
 }
 
+.navbar-margin {
+  margin-top: 67px;
+}
+
+.app-calculator .platforms-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.app-calculator .platforms-container .platform {
+  min-height: 90px;
+  max-height: 90px;
+  margin-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.app-calculator .platforms-container .platform h3 {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.app-calculator .platforms-container .platform h3 .icon {
+  margin: auto;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.app-calculator .section-name:first-child h2 {
+  margin-top: 10px;
+}
+
+.app-calculator .section-name h2 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.app-calculator .items-container .item {
+  min-height: 144px;
+  max-height: 144px;
+  margin-top: 10px;
+}
+
+.app-calculator .items-container .item h3 {
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.app-calculator .items-container .item h3 .icon {
+  font-size: 36px;
+  margin: 5px auto 10px auto;
+}
+
+.app-calculator .shoppingCart {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.app-calculator .shoppingCart .item .name {
+  font-size: 14px;
+}
+
 }

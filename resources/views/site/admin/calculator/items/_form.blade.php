@@ -31,6 +31,11 @@
       </button>
     </div>
   </div>
+  <div class="form-group" style="margin-bottom:0;">
+    <div class="col-md-7 col-md-offset-4">
+      <span>Revisar el catálogo de iconos en: <a href="http://fontawesome.io/icons/" target="__blank">http://fontawesome.io/icons/</a></span>
+    </div>
+  </div>
   <div class="form-group">
     <h2><small>Precios</small></h2>
   </div>

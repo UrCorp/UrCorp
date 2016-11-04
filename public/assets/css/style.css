@@ -1,2 +1,2001 @@
-body::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5}body::-webkit-scrollbar{width:8px;height:8px;background-color:#F5F5F5}body::-webkit-scrollbar-thumb{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#616161}body{font-family:"Open sans", helvetica, arial, sans-serif !important;color:#000000}.app-header{display:block;position:absolute;z-index:9999999}#navbar{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s}.app-navbar-fixed{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;position:fixed;top:0;left:0;width:100%;display:block;z-index:9999999;background-color:rgba(25,25,25,0.8)}.app-logo-container .app-logo{display:block;margin:22px 0 22px 0;width:157.44px;height:43.03px}.app-nav ul{text-align:right;list-style:none}.app-nav ul li{display:inline-block;padding-right:12px}.app-nav ul li a{font-size:14px;display:inline-block;text-decoration:none;color:#FFFFFF}#navbar{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s}.app-navbar-fixed{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;position:fixed;top:0;left:0;width:100%;display:block;z-index:9999999;background-color:rgba(25,25,25,0.86)}.app-navbar-fixed .app-logo-container .app-logo{display:inline-block;margin:12px 0 12px 32px;width:96px;height:32px}.app-navbar-fixed .app-logo-container .btn-menu{padding:6px 8px;margin-top:8px;margin-right:16px;font-size:20px;border-radius:0px;width:40px;height:38px;background-color:rgba(75,75,75,0.2);border:1px solid rgba(25,25,25,0.6)}.app-navbar-fixed .app-nav ul{width:100%;display:inline-block;list-style:none;padding:22px 0;margin:0 0 -5px 0}.app-navbar-fixed .app-nav ul li{width:100%;display:block;padding-right:0}.app-navbar-fixed .app-nav ul li a{width:100%;display:block;text-align:center;font-size:18px;padding:8px 6px}.app-navbar-fixed .app-nav ul li a:hover{background-color:rgba(75,75,75,0.6)}.app-jumbotron{width:100%;overflow:hidden}.app-jumbotron .coverpage{background-image:url("../img/v2/bg-coverpage.png");background-position:center center;background-size:cover;background-repeat:no-repeat;height:400px}.app-jumbotron .app-slogan-container{position:absolute;margin-top:164px;width:100%;text-align:center;-webkit-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-moz-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-ms-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-o-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25)}.app-jumbotron .app-slogan-container .app-slogan{width:92%;display:block;margin:auto}.app-jumbotron .app-arrow-container{margin-top:32.8px}.app-jumbotron .app-arrow-container img{width:32px}.app-clients-container{text-align:center;padding-bottom:14px}.app-clients-container .logo-client{margin-top:24px}.app-clients-container .logo-client-1{margin-top:17.85px;width:130.28px;height:18.51px}.app-clients-container .logo-client-2{margin-top:19.84px;width:148.25px;height:15.08px}.app-clients-container .logo-client-3{margin-top:13.22px;width:111.52px;height:27.55px}.app-clients-container .logo-client-4{margin-top:13.88px;width:161.76px;height:23.61px}.app-description-container{padding-top:7px;padding-bottom:22.96px;background-color:#1B1F22;color:#F9F9F9}.app-description-container .title{font-size:18px;line-height:22px;font-weight:bold}.app-description-container .subtitle{color:#FFFF00;font-size:16px;line-height:20px;display:inline-block;margin:10px 0 0 0}.app-description-container .divider{display:inline-block;height:1px;background-color:#FFFF00;width:58%}.app-description-container .content{margin-top:16px;margin-bottom:12.8px;font-size:14px}.app-description-container .btn-learn-more{display:inline-block;background-color:#FFFF00;color:#1B1F22;padding:6px 12px;text-decoration:none;font-weight:bold}.app-services-container{padding-top:20.48px;padding-bottom:40.96px}.app-services-container .title{font-size:20px;font-weight:bold}.app-services-container .img-service-1{margin-top:15px;width:101.02px;height:81.34px}.app-services-container .img-service-2{margin-top:15px;width:104.30px;height:107.58px}.app-services-container .img-service-3{margin-top:15px;margin-top:20.38px;width:90.52px;height:88.56px}.app-services-container .articles .title{font-size:16px;font-weight:bold}.app-services-container .articles .content{margin-top:16px;font-size:14px}.app-calculators-container{background-color:#1B1F22;padding-bottom:0}.app-calculators-container .title-container .title{font-size:20px;line-height:24px;font-weight:bold;margin-top:20px;margin-bottom:15px}.app-calculators-container .title-container .subtitle{font-size:16px;margin:10px 0 0 0;color:#FFFF00}.app-calculators-container .title-container .divider{display:inline-block;height:1px;background-color:#FFFF00;width:52%}.app-calculators-container .title-container .content{color:#FFFFFF;margin-top:12.8px;margin-bottom:20px}.app-calculators-container .calculator-wrap{background-color:#EDEDED}.app-calculators-container .calculator-wrap .calculator{padding:15px}.app-calculators-container .calculator-wrap .calculator-1{background-color:#FFFFFF}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item{cursor:pointer;min-height:116px;max-height:116px;overflow:hidden;margin-top:16px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#039be5;color:#FFFFFF}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3{font-size:14px;line-height:20px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{display:block;margin:auto;font-size:32px;margin-bottom:12px}.app-calculators-container .calculator-wrap .calculator .header .title{text-align:center;color:#000000;font-weight:bold;font-size:22px;margin-top:10}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose{border:none;display:inline-block;background-color:#FFFF00;color:#1B1F22;padding:6px 32px;font-size:16px;font-weight:bold;margin-top:20px;border:1px solid #FFFF00}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:inherit;text-decoration:none;color:#6C1C7F;border:1px solid #9E86B6}.app-packages-container{background-color:#EDEDED;background-image:url("../img/v2/bg-packages.png");background-position:center center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;padding-bottom:40px}.app-packages-container .title-container{padding-top:10px;padding-bottom:328px}.app-packages-container .title-container .title{font-weight:bold;color:#FFFFFF}.app-packages-container .packages-table{margin-top:-305px;padding-left:12px;padding-right:12px}.app-packages-container .packages-table .package{background-color:#FFFFFF;margin-bottom:30px}.app-packages-container .packages-table .package.offer{margin-top:40px}.app-packages-container .packages-table .package .header{background-color:#1B1F22;color:#FFFFFF;padding:8.8px 16.8px 11.2px 16.8px}.app-packages-container .packages-table .package .header .title{font-size:20px;font-weight:bold;margin-bottom:9.84px}.app-packages-container .packages-table .package .header .description{font-size:14px;margin-bottom:9.84px}.app-packages-container .packages-table .package .header .offer-notice{position:absolute;left:0;top:-35.2px;width:100%;background-color:#FFFF00}.app-packages-container .packages-table .package .header .offer-notice .title{color:#1B1F22;font-size:18px;font-weight:bold}.app-packages-container .packages-table .package .content{padding:0 20px}.app-packages-container .packages-table .package .price-container{margin-top:13.12px;margin-bottom:13.12px}.app-packages-container .packages-table .package .price{font-size:36px;font-weight:bold}.app-packages-container .packages-table .package .price sup{font-weight:normal;font-size:14px;top:-0.52em}.app-packages-container .packages-table .package a.btn-chose{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;display:inline-block;width:100%;font-size:16px;padding:9.84px 59.04px;color:#FFFFFF;background-color:#39B54A;border:1px solid #3FB254}.app-packages-container .packages-table .package a.btn-chose:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;text-decoration:none;background-color:inherit;color:#39B54A}.app-packages-container .packages-table .package a.btn-chose.offer{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#FFFF00;border:1px solid #FFFF00;color:#1B1F22}.app-packages-container .packages-table .package a.btn-chose.offer:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:inherit;text-decoration:none;color:#6C1C7F;border:1px solid #9E86B6}.app-packages-container .packages-table .package .features-list{padding-left:0;margin-top:26.24px}.app-packages-container .packages-table .package .features-list li{list-style:none;font-size:14px;margin-bottom:19.68px}.app-premium-services-container{padding-top:32px;padding-bottom:54px}.app-premium-services-container .title{font-size:20px}.app-premium-services-container .premium-service{margin-top:52.48px}.app-premium-services-container .premium-service .img-premium-service-1{width:67.56px;height:47.23px}.app-premium-services-container .premium-service .img-premium-service-2{width:53.13px;height:44.60px}.app-premium-services-container .premium-service .img-premium-service-3{width:49.85px;height:47.23px}.app-premium-services-container .premium-service .img-premium-service-4{width:41.32px;height:54.44px}.app-premium-services-container .premium-service .title{font-weight:bold;font-size:16px;line-height:22px}.app-premium-services-container .premium-service .title-1{margin-top:32.8px}.app-premium-services-container .premium-service .title-2{margin-top:35.42px}.app-premium-services-container .premium-service .title-3{margin-top:32.8px}.app-premium-services-container .premium-service .title-4{margin-top:25.58px}.app-contact-form-container{background-image:url("../img/v2/bg-transparent-black.png"),url("../img/v2/bg-contact-form.png");background-position:center center;background-repeat:no-repeat;background-size:cover;min-height:424px;padding-top:24px;padding-bottom:24px}.app-contact-form-container .title{color:#FFFFFF}.app-contact-form-container .contact-form{margin-top:24px}.app-contact-form-container .contact-form form label{color:#FFFFFF;font-family:"Open Sans", sans-serif;font-weight:normal;font-size:16px}.app-contact-form-container .contact-form form input,.app-contact-form-container .contact-form form textarea,.app-contact-form-container .contact-form form select{background-color:inherit;color:#FFFFFF;border:0;border-radius:0;box-shadow:none;border-bottom:3px solid #FFFFFF;font-size:16.4px}.app-contact-form-container .contact-form form .btn-send-contact{display:inline-block;background-color:#33CC00;border:0;color:#FFFFFF;padding:4px 32px;font-size:18px;margin-top:10px}.app-footer{padding:19.68px 29.52px;background-color:#000000;color:#FFFFFF}.app-footer .logo{margin-top:20px;width:110.20px;height:37.39px}.app-footer a.link{color:#FFFF00;font-size:16px}.app-footer .links-list h2{font-size:16px}.app-footer .links-list h3{font-size:14px}.app-footer .copyright{text-align:center}.app-footer .copyright h3{font-size:14px}@media (min-width: 768px){.app-header{display:block;position:absolute;z-index:9999999}.app-logo-container .app-logo{display:block;margin:22px auto 22px auto;width:157.44px;height:43.03px}#nav{display:block !important}.app-nav{margin-top:32.8px}.app-nav ul{text-align:right;list-style:none}.app-nav ul li{display:inline-block;padding-right:12px}.app-nav ul li a{font-size:14px;display:inline-block;text-decoration:none;color:#FFFFFF}.app-navbar-fixed .app-logo-container .app-logo{margin:16px 0 15px 45px;width:96px;height:32px}.app-navbar-fixed .app-nav{margin-top:0;text-align:right}.app-navbar-fixed .app-nav ul{width:auto;display:inline-block;list-style:none;padding:0;margin:0 30px -5px 0}.app-navbar-fixed .app-nav ul li{width:auto;display:block;float:left;padding-right:0}.app-navbar-fixed .app-nav ul li a{width:100%;display:block;text-align:center;font-size:18px;padding:8px 6px}.app-navbar-fixed .app-nav ul li a{padding:21px 15px;font-size:14px}.app-navbar-fixed .app-nav ul li a:hover{background-color:rgba(75,75,75,0.2)}.app-jumbotron{width:100%;overflow:hidden}.app-jumbotron .app-slogan-container{position:absolute;margin-top:164px;width:100%;text-align:center;-webkit-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-moz-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-ms-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-o-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25)}.app-jumbotron .app-slogan-container .app-slogan{width:92%;display:block;margin:auto}.app-jumbotron .app-arrow-container{margin-top:32.8px}.app-jumbotron .app-arrow-container img{width:32px}.app-clients-container{padding-bottom:14px}.app-clients-container .logo-client{margin-top:24px}.app-clients-container .logo-client-1{margin-top:17.85px;width:130.28px;height:18.51px}.app-clients-container .logo-client-2{margin-top:19.84px;width:148.25px;height:15.08px}.app-clients-container .logo-client-3{margin-top:13.22px;width:111.52px;height:27.55px}.app-clients-container .logo-client-4{margin-top:13.88px;width:161.76px;height:23.61px}.app-description-container{padding-top:17.71px;padding-bottom:22.96px;background-color:#1B1F22;color:#F9F9F9}.app-description-container .title{font-size:18px;font-weight:bold}.app-description-container .subtitle{color:#FFFF00;font-size:16px;display:inline-block;margin:10px 0 0 0}.app-description-container .divider{display:inline-block;height:1px;background-color:#FFFF00;width:36%}.app-description-container .content{margin-top:16px;margin-bottom:12.8px;font-size:14px}.app-description-container .btn-learn-more{display:inline-block;background-color:#FFFF00;color:#1B1F22;padding:6px 12px;text-decoration:none;font-weight:bold}.app-services-container{padding-top:25.6px;padding-bottom:51.2px}.app-services-container .title{font-size:20px;font-weight:bold}.app-services-container .articles{margin-top:18px}.app-services-container .img-service-1{margin-top:24.09px;width:101.02px;height:81.34px}.app-services-container .img-service-2{width:104.30px;height:107.58px}.app-services-container .img-service-3{margin-top:20.38px;width:90.52px;height:88.56px}.app-services-container .articles .title{font-size:16px;font-weight:bold}.app-services-container .articles .content{margin-top:16px;font-size:14px}.app-calculators-container{background-color:#1B1F22;padding-bottom:0}.app-calculators-container .title-container .title{font-size:22px;font-weight:bold;margin-top:25.6px;margin-bottom:12.8px}.app-calculators-container .title-container .subtitle{font-size:18px;margin:10px 0 0 0;color:#FFFF00}.app-calculators-container .title-container .divider{display:inline-block;height:1px;background-color:#FFFF00;width:52%}.app-calculators-container .title-container .content{color:#FFFFFF;margin-top:12.8px;margin-bottom:28.8px}.app-calculators-container .calculator-wrap{background-color:#EDEDED}.app-calculators-container .calculator-wrap .calculator{padding:15px}.app-calculators-container .calculator-wrap .calculator-1{background-color:#FFFFFF}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item{cursor:pointer;min-height:116px;max-height:116px;overflow:hidden;margin-top:16px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#039be5;color:#FFFFFF}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3{font-size:14px;line-height:20px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{display:block;margin:auto;font-size:32px;margin-bottom:12px}.app-calculators-container .calculator-wrap .calculator .header .title{text-align:center;color:#000000;font-weight:bold;font-size:22px;margin-top:10}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose{border:none;display:inline-block;background-color:#FFFF00;color:#1B1F22;padding:6px 32px;font-size:16px;font-weight:bold;margin-top:20px;border:1px solid #FFFF00}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:inherit;text-decoration:none;color:#6C1C7F;border:1px solid #9E86B6}.app-packages-container{background-color:#EDEDED;background-image:url("../img/v2/bg-packages.png");background-position:center center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;padding-bottom:20px}.app-packages-container .title-container{padding-top:30.16px;padding-bottom:328px}.app-packages-container .title-container .title{font-weight:bold;color:#FFFFFF}.app-packages-container .packages-table{margin-top:-282px;padding-left:12px;padding-right:12px}.app-packages-container .packages-table .package{background-color:#FFFFFF;min-height:896px}.app-packages-container .packages-table .package.offer{margin-top:0}.app-packages-container .packages-table .package .header{background-color:#1B1F22;color:#FFFFFF;padding:8.8px 16.8px 11.2px 16.8px}.app-packages-container .packages-table .package .header .title{font-size:20px;font-weight:bold;margin-bottom:9.84px}.app-packages-container .packages-table .package .header .description{font-size:14px;margin-bottom:9.84px}.app-packages-container .packages-table .package .header .offer-notice{position:absolute;left:0;top:-35.2px;width:100%;background-color:#FFFF00}.app-packages-container .packages-table .package .header .offer-notice .title{color:#1B1F22;font-size:18px;font-weight:bold}.app-packages-container .packages-table .package .content{padding:0 20px}.app-packages-container .packages-table .package .price-container{margin-top:13.12px;margin-bottom:13.12px}.app-packages-container .packages-table .package .price{font-size:36px;font-weight:bold}.app-packages-container .packages-table .package .price sup{font-weight:normal;font-size:14px;top:-0.52em}.app-packages-container .packages-table .package a.btn-chose{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;display:inline-block;width:100%;font-size:16px;padding:9.84px 59.04px;color:#FFFFFF;background-color:#39B54A;border:1px solid #3FB254}.app-packages-container .packages-table .package a.btn-chose:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;text-decoration:none;background-color:inherit;color:#39B54A}.app-packages-container .packages-table .package a.btn-chose.offer{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#FFFF00;border:1px solid #FFFF00;color:#1B1F22}.app-packages-container .packages-table .package a.btn-chose.offer:hover{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:inherit;text-decoration:none;color:#6C1C7F;border:1px solid #9E86B6}.app-packages-container .packages-table .package .features-list{padding-left:0;margin-top:26.24px}.app-packages-container .packages-table .package .features-list li{list-style:none;font-size:14px;margin-bottom:19.68px}.app-premium-services-container{padding-top:38.4px;padding-bottom:78.72px}.app-premium-services-container .title{font-size:20px}.app-premium-services-container .premium-service{margin-top:52.48px}.app-premium-services-container .premium-service .img-premium-service-1{width:67.56px;height:47.23px}.app-premium-services-container .premium-service .img-premium-service-2{width:53.13px;height:44.60px}.app-premium-services-container .premium-service .img-premium-service-3{width:49.85px;height:47.23px}.app-premium-services-container .premium-service .img-premium-service-4{width:41.32px;height:54.44px}.app-premium-services-container .premium-service .title{font-weight:bold;font-size:16px}.app-premium-services-container .premium-service .title-1{margin-top:32.8px}.app-premium-services-container .premium-service .title-2{margin-top:35.42px}.app-premium-services-container .premium-service .title-3{margin-top:32.8px}.app-premium-services-container .premium-service .title-4{margin-top:25.58px}.app-contact-form-container{background-image:url("../img/v2/bg-transparent-black.png"),url("../img/v2/bg-contact-form.png");background-position:center center;background-repeat:no-repeat;background-size:cover;min-height:424px;padding-top:39.36px;padding-bottom:39.36px}.app-contact-form-container .title{color:#FFFFFF}.app-contact-form-container .contact-form{margin-top:39.36px}.app-contact-form-container .contact-form form label{color:#FFFFFF;font-family:"Open Sans", sans-serif;font-weight:normal;font-size:16px}.app-contact-form-container .contact-form form input,.app-contact-form-container .contact-form form textarea,.app-contact-form-container .contact-form form select{background-color:inherit;color:#FFFFFF;border:0;border-radius:0;box-shadow:none;border-bottom:3px solid #FFFFFF;font-size:16.4px}.app-contact-form-container .contact-form form .btn-send-contact{display:inline-block;background-color:#33CC00;border:0;color:#FFFFFF;padding:4px 32px;font-size:18px;margin-top:0}.app-footer{padding:19.68px 29.52px;background-color:#000000;color:#FFFFFF}.app-footer .logo{margin-top:10px;width:110.20px;height:37.39px}.app-footer a.link{color:#FFFF00;font-size:16px}.app-footer .links-list h2{font-size:16px}.app-footer .links-list h3{font-size:14px}.app-footer .copyright{text-align:left}.app-footer .copyright h3{font-size:14px}}@media (min-width: 1024px){.app-logo-container .app-logo{margin:20px 0 25px 30px;width:240px;height:65.6px}.app-nav{margin-top:40px}.app-nav ul li{padding-right:15px}.app-nav ul li a{font-size:16px}.app-navbar-fixed .app-logo-container .app-logo{margin:12px 0 15px 90px;width:120px;height:40px}.app-navbar-fixed .app-nav ul li a{padding:23px 15px}.app-jumbotron .app-slogan-container{position:absolute;margin-top:200px;width:100%;text-align:center;-webkit-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-moz-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-ms-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);-o-transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);transform:matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25)}.app-jumbotron .app-arrow-container{margin-top:40px}.app-clients-container{padding-bottom:20px}.app-clients-container .logo-client{margin-top:24px}.app-clients-container .logo-client-1{margin-top:22.32px;width:162.85px;height:23.14px}.app-clients-container .logo-client-2{margin-top:24.8px;width:185.32px;height:18.86px}.app-clients-container .logo-client-3{margin-top:16.53px;width:139.4px;height:34.44px}.app-clients-container .logo-client-4{margin-top:17.36px;width:224.68px;height:32.8px}.app-description-container{padding-top:22.14px;padding-bottom:28.7px}.app-description-container .title{font-size:21.32px}.app-description-container .subtitle{font-size:18px;display:inline-block;margin:10px 0 0 0}.app-description-container .divider{display:inline-block;width:44%}.app-description-container .content{margin-top:20px;margin-bottom:16px;font-size:16.4px}.app-description-container .btn-learn-more{display:inline-block;padding:6px 12px}.app-services-container{padding-top:32px;padding-bottom:64px}.app-services-container .title{font-size:22px}.app-services-container .articles{margin-top:26px}.app-services-container .img-service-1{margin-top:30.12px;width:126.28px;height:101.68px}.app-services-container .img-service-2{width:130.38px;height:134.48px}.app-services-container .img-service-3{margin-top:25.48px;width:113.16px;height:110.7px}.app-services-container .articles .title{font-size:18.04px}.app-services-container .articles .content{margin-top:18.04px;font-size:16px}.app-calculators-container{padding-bottom:30px}.app-calculators-container .title-container .title{font-size:24px;margin-top:32px;margin-bottom:16px}.app-calculators-container .title-container .subtitle{font-size:18px;margin:10px 0 0 0}.app-calculators-container .title-container .divider{display:inline-block;height:1px;width:52%}.app-calculators-container .title-container .content{margin-top:16px;margin-bottom:36px}.app-calculators-container .calculator-wrap .calculator{padding:15px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item{min-height:125px;max-height:125px;overflow:hidden;margin-top:20px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3{font-size:14px;line-height:20px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{display:block;margin:auto;font-size:38px;margin-bottom:15px}.app-calculators-container .calculator-wrap .calculator .header .title{font-size:26px;margin-top:10}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose{display:inline-block;padding:6px 32px;font-size:18px;margin-top:20px}.app-packages-container{background-color:#EDEDED;background-image:none;padding-bottom:40px}.app-packages-container .title-container{background-image:url("../img/v2/bg-packages.png");background-position:center center;background-repeat:no-repeat;background-size:cover;padding-top:30.16px;padding-bottom:328px}.app-packages-container .title-container .title{font-weight:bold;color:#FFFFFF}.app-packages-container .packages-table{margin-top:-295.2px;padding-left:48px;padding-right:48px}.app-packages-container .packages-table .package{min-height:986px}.app-packages-container .packages-table .package .header{padding:11px 21px 14px 21px}.app-packages-container .packages-table .package .header .title{font-size:26.24px;margin-bottom:12.3px}.app-packages-container .packages-table .package .header .description{font-size:14.76px;margin-bottom:12.3px}.app-packages-container .packages-table .package .header .offer-notice{position:absolute;left:0;top:-44px;width:100%}.app-packages-container .packages-table .package .header .offer-notice .title{color:#1B1F22;font-size:22px}.app-packages-container .packages-table .package .content{padding:0 25px}.app-packages-container .packages-table .package .price-container{margin-top:0;margin-bottom:16.4px}.app-packages-container .packages-table .package .price{font-size:42px}.app-packages-container .packages-table .package .price sup{font-size:20.24px;top:-0.656em}.app-packages-container .packages-table .package a.btn-chose{display:inline-block;width:100%;font-size:18px;padding:9.84px 59.04px}.app-packages-container .packages-table .package .features-list{padding-left:0;margin-top:32.8px}.app-packages-container .packages-table .package .features-list li{list-style:none;font-size:16px;margin-bottom:24.6px}.app-premium-services-container{padding-top:48px;padding-bottom:98.4px}.app-premium-services-container .title{font-size:22.96px}.app-premium-services-container .premium-service{margin-top:65.6px}.app-premium-services-container .premium-service .img-premium-service-1{width:84.46px;height:59.04px}.app-premium-services-container .premium-service .img-premium-service-2{width:66.42px;height:55.76px}.app-premium-services-container .premium-service .img-premium-service-3{width:62.32px;height:59.04px}.app-premium-services-container .premium-service .img-premium-service-4{width:51.66px;height:68.06px}.app-premium-services-container .premium-service .title{font-size:18px}.app-premium-services-container .premium-service .title-1{margin-top:41px}.app-premium-services-container .premium-service .title-2{margin-top:44.28px}.app-premium-services-container .premium-service .title-3{margin-top:41px}.app-premium-services-container .premium-service .title-4{margin-top:31.98px}.app-contact-form-container{min-height:530px;padding-top:49.2px;padding-bottom:49.2px}.app-contact-form-container .title{color:#FFFFFF}.app-contact-form-container .contact-form{margin-top:49.2px}.app-contact-form-container .contact-form form label{font-size:14px}.app-contact-form-container .contact-form form input,.app-contact-form-container .contact-form form textarea,.app-contact-form-container .contact-form form select{font-size:16.4px}.app-contact-form-container .contact-form form .btn-send-contact{display:inline-block;padding:4px 32px;font-size:18px}.app-footer{padding:24.6px 36.9px}.app-footer .logo{width:137.76px;height:46.74px}.app-footer a.link{font-size:18px}.app-footer .links-list h2{font-size:18px}.app-footer .links-list h3{font-size:16.4px}.app-footer .copyright h3{font-size:16px}}@media (min-width: 1200px){.app-logo-container .app-logo{margin:55px 0 25px 60px;width:240px;height:80px}#header{min-height:160px}#header.no-height{min-height:initial}.app-nav{margin-top:80px}.app-nav ul li{padding-right:50px}.app-nav ul li a{font-size:20px}.app-navbar-fixed .app-logo-container .app-logo{margin:12px 0 15px 90px;width:120px;height:40px}.app-navbar-fixed .app-nav ul li a{font-size:18px}.app-jumbotron .app-slogan-container{margin-top:300px}.app-jumbotron .app-arrow-container{margin-top:80px}.app-clients-container{padding-bottom:20px}.app-clients-container .logo-client{margin-top:30px}.app-clients-container .logo-client-1{margin-top:27px;width:197px;height:28px}.app-clients-container .logo-client-2{margin-top:30px;width:226px;height:23px}.app-clients-container .logo-client-3{margin-top:20px;width:170px;height:42px}.app-clients-container .logo-client-4{margin-top:21px;width:274px;height:40px}.app-description-container{padding-top:27px;padding-bottom:35px}.app-description-container .title{font-size:26px}.app-description-container .subtitle{margin:10px 0 0 0;font-size:20px}.app-description-container .divider{width:44%}.app-description-container .content{margin-top:20px;margin-bottom:20px;font-size:18px}.app-description-container .btn-learn-more{font-size:18px}.app-services-container{padding-top:40px;padding-bottom:110px}.app-services-container .title{font-size:24px}.app-services-container .articles{margin-top:30px}.app-services-container .img-service-1{margin-top:16px;width:154px;height:124px}.app-services-container .img-service-2{width:159px;height:164px}.app-services-container .img-service-3{margin-top:14px;width:138px;height:135px}.app-services-container .articles .title{font-size:22px}.app-services-container .articles .title-1{margin-top:34px}.app-services-container .articles .title-2{margin-top:10px}.app-services-container .articles .title-3{margin-top:25px}.app-services-container .articles .content{margin-top:22px;font-size:18px}.app-calculators-container{padding:15px 0 60px 0}.app-calculators-container .title-container .title{font-size:26px;margin-top:40px;margin-bottom:20px}.app-calculators-container .title-container .subtitle{font-size:20px;margin:10px 0 0 0}.app-calculators-container .title-container .divider{width:44%}.app-calculators-container .title-container .content{font-size:18px;margin-top:20px;margin-bottom:45px}.app-calculators-container .calculator-wrap .calculator{padding:15px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item{cursor:pointer;min-height:125px;max-height:125px;overflow:hidden;margin-top:20px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3{font-size:16px}.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{display:block;margin:auto;font-size:48px;margin-bottom:15px}.app-calculators-container .calculator-wrap .calculator .header .title{font-size:26px;margin-top:10}.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose{padding:6px 32px;font-size:18px;margin-top:20px}.app-packages-container{padding-bottom:60px}.app-packages-container .title-container{padding-top:45px;padding-bottom:45px;height:620px}.app-packages-container .packages-table{margin-top:-420px;padding-left:120px;padding-right:120px}.app-packages-container .packages-table .package{min-height:1240px}.app-packages-container .packages-table .package .header .title{font-size:28px;margin-bottom:15px}.app-packages-container .packages-table .package .header .description{font-size:24px;margin-bottom:15px}.app-packages-container .packages-table .package .price-container{margin-top:18px;margin-bottom:18px}.app-packages-container .packages-table .package .price{font-size:58px}.app-packages-container .packages-table .package .price sup{font-size:22px;top:-0.8em}.app-packages-container .packages-table .package a.btn-chose{font-size:22px;padding:12px 72px}.app-packages-container .packages-table .package .features-list{margin-top:40px}.app-packages-container .packages-table .package .features-list li{font-size:19px;margin-bottom:20px}.app-premium-services-container{padding-top:60px;padding-bottom:120px}.app-premium-services-container .title{font-size:28px}.app-premium-services-container .premium-service{margin-top:80px}.app-premium-services-container .premium-service .img-premium-service-1{width:103px;height:72px}.app-premium-services-container .premium-service .img-premium-service-2{width:81px;height:68px}.app-premium-services-container .premium-service .img-premium-service-3{width:76px;height:72px}.app-premium-services-container .premium-service .img-premium-service-4{width:63px;height:83px}.app-premium-services-container .premium-service .title{font-size:22px}.app-premium-services-container .premium-service .title-1{margin-top:50px}.app-premium-services-container .premium-service .title-2{margin-top:54px}.app-premium-services-container .premium-service .title-3{margin-top:50px}.app-premium-services-container .premium-service .title-4{margin-top:39px}.app-contact-form-container{min-height:610px;padding-top:60px;padding-bottom:60px}.app-contact-form-container .contact-form{margin-top:30px}.app-contact-form-container .contact-form form label{font-size:16px}.app-contact-form-container .contact-form form input,.app-contact-form-container .contact-form form textarea,.app-contact-form-container .contact-form form select{border-bottom:4px solid #FFFFFF;font-size:20px}.app-contact-form-container .contact-form form .btn-send-contact{font-size:22px}.app-footer{padding:30px 45px}.app-footer .logo{width:168px;height:57px}.app-footer .links-list h2{font-size:22px}.app-footer .links-list h3{font-size:20px}.app-footer .copyright h3{font-size:20px}.navbar-margin{margin-top:67px}.app-calculator .platforms-container{margin-top:20px;margin-bottom:30px}.app-calculator .platforms-container .platform{cursor:pointer;min-height:100px;max-height:100px;overflow:hidden;margin-top:10px}.app-calculator .platforms-container .platform.active{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#039be5;color:#FFFFFF}.app-calculator .platforms-container .platform h3{font-size:12px;line-height:16px;margin-top:10px}.app-calculator .platforms-container .platform h3 .icon{display:block;margin:auto;font-size:36px;margin-bottom:10px}.app-calculator .section-name:first-child h2{margin-top:15px}.app-calculator .section-name h2{margin-top:30px}.app-calculator .items-container .item{cursor:pointer;min-height:154px;max-height:154px;overflow:hidden;margin-top:10px}.app-calculator .items-container .item.active{-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;background-color:#039be5;color:#FFFFFF}.app-calculator .items-container .item h3{font-size:16px;line-height:22px;margin-top:20px}.app-calculator .items-container .item h3 .icon{display:block;margin:auto;font-size:56px;margin-bottom:10px}}video{width:100%;height:100%;display:block}.bg-black{background-color:#000000}.fc-black{color:#000000}.fc-white{color:#FFFFFF}.fc-faded{color:#777777}.no-padding{padding:0}.no-side-padding{padding-left:0;padding-right:0}.top-margin{margin-top:15px}.bottom-margin{margin-bottom:15px}.no-border{border:0}.app-well{background-color:#E4E4E4}
+@charset "UTF-8";
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #F5F5F5; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #616161; }
+
+body {
+  font-family: "Open sans", helvetica, arial, sans-serif !important;
+  color: #000000; }
+
+.app-header {
+  display: block;
+  position: absolute;
+  z-index: 9999999; }
+
+#navbar {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+.app-navbar-fixed {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 9999999;
+  background-color: rgba(25, 25, 25, 0.8); }
+
+.app-logo-container .app-logo {
+  display: block;
+  margin: 22px 0 22px 0;
+  width: 157.44px;
+  height: 43.03px; }
+
+.app-nav ul {
+  text-align: right;
+  list-style: none; }
+
+.app-nav ul li {
+  display: inline-block;
+  padding-right: 12px; }
+
+.app-nav ul li a {
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#navbar {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+.app-navbar-fixed {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 9999999;
+  background-color: rgba(25, 25, 25, 0.86); }
+
+.app-navbar-fixed .app-logo-container .app-logo {
+  display: inline-block;
+  margin: 12px 0 12px 32px;
+  width: 96px;
+  height: 32px; }
+
+.app-navbar-fixed .app-logo-container .btn-menu {
+  padding: 6px 8px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 20px;
+  border-radius: 0px;
+  width: 40px;
+  height: 38px;
+  background-color: rgba(75, 75, 75, 0.2);
+  border: 1px solid rgba(25, 25, 25, 0.6); }
+
+.app-navbar-fixed .app-nav ul {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+  padding: 22px 0;
+  margin: 0 0 -5px 0; }
+
+.app-navbar-fixed .app-nav ul li {
+  width: 100%;
+  display: block;
+  padding-right: 0; }
+
+.app-navbar-fixed .app-nav ul li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 6px; }
+
+.app-navbar-fixed .app-nav ul li a:hover {
+  background-color: rgba(75, 75, 75, 0.6); }
+
+.app-jumbotron {
+  width: 100%;
+  overflow: hidden; }
+
+.app-jumbotron .coverpage {
+  background-image: url("../img/v2/bg-coverpage.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px; }
+
+.app-jumbotron .app-slogan-container {
+  position: absolute;
+  margin-top: 164px;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+  -moz-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+  -ms-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+  -o-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+  transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25); }
+
+.app-jumbotron .app-slogan-container .app-slogan {
+  width: 92%;
+  display: block;
+  margin: auto; }
+
+.app-jumbotron .app-arrow-container {
+  margin-top: 32.8px; }
+
+.app-jumbotron .app-arrow-container img {
+  width: 32px; }
+
+.app-clients-container {
+  text-align: center;
+  padding-bottom: 14px; }
+
+.app-clients-container .logo-client {
+  margin-top: 24px; }
+
+.app-clients-container .logo-client-1 {
+  margin-top: 17.85px;
+  width: 130.28px;
+  height: 18.51px; }
+
+.app-clients-container .logo-client-2 {
+  margin-top: 19.84px;
+  width: 148.25px;
+  height: 15.08px; }
+
+.app-clients-container .logo-client-3 {
+  margin-top: 13.22px;
+  width: 111.52px;
+  height: 27.55px; }
+
+.app-clients-container .logo-client-4 {
+  margin-top: 13.88px;
+  width: 161.76px;
+  height: 23.61px; }
+
+.app-description-container {
+  padding-top: 7px;
+  padding-bottom: 22.96px;
+  background-color: #1B1F22;
+  color: #F9F9F9; }
+
+.app-description-container .title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold; }
+
+.app-description-container .subtitle {
+  color: #FFFF00;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  margin: 10px 0 0 0; }
+
+.app-description-container .divider {
+  display: inline-block;
+  height: 1px;
+  background-color: #FFFF00;
+  width: 58%; }
+
+.app-description-container .content {
+  margin-top: 16px;
+  margin-bottom: 12.8px;
+  font-size: 14px; }
+
+.app-description-container .btn-learn-more {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #1B1F22;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-weight: bold; }
+
+.app-services-container {
+  padding-top: 20.48px;
+  padding-bottom: 40.96px; }
+
+.app-services-container .title {
+  font-size: 20px;
+  font-weight: bold; }
+
+.app-services-container .img-service-1 {
+  margin-top: 15px;
+  width: 101.02px;
+  height: 81.34px; }
+
+.app-services-container .img-service-2 {
+  margin-top: 15px;
+  width: 104.30px;
+  height: 107.58px; }
+
+.app-services-container .img-service-3 {
+  margin-top: 15px;
+  margin-top: 20.38px;
+  width: 90.52px;
+  height: 88.56px; }
+
+.app-services-container .articles .title {
+  font-size: 16px;
+  font-weight: bold; }
+
+.app-services-container .articles .content {
+  margin-top: 16px;
+  font-size: 14px; }
+
+.app-calculators-container {
+  background-color: #1B1F22;
+  padding-bottom: 0; }
+
+.app-calculators-container .title-container .title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+.app-calculators-container .title-container .subtitle {
+  font-size: 16px;
+  margin: 10px 0 0 0;
+  color: #FFFF00; }
+
+.app-calculators-container .title-container .divider {
+  display: inline-block;
+  height: 1px;
+  background-color: #FFFF00;
+  width: 52%; }
+
+.app-calculators-container .title-container .content {
+  color: #FFFFFF;
+  margin-top: 12.8px;
+  margin-bottom: 20px; }
+
+.app-calculators-container .calculator-wrap {
+  background-color: #EDEDED; }
+
+.app-calculators-container .calculator-wrap .calculator {
+  padding: 15px; }
+
+.app-calculators-container .calculator-wrap .calculator-1 {
+  background-color: #FFFFFF; }
+
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+  cursor: pointer;
+  min-height: 116px;
+  max-height: 116px;
+  overflow: hidden;
+  margin-top: 16px; }
+
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF; }
+
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+  font-size: 14px;
+  line-height: 20px; }
+
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon {
+  display: block;
+  margin: auto;
+  font-size: 32px;
+  margin-bottom: 12px; }
+
+.app-calculators-container .calculator-wrap .calculator .header .title {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 10; }
+
+.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
+  border: none;
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #1B1F22;
+  padding: 6px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 1px solid #FFFF00; }
+
+.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  text-decoration: none;
+  color: #6C1C7F;
+  border: 1px solid #9E86B6; }
+
+.app-packages-container {
+  background-color: #EDEDED;
+  background-image: url("../img/v2/bg-packages.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 40px; }
+
+.app-packages-container .title-container {
+  padding-top: 10px;
+  padding-bottom: 328px; }
+
+.app-packages-container .title-container .title {
+  font-weight: bold;
+  color: #FFFFFF; }
+
+.app-packages-container .packages-table {
+  margin-top: -305px;
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.app-packages-container .packages-table .package {
+  background-color: #FFFFFF;
+  margin-bottom: 30px; }
+
+.app-packages-container .packages-table .package.offer {
+  margin-top: 40px; }
+
+.app-packages-container .packages-table .package .header {
+  background-color: #1B1F22;
+  color: #FFFFFF;
+  padding: 8.8px 16.8px 11.2px 16.8px; }
+
+.app-packages-container .packages-table .package .header .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 9.84px; }
+
+.app-packages-container .packages-table .package .header .description {
+  font-size: 14px;
+  margin-bottom: 9.84px; }
+
+.app-packages-container .packages-table .package .header .offer-notice {
+  position: absolute;
+  left: 0;
+  top: -35.2px;
+  width: 100%;
+  background-color: #FFFF00; }
+
+.app-packages-container .packages-table .package .header .offer-notice .title {
+  color: #1B1F22;
+  font-size: 18px;
+  font-weight: bold; }
+
+.app-packages-container .packages-table .package .content {
+  padding: 0 20px; }
+
+.app-packages-container .packages-table .package .price-container {
+  margin-top: 13.12px;
+  margin-bottom: 13.12px; }
+
+.app-packages-container .packages-table .package .price {
+  font-size: 36px;
+  font-weight: bold; }
+
+.app-packages-container .packages-table .package .price sup {
+  font-weight: normal;
+  font-size: 14px;
+  top: -0.52em; }
+
+.app-packages-container .packages-table .package a.btn-chose {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 9.84px 59.04px;
+  color: #FFFFFF;
+  background-color: #39B54A;
+  border: 1px solid #3FB254; }
+
+.app-packages-container .packages-table .package a.btn-chose:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  background-color: inherit;
+  color: #39B54A; }
+
+.app-packages-container .packages-table .package a.btn-chose.offer {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #FFFF00;
+  border: 1px solid #FFFF00;
+  color: #1B1F22; }
+
+.app-packages-container .packages-table .package a.btn-chose.offer:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  text-decoration: none;
+  color: #6C1C7F;
+  border: 1px solid #9E86B6; }
+
+.app-packages-container .packages-table .package .features-list {
+  padding-left: 0;
+  margin-top: 26.24px; }
+
+.app-packages-container .packages-table .package .features-list li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 19.68px; }
+
+.app-premium-services-container {
+  padding-top: 32px;
+  padding-bottom: 54px; }
+
+.app-premium-services-container .title {
+  font-size: 20px; }
+
+.app-premium-services-container .premium-service {
+  margin-top: 52.48px; }
+
+.app-premium-services-container .premium-service .img-premium-service-1 {
+  width: 67.56px;
+  height: 47.23px; }
+
+.app-premium-services-container .premium-service .img-premium-service-2 {
+  width: 53.13px;
+  height: 44.60px; }
+
+.app-premium-services-container .premium-service .img-premium-service-3 {
+  width: 49.85px;
+  height: 47.23px; }
+
+.app-premium-services-container .premium-service .img-premium-service-4 {
+  width: 41.32px;
+  height: 54.44px; }
+
+.app-premium-services-container .premium-service .title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px; }
+
+.app-premium-services-container .premium-service .title-1 {
+  margin-top: 32.8px; }
+
+.app-premium-services-container .premium-service .title-2 {
+  margin-top: 35.42px; }
+
+.app-premium-services-container .premium-service .title-3 {
+  margin-top: 32.8px; }
+
+.app-premium-services-container .premium-service .title-4 {
+  margin-top: 25.58px; }
+
+.app-contact-form-container {
+  background-image: url("../img/v2/bg-transparent-black.png"), url("../img/v2/bg-contact-form.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 424px;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.app-contact-form-container .title {
+  color: #FFFFFF; }
+
+.app-contact-form-container .contact-form {
+  margin-top: 24px; }
+
+.app-contact-form-container .contact-form form label {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px; }
+
+.app-contact-form-container .contact-form form input,
+.app-contact-form-container .contact-form form textarea,
+.app-contact-form-container .contact-form form select {
+  background-color: inherit;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 3px solid #FFFFFF;
+  font-size: 16.4px; }
+
+.app-contact-form-container .contact-form form .btn-send-contact {
+  display: inline-block;
+  background-color: #33CC00;
+  border: 0;
+  color: #FFFFFF;
+  padding: 4px 32px;
+  font-size: 18px;
+  margin-top: 10px; }
+
+.app-footer {
+  padding: 19.68px 29.52px;
+  background-color: #000000;
+  color: #FFFFFF; }
+
+.app-footer .logo {
+  margin-top: 20px;
+  width: 110.20px;
+  height: 37.39px; }
+
+.app-footer a.link {
+  color: #FFFF00;
+  font-size: 16px; }
+
+.app-footer .links-list h2 {
+  font-size: 16px; }
+
+.app-footer .links-list h3 {
+  font-size: 14px; }
+
+.app-footer .copyright {
+  text-align: center; }
+
+.app-footer .copyright h3 {
+  font-size: 14px; }
+
+.navbar-margin {
+  margin-top: 67px; }
+
+.app-calculator .platforms-container {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.app-calculator .platforms-container .platform {
+  cursor: pointer;
+  min-height: 84px;
+  max-height: 84px;
+  overflow: hidden;
+  margin-top: 5px;
+  padding-left: 1px;
+  padding-right: 1px; }
+
+.app-calculator .platforms-container .platform.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF; }
+
+.app-calculator .platforms-container .platform h3 {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 10px; }
+
+.app-calculator .platforms-container .platform h3 .icon {
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 10px; }
+
+.app-calculator .section-name:first-child h2 {
+  margin-top: 10px; }
+
+.app-calculator .section-name h2 {
+  margin-top: 20px;
+  font-size: 24px; }
+
+.app-calculator .items-container .item {
+  cursor: pointer;
+  min-height: 144px;
+  max-height: 144px;
+  overflow: hidden;
+  margin-top: 10px; }
+
+.app-calculator .items-container .item.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF; }
+
+.app-calculator .items-container .item h3 {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 20px; }
+
+.app-calculator .items-container .item h3 .icon {
+  display: block;
+  font-size: 36px;
+  margin: 5px auto 10px auto; }
+
+.app-calculator .shoppingCart {
+  padding-left: 2px;
+  padding-right: 2px; }
+
+.app-calculator .shoppingCart .item .name {
+  font-size: 12px; }
+
+/* RESPONSIVE
+   ========================================================================= */
+/* M├│viles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .app-header {
+    display: block;
+    position: absolute;
+    z-index: 9999999; }
+
+  .app-logo-container .app-logo {
+    display: block;
+    margin: 22px auto 22px auto;
+    width: 157.44px;
+    height: 43.03px; }
+
+  #nav {
+    display: block !important; }
+
+  .app-nav {
+    margin-top: 32.8px; }
+
+  .app-nav ul {
+    text-align: right;
+    list-style: none; }
+
+  .app-nav ul li {
+    display: inline-block;
+    padding-right: 12px; }
+
+  .app-nav ul li a {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF; }
+
+  .app-navbar-fixed .app-logo-container .app-logo {
+    margin: 16px 0 15px 45px;
+    width: 96px;
+    height: 32px; }
+
+  .app-navbar-fixed .app-nav {
+    margin-top: 0;
+    text-align: right; }
+
+  .app-navbar-fixed .app-nav ul {
+    width: auto;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0 30px -5px 0; }
+
+  .app-navbar-fixed .app-nav ul li {
+    width: auto;
+    display: block;
+    float: left;
+    padding-right: 0; }
+
+  .app-navbar-fixed .app-nav ul li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 6px; }
+
+  .app-navbar-fixed .app-nav ul li a {
+    padding: 21px 15px;
+    font-size: 14px; }
+
+  .app-navbar-fixed .app-nav ul li a:hover {
+    background-color: rgba(75, 75, 75, 0.2); }
+
+  .app-jumbotron {
+    width: 100%;
+    overflow: hidden; }
+
+  .app-jumbotron .app-slogan-container {
+    position: absolute;
+    margin-top: 164px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -moz-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -ms-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -o-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25); }
+
+  .app-jumbotron .app-slogan-container .app-slogan {
+    width: 92%;
+    display: block;
+    margin: auto; }
+
+  .app-jumbotron .app-arrow-container {
+    margin-top: 32.8px; }
+
+  .app-jumbotron .app-arrow-container img {
+    width: 32px; }
+
+  .app-clients-container {
+    padding-bottom: 14px; }
+
+  .app-clients-container .logo-client {
+    margin-top: 24px; }
+
+  .app-clients-container .logo-client-1 {
+    margin-top: 17.85px;
+    width: 130.28px;
+    height: 18.51px; }
+
+  .app-clients-container .logo-client-2 {
+    margin-top: 19.84px;
+    width: 148.25px;
+    height: 15.08px; }
+
+  .app-clients-container .logo-client-3 {
+    margin-top: 13.22px;
+    width: 111.52px;
+    height: 27.55px; }
+
+  .app-clients-container .logo-client-4 {
+    margin-top: 13.88px;
+    width: 161.76px;
+    height: 23.61px; }
+
+  .app-description-container {
+    padding-top: 17.71px;
+    padding-bottom: 22.96px;
+    background-color: #1B1F22;
+    color: #F9F9F9; }
+
+  .app-description-container .title {
+    font-size: 18px;
+    font-weight: bold; }
+
+  .app-description-container .subtitle {
+    color: #FFFF00;
+    font-size: 16px;
+    display: inline-block;
+    margin: 10px 0 0 0; }
+
+  .app-description-container .divider {
+    display: inline-block;
+    height: 1px;
+    background-color: #FFFF00;
+    width: 36%; }
+
+  .app-description-container .content {
+    margin-top: 16px;
+    margin-bottom: 12.8px;
+    font-size: 14px; }
+
+  .app-description-container .btn-learn-more {
+    display: inline-block;
+    background-color: #FFFF00;
+    color: #1B1F22;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: bold; }
+
+  .app-services-container {
+    padding-top: 25.6px;
+    padding-bottom: 51.2px; }
+
+  .app-services-container .title {
+    font-size: 20px;
+    font-weight: bold; }
+
+  .app-services-container .articles {
+    margin-top: 18px; }
+
+  .app-services-container .img-service-1 {
+    margin-top: 24.09px;
+    width: 101.02px;
+    height: 81.34px; }
+
+  .app-services-container .img-service-2 {
+    width: 104.30px;
+    height: 107.58px; }
+
+  .app-services-container .img-service-3 {
+    margin-top: 20.38px;
+    width: 90.52px;
+    height: 88.56px; }
+
+  .app-services-container .articles .title {
+    font-size: 16px;
+    font-weight: bold; }
+
+  .app-services-container .articles .content {
+    margin-top: 16px;
+    font-size: 14px; }
+
+  .app-calculators-container {
+    background-color: #1B1F22;
+    padding-bottom: 0; }
+
+  .app-calculators-container .title-container .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25.6px;
+    margin-bottom: 12.8px; }
+
+  .app-calculators-container .title-container .subtitle {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    color: #FFFF00; }
+
+  .app-calculators-container .title-container .divider {
+    display: inline-block;
+    height: 1px;
+    background-color: #FFFF00;
+    width: 52%; }
+
+  .app-calculators-container .title-container .content {
+    color: #FFFFFF;
+    margin-top: 12.8px;
+    margin-bottom: 28.8px; }
+
+  .app-calculators-container .calculator-wrap {
+    background-color: #EDEDED; }
+
+  .app-calculators-container .calculator-wrap .calculator {
+    padding: 15px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 {
+    background-color: #FFFFFF; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+    cursor: pointer;
+    min-height: 116px;
+    max-height: 116px;
+    overflow: hidden;
+    margin-top: 16px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: #039be5;
+    color: #FFFFFF; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon {
+    display: block;
+    margin: auto;
+    font-size: 32px;
+    margin-bottom: 12px; }
+
+  .app-calculators-container .calculator-wrap .calculator .header .title {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10; }
+
+  .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
+    border: none;
+    display: inline-block;
+    background-color: #FFFF00;
+    color: #1B1F22;
+    padding: 6px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 1px solid #FFFF00; }
+
+  .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: inherit;
+    text-decoration: none;
+    color: #6C1C7F;
+    border: 1px solid #9E86B6; }
+
+  .app-packages-container {
+    background-color: #EDEDED;
+    background-image: url("../img/v2/bg-packages.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 20px; }
+
+  .app-packages-container .title-container {
+    padding-top: 30.16px;
+    padding-bottom: 328px; }
+
+  .app-packages-container .title-container .title {
+    font-weight: bold;
+    color: #FFFFFF; }
+
+  .app-packages-container .packages-table {
+    margin-top: -282px;
+    padding-left: 12px;
+    padding-right: 12px; }
+
+  .app-packages-container .packages-table .package {
+    background-color: #FFFFFF;
+    min-height: 896px; }
+
+  .app-packages-container .packages-table .package.offer {
+    margin-top: 0; }
+
+  .app-packages-container .packages-table .package .header {
+    background-color: #1B1F22;
+    color: #FFFFFF;
+    padding: 8.8px 16.8px 11.2px 16.8px; }
+
+  .app-packages-container .packages-table .package .header .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 9.84px; }
+
+  .app-packages-container .packages-table .package .header .description {
+    font-size: 14px;
+    margin-bottom: 9.84px; }
+
+  .app-packages-container .packages-table .package .header .offer-notice {
+    position: absolute;
+    left: 0;
+    top: -35.2px;
+    width: 100%;
+    background-color: #FFFF00; }
+
+  .app-packages-container .packages-table .package .header .offer-notice .title {
+    color: #1B1F22;
+    font-size: 18px;
+    font-weight: bold; }
+
+  .app-packages-container .packages-table .package .content {
+    padding: 0 20px; }
+
+  .app-packages-container .packages-table .package .price-container {
+    margin-top: 13.12px;
+    margin-bottom: 13.12px; }
+
+  .app-packages-container .packages-table .package .price {
+    font-size: 36px;
+    font-weight: bold; }
+
+  .app-packages-container .packages-table .package .price sup {
+    font-weight: normal;
+    font-size: 14px;
+    top: -0.52em; }
+
+  .app-packages-container .packages-table .package a.btn-chose {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    padding: 9.84px 59.04px;
+    color: #FFFFFF;
+    background-color: #39B54A;
+    border: 1px solid #3FB254; }
+
+  .app-packages-container .packages-table .package a.btn-chose:hover {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    text-decoration: none;
+    background-color: inherit;
+    color: #39B54A; }
+
+  .app-packages-container .packages-table .package a.btn-chose.offer {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: #FFFF00;
+    border: 1px solid #FFFF00;
+    color: #1B1F22; }
+
+  .app-packages-container .packages-table .package a.btn-chose.offer:hover {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: inherit;
+    text-decoration: none;
+    color: #6C1C7F;
+    border: 1px solid #9E86B6; }
+
+  .app-packages-container .packages-table .package .features-list {
+    padding-left: 0;
+    margin-top: 26.24px; }
+
+  .app-packages-container .packages-table .package .features-list li {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 19.68px; }
+
+  .app-premium-services-container {
+    padding-top: 38.4px;
+    padding-bottom: 78.72px; }
+
+  .app-premium-services-container .title {
+    font-size: 20px; }
+
+  .app-premium-services-container .premium-service {
+    margin-top: 52.48px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-1 {
+    width: 67.56px;
+    height: 47.23px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-2 {
+    width: 53.13px;
+    height: 44.60px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-3 {
+    width: 49.85px;
+    height: 47.23px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-4 {
+    width: 41.32px;
+    height: 54.44px; }
+
+  .app-premium-services-container .premium-service .title {
+    font-weight: bold;
+    font-size: 16px; }
+
+  .app-premium-services-container .premium-service .title-1 {
+    margin-top: 32.8px; }
+
+  .app-premium-services-container .premium-service .title-2 {
+    margin-top: 35.42px; }
+
+  .app-premium-services-container .premium-service .title-3 {
+    margin-top: 32.8px; }
+
+  .app-premium-services-container .premium-service .title-4 {
+    margin-top: 25.58px; }
+
+  .app-contact-form-container {
+    background-image: url("../img/v2/bg-transparent-black.png"), url("../img/v2/bg-contact-form.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 424px;
+    padding-top: 39.36px;
+    padding-bottom: 39.36px; }
+
+  .app-contact-form-container .title {
+    color: #FFFFFF; }
+
+  .app-contact-form-container .contact-form {
+    margin-top: 39.36px; }
+
+  .app-contact-form-container .contact-form form label {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px; }
+
+  .app-contact-form-container .contact-form form input,
+  .app-contact-form-container .contact-form form textarea,
+  .app-contact-form-container .contact-form form select {
+    background-color: inherit;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 3px solid #FFFFFF;
+    font-size: 16.4px; }
+
+  .app-contact-form-container .contact-form form .btn-send-contact {
+    display: inline-block;
+    background-color: #33CC00;
+    border: 0;
+    color: #FFFFFF;
+    padding: 4px 32px;
+    font-size: 18px;
+    margin-top: 0; }
+
+  .app-footer {
+    padding: 19.68px 29.52px;
+    background-color: #000000;
+    color: #FFFFFF; }
+
+  .app-footer .logo {
+    margin-top: 10px;
+    width: 110.20px;
+    height: 37.39px; }
+
+  .app-footer a.link {
+    color: #FFFF00;
+    font-size: 16px; }
+
+  .app-footer .links-list h2 {
+    font-size: 16px; }
+
+  .app-footer .links-list h3 {
+    font-size: 14px; }
+
+  .app-footer .copyright {
+    text-align: left; }
+
+  .app-footer .copyright h3 {
+    font-size: 14px; }
+
+  .navbar-margin {
+    margin-top: 67px; }
+
+  .app-calculator .platforms-container {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+  .app-calculator .platforms-container .platform {
+    cursor: pointer;
+    min-height: 84px;
+    max-height: 84px;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 1px;
+    padding-right: 1px; }
+
+  .app-calculator .platforms-container .platform.active {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: #039be5;
+    color: #FFFFFF; }
+
+  .app-calculator .platforms-container .platform h3 {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 10px; }
+
+  .app-calculator .platforms-container .platform h3 .icon {
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    margin-bottom: 10px; }
+
+  .app-calculator .section-name:first-child h2 {
+    margin-top: 10px; }
+
+  .app-calculator .section-name h2 {
+    margin-top: 20px;
+    font-size: 24px; }
+
+  .app-calculator .items-container .item {
+    cursor: pointer;
+    min-height: 144px;
+    max-height: 144px;
+    overflow: hidden;
+    margin-top: 10px; }
+
+  .app-calculator .items-container .item.active {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background-color: #039be5;
+    color: #FFFFFF; }
+
+  .app-calculator .items-container .item h3 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 20px; }
+
+  .app-calculator .items-container .item h3 .icon {
+    display: block;
+    font-size: 36px;
+    margin: 5px auto 10px auto; }
+
+  .app-calculator .shoppingCart {
+    padding-left: 2px;
+    padding-right: 2px; }
+
+  .app-calculator .shoppingCart .item .name {
+    font-size: 12px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .calculator-container {
+    width: 100%; } }
+/* Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .app-logo-container .app-logo {
+    margin: 20px 0 25px 30px;
+    width: 240px;
+    height: 65.6px; }
+
+  .app-nav {
+    margin-top: 40px; }
+
+  .app-nav ul li {
+    padding-right: 15px; }
+
+  .app-nav ul li a {
+    font-size: 16px; }
+
+  .app-navbar-fixed .app-logo-container .app-logo {
+    margin: 12px 0 15px 90px;
+    width: 120px;
+    height: 40px; }
+
+  .app-navbar-fixed .app-nav ul li a {
+    padding: 23px 15px; }
+
+  .app-jumbotron .app-slogan-container {
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -moz-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -ms-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    -o-transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25);
+    transform: matrix(0.9986, -0.0523, 0.0523, 0.9986, -4, 25); }
+
+  .app-jumbotron .app-arrow-container {
+    margin-top: 40px; }
+
+  .app-clients-container {
+    padding-bottom: 20px; }
+
+  .app-clients-container .logo-client {
+    margin-top: 24px; }
+
+  .app-clients-container .logo-client-1 {
+    margin-top: 22.32px;
+    width: 162.85px;
+    height: 23.14px; }
+
+  .app-clients-container .logo-client-2 {
+    margin-top: 24.8px;
+    width: 185.32px;
+    height: 18.86px; }
+
+  .app-clients-container .logo-client-3 {
+    margin-top: 16.53px;
+    width: 139.4px;
+    height: 34.44px; }
+
+  .app-clients-container .logo-client-4 {
+    margin-top: 17.36px;
+    width: 224.68px;
+    height: 32.8px; }
+
+  .app-description-container {
+    padding-top: 22.14px;
+    padding-bottom: 28.7px; }
+
+  .app-description-container .title {
+    font-size: 21.32px; }
+
+  .app-description-container .subtitle {
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0 0 0; }
+
+  .app-description-container .divider {
+    display: inline-block;
+    width: 44%; }
+
+  .app-description-container .content {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-size: 16.4px; }
+
+  .app-description-container .btn-learn-more {
+    display: inline-block;
+    padding: 6px 12px; }
+
+  .app-services-container {
+    padding-top: 32px;
+    padding-bottom: 64px; }
+
+  .app-services-container .title {
+    font-size: 22px; }
+
+  .app-services-container .articles {
+    margin-top: 26px; }
+
+  .app-services-container .img-service-1 {
+    margin-top: 30.12px;
+    width: 126.28px;
+    height: 101.68px; }
+
+  .app-services-container .img-service-2 {
+    width: 130.38px;
+    height: 134.48px; }
+
+  .app-services-container .img-service-3 {
+    margin-top: 25.48px;
+    width: 113.16px;
+    height: 110.7px; }
+
+  .app-services-container .articles .title {
+    font-size: 18.04px; }
+
+  .app-services-container .articles .content {
+    margin-top: 18.04px;
+    font-size: 16px; }
+
+  .app-calculators-container {
+    padding-bottom: 30px; }
+
+  .app-calculators-container .title-container .title {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px; }
+
+  .app-calculators-container .title-container .subtitle {
+    font-size: 18px;
+    margin: 10px 0 0 0; }
+
+  .app-calculators-container .title-container .divider {
+    display: inline-block;
+    height: 1px;
+    width: 52%; }
+
+  .app-calculators-container .title-container .content {
+    margin-top: 16px;
+    margin-bottom: 36px; }
+
+  .app-calculators-container .calculator-wrap .calculator {
+    padding: 15px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+    min-height: 125px;
+    max-height: 125px;
+    overflow: hidden;
+    margin-top: 20px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+    font-size: 14px;
+    line-height: 20px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon {
+    display: block;
+    margin: auto;
+    font-size: 38px;
+    margin-bottom: 15px; }
+
+  .app-calculators-container .calculator-wrap .calculator .header .title {
+    font-size: 26px;
+    margin-top: 10; }
+
+  .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
+    display: inline-block;
+    padding: 6px 32px;
+    font-size: 18px;
+    margin-top: 20px; }
+
+  .app-packages-container {
+    background-color: #EDEDED;
+    background-image: none;
+    padding-bottom: 40px; }
+
+  .app-packages-container .title-container {
+    background-image: url("../img/v2/bg-packages.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30.16px;
+    padding-bottom: 328px; }
+
+  .app-packages-container .title-container .title {
+    font-weight: bold;
+    color: #FFFFFF; }
+
+  .app-packages-container .packages-table {
+    margin-top: -295.2px;
+    padding-left: 48px;
+    padding-right: 48px; }
+
+  .app-packages-container .packages-table .package {
+    min-height: 986px; }
+
+  .app-packages-container .packages-table .package .header {
+    padding: 11px 21px 14px 21px; }
+
+  .app-packages-container .packages-table .package .header .title {
+    font-size: 26.24px;
+    margin-bottom: 12.3px; }
+
+  .app-packages-container .packages-table .package .header .description {
+    font-size: 14.76px;
+    margin-bottom: 12.3px; }
+
+  .app-packages-container .packages-table .package .header .offer-notice {
+    position: absolute;
+    left: 0;
+    top: -44px;
+    width: 100%; }
+
+  .app-packages-container .packages-table .package .header .offer-notice .title {
+    color: #1B1F22;
+    font-size: 22px; }
+
+  .app-packages-container .packages-table .package .content {
+    padding: 0 25px; }
+
+  .app-packages-container .packages-table .package .price-container {
+    margin-top: 0;
+    margin-bottom: 16.4px; }
+
+  .app-packages-container .packages-table .package .price {
+    font-size: 42px; }
+
+  .app-packages-container .packages-table .package .price sup {
+    font-size: 20.24px;
+    top: -0.656em; }
+
+  .app-packages-container .packages-table .package a.btn-chose {
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    padding: 9.84px 59.04px; }
+
+  .app-packages-container .packages-table .package .features-list {
+    padding-left: 0;
+    margin-top: 32.8px; }
+
+  .app-packages-container .packages-table .package .features-list li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 24.6px; }
+
+  .app-premium-services-container {
+    padding-top: 48px;
+    padding-bottom: 98.4px; }
+
+  .app-premium-services-container .title {
+    font-size: 22.96px; }
+
+  .app-premium-services-container .premium-service {
+    margin-top: 65.6px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-1 {
+    width: 84.46px;
+    height: 59.04px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-2 {
+    width: 66.42px;
+    height: 55.76px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-3 {
+    width: 62.32px;
+    height: 59.04px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-4 {
+    width: 51.66px;
+    height: 68.06px; }
+
+  .app-premium-services-container .premium-service .title {
+    font-size: 18px; }
+
+  .app-premium-services-container .premium-service .title-1 {
+    margin-top: 41px; }
+
+  .app-premium-services-container .premium-service .title-2 {
+    margin-top: 44.28px; }
+
+  .app-premium-services-container .premium-service .title-3 {
+    margin-top: 41px; }
+
+  .app-premium-services-container .premium-service .title-4 {
+    margin-top: 31.98px; }
+
+  .app-contact-form-container {
+    min-height: 530px;
+    padding-top: 49.2px;
+    padding-bottom: 49.2px; }
+
+  .app-contact-form-container .title {
+    color: #FFFFFF; }
+
+  .app-contact-form-container .contact-form {
+    margin-top: 49.2px; }
+
+  .app-contact-form-container .contact-form form label {
+    font-size: 14px; }
+
+  .app-contact-form-container .contact-form form input,
+  .app-contact-form-container .contact-form form textarea,
+  .app-contact-form-container .contact-form form select {
+    font-size: 16.4px; }
+
+  .app-contact-form-container .contact-form form .btn-send-contact {
+    display: inline-block;
+    padding: 4px 32px;
+    font-size: 18px; }
+
+  .app-footer {
+    padding: 24.6px 36.9px; }
+
+  .app-footer .logo {
+    width: 137.76px;
+    height: 46.74px; }
+
+  .app-footer a.link {
+    font-size: 18px; }
+
+  .app-footer .links-list h2 {
+    font-size: 18px; }
+
+  .app-footer .links-list h3 {
+    font-size: 16.4px; }
+
+  .app-footer .copyright h3 {
+    font-size: 16px; }
+
+  .navbar-margin {
+    margin-top: 67px; }
+
+  .app-calculator .platforms-container {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+  .app-calculator .platforms-container .platform {
+    min-height: 90px;
+    max-height: 90px;
+    margin-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px; }
+
+  .app-calculator .platforms-container .platform h3 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px; }
+
+  .app-calculator .platforms-container .platform h3 .icon {
+    margin: auto;
+    font-size: 26px;
+    margin-bottom: 10px; }
+
+  .app-calculator .section-name:first-child h2 {
+    margin-top: 10px; }
+
+  .app-calculator .section-name h2 {
+    margin-top: 20px;
+    font-size: 26px; }
+
+  .app-calculator .items-container .item {
+    min-height: 144px;
+    max-height: 144px;
+    margin-top: 10px; }
+
+  .app-calculator .items-container .item h3 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 20px; }
+
+  .app-calculator .items-container .item h3 .icon {
+    font-size: 36px;
+    margin: 5px auto 10px auto; }
+
+  .app-calculator .shoppingCart {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .app-calculator .shoppingCart .item .name {
+    font-size: 14px; } }
+/* Escritorios muy anchos
+  ------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .app-logo-container .app-logo {
+    margin: 55px 0 25px 60px;
+    width: 240px;
+    height: 80px; }
+
+  #header {
+    min-height: 160px; }
+
+  #header.no-height {
+    min-height: initial; }
+
+  .app-nav {
+    margin-top: 80px; }
+
+  .app-nav ul li {
+    padding-right: 50px; }
+
+  .app-nav ul li a {
+    font-size: 20px; }
+
+  .app-navbar-fixed .app-logo-container .app-logo {
+    margin: 12px 0 15px 90px;
+    width: 120px;
+    height: 40px; }
+
+  .app-navbar-fixed .app-nav ul li a {
+    font-size: 18px; }
+
+  .app-jumbotron .app-slogan-container {
+    margin-top: 300px; }
+
+  .app-jumbotron .app-arrow-container {
+    margin-top: 80px; }
+
+  .app-clients-container {
+    padding-bottom: 20px; }
+
+  .app-clients-container .logo-client {
+    margin-top: 30px; }
+
+  .app-clients-container .logo-client-1 {
+    margin-top: 27px;
+    width: 197px;
+    height: 28px; }
+
+  .app-clients-container .logo-client-2 {
+    margin-top: 30px;
+    width: 226px;
+    height: 23px; }
+
+  .app-clients-container .logo-client-3 {
+    margin-top: 20px;
+    width: 170px;
+    height: 42px; }
+
+  .app-clients-container .logo-client-4 {
+    margin-top: 21px;
+    width: 274px;
+    height: 40px; }
+
+  .app-description-container {
+    padding-top: 27px;
+    padding-bottom: 35px; }
+
+  .app-description-container .title {
+    font-size: 26px; }
+
+  .app-description-container .subtitle {
+    margin: 10px 0 0 0;
+    font-size: 20px; }
+
+  .app-description-container .divider {
+    width: 44%; }
+
+  .app-description-container .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px; }
+
+  .app-description-container .btn-learn-more {
+    font-size: 18px; }
+
+  .app-services-container {
+    padding-top: 40px;
+    padding-bottom: 110px; }
+
+  .app-services-container .title {
+    font-size: 24px; }
+
+  .app-services-container .articles {
+    margin-top: 30px; }
+
+  .app-services-container .img-service-1 {
+    margin-top: 16px;
+    width: 154px;
+    height: 124px; }
+
+  .app-services-container .img-service-2 {
+    width: 159px;
+    height: 164px; }
+
+  .app-services-container .img-service-3 {
+    margin-top: 14px;
+    width: 138px;
+    height: 135px; }
+
+  .app-services-container .articles .title {
+    font-size: 22px; }
+
+  .app-services-container .articles .title-1 {
+    margin-top: 34px; }
+
+  .app-services-container .articles .title-2 {
+    margin-top: 10px; }
+
+  .app-services-container .articles .title-3 {
+    margin-top: 25px; }
+
+  .app-services-container .articles .content {
+    margin-top: 22px;
+    font-size: 18px; }
+
+  .app-calculators-container {
+    padding: 15px 0 60px 0; }
+
+  .app-calculators-container .title-container .title {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
+  .app-calculators-container .title-container .subtitle {
+    font-size: 20px;
+    margin: 10px 0 0 0; }
+
+  .app-calculators-container .title-container .divider {
+    width: 44%; }
+
+  .app-calculators-container .title-container .content {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 45px; }
+
+  .app-calculators-container .calculator-wrap .calculator {
+    padding: 15px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+    cursor: pointer;
+    min-height: 125px;
+    max-height: 125px;
+    overflow: hidden;
+    margin-top: 20px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+    font-size: 16px; }
+
+  .app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon {
+    display: block;
+    margin: auto;
+    font-size: 48px;
+    margin-bottom: 15px; }
+
+  .app-calculators-container .calculator-wrap .calculator .header .title {
+    font-size: 26px;
+    margin-top: 10; }
+
+  .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
+    padding: 6px 32px;
+    font-size: 18px;
+    margin-top: 20px; }
+
+  .app-packages-container {
+    padding-bottom: 60px; }
+
+  .app-packages-container .title-container {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    height: 620px; }
+
+  .app-packages-container .packages-table {
+    margin-top: -420px;
+    padding-left: 120px;
+    padding-right: 120px; }
+
+  .app-packages-container .packages-table .package {
+    min-height: 1240px; }
+
+  .app-packages-container .packages-table .package .header .title {
+    font-size: 28px;
+    margin-bottom: 15px; }
+
+  .app-packages-container .packages-table .package .header .description {
+    font-size: 24px;
+    margin-bottom: 15px; }
+
+  .app-packages-container .packages-table .package .price-container {
+    margin-top: 18px;
+    margin-bottom: 18px; }
+
+  .app-packages-container .packages-table .package .price {
+    font-size: 58px; }
+
+  .app-packages-container .packages-table .package .price sup {
+    font-size: 22px;
+    top: -0.8em; }
+
+  .app-packages-container .packages-table .package a.btn-chose {
+    font-size: 22px;
+    padding: 12px 72px; }
+
+  .app-packages-container .packages-table .package .features-list {
+    margin-top: 40px; }
+
+  .app-packages-container .packages-table .package .features-list li {
+    font-size: 19px;
+    margin-bottom: 20px; }
+
+  .app-premium-services-container {
+    padding-top: 60px;
+    padding-bottom: 120px; }
+
+  .app-premium-services-container .title {
+    font-size: 28px; }
+
+  .app-premium-services-container .premium-service {
+    margin-top: 80px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-1 {
+    width: 103px;
+    height: 72px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-2 {
+    width: 81px;
+    height: 68px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-3 {
+    width: 76px;
+    height: 72px; }
+
+  .app-premium-services-container .premium-service .img-premium-service-4 {
+    width: 63px;
+    height: 83px; }
+
+  .app-premium-services-container .premium-service .title {
+    font-size: 22px; }
+
+  .app-premium-services-container .premium-service .title-1 {
+    margin-top: 50px; }
+
+  .app-premium-services-container .premium-service .title-2 {
+    margin-top: 54px; }
+
+  .app-premium-services-container .premium-service .title-3 {
+    margin-top: 50px; }
+
+  .app-premium-services-container .premium-service .title-4 {
+    margin-top: 39px; }
+
+  .app-contact-form-container {
+    min-height: 610px;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+
+  .app-contact-form-container .contact-form {
+    margin-top: 30px; }
+
+  .app-contact-form-container .contact-form form label {
+    font-size: 16px; }
+
+  .app-contact-form-container .contact-form form input,
+  .app-contact-form-container .contact-form form textarea,
+  .app-contact-form-container .contact-form form select {
+    border-bottom: 4px solid #FFFFFF;
+    font-size: 20px; }
+
+  .app-contact-form-container .contact-form form .btn-send-contact {
+    font-size: 22px; }
+
+  .app-footer {
+    padding: 30px 45px; }
+
+  .app-footer .logo {
+    width: 168px;
+    height: 57px; }
+
+  .app-footer .links-list h2 {
+    font-size: 22px; }
+
+  .app-footer .links-list h3 {
+    font-size: 20px; }
+
+  .app-footer .copyright h3 {
+    font-size: 20px; }
+
+  .app-calculator .platforms-container {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+
+  .app-calculator .platforms-container .platform {
+    min-height: 100px;
+    max-height: 100px;
+    margin-top: 10px; }
+
+  .app-calculator .platforms-container .platform h3 .icon {
+    margin: auto;
+    font-size: 32px;
+    margin-bottom: 10px; }
+
+  .app-calculator .section-name:first-child h2 {
+    margin-top: 15px; }
+
+  .app-calculator .section-name h2 {
+    margin-top: 30px; }
+
+  .app-calculator .items-container .item {
+    min-height: 154px;
+    max-height: 154px; }
+
+  .app-calculator .items-container .item h3 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px; }
+
+  .app-calculator .items-container .item h3 .icon {
+    margin: auto;
+    font-size: 48px;
+    margin-bottom: 10px; } }
+/* Inicio [Estilos de uso general] */
+video {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+.bg-black {
+  background-color: #000000; }
+
+.fc-black {
+  color: #000000; }
+
+.fc-white {
+  color: #FFFFFF; }
+
+.fc-faded {
+  color: #777777; }
+
+.no-padding {
+  padding: 0; }
+
+.no-side-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.top-margin {
+  margin-top: 15px; }
+
+.bottom-margin {
+  margin-bottom: 15px; }
+
+.no-border {
+  border: 0; }
+
+.app-well {
+  background-color: #E4E4E4; }
+
+/* Fin [Estilos de uso general] */
+
 /*# sourceMappingURL=style.css.map */

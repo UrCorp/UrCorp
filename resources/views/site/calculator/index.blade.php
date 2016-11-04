@@ -2,10 +2,10 @@
 @section('content')
 <section>
   <article>
-    <div class="container">
+    <div class="container calculator-container">
       <div class="row navbar-margin">
         <div class="app-calculator col-xs-12 no-padding">
-          <div id="items-container" class="items-container col-sm-9 no-padding">
+          <div id="items-container" class="items-container col-md-8 col-sm-8 no-padding">
             {!! Form::open(['method' => 'GET', 'id' => 'web-calculator']) !!}
               <select id="items-selector" name="i[]" class="hidden" multiple>
                 @foreach ($calculator->items as $item)
@@ -24,19 +24,21 @@
               </div>
               <div class="col-xs-12 no-side-padding">
                 @foreach ($calculator->items()->where(['items.section_id' => $section->id])->get() as $item)
-                  <div class="col-xs-3 no-side-padding">
-                    <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}">
-                      <h3 class="text-center">
-                        <span class="icon fa fa-{!! $item->icon->name !!}"></span>
-                        {!! $item->name !!}
-                      </h3>
+                  <div class="col-sm-3 col-xs-4 no-side-padding">
+                    <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}">
+                      <div class="name">
+                        <h3 class="text-center">
+                          <span class="icon fa fa-{!! $item->icon->name !!}"></span>
+                          {!! $item->name !!}
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 @endforeach
               </div>
             @endforeach
           </div>
-          <div class="col-sm-3 no-side-padding">
+          <div class="col-md-3 col-md-offset-1 col-sm-4 no-side-padding">
             <div id="platforms-container" class="platforms-container col-xs-12 no-side-padding">
               @foreach ($calculator->platforms as $platform)
                 <div class="col-xs-4 no-side-padding">
@@ -50,7 +52,7 @@
               @endforeach
             </div>
             <div class="col-xs-12 no-side-padding">
-              <div id="shoppingCart" class="col-xs-12 well">
+              <div id="shoppingCart" class="shoppingCart col-xs-12 well">
                
               </div>
             </div>

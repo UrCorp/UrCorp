@@ -180,10 +180,10 @@ $(document).on('ready' , function() {
 
         $shoppingCart.append(
           '<div class="item col-xs-12 no-side-padding" data-id="'+item+'">'+
-          '\t<div class="col-xs-8">'+
+          '\t<div class="col-xs-8 no-side-padding">'+
           '\t\t<p class="name">'+objCalculator.getItemName(item)+'</p>'+
           '\t</div>'+
-          '\t<div class="col-xs-4">'+
+          '\t<div class="col-xs-4 no-side-padding">'+
           '\t\t<p class="pull-right price">'+price.toCurrency()+'</p>'+
           '\t</div>'+
           '</div>'
@@ -195,4 +195,15 @@ $(document).on('ready' , function() {
 
     $(document).unbind('ajaxComplete');
   });
+
+  $('.item .tools button', $itemsContainer).click(function(event) {
+    event.stopPropagation();
+    alert("Hola");
+  });
+
+  if ($.fn.isMobile) {
+    $('[data-toggle="tooltip"]').tooltip('destroy');
+  } else {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
 });

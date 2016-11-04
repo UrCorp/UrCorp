@@ -613,4 +613,102 @@
   font-size: 14px;
 }
 
+.navbar-margin {
+  margin-top: 67px;
+}
+
+.app-calculator .platforms-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.app-calculator .platforms-container .platform {
+  cursor: pointer;
+  min-height: 84px;
+  max-height: 84px;
+  overflow: hidden;
+  margin-top: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.app-calculator .platforms-container .platform.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF;
+}
+
+.app-calculator .platforms-container .platform h3 {
+  font-size: 11px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+
+.app-calculator .platforms-container .platform h3 .icon {
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.app-calculator .section-name:first-child h2 {
+  margin-top: 10px;
+}
+
+.app-calculator .section-name h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.app-calculator .items-container .item {
+  cursor: pointer;
+  min-height: 144px;
+  max-height: 144px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.app-calculator .items-container .item.active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #039be5;
+  color: #FFFFFF;
+}
+
+.app-calculator .items-container .item h3 {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.app-calculator .items-container .item h3 .icon {
+  display: block;
+  font-size: 36px;
+  margin: 5px auto 10px auto;
+}
+
+.app-calculator .shoppingCart {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.app-calculator .shoppingCart .item .name {
+  font-size: 12px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.calculator-container {
+  width: 100%;
+}
+
 }
