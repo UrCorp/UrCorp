@@ -217,7 +217,7 @@ $(document).on('ready' , function() {
             '<button type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>'
           );
           $appModal.modal('show');
-        }, 400);
+        }, 200);
     }).mouseup(function(e) {
         clearTimeout(this.downTimer);
     });
