@@ -43,12 +43,12 @@
 
   <!-- START [Cascade Style Sheet Files] -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/font-awesome.min.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/animate.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/hover.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/jquery.loading.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/font-awesome.min.css?v='.time()) }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/animate.css?v='.time()) }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/hover.css?v='.time()) }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/jquery.loading.css?v='.time()) }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/style.css?v='.time()) }}">
   <!-- END [Cascade Style Sheet Files] -->
 </head>
 <body>
@@ -86,13 +86,13 @@
   </header>
   @yield('content')
   <!-- START [JavaScript Files] -->
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.loading.js')}}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.validate.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/app/app.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js?v='.time()) }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.loading.js?v='.time())}}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.validate.js?v='.time()) }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.js?v='.time()) }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js?v='.time()) }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js?v='.time()) }}"></script>
+  <script type="text/javascript" src="{{ asset('public/assets/js/app/app.js?v='.time()) }}"></script>
   @yield('scripts')
   <!-- END [JavaScript Files] -->
 

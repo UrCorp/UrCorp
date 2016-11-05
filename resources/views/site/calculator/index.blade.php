@@ -79,5 +79,5 @@
 </section>
 @endsection
 @section('scripts')
-<script type="text/javascript" src="{!! asset('public/assets/js/app/calculator/index.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('public/assets/js/app/calculator/index.js?v='.time()) !!}"></script>
 @endsection
