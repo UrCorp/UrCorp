@@ -27,7 +27,7 @@
                   <div class="col-sm-3 col-xs-4 no-side-padding">
                     <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
                       <div class="name">
-                        <h3 class="text-center">
+                        <h3 class="text-center noselect">
                           <span class="icon fa fa-{!! $item->icon->name !!}"></span>
                           {!! str_limit($item->name, 15) !!}
                         </h3>
