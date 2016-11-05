@@ -613,8 +613,11 @@
   font-size: 14px;
 }
 
-.navbar-margin {
-  margin-top: 67px;
+/* CALCULATOR APP
+   ========================================================================= */
+
+.app-calculator {
+  padding-bottom: 75px;
 }
 
 .app-calculator .platforms-container {
@@ -686,6 +689,11 @@
 
 .app-calculator .shoppingCart .item .name {
   font-size: 12px;
+}
+
+.app-calculator .panel > .panel-heading > .title {
+  margin: 2px auto;
+  font-size: 16px;
 }
 
 }

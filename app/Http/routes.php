@@ -4,11 +4,6 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
 */
 
 Route::group(['as' => 'site.'], function () {
@@ -202,6 +197,11 @@ Route::group(['as' => 'site.'], function () {
         Route::get('{calculator}/prices', [
           'uses'  => 'Calculator@prices',
           'as'    => 'prices'
+        ]);
+
+        Route::post('{calculator}/sendByEmail', [
+          'uses'  => 'Calculator@sendByEmail',
+          'as'    => 'sendByEmail'
         ]);
       
         Route::group(['prefix' => '{calculator}', 'as' => 'item.'], function () {

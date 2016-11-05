@@ -84,7 +84,24 @@
       </div>
     </div>
   </header>
-  @yield('content')
+  <div class="container-fluid">
+    <div class="row">
+      @yield('content')
+      <section>
+        <div class="col-xs-12 app-footer">
+          <div class="col-xs-12">
+            <div class="col-md-6 col-sm-8 col-xs-12 no-side-padding copyright">
+              <h3>TODOS LOS DERECHOS RESERVADOS | URCORP &copy; 2016</h3>
+              <a href="#" class="link">Política de Cookies</a>
+            </div>
+            <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-1 col-xs-12 text-center">
+              <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="logo" title="UrCorp logo">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
   <!-- START [JavaScript Files] -->
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js?v='.time()) }}"></script>
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.loading.js?v='.time())}}"></script>

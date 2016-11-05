@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Route;
+use Validator;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Laracasts\Flash\Flash;
-use Route;
+use App\Item;
+use App\Platform;
 
 class Calculator extends Controller
 {
@@ -68,6 +71,82 @@ class Calculator extends Controller
     } else {
       $resp['status'] = 'VALIDATION_ERROR';
       $resp['msg'] = 'Error de validación<br/>¡Los datos obtenidos son incorrectos!';
+    }
+
+    return response()->json($resp);
+  }
+
+  public function sendByEmail(Request $request) {
+    $resp = [
+      'status' => 'ERROR_CONNECTION',
+      'msg'    => 'Existe un error en la conexión ¡Por favor, intente más tarde!'
+    ];
+
+    $quote = $request->input('quote');
+
+
+    $validation = Validator::make($quote, [
+      'email'       => 'required|email|max:250',
+      'platforms'   => 'required|array',
+      'items'       => 'required|array'
+    ]);
+
+    if ($validation->fails()) {
+      $resp['status'] = 'VALIDATION_ERROR';
+      $resp['msg'] = 'Debe seleccionar al menos un servicio y un plataforma (Android, iPhone, PhoneGap, etc) para poder generar la cotización.';
+    } else {
+      if (isset($quote['items']) and count($quote['items']) > 0 and
+          isset($quote['platforms']) and count($quote['platforms']) > 0) {
+        $items = $quote['items'];
+        $platforms = $quote['platforms'];
+
+        $mail_sent = true; // recordar borrar
+
+        $price = 0.0;
+        $resp['shoppingCart']['items'] = [];
+        $resp['shoppingCart']['platforms'] = [];
+
+        foreach ($items as $itemSlug) {
+          $price = 0.0;
+          $item = Item::findBySlug($itemSlug);
+
+          foreach ($platforms as $platformSlug) {
+            $platform = $item->platforms()->where(['platforms.slug' => $platformSlug])->first();
+            $price += $platform->pivot->price;
+          }
+
+          array_push($resp['shoppingCart']['items'], [
+            'name'        => $item->name,
+            'description' => $item->short_description,
+            'price'       => $price
+          ]);
+        }
+
+        foreach ($platforms as $platformSlug) {
+          $platform = Platform::findBySlug($platformSlug);
+
+          array_push($resp['shoppingCart']['platforms'], $platform->name);
+        }
+
+        /* 
+        $mail_sent = Mail::send('site.emails.calculator.sendByEmail', ['quote' => $quote], function ($m) use ($quote) {
+          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
+          $m->replyTo($contact['email'], $contact['name']);
+          $m->to('contacto@urcorp.mx', 'Contacto UrCorp');
+          $m->subject('[contacto] '.$contact['name'].' | UrCorp');
+        });*/
+
+        if ($mail_sent) {
+          $resp['status'] = 'SUCCESS';
+          $resp['msg'] = '¡La cotización ha sido enviada exitosamente!';
+        } else {
+          $resp['status'] = 'ERROR_CONNECTION';
+          $resp['msg']    = 'Existe un error en la conexión ¡Por favor, intente más tarde!';
+        }
+      } else {
+        $resp['status'] = 'VALIDATION_ERROR';
+        $resp['msg'] = 'Debe seleccionar al menos un servicio y una plataforma (Android, iPhone, PhoneGap, etc) para poder generar la cotización.';
+      }
     }
 
     return response()->json($resp);

@@ -79,11 +79,13 @@ $(document).on('ready' , function() {
   var $window = $(window),
       $body = $('body'),
       $appModal = $('#app-modal'),
-      $webCalculator = $('#web-calculator'),
+      $webCalculatorForm = $('#form-web-calculator'),
       $platformsContainer = $('#platforms-container'),
       $itemsContainer = $('#items-container'),
       $shoppingCart = $('#shoppingCart'),
       $total = $('#total'),
+      $shareQuote = $('#share-quote'),
+      $sendByEmailForm = $('#form-send-by-email'),
       objCalculator = null,
       items = [],
       platforms = [];
@@ -92,7 +94,7 @@ $(document).on('ready' , function() {
     var $this = $(this),
         id = $this.data('id');
 
-    var $option = $('#items-selector option#item-'+id, $webCalculator);
+    var $option = $('#items-selector option#item-'+id, $webCalculatorForm);
     
     items.push(id);
     $option.prop('selected', true);
@@ -102,7 +104,7 @@ $(document).on('ready' , function() {
     var $this = $(this),
         id = $this.data('id');
 
-    var $option = $('#platforms-selector option#platform-'+id, $webCalculator);
+    var $option = $('#platforms-selector option#platform-'+id, $webCalculatorForm);
 
     platforms.push(id);
     $option.prop('selected', true);
@@ -122,7 +124,7 @@ $(document).on('ready' , function() {
           total = 0.00;
 
       $this.toggleClass('bounce bounceIn active');
-      $option = $('#items-selector option#item-'+id, $webCalculator);
+      $option = $('#items-selector option#item-'+id, $webCalculatorForm);
       
       if ($option.is(':selected')) {
         objCalculator.removeItem(id);
@@ -163,7 +165,7 @@ $(document).on('ready' , function() {
           total = 0.00;
 
       $this.toggleClass('bounce bounceIn active');
-      $option = $('#platforms-selector option#platform-'+id, $webCalculator);
+      $option = $('#platforms-selector option#platform-'+id, $webCalculatorForm);
 
       if ($option.is(':selected')) {
         objCalculator.removePlatform(id);
@@ -194,13 +196,44 @@ $(document).on('ready' , function() {
       $('.amount', $total).html(total.toCurrency());
     });
 
-    $(document).unbind('ajaxComplete');
-  });
+    $sendByEmailForm.validate({
+      rules: {
+        'quote[email]': {
+          required: true,
+          email: true,
+          maxlength: 250
+        }
+      },
+      messages: {
+        'quote[email]': {
+          required: "Por favor, introduzca su correo electrónico.",
+          email: "Correo electrónico inválido.",
+        }
+      },
+      submitHandler : function(form) {
+        var $form = $(form);
+        $.ajax({
+          type: "POST",
+          url: $form.attr('action'),
+          data: $sendByEmailForm.serialize()+'&'+$webCalculatorForm.serialize(),
+          dataType : 'json',
+          beforeSend: function() { 
+          },
+          success: function(res) {
+            console.log(res);
+          },
+          error: function(res, textstatus, jqxhr) {
+            alert("AJAX Error");
+          }
+        });
+        return false;
+      }
+    });
 
-  if ($.fn.isMobile) {
-    $('[data-toggle="tooltip"]').tooltip('destroy');
+    if ($.fn.isMobile) {
+      $('[data-toggle="tooltip"]').tooltip('destroy');
 
-    $('.item', $itemsContainer).mousedown(function(e) {
+      $('.item', $itemsContainer).mousedown(function(e) {
         var $this = $(this);
         clearTimeout(this.downTimer);
         this.downTimer = setTimeout(function() {
@@ -218,10 +251,13 @@ $(document).on('ready' , function() {
           );
           $appModal.modal('show');
         }, 200);
-    }).mouseup(function(e) {
+      }).mouseup(function(e) {
         clearTimeout(this.downTimer);
-    });
-  } else {
-    $('[data-toggle="tooltip"]').tooltip();
-  }
+      });
+    } else {
+      $('[data-toggle="tooltip"]').tooltip();
+    }
+
+    $(document).unbind('ajaxComplete');
+  });
 });
