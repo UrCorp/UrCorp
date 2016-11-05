@@ -200,23 +200,26 @@ $(document).on('ready' , function() {
   if ($.fn.isMobile) {
     $('[data-toggle="tooltip"]').tooltip('destroy');
 
-    $('.item', $itemsContainer).dblclick(function(event){
-      var $this = $(this);
+    $('.item', $itemsContainer).mousedown(function(e) {
+        var $this = $(this);
+        clearTimeout(this.downTimer);
+        this.downTimer = setTimeout(function() {
+          $('.modal-header', $appModal).append(
+            '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+            '<h3>' + $this.data('name') + '</h3>'
+          );
 
-      $('.modal-header', $appModal).append(
-        '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
-        '<h3>' + $this.data('name') + '</h3>'
-      );
+          $('.modal-body', $appModal).append(
+            '<p>' + $this.data('original-title') + '</p>'
+          );
 
-      $('.modal-body', $appModal).append(
-        '<p>' + $this.data('original-title') + '</p>'
-      );
-
-      $('.modal-footer', $appModal).append(
-        '<button type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>'
-      );
-
-      $appModal.modal('show');
+          $('.modal-footer', $appModal).append(
+            '<button type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>'
+          );
+          $appModal.modal('show');
+        }, 800);
+    }).mouseup(function(e) {
+        clearTimeout(this.downTimer);
     });
   } else {
     $('[data-toggle="tooltip"]').tooltip();

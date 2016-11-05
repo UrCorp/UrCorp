@@ -738,8 +738,8 @@ body {
 
 .app-calculator .items-container .item {
   cursor: pointer;
-  min-height: 144px;
-  max-height: 144px;
+  min-height: 110px;
+  max-height: 110px;
   overflow: hidden;
   margin-top: 10px;
   padding-left: 4px;
@@ -763,10 +763,11 @@ body {
 .app-calculator .items-container .item h3 {
   font-size: 13px;
   line-height: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-overflow: ellipsis;
   word-wrap: break-word;
   overflow: hidden;
+  height: 84px;
   max-height: 84px;
   line-height: 16px;
 }
