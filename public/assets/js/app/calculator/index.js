@@ -78,6 +78,7 @@ $(document).on('ready' , function() {
 
   var $window = $(window),
       $body = $('body'),
+      $appModal = $('#app-modal'),
       $webCalculator = $('#web-calculator'),
       $platformsContainer = $('#platforms-container'),
       $itemsContainer = $('#items-container'),
@@ -196,13 +197,27 @@ $(document).on('ready' , function() {
     $(document).unbind('ajaxComplete');
   });
 
-  $('.item .tools button', $itemsContainer).click(function(event) {
-    event.stopPropagation();
-    alert("Hola");
-  });
-
   if ($.fn.isMobile) {
     $('[data-toggle="tooltip"]').tooltip('destroy');
+
+    $('.item', $itemsContainer).dblclick(function(event){
+      var $this = $(this);
+
+      $('.modal-header', $appModal).append(
+        '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+        '<h3>' + $this.data('name') + '</h3>'
+      );
+
+      $('.modal-body', $appModal).append(
+        '<p>' + $this.data('original-title') + '</p>'
+      );
+
+      $('.modal-footer', $appModal).append(
+        '<button type="button" class="btn btn-default" data-dismiss="modal" autofocus>Cerrar</button>'
+      );
+
+      $appModal.modal('show');
+    });
   } else {
     $('[data-toggle="tooltip"]').tooltip();
   }

@@ -12,7 +12,8 @@ Number.prototype.toCurrency = function() {
 
 $(function() {
   var $window = $(window),
-      $body = $('body');
+      $body = $('body'),
+      $appModal = $('#app-modal');
 
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -24,4 +25,10 @@ $(function() {
     },
     "Please check your input."
   );
+
+  $appModal.on('hidden.bs.modal', function (e) {
+    $('.modal-header', $appModal).empty();
+    $('.modal-body', $appModal).empty();
+    $('.modal-footer', $appModal).empty();
+  });
 });

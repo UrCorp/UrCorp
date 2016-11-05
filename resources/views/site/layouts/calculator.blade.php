@@ -52,47 +52,59 @@
   <!-- END [Cascade Style Sheet Files] -->
 </head>
 <body>
-  <header>
-    <div id="header" class="col-xs-12 app-header no-side-padding no-height">
-      <div id="navbar" class="app-navbar-fixed col-xs-12 no-side-padding">
-        <div class="col-sm-3 col-xs-12 app-logo-container no-side-padding">
-          <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo" />
-          <!--<button id="btn-open-nav" class="btn-menu btn btn-primary pull-right visible-xs" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
-              <span class="fa fa-bars"></span>
-          </button>-->
-        </div> 
-        <div id="nav" class="col-sm-9 col-xs-12 collapse no-side-padding">
-          <div class="col-xs-12 no-side-padding">
-            <nav class="app-nav">
-              <ul>
-              </ul>
-            </nav>
-          </div>
+<div id="app-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<header>
+  <div id="header" class="col-xs-12 app-header no-side-padding no-height">
+    <div id="navbar" class="app-navbar-fixed col-xs-12 no-side-padding">
+      <div class="col-sm-3 col-xs-12 app-logo-container no-side-padding">
+        <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo" />
+        <!--<button id="btn-open-nav" class="btn-menu btn btn-primary pull-right visible-xs" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
+            <span class="fa fa-bars"></span>
+        </button>-->
+      </div> 
+      <div id="nav" class="col-sm-9 col-xs-12 collapse no-side-padding">
+        <div class="col-xs-12 no-side-padding">
+          <nav class="app-nav">
+            <ul>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
-  </header>
-  @yield('content')
-  <!-- START [JavaScript Files] -->
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.loading.js')}}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.validate.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('public/assets/js/app/app.js') }}"></script>
-  @yield('scripts')
-  <!-- END [JavaScript Files] -->
+  </div>
+</header>
+@yield('content')
+<!-- START [JavaScript Files] -->
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.loading.js')}}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.validate.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/bootstrap.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.scrollspy.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/jquery.anchor.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/assets/js/app/app.js') }}"></script>
+@yield('scripts')
+<!-- END [JavaScript Files] -->
 
-  <!-- START [Google Analytics] -->
-  <script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-78394522-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-  <!-- END [Google Analytics] -->
+<!-- START [Google Analytics] -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-78394522-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- END [Google Analytics] -->
 </body>
 </html>

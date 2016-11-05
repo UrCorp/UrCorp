@@ -25,11 +25,11 @@
               <div class="col-xs-12 no-side-padding">
                 @foreach ($calculator->items()->where(['items.section_id' => $section->id])->get() as $item)
                   <div class="col-sm-3 col-xs-4 no-side-padding">
-                    <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}">
+                    <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
                       <div class="name">
                         <h3 class="text-center">
                           <span class="icon fa fa-{!! $item->icon->name !!}"></span>
-                          {!! $item->name !!}
+                          {!! str_limit($item->name, 15) !!}
                         </h3>
                       </div>
                     </div>
@@ -42,7 +42,7 @@
             <div id="platforms-container" class="platforms-container col-xs-12 no-side-padding">
               @foreach ($calculator->platforms as $platform)
                 <div class="col-xs-4 no-side-padding">
-                  <div class="platform animated {!! in_array($platform->slug, $p) ? 'bounceIn active' : 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                  <div class="platform animated {!! (isset($p) and is_array($p) and in_array($platform->slug, $p)) ? 'bounceIn active' : 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
                     <h3 class="text-center">
                       <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
                       {!! $platform->name !!}
@@ -52,11 +52,16 @@
               @endforeach
             </div>
             <div class="col-xs-12 no-side-padding">
-              <div id="shoppingCart" class="shoppingCart col-xs-12 well">
-               
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="title text-center">Lista de productos</h3>
+                </div>
+                <div id="shoppingCart" class="shoppingCart panel-body">
+                  
+                </div>
               </div>
             </div>
-            <div class="col-xs-12 no-side-padding">
+            <div class="calculator-total col-xs-12 no-side-padding">
               <div id="total" class="col-xs-12">
                 <div class="col-xs-6">
                   <h4 class="lbl">Total</h4>

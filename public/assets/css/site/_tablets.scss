@@ -623,23 +623,11 @@
 }
 
 .app-calculator .platforms-container .platform {
-  cursor: pointer;
   min-height: 84px;
   max-height: 84px;
-  overflow: hidden;
   margin-top: 5px;
   padding-left: 1px;
   padding-right: 1px;
-}
-
-.app-calculator .platforms-container .platform.active {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #039be5;
-  color: #FFFFFF;
 }
 
 .app-calculator .platforms-container .platform h3 {
@@ -649,7 +637,6 @@
 }
 
 .app-calculator .platforms-container .platform h3 .icon {
-  display: block;
   margin: auto;
   font-size: 22px;
   margin-bottom: 10px;
@@ -665,10 +652,8 @@
 }
 
 .app-calculator .items-container .item {
-  cursor: pointer;
   min-height: 144px;
   max-height: 144px;
-  overflow: hidden;
   margin-top: 10px;
 }
 
