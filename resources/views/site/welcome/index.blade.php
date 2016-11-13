@@ -12,9 +12,9 @@
         <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" alt="Flecha hacia abajo" title="Ir Abajo" />
       </div>
     </div>
-    <div class="coverpage visible-xs"></div>
+    <div class="coverpage-mobile visible-xs"></div>
     <video class="hidden-xs" autoplay muted loop>
-      <source src="{!! asset('public/assets/video/welcome.mp4?v='.time()) !!}" type="video/mp4" >
+      <source src="{!! asset('public/assets/video/welcome-v1.mp4?v='.time()) !!}" type="video/mp4" >
       <!--
       <source src="{!! asset('public/assets/video/welcome.ogg') !!}" type="video/ogg" >
       <source src="{!! asset('public/assets/video/welcome.webm') !!}" type="video/webm" >
