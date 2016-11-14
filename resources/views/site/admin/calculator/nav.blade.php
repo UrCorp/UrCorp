@@ -1,4 +1,5 @@
 @section('nav')
+<!-- [links not connected]
 <li>
   <a href="{{ route('site.admin.panel.calculator.index') }}">Cotizadores</a>
 </li>
@@ -11,4 +12,5 @@
 <li>
   <a href="#">Artículos</a>
 </li>
+-->
 @endsection

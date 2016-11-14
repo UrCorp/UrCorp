@@ -155,6 +155,39 @@ Route::group(['as' => 'site.'], function () {
             ]);
           });
         });
+
+        Route::group(['prefix' => 'promotions', 'as' => 'promotions.'], function() {
+
+          Route::get('/', [
+            'uses'  => 'Admin\Promotions@index',
+            'as'    => 'index'
+          ]);
+
+          Route::get('/create', [
+            'uses'  => 'Admin\Promotions@create',
+            'as'    => 'create'
+          ]);
+
+          Route::post('/', [
+            'uses'  => 'Admin\Promotions@store',
+            'as'    => 'store'
+          ]);
+
+          Route::get('{promotionCode}/edit', [
+            'uses'  => 'Admin\Promotions@edit',
+            'as'    => 'edit'
+          ]);
+
+          Route::put('{promotionCode}/update', [
+            'uses'  => 'Admin\Promotions@update',
+            'as'    => 'update'
+          ]);
+
+          Route::get('{promotionsCode}/destroy', [
+            'uses'  => 'Admin\Promotions@destroy',
+            'as'    => 'destroy'
+          ]);
+        });
       });
     });
   });

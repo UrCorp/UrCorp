@@ -5,4 +5,8 @@
   <span class="app-metro-icon fa fa-calculator"></span>
   Cotizadores
 </a>
+<a href="{!! route('site.admin.panel.promotions.index') !!}" class="app-metro-btn col-md-4 btn btn-primary">
+  <span class="app-metro-icon fa fa-ticket"></span>
+  Promociones
+</a>
 @endsection

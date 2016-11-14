@@ -93,6 +93,14 @@
   </nav>
   <div class="container">
     <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        @if (session()->has('flash_notification.message'))
+          <div class="alert alert-{{ session('flash_notification.level') }} top-margin">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {!! session('flash_notification.message') !!}
+          </div>
+        @endif
+      </div>
       <div class="@yield('panel-container', 'col-md-10 col-md-offset-1') top-margin">
         <div class="panel panel-default">
           <div class="panel-heading">
