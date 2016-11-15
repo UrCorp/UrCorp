@@ -14,7 +14,7 @@
     </div>
     <div class="coverpage-mobile visible-xs"></div>
     <video class="hidden-xs" autoplay muted loop>
-      <source src="{!! asset('public/assets/video/welcome-v1.mp4?v='.time()) !!}" type="video/mp4" >
+      <source src="{!! asset('public/assets/video/welcome-v2.mp4?v='.time()) !!}" type="video/mp4" >
       <!--
       <source src="{!! asset('public/assets/video/welcome.ogg') !!}" type="video/ogg" >
       <source src="{!! asset('public/assets/video/welcome.webm') !!}" type="video/webm" >
@@ -22,16 +22,24 @@
     </video>
     <div class="col-xs-12 bg-black app-clients-container">
       <div class="col-sm-3 col-xs-12">
+      <a href="http://www.pechakucha.org/" title="pechakucha.org" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-1.svg') !!}" class="logo-client logo-client-1" alt="Pecha Kucha Night" title="Pecha Kucha Night">
+      </a>
       </div>
       <div class="col-sm-3 col-xs-12">
+      <a href="http://emprendeya.org" title="EmpredeYa" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-2.svg') !!}" class="logo-client logo-client-2" alt="EmprendeYA" title="EmprendeYA">
+      </a>
       </div>
       <div class="col-sm-3 col-xs-12">
+      <a href="http://kanpai.mx/" title="Kanpai.mx" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-3.svg') !!}" class="logo-client logo-client-3" alt="Kanpai" title="Kanpai">
+      </a>
       </div>
       <div class="col-sm-3 col-xs-12">
+      <a href="https://www.wtca.org/world-trade-center-queretaro" title="WTC" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-4.svg') !!}" class="logo-client logo-client-4" alt="WTC" title="WTC">
+      </a>
       </div>
     </div>
   </div>
@@ -55,9 +63,9 @@
             En internet no hay fronteras, crecemos tu negocio pensando global.
           </p>
         </div>
-        <div class="text-center">
+        <!--div class="text-center">
           <a href="#" class="btn-learn-more">CONOCE MÁS</a>
-        </div>
+        </div-->
       </div>
     </div>
   </article>
@@ -179,8 +187,8 @@
           <div class="col-xs-12 package no-side-padding">
             <header>
               <div class="col-xs-12 header">
-                <h3 class="text-center title">Diseño WEB Básico</h3>
-                <h4 class="text-center description">Ideal para<br/> emprendedores</h4>
+                <h3 class="text-center title">WEB Básico</h3>
+                <h4 class="text-center description">Ideal para<br/> Emprendedores</h4>
               </div>
             </header>
             <div class="col-xs-12 content">
@@ -188,7 +196,7 @@
                 <span class="price">5,500 <sup>00 MXN</sup></span>
               </div>
               <div class="text-center">
-                <a href="#" class="btn-chose">Elegir</a>
+                <a href="#contact" class="btn-chose">Elegir</a>
               </div>
               <div class="features-container">
                 <ul class="features-list">
@@ -213,7 +221,7 @@
             <header>
               <div class="col-xs-12 header">
                 <h3 class="text-center title">BRANDING</h3>
-                <h4 class="text-center description">Emprendedores y freelancers</h4>
+                <h4 class="text-center description">Emprendedores y Freelancers</h4>
               </div>
             </header>
             <div class="col-xs-12 content">
@@ -221,7 +229,7 @@
                 <span class="price">8,000 <sup>00 MXN</sup></span>
               </div>
               <div class="text-center">
-                <a href="#" class="btn-chose">Elegir</a>
+                <a href="#contact" class="btn-chose">Elegir</a>
               </div>
               <div class="features-container">
                 <ul class="features-list">
@@ -257,8 +265,8 @@
                 <div class="offer-notice">
                   <h5 class="title text-center">30% MENOS</h5>
                 </div>
-                <h3 class="text-center title">TODO INCLUIDO</h3>
-                <h4 class="text-center description">Ideal para PYMES<br/>&nbsp;</h4>
+                <h3 class="text-center title">PYME WEB</h3>
+                <h4 class="text-center description">Planes Desde*<br/>&nbsp;</h4>
               </div>
             </header>
             <div class="col-xs-12 content">
@@ -266,7 +274,7 @@
                 <span class="price">12,000 <sup>00 MXN</sup></span>
               </div>
               <div class="text-center">
-                <a href="#" class="btn-chose offer">Elegir</a>
+                <a href="#contact" class="btn-chose offer">Elegir</a>
               </div>
               <div class="features-container">
                 <ul class="features-list">
@@ -338,11 +346,11 @@
       <div class="col-xs-12 contact-form">
         {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
           <div class="form-group">
-            {!! Form::label('contact[name]', 'Nombre / Empresa') !!}
+            {!! Form::label('contact[name]', 'Nombre / Empresa *') !!}
             {!! Form::text('contact[name]', null, ['class' => 'form-control', 'maxlength' => 60, 'required' => 'required']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('contact[email]', 'eMail') !!}
+            {!! Form::label('contact[email]', 'eMail *') !!}
             {!! Form::email('contact[email]', null, ['class' => 'form-control', 'maxlength' => 250, 'required' => 'required']) !!}
           </div>
           <div class="form-group">
@@ -350,9 +358,17 @@
             {!! Form::text('contact[phone]', null, ['class' => 'form-control', 'pattern' => '^[0-9]{10,10}$', 'required' => 'required']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('contact[msg]', 'Mensaje (Opcional)') !!}
+            {!! Form::label('contact[msg]', 'Cuéntanos más de tu proyecto') !!}
             {!! Form::textarea('contact[msg]', null, ['class' => 'form-control', 'maxlength' => 512, 'rows' => 3]) !!}
           </div>
+				<div class="form-group">
+                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				  {!! Form::label('contact[KIT]', 'WEB BÁSICO') !!}
+                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				  {!! Form::label('contact[KIT]', 'BRANDING') !!}
+                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				  {!! Form::label('contact[KIT]', 'PYME WEB') !!}
+                </div>
           <div class="form-group text-center">
             <button class="btn-send-contact">
               ENVIAR
