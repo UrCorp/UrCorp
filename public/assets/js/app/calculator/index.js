@@ -5,6 +5,7 @@ function Calculator(items, platforms) {
   this.itemNames = {};
   this.prices = {};
   this.shoppingCart = {};
+  this.discount = 0.00;
 
   $.ajax({
     type: 'GET',
@@ -74,6 +75,10 @@ Calculator.prototype.getItemValue = function(id) {
   return this.shoppingCart[id];
 }
 
+Calculator.prototype.setDiscount = function(percentage) {
+  return this.discount = percentage;
+}
+
 $(document).on('ready' , function() { 
 
   var $window = $(window),
@@ -83,6 +88,8 @@ $(document).on('ready' , function() {
       $platformsContainer = $('#platforms-container'),
       $itemsContainer = $('#items-container'),
       $shoppingCart = $('#shoppingCart'),
+      $btnApplyPromo = $('#btn-apply-promo'),
+      $promotionCode = $('#promotion-code'),
       $total = $('#total'),
       $shareQuote = $('#share-quote'),
       $sendByEmailForm = $('#form-send-by-email'),
@@ -152,7 +159,7 @@ $(document).on('ready' , function() {
         );
         total += price;
       }
-      $('.amount', $total).html(total.toCurrency());
+      $('.subtotal', $total).html(total.toCurrency());
     });
 
     $('.platform', $platformsContainer).click(function(event){
@@ -193,7 +200,30 @@ $(document).on('ready' , function() {
         );
         total += price;
       }
-      $('.amount', $total).html(total.toCurrency());
+      $('.subtotal', $total).html(total.toCurrency());
+    });
+
+    $btnApplyPromo.click(function(event) {
+      event.preventDefault();
+
+        $.ajax({
+          type: 'GET',
+          url: 'api/v1/promotions/code/' + $promotionCode.val(),
+          dataType: 'json',
+          beforeSend: function() {
+            // more code here...
+          },
+          success: function(resp) {
+            if (resp.status == 'SUCCESS') {
+              __self.itemNames = resp.data.itemNames;
+              __self.prices = resp.data.prices;
+              __self.calculate();
+            }
+          },
+          error: function(res, textStatus, jqxhr) {
+            alert("AJAX Error");
+          }
+        });
     });
 
     $sendByEmailForm.validate({

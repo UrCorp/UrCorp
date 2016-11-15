@@ -60,27 +60,63 @@
             </div>
           </div>
         </div>
-        <div id="total" class="calculator-total col-xs-12">
-          <div class="col-xs-6">
-            <h4 class="lbl">Total</h4>
-          </div>
-          <div class="col-xs-6">
-            <h4 class="amount pull-right">$0.00</h4>
+        <div id="total" class="calculator-total col-xs-12 no-side-padding">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="col-xs-12 no-side-padding">
+                {!! Form::open(['method' => 'POST', 'id' => 'form-apply-promotion']) !!}
+                  <div class="form-group">
+                    <label>Código de promoción</label>
+                    <div class="input-group">
+                      {!! Form::text('code', null, ['id' => 'promotion-code', 'class' => 'form-control']) !!}
+                      <span class="input-group-btn">
+                        <button id="btn-apply-promo" class="btnApplyPromo btn btn-warning" type="button">Aplicar</button>
+                      </span>
+                    </div>
+                  </div>
+                {!! Form::close() !!}
+              </div>
+              <div class="subtotal-container col-xs-12 no-side-padding">
+                <div class="col-xs-6 no-side-padding">
+                  <h4 class="lbl">Subtotal</h4>
+                </div>
+                <div class="col-xs-6 no-side-padding">
+                  <h4 class="subtotal pull-right">$0.00</h4>
+                </div>
+              </div>
+              <div class="discount-container col-xs-12 no-side-padding">
+                <div class="col-xs-6 no-side-padding">
+                  <h5 class="lbl">Descuento</h5>
+                </div>
+                <div class="col-xs-6 no-side-padding">
+                  <h5 class="discount pull-right">$0.00</h5>
+                </div>
+              </div>
+              <div class="total-container col-xs-12 no-side-padding">
+                <div class="col-xs-6 no-side-padding">
+                  <h3 class="lbl">Total</h3>
+                </div>
+                <div class="col-xs-6 no-side-padding">
+                  <h3 class="total pull-right">$0.00</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div id="share-quote" class="col-xs-12 no-side-padding">
           {!! Form::open(['route' => ['site.api.v1.calculator.sendByEmail', 'web'], 'id' => 'form-send-by-email', 'method' => 'POST']) !!}
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="title text-center">Compartir</h3>
+                <h3 class="title text-center">Guardar mi cotización</h3>
               </div>
               <div class="panel-body">
                 <div class="form-group">
+                  <label for="quote-email">Enviarme la cotización por email</label>
                   <input id="quote-email" name="quote[email]" type="email" class="form-control" placeholder="E-mail: example@mail.com">
                 </div>
                 <div class="form-group">
-                  <button class="btnSendByEmail btn btn-primary btn-block">
-                    Enviar
+                  <button class="btnSendByEmail btn btn-success btn-block">
+                    ENVIAR
                   </button>
                 </div>
               </div>

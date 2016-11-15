@@ -245,6 +245,10 @@ Route::group(['as' => 'site.'], function () {
           ]);
         });
       });
+
+      Route::group(['prefix' => 'promotion', 'as' => 'promotion.'], function () {
+        
+      });
     });
   });
 });

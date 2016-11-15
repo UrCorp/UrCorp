@@ -790,9 +790,28 @@ body {
   font-size: 14px;
 }
 
-.app-calculator .calculator-total {
-  margin-top: -10px;
-  padding-bottom: 15px;
+.app-calculator .panel > .panel-body label {
+  font-weight: lighter;
+}
+
+.app-calculator .panel > .panel-body .subtotal-container h4 { 
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+}
+
+.app-calculator .panel > .panel-body .discount-container {
+  color: red;
+}
+
+.app-calculator .panel > .panel-body .discount-container h5 {
+  font-size: 16px;
+  margin: 5px 0 5px 0;
+}
+
+.app-calculator .panel > .panel-body .total-container h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px 0 5px 0;
 }
 
 /* RESPONSIVE
@@ -832,4 +851,47 @@ body {
 
 .modal-footer .btn-default {
   background-color: #F5F5F5;
+}
+
+.form-control,
+.panel,
+.btn {
+  border-radius: 0;
+}
+
+.btn-warning {
+  background-color: #f8fc00;
+  border-color: #f8fc00;
+  color: #000;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  color: #6C1C7F;
+  border-color: #9E86B6;
+}
+
+.btn-success {
+  background-color: #4fd330;
+  border-color: #4fd330;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  color: #39B54A;
+  border-color: #39B54A;
 }
