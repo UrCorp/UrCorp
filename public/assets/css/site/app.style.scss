@@ -148,11 +148,13 @@ body {
 }
 
 .app-jumbotron .coverpage-mobile {
+  position: relative;
   background-image: url("../video/welcome-v1.gif");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
+  z-index: -1;
 }
 
 .app-jumbotron .app-slogan-container {
@@ -165,6 +167,7 @@ body {
   -ms-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
   -o-transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
   transform: matrix(0.9986,-0.0523,0.0523,0.9986,-4,25);
+  z-index: 9999999999
 }
 
 .app-jumbotron .app-slogan-container .app-slogan {
@@ -175,6 +178,11 @@ body {
 
 .app-jumbotron .app-arrow-container {
   margin-top: 32.8px;
+  z-index: 9999999999;
+}
+
+.app-jumbotron .app-arrow-container .icon-arrow {
+  z-index: 9999999999;
 }
 
 .app-jumbotron .app-arrow-container img {

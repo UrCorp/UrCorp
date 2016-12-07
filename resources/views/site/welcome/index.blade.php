@@ -3,15 +3,15 @@
 @section('content')
 @include('flash::message')
 <section>
-  <div class="col-xs-12 no-padding app-jumbotron" id="home">
+  <div id="top" class="col-xs-12 no-padding app-jumbotron">
     <div class="col-xs-12 app-slogan-container">
       <div class="col-xs-12">
         <img src="{!! asset('public/assets/img/v2/urcorp-slogan.png') !!}" alt="UrCorp eslogan" title="UrCorp eslogan" class="app-slogan" />
       </div>
       <div class="col-xs-12 app-arrow-container">
-      <a href="https://facebook.com" style="z-index: 10">
-        <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" alt="Flecha hacia abajo" title="Ir Abajo" />
-      </a>
+        <a href="#about" class="anchorLink">  
+          <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" class="icon-arrow" alt="Flecha hacia abajo" title="Ir Abajo" />
+        </a>
       </div>
     </div>
     <div class="coverpage-mobile visible-xs" style="z-index: 1"></div>
@@ -22,7 +22,7 @@
       <source src="{!! asset('public/assets/video/welcome.webm') !!}" type="video/webm" >
       -->
     </video>
-    <div class="col-xs-12 bg-black app-clients-container">
+    <div id="about" class="col-xs-12 bg-black app-clients-container">
       <div class="col-sm-3 col-xs-12">
       <a href="http://www.pechakucha.org/cities/queretaro" title="pechakucha.org" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-1.svg') !!}" class="logo-client logo-client-1" alt="Pecha Kucha Night" title="Pecha Kucha Night">
