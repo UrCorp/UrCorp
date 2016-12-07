@@ -1,0 +1,113 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" ftp_hostname="ftp://urcorp.mx" ftp_rootfolder="/" exportTarget="FTP" domain="motorworld.mx" resolutions="1x" timestamp="1478250907005">
+  <folder name="css">
+    <file name="site_global.css" crc="4052507572"/>
+    <file name="registro_medios.css" crc="124858426" ref="registro_medios"/>
+    <file name="iefonts_registro_medios.css" crc="532403833" ref="registro_medios"/>
+    <file name="exhibitors.css" crc="466897148" ref="exhibitors"/>
+    <file name="iefonts_exhibitors.css" crc="4035914173" ref="exhibitors"/>
+    <file name="media.css" crc="413018650" ref="media"/>
+    <file name="iefonts_media.css" crc="4168493704" ref="media"/>
+    <file name="index.css" crc="374300314" ref="index"/>
+    <file name="iefonts_index.css" crc="359372789" ref="index"/>
+    <file name="en.css" crc="4110417701" ref="en"/>
+    <file name="iefonts_en.css" crc="4207461939" ref="en"/>
+    <file name="itinerario.css" crc="4097520846" ref="itinerario"/>
+    <file name="iefonts_itinerario.css" crc="4020532681" ref="itinerario"/>
+    <file name="registro_expositores.css" crc="402814624" ref="registro_expositores"/>
+    <file name="iefonts_registro_expositores.css" crc="4157990139" ref="registro_expositores"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="museutils.js" crc="183364071" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4004268962" ref="index:en"/>
+    <file name="pie.js" crc="3827607177" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="webpro.js" crc="3803554875" ref="index:registro_medios:registro_expositores:en:media:exhibitors"/>
+    <file name="form_check.php" crc="277267350" ref="index:registro_medios:registro_expositores:en:media:exhibitors"/>
+    <file name="form_throttle.php" crc="3908387251" ref="index:registro_medios:registro_expositores:en:media:exhibitors"/>
+    <file name="form_process.php" crc="24249335" ref="index:registro_medios:registro_expositores:en:media:exhibitors"/>
+    <file name="form-u1172.php" crc="114718265" ref="index"/>
+    <file name="form-u1103.php" crc="3943646847" ref="index"/>
+    <file name="form-u1233.php" crc="142484546" ref="registro_medios"/>
+    <file name="form-u1336.php" crc="454210756" ref="registro_expositores"/>
+    <file name="form-u1460.php" crc="114718265" ref="en"/>
+    <file name="form-u1500.php" crc="3927814353" ref="en"/>
+    <file name="form-u1543.php" crc="4205951882" ref="media"/>
+    <file name="form-u1637.php" crc="508825734" ref="exhibitors"/>
+  </folder>
+  <folder name="images">
+    <file name="mw_poster_web.png" crc="499698574" seo="true" ref="index:en"/>
+    <file name="mw_logo_qro_rgb-06.png" crc="316769215" seo="true" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="ooooo-u501-fr.png" crc="24446543" ref="index:en"/>
+    <file name="pasted svg 62x70.svg" crc="3791346101" ref="index:en"/>
+    <file name="pasted svg 62x70_poster_.png" crc="3981172726" ref="index"/>
+    <file name="pasted svg 55351x73.svg" crc="4192873442" ref="index:en"/>
+    <file name="pasted svg 55351x73_poster_.png" crc="3782192527" ref="index"/>
+    <file name="papermobile-u627-fr.png" crc="111963120" ref="index:en"/>
+    <file name="new_3751_0b-u1015-fr.png" crc="161577587" ref="index:en"/>
+    <file name="blank.gif" crc="4208392903" ref="index:en"/>
+    <file name="u1177-fss.png" crc="371193091" ref="index"/>
+    <file name="u1183-17.png" crc="122949014" ref="index"/>
+    <file name="u1183-17-r.png" crc="187103655" ref="index"/>
+    <file name="u1183-17-m.png" crc="187103655" ref="index"/>
+    <file name="u1183-17-fs.png" crc="3860900372" ref="index"/>
+    <file name="u1112-17.png" crc="4174445110" ref="index"/>
+    <file name="u1112-17-r.png" crc="31926867" ref="index"/>
+    <file name="u1112-17-m.png" crc="31926867" ref="index"/>
+    <file name="u1112-17-fs.png" crc="214182814" ref="index"/>
+    <file name="twitter.png" crc="4102706121" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="facebook.png" crc="317936629" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="mw_logo_b_negro.png" crc="339437966" seo="true" ref="index:registro_medios:registro_expositores:itinerario:en:media:exhibitors"/>
+    <file name="u1235-17.png" crc="4174445110" ref="registro_medios"/>
+    <file name="u1235-17-r.png" crc="31926867" ref="registro_medios"/>
+    <file name="u1235-17-m.png" crc="31926867" ref="registro_medios"/>
+    <file name="u1235-17-fs.png" crc="214182814" ref="registro_medios"/>
+    <file name="u1345-17.png" crc="4174445110" ref="registro_expositores"/>
+    <file name="u1345-17-r.png" crc="31926867" ref="registro_expositores"/>
+    <file name="u1345-17-m.png" crc="31926867" ref="registro_expositores"/>
+    <file name="u1345-17-fs.png" crc="214182814" ref="registro_expositores"/>
+    <file name="14114122_1220975907923858_1117975769_o.jpg" crc="4247691589" seo="true" ref="itinerario"/>
+    <file name="14074534_1221860401168742_843362987_o.jpg" crc="4148290758" seo="true" ref="itinerario"/>
+    <file name="u1461-fss.png" crc="197131141" ref="en"/>
+    <file name="u1468-17.png" crc="3996019029" ref="en"/>
+    <file name="u1468-17-r.png" crc="330529853" ref="en"/>
+    <file name="u1468-17-m.png" crc="330529853" ref="en"/>
+    <file name="u1468-17-fs.png" crc="4153573893" ref="en"/>
+    <file name="u1520-17.png" crc="517054916" ref="en"/>
+    <file name="u1520-17-r.png" crc="39223847" ref="en"/>
+    <file name="u1520-17-m.png" crc="39223847" ref="en"/>
+    <file name="u1520-17-fs.png" crc="3827080777" ref="en"/>
+    <file name="u1552-17.png" crc="517054916" ref="media"/>
+    <file name="u1552-17-r.png" crc="39223847" ref="media"/>
+    <file name="u1552-17-m.png" crc="39223847" ref="media"/>
+    <file name="u1552-17-fs.png" crc="3827080777" ref="media"/>
+    <file name="u1653-17.png" crc="517054916" ref="exhibitors"/>
+    <file name="u1653-17-r.png" crc="39223847" ref="exhibitors"/>
+    <file name="u1653-17-m.png" crc="39223847" ref="exhibitors"/>
+    <file name="u1653-17-fs.png" crc="3827080777" ref="exhibitors"/>
+  </folder>
+  <file name="index.html" crc="28200902" seo="true" mt="1478250783257" redirect="true"/>
+  <file name="registro_medios.html" crc="3793859334" seo="true" mt="1474574142029" redirect="true"/>
+  <file name="registro_expositores.html" crc="3767576588" seo="true" mt="1472017410121" redirect="true"/>
+  <file name="itinerario.html" crc="530126091" seo="true" mt="1472168653086" redirect="true"/>
+  <file name="en.html" crc="3856848370" seo="true" mt="1478250829711" redirect="true"/>
+  <file name="media.html" crc="430701410" seo="true" mt="1474574167491" redirect="true"/>
+  <file name="exhibitors.html" crc="4237350317" seo="true" mt="1474574199765" redirect="true"/>
+  <linkData>
+    <DESKTOP>
+      <page name="media" filename="media.html" muse_href="page:U1575"/>
+      <page name="Exhibitors" filename="exhibitors.html" muse_href="page:U1669"/>
+      <page name="registro_medios" filename="registro_medios.html" muse_href="page:U1222"/>
+      <page name="registro_expositores" filename="registro_expositores.html" muse_href="page:U1360"/>
+      <page name="ITINERARIO" filename="itinerario.html" muse_href="page:U1415"/>
+      <page name="landing_esp" filename="index.html" muse_href="page:U74">
+        <anchor name="Registro" html_id="registro" muse_href="anchor:U69:U1102"/>
+        <anchor name="Newsletter" html_id="newsletter" muse_href="anchor:U69:U1213"/>
+      </page>
+      <page name="en" filename="en.html" muse_href="page:U1528">
+        <anchor name="Registro" html_id="registro" muse_href="anchor:U1429:U1490"/>
+        <anchor name="Newsletter" html_id="newsletter" muse_href="anchor:U1429:U1498"/>
+      </page>
+    </DESKTOP>
+  </linkData>
+</manifest>

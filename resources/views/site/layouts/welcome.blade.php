@@ -56,7 +56,9 @@
     <div id="header" class="col-xs-12 app-header no-side-padding">
       <div id="navbar" class="col-xs-12 no-side-padding">
         <div class="col-sm-3 col-xs-12 app-logo-container no-side-padding">
+        <a href="#home">
           <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" alt="UrCorp logo" class="app-logo" title="UrCorp logo" />
+        </a>
           <button id="btn-open-nav" class="btn-menu btn btn-primary pull-right visible-xs" type="button" data-toggle="collapse" data-target="#nav" aria-expanded="false" aria-controls="navbar">
               <span class="fa fa-bars"></span>
           </button>

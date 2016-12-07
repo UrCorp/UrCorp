@@ -3,16 +3,18 @@
 @section('content')
 @include('flash::message')
 <section>
-  <div class="col-xs-12 no-padding app-jumbotron">
+  <div class="col-xs-12 no-padding app-jumbotron" id="home">
     <div class="col-xs-12 app-slogan-container">
       <div class="col-xs-12">
         <img src="{!! asset('public/assets/img/v2/urcorp-slogan.png') !!}" alt="UrCorp eslogan" title="UrCorp eslogan" class="app-slogan" />
       </div>
       <div class="col-xs-12 app-arrow-container">
+      <a href="https://facebook.com" style="z-index: 10">
         <img src="{!! asset('public/assets/img/v2/icon-down-arrow.svg') !!}" alt="Flecha hacia abajo" title="Ir Abajo" />
+      </a>
       </div>
     </div>
-    <div class="coverpage-mobile visible-xs"></div>
+    <div class="coverpage-mobile visible-xs" style="z-index: 1"></div>
     <video class="hidden-xs" autoplay muted loop>
       <source src="{!! asset('public/assets/video/welcome-v2.mp4?v='.time()) !!}" type="video/mp4" >
       <!--
@@ -22,7 +24,7 @@
     </video>
     <div class="col-xs-12 bg-black app-clients-container">
       <div class="col-sm-3 col-xs-12">
-      <a href="http://www.pechakucha.org/" title="pechakucha.org" target="_blank">
+      <a href="http://www.pechakucha.org/cities/queretaro" title="pechakucha.org" target="_blank">
         <img src="{!! asset('public/assets/img/v2/logo-client-1.svg') !!}" class="logo-client logo-client-1" alt="Pecha Kucha Night" title="Pecha Kucha Night">
       </a>
       </div>
@@ -221,7 +223,7 @@
             <header>
               <div class="col-xs-12 header">
                 <h3 class="text-center title">BRANDING</h3>
-                <h4 class="text-center description">Emprendedores y Freelancers</h4>
+                <h4 class="text-center description">Emprendedores y Freelancers<br/>&nbsp;</h4>
               </div>
             </header>
             <div class="col-xs-12 content">
@@ -361,14 +363,14 @@
             {!! Form::label('contact[msg]', 'Cuéntanos más de tu proyecto') !!}
             {!! Form::textarea('contact[msg]', null, ['class' => 'form-control', 'maxlength' => 512, 'rows' => 3]) !!}
           </div>
-				<div class="form-group">
-                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
-				  {!! Form::label('contact[KIT]', 'WEB BÁSICO') !!}
-                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
-				  {!! Form::label('contact[KIT]', 'BRANDING') !!}
-                  {!! Form::radio('contact[KIT]', null, ['class' => 'form-control col-sm-3 col-xs-12']) !!}
-				  {!! Form::label('contact[KIT]', 'PYME WEB') !!}
-                </div>
+				  <div class="form-group">
+            {!! Form::radio('contact[kit]', 'WEB BÁSICO', ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				    {!! Form::label('contact[kit]', 'WEB BÁSICO') !!}
+            {!! Form::radio('contact[kit]', 'BRANDING', ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				    {!! Form::label('contact[kit]', 'BRANDING') !!}
+            {!! Form::radio('contact[kit]', 'PYME WEB', ['class' => 'form-control col-sm-3 col-xs-12']) !!}
+				    {!! Form::label('contact[kit]', 'PYME WEB') !!}
+          </div>
           <div class="form-group text-center">
             <button class="btn-send-contact">
               ENVIAR

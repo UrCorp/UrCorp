@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^motorworld\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.motorworld\.com\.mx$
+RewriteRule ^/?$ "http\:\/\/motorworld\.mx\/" [R=301,L]
+

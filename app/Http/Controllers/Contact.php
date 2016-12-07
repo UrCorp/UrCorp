@@ -35,8 +35,15 @@ class Contact extends Controller
         $mail_sent = Mail::send('site.emails.contact', ['contact' => $contact], function ($m) use ($contact) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
           $m->replyTo($contact['email'], $contact['name']);
-          $m->to('contacto@urcorp.mx', 'Contacto UrCorp');
-          $m->subject('[contacto] '.$contact['name'].' | UrCorp');
+          $m->to('eduardo.vera.pineda@gmail.com', 'Contacto UrCorp');
+          $m->subject('Kit:'.$contact['kit'].' | UrCorp');
+        });
+
+        $mail_sent_client = Mail::send('site.emails.contact_client', ['contact' => $contact], function ($m) use ($contact) {
+          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
+          $m->replyTo('ventas@urcorp.mx', 'Ventas UrCorp');
+          $m->to($contact['email'], $contact['name']);
+          $m->subject('Cotización UrCorp'); 
         });
 
         if ($mail_sent) {
