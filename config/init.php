@@ -2960,8 +2960,8 @@ return [
 
   'items' => [
     [
-      'name'              => 'E-mail Login',
-      'short_description' => 'Inicio de sesión vía E-mail',
+      'name'              => 'Página Informativa',
+      'short_description' => 'Página web sencilla con 5 secciones y formulario de contacto.',
       'section_id'        => 1,
       'icon_id'           => 250,
       'item_platform'     => [
@@ -2999,6 +2999,1150 @@ return [
           'platform_id' => 6,
           'additional'  => [
             'price' => 1650
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Filtros',
+      'short_description' => 'Los filtros son un elemento importante dentro de una búsqueda ya que facilita al usuario el orden y la forma en que se muestran los datos.',
+      'section_id'        => 1,
+      'icon_id'           => 201,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Inicio de sesión vía Redes Sociales',
+      'short_description' => 'Es un sistema de ingreso de usuarios por medio de una red social. Permite al usuario el acceso a cualquier interfaz o contenido cuya restricción fue determinada con la finalidad de llevar un mejor control en el tráfico web.',
+      'section_id'        => 1,
+      'icon_id'           => 271,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Perfiles',
+      'short_description' => 'El sistema de perfil de usuarios, en general permite almacenar cualquier tipo de información o configuración relacionada a un usuario, esto con la finalidad de poder acceder a estas características posteriormente. ',
+      'section_id'        => 1,
+      'icon_id'           => 425,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Panel de Control',
+      'short_description' => 'El Dashboard o Panel de control es un software que provee una interfaz gráfica para la gestión de sistemas automatizados así como también para la gestión de contenidos, configuraciones, administración de servicios, privilegios de usuario, etc.',
+      'section_id'        => 1,
+      'icon_id'           => 162,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Chat',
+      'short_description' => 'El Chat es un sistema de comunicación en tiempo real, lo cual permite enviar mensajes de forma instantánea mediante el uso de un software.',
+      'section_id'        => 1,
+      'icon_id'           => 710,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Pagos ',
+      'short_description' => 'Medio de pago online, para transacciones por internet. ',
+      'section_id'        => 1,
+      'icon_id'           => 470,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Geolocalización y brújula con API Google Maps',
+      'short_description' => 'Un geolocalizador permite ubicar la zona geográfica de su dispositivo así como su orientación, las aplicaciones pueden ser diversas dependiendo de la finalidad que se le quiera dar.',
+      'section_id'        => 1,
+      'icon_id'           => 270,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Calificación ',
+      'short_description' => 'El FeedBack es un medio de retroalimentación a través de las redes sociales. Sus principales características son las API’s de publicación de contenidos, comentarios, botones de “me gusta”, botones de “compartir” entre otros.',
+      'section_id'        => 1,
+      'icon_id'           => 376,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Compartir en Redes Sociales',
+      'short_description' => 'El Social sharing es un elemento para compartir contenidos web en las redes sociales con la finalidad de difundir cierta información de tu página web.',
+      'section_id'        => 1,
+      'icon_id'           => 347,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 3000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 3000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 2800
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 2800
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 2300
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 2300
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Integración mensajería SMS',
+      'short_description' => 'La Integración de SMS otorga la posibilidad de enviar SMS de forma automatizada por medio de una interfaz de usuario. Muy útil para las empresas que envian recordatorios a sus clientes de sus pagos vencidos o atrasados. ',
+      'section_id'        => 1,
+      'icon_id'           => 343,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 8500
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 8500
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Configuración de Privacidad de Usuarios',
+      'short_description' => 'Las configuraciones de privacidad de usuario permitirán darle un entorno más seguro a la información de tus usuarios en tu sitio web o aplicación.',
+      'section_id'        => 1,
+      'icon_id'           => 427,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Calendario',
+      'short_description' => 'La integración de calendario permitirá informar a los usuarios de aquellos eventos próximos que tienes.',
+      'section_id'        => 1,
+      'icon_id'           => 115,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 5500
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 5500
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Galería de Fotos/Videos',
+      'short_description' => 'Una galería de fotos o video permitirá darle más estilo a tú sitio web o aplicación móvil. ',
+      'section_id'        => 1,
+      'icon_id'           => 312,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Códigos QR',
+      'short_description' => 'Al igual que los códigos de barra, los códigos QR permiten identificar diversos articulos, sin embargo,  incluso su aplicación es más amplia ya que pueden adjuntarse promociones de alguna temporada o sitios web en especifico.',
+      'section_id'        => 1,
+      'icon_id'           => 323,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8450
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8450
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Código de barras',
+      'short_description' => 'Los códigos de barras permiten identificar de manera oficial un producto.',
+      'section_id'        => 1,
+      'icon_id'           => 75,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 5200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 5200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Lista de Tareas',
+      'short_description' => 'Una lista de tareas permite gestionar las distintas acciones a realizar dentro de una aplicación. Sus aplicaciones pueden ser diferentes dependiendo del área.',
+      'section_id'        => 1,
+      'icon_id'           => 514,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Carrito de Compras',
+      'short_description' => 'Coloca un carrito de compras en tu página web o aplicación móvil. Su principal función es poder almacenar los productos o artículos elegidos por el cliente. Hoy en día millones de tiendas virtuales ponen a disposición este sistema para ser más prácticos.',
+      'section_id'        => 1,
+      'icon_id'           => 23,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Audio/Musica',
+      'short_description' => 'Coloca cualquier tipo de audio dentro de tú página web o aplicación. Dale un ambiente más agradable e incluso gestiona playlist.',
+      'section_id'        => 1,
+      'icon_id'           => 297,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 3500
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 3500
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Cámara/Video',
+      'short_description' => 'Es un plug-in que permite la disponibilidad de la cámara de cualquier dispositivo para distintos usos.',
+      'section_id'        => 1,
+      'icon_id'           => 430,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sincronización en todos los dispositvos',
+      'short_description' => 'La sincronización en todos los dispositivos permite potencializar una aplicación dando lugar a nuevas funcionalidades desarrolladas a base de la nube. Un ejemplo simple puede ser la subida de archivos para alojamiento en la nube y total acceso desde pc. ',
+      'section_id'        => 1,
+      'icon_id'           => 541,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Buscador Web',
+      'short_description' => 'Permite realizar búsquedas dentro de su sitio web para mostrar diversos tipos de contenidos ya sea algún tipo de información, fotografías, audio, video, etc. ',
+      'section_id'        => 1,
+      'icon_id'           => 25,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 10450
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 10450
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de tickets ',
+      'short_description' => 'El Sistema de Tickets permite mostrar datos ordenados de alguna operación realizada. Su aplicación es muy amplia, puede ser desde transacciones por internet, peticiones de usuarios hasta promociones de algún articulo generadas vía web. ',
+      'section_id'        => 2,
+      'icon_id'           => 401,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Administración de Pagos/Cuentas',
+      'short_description' => 'La administración de pagos ofrece una interfaz mediante la cual se tiene el control sobre las transacciones realizadas, así como la información de quién y en qué momento se realizaron los pagos. ',
+      'section_id'        => 2,
+      'icon_id'           => 292,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Administración por Usuarios con Privilegios',
+      'short_description' => 'El Panel de Control de Usuarios otorga una mayor fiabilidad en cuanto a la gestión de los usuarios teniendo un total control de ellos. Sus principales características son la modificación de información, permisos, bloqueos o baja de usuarios.',
+      'section_id'        => 2,
+      'icon_id'           => 426,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Reportes',
+      'short_description' => 'Reporting es un sistema que permite generar reportes en base a una serie de criterios, cálculos, estadísticas o información de cualquier tipo. Es comunmente utilizado por empresas que requieren obtener datos de sus ventas realizadas en un determinado tiem',
+      'section_id'        => 2,
+      'icon_id'           => 515,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Aprobación/Moderación',
+      'short_description' => 'El sistema de Moderación es una implementación sobre el Sistema de FeedBack o retroalimentación, en donde se puede determinar que contenidos, comentarios o cualquier tipo de flujo de información puede permitirse en una aplicación. ',
+      'section_id'        => 2,
+      'icon_id'           => 8,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
           ]
         ]
       ]
