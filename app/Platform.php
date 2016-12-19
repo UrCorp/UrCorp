@@ -37,6 +37,10 @@ class Platform extends Model implements SluggableInterface
     return $this->belongsTo('App\Icon');
   }
 
+  public function quotes() {
+    return $this->belongsToMany('App\Quote', 'quotes_platforms')->withTimestamps();
+  }
+
   /**
    * Platform - Mutators
    * ============================================================= //

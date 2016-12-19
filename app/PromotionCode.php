@@ -14,4 +14,8 @@ class PromotionCode extends Model
   public function referringUsers() {
     return $this->belongsToMany('App\ReferringUser', 'promotion_codes_referring_users')->withTimestamps();
   }
+
+  public function quotes() {
+    return $this->belongsToMany('App\Quote', 'quotes_promotion_codes')->withTimestamps();
+  }
 }

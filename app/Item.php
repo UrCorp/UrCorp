@@ -38,6 +38,10 @@ class Item extends Model implements SluggableInterface
     return $this->belongsTo('App\Icon');
   }
 
+  public function quotes() {
+    return $this->belongsToMany('App\Quote', 'quotes_items')->withTimestamps();
+  }
+
   /**
    * Item - Mutators
    * ============================================================= //
