@@ -39,12 +39,12 @@
   <meta name="keywords" content="">
   <!-- END [META TAGS] -->
 
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/hover.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/jquery.loading.css') !!}">
-  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/admin.css') !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/animate.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/hover.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/jquery.loading.css?v='.time()) !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/admin.css?v='.time()) !!}">
 </head>
 <body id="app-layout">
   <nav class="navbar navbar-default navbar-static-top">
@@ -127,11 +127,11 @@
     </div>
   </div>
   <!-- JavaScripts -->
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('/public/assets/js/defiant.min.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js')!!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js') !!}"></script>
-  <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.js?v='.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('/public/assets/js/defiant.min.js?v='.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.loading.js?v='.time())!!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js?v='.time()) !!}"></script>
+  <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js?v='.time()) !!}"></script>
   @yield('scripts')
   {{-- <script src="{!! elixir('js/app.js') !!}"></script> --}}
 </body>

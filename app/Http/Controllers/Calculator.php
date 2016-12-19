@@ -84,7 +84,6 @@ class Calculator extends Controller
 
     $quote = $request->input('quote');
 
-
     $validation = Validator::make($quote, [
       'email'       => 'required|email|max:250',
       'platforms'   => 'required|array',

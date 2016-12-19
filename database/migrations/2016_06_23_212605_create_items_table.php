@@ -18,6 +18,7 @@ class CreateItemsTable extends Migration
        * Items - Fields
        * ============================================================= //
        */
+      $table->engine = 'InnoDB';
       $table->increments('id');
       $table->string('name', 45);
       $table->string('slug')->nullable();
@@ -43,6 +44,7 @@ class CreateItemsTable extends Migration
        * Item/Platform - Fields
        * ============================================================= //
        */
+      $table->engine = 'InnoDB';
       $table->integer('item_id')->unsigned();
       $table->integer('platform_id')->unsigned();
       $table->decimal('price', 17, 4);

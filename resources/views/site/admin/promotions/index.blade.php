@@ -10,7 +10,7 @@
   <thead>
     <tr>
       <th class="text-center">Código</th>
-      <th class="text-center">Porcentaje (%)</th>
+      <th class="text-center">Descuento (%)</th>
       <th class="text-center">Nombre (Referente)</th>
       <th class="text-center">E-mail (Referente)</th>
       <th class="text-center">Opciones</th>

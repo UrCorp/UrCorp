@@ -17,6 +17,7 @@ class CreatePromotionCodesTable extends Migration
        * PromotionCodes - Fields
        * ============================================================= //
        */
+      $table->engine = 'InnoDB';
       $table->increments('id');
       $table->string('code');
       $table->decimal('percentage', 17, 4);
@@ -28,6 +29,7 @@ class CreatePromotionCodesTable extends Migration
      * ============================================================= //
      */
     Schema::create('promotion_codes_referring_users', function(Blueprint $table) {
+      $table->engine = 'InnoDB';
       $table->integer('promotion_code_id')->unsigned();
       $table->integer('referring_user_id')->unsigned();
       $table->timestamps();
