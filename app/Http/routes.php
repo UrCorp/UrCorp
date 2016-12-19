@@ -248,6 +248,10 @@ Route::group(['as' => 'site.'], function () {
 
       Route::group(['prefix' => 'promotion', 'as' => 'promotion.'], function () {
         
+        Route::get('/discount/{promotionCode}', [
+          'uses'    => 'Admin\Promotions@getDiscount',
+          'as'      => 'getDiscount'
+        ]);
       });
     });
   });

@@ -1,5 +1,209 @@
 /* Inicio [Estilos de uso general] */
 
+/* DEFINED VARIABLES 
+   ========================================================================= */
+
+// White
+$white: #F1F1F1;
+$whiteDark: #F1F1F1;
+$whiteLight: #FFFFFF;
+
+// Red
+$red: #FF0000;
+$redLight: #FF0000;
+$redDark: #DD0000;
+
+// Green
+$green: #39B54A;
+$greenDark: #39B54A;
+$greenLight: #4fd330;
+
+// Blue
+$blue: #337ab7;
+$blueLight: #039be5;
+
+// Yellow
+$yellow: #FFFF00;
+
+// Purple
+$purple: #6C1C7F;
+$purpleLight: #9E86B6;
+
+// Black
+$black: #000000;
+$blackLight: #1B1F22;
+
+// Gray
+$gray: #EDEDED;
+$grayLight: #DFDFDF;
+$grayDark: #555555;
+
+
+/* DEFINED MIXINS 
+   ========================================================================= */
+
+@mixin transition {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+@mixin btn {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0 !important;
+  background-color: $gray;
+  color: $black;
+  border: none;
+  @include transition;
+}
+
+@mixin btn-hover {
+  outline: 0 !important;
+  background-color: $grayLight;
+  color: $blackLight;
+}
+
+@mixin btn-link {
+  @include btn;
+  background-color: inherit;
+  color: $blueLight;
+}
+
+@mixin btn-link-hover {
+  @include btn-hover;
+  background-color: inherit;
+  color: $blue;
+}
+
+@mixin btn-success {
+  @include btn;
+  color: $white;
+  background-color: $greenDark;
+  border: 1px solid $greenDark;
+}
+
+@mixin btn-success-hover {
+  color: $greenDark;
+  background-color: inherit;
+  border: 1px solid $greenDark;
+}
+
+@mixin btn-warning {
+  @include btn;
+  color: $black;
+  background-color: $yellow;
+  border: 1px solid $yellow;
+}
+
+@mixin btn-warning-hover {
+  color: $purple !important;
+  background-color: inherit !important;
+  border: 1px solid $purpleLight !important;
+}
+
+@mixin share {
+  cursor: pointer;
+  font-size: 32px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: $blue;
+  @include transition;
+}
+
+@mixin share-hover {
+  color: $blueLight;
+}
+
+@mixin share-with-facebook {
+  color: rgb(73, 101, 159);
+}
+
+@mixin share-with-facebook-hover {
+  color: rgb(53, 81, 139);
+}
+
+@mixin share-with-twitter {
+  color: rgb(29, 161, 242);
+}
+
+@mixin share-with-twitter-hover {
+  color: rgb(09, 141, 222);
+}
+
+@mixin share-with-google-plus {
+  color: rgb(221, 80, 68);
+}
+
+@mixin share-with-google-plus-hover {
+  color: rgb(201, 60, 48);
+}
+
+/* APP STYLES
+   ========================================================================= */
+
+.btn-warning {
+  @include btn-warning;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning:active:hover,
+.btn-warning:active:focus {
+  @include btn-warning-hover;
+}
+
+.fa.share {
+  @include share;
+}
+
+.fa.share:hover,
+.fa.share:focus,
+.fa.share:active,
+.fa.share:active:hover,
+.fa.share:active:focus {
+  @include share-hover;
+}
+
+.fa.share-with-facebook {
+  @include share-with-facebook;
+}
+
+.fa.share-with-facebook:hover,
+.fa.share-with-facebook:focus,
+.fa.share-with-facebook:active,
+.fa.share-with-facebook:active:hover,
+.fa.share-with-facebook:active:focus {
+  @include share-with-facebook-hover;
+}
+
+.fa.share-with-twitter {
+  @include share-with-twitter;
+}
+
+.fa.share-with-twitter:hover,
+.fa.share-with-twitter:focus,
+.fa.share-with-twitter:active,
+.fa.share-with-twitter:active:hover,
+.fa.share-with-twitter:active:focus {
+  @include share-with-twitter-hover;
+}
+
+.fa.share-with-google-plus {
+  @include share-with-google-plus;
+}
+
+.fa.share-with-google-plus:hover,
+.fa.share-with-google-plus:focus,
+.fa.share-with-google-plus:active,
+.fa.share-with-google-plus:active:hover,
+.fa.share-with-google-plus:active:focus {
+  @include share-with-google-plus-hover;
+}
+
 video {
   width: 100%;
   height: 100%;
@@ -39,6 +243,10 @@ video {
   margin-bottom: 15px;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
 .no-border {
   border: 0;
 }
@@ -55,6 +263,15 @@ video {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  max-height: 1px;
+  background-color: #E5E5E5;
+  overflow: hidden;
 }
 
 /* Fin [Estilos de uso general] */

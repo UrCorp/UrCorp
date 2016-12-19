@@ -108,4 +108,23 @@ class Promotions extends Controller
     Flash::error('El código de promoción: <b>' . $promotionCode->code . '</b> ha sido eliminado.');
     return redirect()->route('site.admin.panel.promotions.index');
   }
+
+  public function getDiscount($code) {
+    $resp = [
+      'status'  => 'CONNECTION_ERROR',
+      'msg'     => 'Existe un error en la conexión <br/>¡Por favor, intente más tarde!'
+    ];
+    $promotionCode = PromotionCode::whereCode($code);
+
+    if ($promotionCode->count() > 0) {
+      $promotionCode = $promotionCode->first();
+      $resp['discount'] = (double) $promotionCode->percentage;
+      $resp['msg'] = '¡Promoción aplicada exitosamente!';
+      $resp['status'] = 'SUCCESS';
+    } else if ($promotionCode->count() == 0) {
+      $resp['msg'] = 'El código de promoción no se encuentra registrado.';
+      $resp['status'] = 'VALIDATION_ERROR';
+    }
+    return response()->json($resp);
+  }
 }

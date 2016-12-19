@@ -1,17 +1,17 @@
 @extends('site.layouts.calculator')
 
 @section('content')
-<div class="container calculator-container">
+<div  class="container calculator-container">
   <div class="row navbar-margin">
-    <div class="app-calculator col-xs-12 no-side-padding">
+    <div id="calculator" class="app-calculator col-xs-12 no-side-padding">
       <div id="items-container" class="items-container col-md-8 col-sm-8 no-padding">
-        {!! Form::open(['method' => 'POST', 'id' => 'form-web-calculator']) !!}
-          <select id="items-selector" name="quote[items][]" class="hidden" multiple>
+        {!! Form::open(['method' => 'POST', 'id' => 'form-web-calculator', 'class' => 'calculator-form']) !!}
+          <select id="items-selector" name="quote[items][]" class="calculator-select-items hidden" multiple>
             @foreach ($calculator->items as $item)
               <option id="item-{{ $item->slug }}" value="{{ $item->slug }}">{{ $item->name }}</option>
             @endforeach
           </select>
-          <select id="platforms-selector" name="quote[platforms][]" class="hidden" multiple>
+          <select id="platforms-selector" name="quote[platforms][]" class="calculator-select-platforms hidden" multiple>
             @foreach ($calculator->platforms as $platform)
               <option id="platform-{{ $platform->slug }}" value="{{ $platform->slug }}">{{ $platform->name }}</option>
             @endforeach
@@ -27,7 +27,7 @@
                 <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
                   <div class="name">
                     <h3 class="text-center noselect">
-                      <span class="icon fa fa-{!! $item->icon->name !!}"></span>
+                      <span class="icon fa">{!! '&#x'.$item->icon->unicode.';' !!}</span>
                       {!! str_limit($item->name, 15) !!}
                     </h3>
                   </div>
@@ -55,41 +55,34 @@
             <div class="panel-heading">
               <h3 class="title text-center">Lista de productos</h3>
             </div>
-            <div id="shoppingCart" class="shoppingCart panel-body">
+            <div id="shoppingCart" class="calculator-shoppingcart panel-body">
               <!-- any item list -->
             </div>
           </div>
         </div>
-        <div id="total" class="calculator-total col-xs-12 no-side-padding">
+        <div id="total" class="calculator-price-container col-xs-12 no-side-padding">
           <div class="panel panel-default">
             <div class="panel-body">
               <div class="col-xs-12 no-side-padding">
-                {!! Form::open(['method' => 'POST', 'id' => 'form-apply-promotion']) !!}
+                {!! Form::open(['method' => 'POST', 'id' => 'form-apply-promotion', 'class' => 'calculator-form-promotion']) !!}
+                  {!! Form::hidden('quote[code]', null, ['class' => 'calculator-input-applied-promotion-code']) !!}
                   <div class="form-group">
                     <label>Código de promoción</label>
                     <div class="input-group">
-                      {!! Form::text('code', null, ['id' => 'promotion-code', 'class' => 'form-control']) !!}
+                      {!! Form::text('code', null, ['id' => 'promotion-code', 'class' => 'calculator-input-promotion-code form-control']) !!}
                       <span class="input-group-btn">
-                        <button id="btn-apply-promo" class="btnApplyPromo btn btn-warning" type="button">Aplicar</button>
+                        <button type="submit" id="btn-apply-promo" class="btnApplyPromo btn btn-warning" type="button">Aplicar</button>
                       </span>
                     </div>
                   </div>
                 {!! Form::close() !!}
               </div>
-              <div class="subtotal-container col-xs-12 no-side-padding">
+              <div class="calculator-subtotal-container col-xs-12 no-side-padding">
                 <div class="col-xs-6 no-side-padding">
                   <h4 class="lbl">Subtotal</h4>
                 </div>
                 <div class="col-xs-6 no-side-padding">
                   <h4 class="subtotal pull-right">$0.00</h4>
-                </div>
-              </div>
-              <div class="discount-container col-xs-12 no-side-padding">
-                <div class="col-xs-6 no-side-padding">
-                  <h5 class="lbl">Descuento</h5>
-                </div>
-                <div class="col-xs-6 no-side-padding">
-                  <h5 class="discount pull-right">$0.00</h5>
                 </div>
               </div>
               <div class="total-container col-xs-12 no-side-padding">
@@ -104,7 +97,7 @@
           </div>
         </div>
         <div id="share-quote" class="col-xs-12 no-side-padding">
-          {!! Form::open(['route' => ['site.api.v1.calculator.sendByEmail', 'web'], 'id' => 'form-send-by-email', 'method' => 'POST']) !!}
+          {!! Form::open(['route' => ['site.api.v1.calculator.sendByEmail', 'web'], 'id' => 'form-send-by-email', 'class' => 'calculator-form-email-send', 'method' => 'POST']) !!}
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="title text-center">Guardar mi cotización</h3>
@@ -115,7 +108,7 @@
                   <input id="quote-email" name="quote[email]" type="email" class="form-control" placeholder="E-mail: example@mail.com">
                 </div>
                 <div class="form-group">
-                  <button class="btnSendByEmail btn btn-success btn-block">
+                  <button type="submit" class="calculator-email-send btn btn-success btn-block">
                     ENVIAR
                   </button>
                 </div>

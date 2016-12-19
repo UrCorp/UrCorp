@@ -20,6 +20,7 @@ class Icon extends Model implements SluggableInterface
 
   protected $fillable = [
     'name',
-    'slug'
+    'slug',
+    'unicode'
   ];
 }

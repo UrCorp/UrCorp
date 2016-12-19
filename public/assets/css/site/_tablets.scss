@@ -310,27 +310,11 @@
 }
 
 .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
-  border: none;
   display: inline-block;
-  background-color: #FFFF00;
-  color: #1B1F22;
   padding: 6px 32px;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
-  border: 1px solid #FFFF00;
-}
-
-.app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  text-decoration: none;
-  color: #6C1C7F;
-  border: 1px solid #9E86B6;
 }
 
 .app-packages-container {
@@ -420,18 +404,10 @@
 }
 
 .app-packages-container .packages-table .package a.btn-chose {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
   display: inline-block;
   width: 100%;
   font-size: 16px;
   padding: 9.84px 59.04px;
-  color: #FFFFFF;
-  background-color: #39B54A;
-  border: 1px solid #3FB254;
 }
 
 .app-packages-container .packages-table .package a.btn-chose:hover {
@@ -443,29 +419,6 @@
   text-decoration: none;
   background-color: inherit;
   color: #39B54A;
-}
-
-.app-packages-container .packages-table .package a.btn-chose.offer {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #FFFF00;
-  border: 1px solid #FFFF00;
-  color: #1B1F22;
-}
-
-.app-packages-container .packages-table .package a.btn-chose.offer:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  text-decoration: none;
-  color: #6C1C7F;
-  border: 1px solid #9E86B6;
 }
 
 .app-packages-container .packages-table .package .features-list {

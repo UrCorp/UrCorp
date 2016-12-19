@@ -1,3 +1,5 @@
+@import "general";
+
 body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -226,7 +228,7 @@ body {
 .app-description-container {
   padding-top: 7px;
   padding-bottom: 22.96px;
-  background-color: #1B1F22;
+  background-color: $blackLight;
   color: #F9F9F9;
 }
 
@@ -260,7 +262,7 @@ body {
 .app-description-container .btn-learn-more {
   display: inline-block;
   background-color: #FFFF00;
-  color: #1B1F22;
+  color: $blackLight;
   padding: 6px 12px;
   text-decoration: none;
   font-weight: bold;
@@ -306,7 +308,7 @@ body {
 }
 
 .app-calculators-container {
-  background-color: #1B1F22;
+  background-color: $blackLight;
   padding-bottom: 0;
 }
 
@@ -357,6 +359,11 @@ body {
   margin-top: 16px;
 }
 
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item:hover {
+  @include transition;
+  background-color: $grayLight;
+}
+
 .app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -388,27 +395,16 @@ body {
 }
 
 .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose {
-  border: none;
   display: inline-block;
-  background-color: #FFFF00;
-  color: #1B1F22;
   padding: 6px 32px;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
-  border: 1px solid #FFFF00;
+  @include btn-warning;
 }
 
 .app-calculators-container .calculator-wrap .calculator .items-container .btn-choose:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  text-decoration: none;
-  color: #6C1C7F;
-  border: 1px solid #9E86B6;
+  @include btn-warning-hover;
 }
 
 .app-packages-container {
@@ -447,7 +443,7 @@ body {
 }
 
 .app-packages-container .packages-table .package .header {
-  background-color: #1B1F22;
+  background-color: $blackLight;
   color: #FFFFFF;
   padding: 8.8px 16.8px 11.2px 16.8px;
 }
@@ -472,7 +468,7 @@ body {
 }
 
 .app-packages-container .packages-table .package .header .offer-notice .title {
-  color: #1B1F22;
+  color: $blackLight;
   font-size: 18px;
   font-weight: bold;
 }
@@ -498,52 +494,23 @@ body {
 }
 
 .app-packages-container .packages-table .package a.btn-chose {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
   display: inline-block;
   width: 100%;
   font-size: 16px;
   padding: 9.84px 59.04px;
-  color: #FFFFFF;
-  background-color: #39B54A;
-  border: 1px solid #3FB254;
+  @include btn-success;
 }
 
 .app-packages-container .packages-table .package a.btn-chose:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  text-decoration: none;
-  background-color: inherit;
-  color: #39B54A;
+  @include btn-success-hover;
 }
 
 .app-packages-container .packages-table .package a.btn-chose.offer {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #FFFF00;
-  border: 1px solid #FFFF00;
-  color: #1B1F22;
+  @include btn-warning;
 }
 
 .app-packages-container .packages-table .package a.btn-chose.offer:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  text-decoration: none;
-  color: #6C1C7F;
-  border: 1px solid #9E86B6;
+  @include btn-warning-hover;
 }
 
 .app-packages-container .packages-table .package .features-list {
@@ -556,7 +523,6 @@ body {
   font-size: 14px;
   margin-bottom: 19.68px;
 }
-
 
 .app-premium-services-container {
   padding-top: 32px;
@@ -652,7 +618,7 @@ body {
 
 .app-contact-form-container .contact-form form .btn-send-contact {
   display: inline-block;
-  background-color: #33CC00;
+  background-color: $greenLight;
   border: 0;
   color: #FFFFFF;
   padding: 4px 32px;
@@ -715,6 +681,11 @@ body {
   padding-right: 1px;
 }
 
+.app-calculator .platforms-container .platform:hover {
+  @include transition;
+  background-color: $grayLight;
+}
+
 .app-calculator .platforms-container .platform.active {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -758,7 +729,7 @@ body {
 }
 
 .app-calculator .items-container .item:hover {
-  background-color: #DFDFDF;
+  background-color: $grayLight;
 }
 
 .app-calculator .items-container .item.active {
@@ -822,10 +793,27 @@ body {
   margin: 10px 0 5px 0;
 }
 
+.app-calculator .calculator-discount-container {
+  color: $red;
+}
+
+.app-calculator .calculator-discount-remove {
+  @include btn-link;
+  padding: 6.5px 9px;
+  margin-left: 4px;
+  color: $red;
+}
+
+.app-calculator .calculator-discount-remove:hover {
+  @include btn-link-hover;
+  color: $redDark;
+  background-color: $whiteDark;
+}
+
 /* RESPONSIVE
    ========================================================================= */
 
-@import "tablets", "desktop", "bigdesktop", "general";
+@import "tablets", "desktop", "bigdesktop";
 
 /* PARCHES DE BOOTSTRAP
    ========================================================================= */
@@ -839,17 +827,33 @@ body {
 }
 
 .modal-header {
+  padding: 15px 30px;
   border-bottom: none;
 }
 
 .modal-header .close {
+  background-color: inherit;
   color: #333333;
   font-size: 24px;
   opacity: 1;
+  padding: 3.5px 8px;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus,
+.modal-header .close:active,
+.modal-header .close:active:hover,
+.modal-header .close:active:focus {
+  @include btn-hover;
+}
+
+.modal-body {
+  padding: 0 15px 15px 15px;
 }
 
 .modal-footer {
-  background-color: #F1F1F1;
+  padding: 15px 30px;
+  background-color: $white;
   border-top: none;
 }
 
@@ -867,25 +871,6 @@ body {
   border-radius: 0;
 }
 
-.btn-warning {
-  background-color: #f8fc00;
-  border-color: #f8fc00;
-  color: #000;
-}
-
-.btn-warning:hover,
-.btn-warning:focus,
-.btn-warning:active {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: inherit;
-  color: #6C1C7F;
-  border-color: #9E86B6;
-}
-
 .btn-success {
   background-color: #4fd330;
   border-color: #4fd330;
@@ -900,6 +885,6 @@ body {
   -o-transition: all .2s;
   transition: all .2s;
   background-color: inherit;
-  color: #39B54A;
-  border-color: #39B54A;
+  color: $greenDark;
+  border-color: $greenDark;
 }

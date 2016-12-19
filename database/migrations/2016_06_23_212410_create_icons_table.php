@@ -18,9 +18,11 @@ class CreateIconsTable extends Migration
        * Icons - Fields
        * ============================================================= //
        */
+      $table->engine = 'InnoDB';
       $table->increments('id');
       $table->string('name', 45);
       $table->string('slug')->nullable();
+      $table->string('unicode', 4);
       $table->timestamps();
     });
     

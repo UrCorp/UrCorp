@@ -17,6 +17,7 @@ class CreateReferringUsersTable extends Migration
        * Referring Users - Fields
        * ============================================================= //
        */
+      $table->engine = 'InnoDB';
       $table->increments('id');
       $table->string('first_name', 45);
       $table->string('last_name', 45);

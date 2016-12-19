@@ -20,2194 +20,2908 @@ return [
 
   'icons' => [
     [
-      "name"  => "fort-awesome"
+      'name'    => 'glass',
+      'unicode' => 'f000'
     ],
     [
-      "name"  => "font-awesome"
+      'name'    => 'music',
+      'unicode' => 'f001'
     ],
     [
-      "name"  => "bars"
+      'name'    => 'search',
+      'unicode' => 'f002'
     ],
     [
-      "name"  => "caret-down"
+      'name'    => 'envelope-o',
+      'unicode' => 'f003'
     ],
     [
-      "name"  => "flag"
+      'name'    => 'heart',
+      'unicode' => 'f004'
     ],
     [
-      "name"  => "wheelchair-alt"
+      'name'    => 'star',
+      'unicode' => 'f005'
     ],
     [
-      "name"  => "camera-retro"
+      'name'    => 'star-o',
+      'unicode' => 'f006'
     ],
     [
-      "name"  => "universal-access"
+      'name'    => 'user',
+      'unicode' => 'f007'
     ],
     [
-      "name"  => "hand-spock-o"
+      'name'    => 'film',
+      'unicode' => 'f008'
     ],
     [
-      "name"  => "ship"
+      'name'    => 'th-large',
+      'unicode' => 'f009'
     ],
     [
-      "name"  => "venus"
+      'name'    => 'th',
+      'unicode' => 'f00a'
     ],
     [
-      "name"  => "file-image-o"
+      'name'    => 'th-list',
+      'unicode' => 'f00b'
     ],
     [
-      "name"  => "spinner"
+      'name'    => 'check',
+      'unicode' => 'f00c'
     ],
     [
-      "name"  => "check-square"
+      'name'    => 'remove',
+      'unicode' => 'f00d'
     ],
     [
-      "name"  => "credit-card"
+      'name'    => 'close',
+      'unicode' => 'f00d'
     ],
     [
-      "name"  => "pie-chart"
+      'name'    => 'times',
+      'unicode' => 'f00d'
     ],
     [
-      "name"  => "won"
+      'name'    => 'search-plus',
+      'unicode' => 'f00e'
     ],
     [
-      "name"  => "file-text-o"
+      'name'    => 'search-minus',
+      'unicode' => 'f010'
     ],
     [
-      "name"  => "arrow-right"
+      'name'    => 'power-off',
+      'unicode' => 'f011'
     ],
     [
-      "name"  => "play-circle"
+      'name'    => 'signal',
+      'unicode' => 'f012'
     ],
     [
-      "name"  => "facebook-official"
+      'name'    => 'gear',
+      'unicode' => 'f013'
     ],
     [
-      "name"  => "medkit"
+      'name'    => 'cog',
+      'unicode' => 'f013'
     ],
     [
-      "name"  => "shopping-cart"
+      'name'    => 'trash-o',
+      'unicode' => 'f014'
     ],
     [
-      "name"  => "envelope"
+      'name'    => 'home',
+      'unicode' => 'f015'
     ],
     [
-      "name"  => "search"
+      'name'    => 'file-o',
+      'unicode' => 'f016'
     ],
     [
-      "name"  => "times-circle"
+      'name'    => 'clock-o',
+      'unicode' => 'f017'
     ],
     [
-      "name"  => "american-sign-language-interpreting"
+      'name'    => 'road',
+      'unicode' => 'f018'
     ],
     [
-      "name"  => "asl-interpreting"
+      'name'    => 'download',
+      'unicode' => 'f019'
     ],
     [
-      "name"  => "assistive-listening-systems"
+      'name'    => 'arrow-circle-o-down',
+      'unicode' => 'f01a'
     ],
     [
-      "name"  => "audio-description"
+      'name'    => 'arrow-circle-o-up',
+      'unicode' => 'f01b'
     ],
     [
-      "name"  => "blind"
+      'name'    => 'inbox',
+      'unicode' => 'f01c'
     ],
     [
-      "name"  => "braille"
+      'name'    => 'play-circle-o',
+      'unicode' => 'f01d'
     ],
     [
-      "name"  => "deaf"
+      'name'    => 'rotate-right',
+      'unicode' => 'f01e'
     ],
     [
-      "name"  => "deafness"
+      'name'    => 'repeat',
+      'unicode' => 'f01e'
     ],
     [
-      "name"  => "envira"
+      'name'    => 'refresh',
+      'unicode' => 'f021'
     ],
     [
-      "name"  => "fa"
+      'name'    => 'list-alt',
+      'unicode' => 'f022'
     ],
     [
-      "name"  => "first-order"
+      'name'    => 'lock',
+      'unicode' => 'f023'
     ],
     [
-      "name"  => "gitlab"
+      'name'    => 'flag',
+      'unicode' => 'f024'
     ],
     [
-      "name"  => "glide"
+      'name'    => 'headphones',
+      'unicode' => 'f025'
     ],
     [
-      "name"  => "glide-g"
+      'name'    => 'volume-off',
+      'unicode' => 'f026'
     ],
     [
-      "name"  => "google-plus-circle"
+      'name'    => 'volume-down',
+      'unicode' => 'f027'
     ],
     [
-      "name"  => "google-plus-official"
+      'name'    => 'volume-up',
+      'unicode' => 'f028'
     ],
     [
-      "name"  => "hard-of-hearing"
+      'name'    => 'qrcode',
+      'unicode' => 'f029'
     ],
     [
-      "name"  => "instagram"
+      'name'    => 'barcode',
+      'unicode' => 'f02a'
     ],
     [
-      "name"  => "low-vision"
+      'name'    => 'tag',
+      'unicode' => 'f02b'
     ],
     [
-      "name"  => "pied-piper"
+      'name'    => 'tags',
+      'unicode' => 'f02c'
     ],
     [
-      "name"  => "question-circle-o"
+      'name'    => 'book',
+      'unicode' => 'f02d'
     ],
     [
-      "name"  => "sign-language"
+      'name'    => 'bookmark',
+      'unicode' => 'f02e'
     ],
     [
-      "name"  => "signing"
+      'name'    => 'print',
+      'unicode' => 'f02f'
     ],
     [
-      "name"  => "snapchat"
+      'name'    => 'camera',
+      'unicode' => 'f030'
     ],
     [
-      "name"  => "snapchat-ghost"
+      'name'    => 'font',
+      'unicode' => 'f031'
     ],
     [
-      "name"  => "snapchat-square"
+      'name'    => 'bold',
+      'unicode' => 'f032'
     ],
     [
-      "name"  => "themeisle"
+      'name'    => 'italic',
+      'unicode' => 'f033'
     ],
     [
-      "name"  => "viadeo"
+      'name'    => 'text-height',
+      'unicode' => 'f034'
     ],
     [
-      "name"  => "viadeo-square"
+      'name'    => 'text-width',
+      'unicode' => 'f035'
     ],
     [
-      "name"  => "volume-control-phone"
+      'name'    => 'align-left',
+      'unicode' => 'f036'
     ],
     [
-      "name"  => "wpbeginner"
+      'name'    => 'align-center',
+      'unicode' => 'f037'
     ],
     [
-      "name"  => "wpforms"
+      'name'    => 'align-right',
+      'unicode' => 'f038'
     ],
     [
-      "name"  => "yoast"
+      'name'    => 'align-justify',
+      'unicode' => 'f039'
     ],
     [
-      "name"  => "adjust"
+      'name'    => 'list',
+      'unicode' => 'f03a'
     ],
     [
-      "name"  => "anchor"
+      'name'    => 'dedent',
+      'unicode' => 'f03b'
     ],
     [
-      "name"  => "archive"
+      'name'    => 'outdent',
+      'unicode' => 'f03b'
     ],
     [
-      "name"  => "area-chart"
+      'name'    => 'indent',
+      'unicode' => 'f03c'
     ],
     [
-      "name"  => "arrows"
+      'name'    => 'video-camera',
+      'unicode' => 'f03d'
     ],
     [
-      "name"  => "arrows-h"
+      'name'    => 'photo',
+      'unicode' => 'f03e'
     ],
     [
-      "name"  => "arrows-v"
+      'name'    => 'image',
+      'unicode' => 'f03e'
     ],
     [
-      "name"  => "asterisk"
+      'name'    => 'picture-o',
+      'unicode' => 'f03e'
     ],
     [
-      "name"  => "at"
+      'name'    => 'pencil',
+      'unicode' => 'f040'
     ],
     [
-      "name"  => "automobile"
+      'name'    => 'map-marker',
+      'unicode' => 'f041'
     ],
     [
-      "name"  => "balance-scale"
+      'name'    => 'adjust',
+      'unicode' => 'f042'
     ],
     [
-      "name"  => "ban"
+      'name'    => 'tint',
+      'unicode' => 'f043'
     ],
     [
-      "name"  => "bank"
+      'name'    => 'edit',
+      'unicode' => 'f044'
     ],
     [
-      "name"  => "bar-chart"
+      'name'    => 'pencil-square-o',
+      'unicode' => 'f044'
     ],
     [
-      "name"  => "bar-chart-o"
+      'name'    => 'share-square-o',
+      'unicode' => 'f045'
     ],
     [
-      "name"  => "barcode"
+      'name'    => 'check-square-o',
+      'unicode' => 'f046'
     ],
     [
-      "name"  => "battery-0"
+      'name'    => 'arrows',
+      'unicode' => 'f047'
     ],
     [
-      "name"  => "battery-1"
+      'name'    => 'step-backward',
+      'unicode' => 'f048'
     ],
     [
-      "name"  => "battery-2"
+      'name'    => 'fast-backward',
+      'unicode' => 'f049'
     ],
     [
-      "name"  => "battery-3"
+      'name'    => 'backward',
+      'unicode' => 'f04a'
     ],
     [
-      "name"  => "battery-4"
+      'name'    => 'play',
+      'unicode' => 'f04b'
     ],
     [
-      "name"  => "battery-empty"
+      'name'    => 'pause',
+      'unicode' => 'f04c'
     ],
     [
-      "name"  => "battery-full"
+      'name'    => 'stop',
+      'unicode' => 'f04d'
     ],
     [
-      "name"  => "battery-half"
+      'name'    => 'forward',
+      'unicode' => 'f04e'
     ],
     [
-      "name"  => "battery-quarter"
+      'name'    => 'fast-forward',
+      'unicode' => 'f050'
     ],
     [
-      "name"  => "battery-three-quarters"
+      'name'    => 'step-forward',
+      'unicode' => 'f051'
     ],
     [
-      "name"  => "bed"
+      'name'    => 'eject',
+      'unicode' => 'f052'
     ],
     [
-      "name"  => "beer"
+      'name'    => 'chevron-left',
+      'unicode' => 'f053'
     ],
     [
-      "name"  => "bell"
+      'name'    => 'chevron-right',
+      'unicode' => 'f054'
     ],
     [
-      "name"  => "bell-o"
+      'name'    => 'plus-circle',
+      'unicode' => 'f055'
     ],
     [
-      "name"  => "bell-slash"
+      'name'    => 'minus-circle',
+      'unicode' => 'f056'
     ],
     [
-      "name"  => "bell-slash-o"
+      'name'    => 'times-circle',
+      'unicode' => 'f057'
     ],
     [
-      "name"  => "bicycle"
+      'name'    => 'check-circle',
+      'unicode' => 'f058'
     ],
     [
-      "name"  => "binoculars"
+      'name'    => 'question-circle',
+      'unicode' => 'f059'
     ],
     [
-      "name"  => "birthday-cake"
+      'name'    => 'info-circle',
+      'unicode' => 'f05a'
     ],
     [
-      "name"  => "bluetooth"
+      'name'    => 'crosshairs',
+      'unicode' => 'f05b'
     ],
     [
-      "name"  => "bluetooth-b"
+      'name'    => 'times-circle-o',
+      'unicode' => 'f05c'
     ],
     [
-      "name"  => "bolt"
+      'name'    => 'check-circle-o',
+      'unicode' => 'f05d'
     ],
     [
-      "name"  => "bomb"
+      'name'    => 'ban',
+      'unicode' => 'f05e'
     ],
     [
-      "name"  => "book"
+      'name'    => 'arrow-left',
+      'unicode' => 'f060'
     ],
     [
-      "name"  => "bookmark"
+      'name'    => 'arrow-right',
+      'unicode' => 'f061'
     ],
     [
-      "name"  => "bookmark-o"
+      'name'    => 'arrow-up',
+      'unicode' => 'f062'
     ],
     [
-      "name"  => "briefcase"
+      'name'    => 'arrow-down',
+      'unicode' => 'f063'
     ],
     [
-      "name"  => "bug"
+      'name'    => 'mail-forward',
+      'unicode' => 'f064'
     ],
     [
-      "name"  => "building"
+      'name'    => 'share',
+      'unicode' => 'f064'
     ],
     [
-      "name"  => "building-o"
+      'name'    => 'expand',
+      'unicode' => 'f065'
     ],
     [
-      "name"  => "bullhorn"
+      'name'    => 'compress',
+      'unicode' => 'f066'
     ],
     [
-      "name"  => "bullseye"
+      'name'    => 'plus',
+      'unicode' => 'f067'
     ],
     [
-      "name"  => "bus"
+      'name'    => 'minus',
+      'unicode' => 'f068'
     ],
     [
-      "name"  => "cab"
+      'name'    => 'asterisk',
+      'unicode' => 'f069'
     ],
     [
-      "name"  => "calculator"
+      'name'    => 'exclamation-circle',
+      'unicode' => 'f06a'
     ],
     [
-      "name"  => "calendar"
+      'name'    => 'gift',
+      'unicode' => 'f06b'
     ],
     [
-      "name"  => "calendar-check-o"
+      'name'    => 'leaf',
+      'unicode' => 'f06c'
     ],
     [
-      "name"  => "calendar-minus-o"
+      'name'    => 'fire',
+      'unicode' => 'f06d'
     ],
     [
-      "name"  => "calendar-o"
+      'name'    => 'eye',
+      'unicode' => 'f06e'
     ],
     [
-      "name"  => "calendar-plus-o"
+      'name'    => 'eye-slash',
+      'unicode' => 'f070'
     ],
     [
-      "name"  => "calendar-times-o"
+      'name'    => 'warning',
+      'unicode' => 'f071'
     ],
     [
-      "name"  => "camera"
+      'name'    => 'exclamation-triangle',
+      'unicode' => 'f071'
     ],
     [
-      "name"  => "car"
+      'name'    => 'plane',
+      'unicode' => 'f072'
     ],
     [
-      "name"  => "caret-square-o-down"
+      'name'    => 'calendar',
+      'unicode' => 'f073'
     ],
     [
-      "name"  => "caret-square-o-left"
+      'name'    => 'random',
+      'unicode' => 'f074'
     ],
     [
-      "name"  => "caret-square-o-right"
+      'name'    => 'comment',
+      'unicode' => 'f075'
     ],
     [
-      "name"  => "caret-square-o-up"
+      'name'    => 'magnet',
+      'unicode' => 'f076'
     ],
     [
-      "name"  => "cart-arrow-down"
+      'name'    => 'chevron-up',
+      'unicode' => 'f077'
     ],
     [
-      "name"  => "cart-plus"
+      'name'    => 'chevron-down',
+      'unicode' => 'f078'
     ],
     [
-      "name"  => "cc"
+      'name'    => 'retweet',
+      'unicode' => 'f079'
     ],
     [
-      "name"  => "certificate"
+      'name'    => 'shopping-cart',
+      'unicode' => 'f07a'
     ],
     [
-      "name"  => "check"
+      'name'    => 'folder',
+      'unicode' => 'f07b'
     ],
     [
-      "name"  => "check-circle"
+      'name'    => 'folder-open',
+      'unicode' => 'f07c'
     ],
     [
-      "name"  => "check-circle-o"
+      'name'    => 'arrows-v',
+      'unicode' => 'f07d'
     ],
     [
-      "name"  => "check-square-o"
+      'name'    => 'arrows-h',
+      'unicode' => 'f07e'
     ],
     [
-      "name"  => "child"
+      'name'    => 'bar-chart-o',
+      'unicode' => 'f080'
     ],
     [
-      "name"  => "circle"
+      'name'    => 'bar-chart',
+      'unicode' => 'f080'
     ],
     [
-      "name"  => "circle-o"
+      'name'    => 'twitter-square',
+      'unicode' => 'f081'
     ],
     [
-      "name"  => "circle-o-notch"
+      'name'    => 'facebook-square',
+      'unicode' => 'f082'
     ],
     [
-      "name"  => "circle-thin"
+      'name'    => 'camera-retro',
+      'unicode' => 'f083'
     ],
     [
-      "name"  => "clock-o"
+      'name'    => 'key',
+      'unicode' => 'f084'
     ],
     [
-      "name"  => "clone"
+      'name'    => 'gears',
+      'unicode' => 'f085'
     ],
     [
-      "name"  => "close"
+      'name'    => 'cogs',
+      'unicode' => 'f085'
     ],
     [
-      "name"  => "cloud"
+      'name'    => 'comments',
+      'unicode' => 'f086'
     ],
     [
-      "name"  => "cloud-download"
+      'name'    => 'thumbs-o-up',
+      'unicode' => 'f087'
     ],
     [
-      "name"  => "cloud-upload"
+      'name'    => 'thumbs-o-down',
+      'unicode' => 'f088'
     ],
     [
-      "name"  => "code"
+      'name'    => 'star-half',
+      'unicode' => 'f089'
     ],
     [
-      "name"  => "code-fork"
+      'name'    => 'heart-o',
+      'unicode' => 'f08a'
     ],
     [
-      "name"  => "coffee"
+      'name'    => 'sign-out',
+      'unicode' => 'f08b'
     ],
     [
-      "name"  => "cog"
+      'name'    => 'linkedin-square',
+      'unicode' => 'f08c'
     ],
     [
-      "name"  => "cogs"
+      'name'    => 'thumb-tack',
+      'unicode' => 'f08d'
     ],
     [
-      "name"  => "comment"
+      'name'    => 'external-link',
+      'unicode' => 'f08e'
     ],
     [
-      "name"  => "comment-o"
+      'name'    => 'sign-in',
+      'unicode' => 'f090'
     ],
     [
-      "name"  => "commenting"
+      'name'    => 'trophy',
+      'unicode' => 'f091'
     ],
     [
-      "name"  => "commenting-o"
+      'name'    => 'github-square',
+      'unicode' => 'f092'
     ],
     [
-      "name"  => "comments"
+      'name'    => 'upload',
+      'unicode' => 'f093'
     ],
     [
-      "name"  => "comments-o"
+      'name'    => 'lemon-o',
+      'unicode' => 'f094'
     ],
     [
-      "name"  => "compass"
+      'name'    => 'phone',
+      'unicode' => 'f095'
     ],
     [
-      "name"  => "copyright"
+      'name'    => 'square-o',
+      'unicode' => 'f096'
     ],
     [
-      "name"  => "creative-commons"
+      'name'    => 'bookmark-o',
+      'unicode' => 'f097'
     ],
     [
-      "name"  => "credit-card-alt"
+      'name'    => 'phone-square',
+      'unicode' => 'f098'
     ],
     [
-      "name"  => "crop"
+      'name'    => 'twitter',
+      'unicode' => 'f099'
     ],
     [
-      "name"  => "crosshairs"
+      'name'    => 'facebook-f',
+      'unicode' => 'f09a'
     ],
     [
-      "name"  => "cube"
+      'name'    => 'facebook',
+      'unicode' => 'f09a'
     ],
     [
-      "name"  => "cubes"
+      'name'    => 'github',
+      'unicode' => 'f09b'
     ],
     [
-      "name"  => "cutlery"
+      'name'    => 'unlock',
+      'unicode' => 'f09c'
     ],
     [
-      "name"  => "dashboard"
+      'name'    => 'credit-card',
+      'unicode' => 'f09d'
     ],
     [
-      "name"  => "database"
+      'name'    => 'feed',
+      'unicode' => 'f09e'
     ],
     [
-      "name"  => "desktop"
+      'name'    => 'rss',
+      'unicode' => 'f09e'
     ],
     [
-      "name"  => "diamond"
+      'name'    => 'hdd-o',
+      'unicode' => 'f0a0'
     ],
     [
-      "name"  => "dot-circle-o"
+      'name'    => 'bullhorn',
+      'unicode' => 'f0a1'
     ],
     [
-      "name"  => "download"
+      'name'    => 'bell',
+      'unicode' => 'f0f3'
     ],
     [
-      "name"  => "edit"
+      'name'    => 'certificate',
+      'unicode' => 'f0a3'
     ],
     [
-      "name"  => "ellipsis-h"
+      'name'    => 'hand-o-right',
+      'unicode' => 'f0a4'
     ],
     [
-      "name"  => "ellipsis-v"
+      'name'    => 'hand-o-left',
+      'unicode' => 'f0a5'
     ],
     [
-      "name"  => "envelope-o"
+      'name'    => 'hand-o-up',
+      'unicode' => 'f0a6'
     ],
     [
-      "name"  => "envelope-square"
+      'name'    => 'hand-o-down',
+      'unicode' => 'f0a7'
     ],
     [
-      "name"  => "eraser"
+      'name'    => 'arrow-circle-left',
+      'unicode' => 'f0a8'
     ],
     [
-      "name"  => "exchange"
+      'name'    => 'arrow-circle-right',
+      'unicode' => 'f0a9'
     ],
     [
-      "name"  => "exclamation"
+      'name'    => 'arrow-circle-up',
+      'unicode' => 'f0aa'
     ],
     [
-      "name"  => "exclamation-circle"
+      'name'    => 'arrow-circle-down',
+      'unicode' => 'f0ab'
     ],
     [
-      "name"  => "exclamation-triangle"
+      'name'    => 'globe',
+      'unicode' => 'f0ac'
     ],
     [
-      "name"  => "external-link"
+      'name'    => 'wrench',
+      'unicode' => 'f0ad'
     ],
     [
-      "name"  => "external-link-square"
+      'name'    => 'tasks',
+      'unicode' => 'f0ae'
     ],
     [
-      "name"  => "eye"
+      'name'    => 'filter',
+      'unicode' => 'f0b0'
     ],
     [
-      "name"  => "eye-slash"
+      'name'    => 'briefcase',
+      'unicode' => 'f0b1'
     ],
     [
-      "name"  => "eyedropper"
+      'name'    => 'arrows-alt',
+      'unicode' => 'f0b2'
     ],
     [
-      "name"  => "fax"
+      'name'    => 'group',
+      'unicode' => 'f0c0'
     ],
     [
-      "name"  => "feed"
+      'name'    => 'users',
+      'unicode' => 'f0c0'
     ],
     [
-      "name"  => "female"
+      'name'    => 'chain',
+      'unicode' => 'f0c1'
     ],
     [
-      "name"  => "fighter-jet"
+      'name'    => 'link',
+      'unicode' => 'f0c1'
     ],
     [
-      "name"  => "file-archive-o"
+      'name'    => 'cloud',
+      'unicode' => 'f0c2'
     ],
     [
-      "name"  => "file-audio-o"
+      'name'    => 'flask',
+      'unicode' => 'f0c3'
     ],
     [
-      "name"  => "file-code-o"
+      'name'    => 'cut',
+      'unicode' => 'f0c4'
     ],
     [
-      "name"  => "file-excel-o"
+      'name'    => 'scissors',
+      'unicode' => 'f0c4'
     ],
     [
-      "name"  => "file-movie-o"
+      'name'    => 'copy',
+      'unicode' => 'f0c5'
     ],
     [
-      "name"  => "file-pdf-o"
+      'name'    => 'files-o',
+      'unicode' => 'f0c5'
     ],
     [
-      "name"  => "file-photo-o"
+      'name'    => 'paperclip',
+      'unicode' => 'f0c6'
     ],
     [
-      "name"  => "file-picture-o"
+      'name'    => 'save',
+      'unicode' => 'f0c7'
     ],
     [
-      "name"  => "file-powerpoint-o"
+      'name'    => 'floppy-o',
+      'unicode' => 'f0c7'
     ],
     [
-      "name"  => "file-sound-o"
+      'name'    => 'square',
+      'unicode' => 'f0c8'
     ],
     [
-      "name"  => "file-video-o"
+      'name'    => 'navicon',
+      'unicode' => 'f0c9'
     ],
     [
-      "name"  => "file-word-o"
+      'name'    => 'reorder',
+      'unicode' => 'f0c9'
     ],
     [
-      "name"  => "file-zip-o"
+      'name'    => 'bars',
+      'unicode' => 'f0c9'
     ],
     [
-      "name"  => "film"
+      'name'    => 'list-ul',
+      'unicode' => 'f0ca'
     ],
     [
-      "name"  => "filter"
+      'name'    => 'list-ol',
+      'unicode' => 'f0cb'
     ],
     [
-      "name"  => "fire"
+      'name'    => 'strikethrough',
+      'unicode' => 'f0cc'
     ],
     [
-      "name"  => "fire-extinguisher"
+      'name'    => 'underline',
+      'unicode' => 'f0cd'
     ],
     [
-      "name"  => "flag-checkered"
+      'name'    => 'table',
+      'unicode' => 'f0ce'
     ],
     [
-      "name"  => "flag-o"
+      'name'    => 'magic',
+      'unicode' => 'f0d0'
     ],
     [
-      "name"  => "flash"
+      'name'    => 'truck',
+      'unicode' => 'f0d1'
     ],
     [
-      "name"  => "flask"
+      'name'    => 'pinterest',
+      'unicode' => 'f0d2'
     ],
     [
-      "name"  => "folder"
+      'name'    => 'pinterest-square',
+      'unicode' => 'f0d3'
     ],
     [
-      "name"  => "folder-o"
+      'name'    => 'google-plus-square',
+      'unicode' => 'f0d4'
     ],
     [
-      "name"  => "folder-open"
+      'name'    => 'google-plus',
+      'unicode' => 'f0d5'
     ],
     [
-      "name"  => "folder-open-o"
+      'name'    => 'money',
+      'unicode' => 'f0d6'
     ],
     [
-      "name"  => "frown-o"
+      'name'    => 'caret-down',
+      'unicode' => 'f0d7'
     ],
     [
-      "name"  => "futbol-o"
+      'name'    => 'caret-up',
+      'unicode' => 'f0d8'
     ],
     [
-      "name"  => "gamepad"
+      'name'    => 'caret-left',
+      'unicode' => 'f0d9'
     ],
     [
-      "name"  => "gavel"
+      'name'    => 'caret-right',
+      'unicode' => 'f0da'
     ],
     [
-      "name"  => "gear"
+      'name'    => 'columns',
+      'unicode' => 'f0db'
     ],
     [
-      "name"  => "gears"
+      'name'    => 'unsorted',
+      'unicode' => 'f0dc'
     ],
     [
-      "name"  => "gift"
+      'name'    => 'sort',
+      'unicode' => 'f0dc'
     ],
     [
-      "name"  => "glass"
+      'name'    => 'sort-down',
+      'unicode' => 'f0dd'
     ],
     [
-      "name"  => "globe"
+      'name'    => 'sort-desc',
+      'unicode' => 'f0dd'
     ],
     [
-      "name"  => "graduation-cap"
+      'name'    => 'sort-up',
+      'unicode' => 'f0de'
     ],
     [
-      "name"  => "group"
+      'name'    => 'sort-asc',
+      'unicode' => 'f0de'
     ],
     [
-      "name"  => "hand-grab-o"
+      'name'    => 'envelope',
+      'unicode' => 'f0e0'
     ],
     [
-      "name"  => "hand-lizard-o"
+      'name'    => 'linkedin',
+      'unicode' => 'f0e1'
     ],
     [
-      "name"  => "hand-paper-o"
+      'name'    => 'rotate-left',
+      'unicode' => 'f0e2'
     ],
     [
-      "name"  => "hand-peace-o"
+      'name'    => 'undo',
+      'unicode' => 'f0e2'
     ],
     [
-      "name"  => "hand-pointer-o"
+      'name'    => 'legal',
+      'unicode' => 'f0e3'
     ],
     [
-      "name"  => "hand-rock-o"
+      'name'    => 'gavel',
+      'unicode' => 'f0e3'
     ],
     [
-      "name"  => "hand-scissors-o"
+      'name'    => 'dashboard',
+      'unicode' => 'f0e4'
     ],
     [
-      "name"  => "hand-stop-o"
+      'name'    => 'tachometer',
+      'unicode' => 'f0e4'
     ],
     [
-      "name"  => "hashtag"
+      'name'    => 'comment-o',
+      'unicode' => 'f0e5'
     ],
     [
-      "name"  => "hdd-o"
+      'name'    => 'comments-o',
+      'unicode' => 'f0e6'
     ],
     [
-      "name"  => "headphones"
+      'name'    => 'flash',
+      'unicode' => 'f0e7'
     ],
     [
-      "name"  => "heart"
+      'name'    => 'bolt',
+      'unicode' => 'f0e7'
     ],
     [
-      "name"  => "heart-o"
+      'name'    => 'sitemap',
+      'unicode' => 'f0e8'
     ],
     [
-      "name"  => "heartbeat"
+      'name'    => 'umbrella',
+      'unicode' => 'f0e9'
     ],
     [
-      "name"  => "history"
+      'name'    => 'paste',
+      'unicode' => 'f0ea'
     ],
     [
-      "name"  => "home"
+      'name'    => 'clipboard',
+      'unicode' => 'f0ea'
     ],
     [
-      "name"  => "hotel"
+      'name'    => 'lightbulb-o',
+      'unicode' => 'f0eb'
     ],
     [
-      "name"  => "hourglass"
+      'name'    => 'exchange',
+      'unicode' => 'f0ec'
     ],
     [
-      "name"  => "hourglass-1"
+      'name'    => 'cloud-download',
+      'unicode' => 'f0ed'
     ],
     [
-      "name"  => "hourglass-2"
+      'name'    => 'cloud-upload',
+      'unicode' => 'f0ee'
     ],
     [
-      "name"  => "hourglass-3"
+      'name'    => 'user-md',
+      'unicode' => 'f0f0'
     ],
     [
-      "name"  => "hourglass-end"
+      'name'    => 'stethoscope',
+      'unicode' => 'f0f1'
     ],
     [
-      "name"  => "hourglass-half"
+      'name'    => 'suitcase',
+      'unicode' => 'f0f2'
     ],
     [
-      "name"  => "hourglass-o"
+      'name'    => 'bell-o',
+      'unicode' => 'f0a2'
     ],
     [
-      "name"  => "hourglass-start"
+      'name'    => 'coffee',
+      'unicode' => 'f0f4'
     ],
     [
-      "name"  => "i-cursor"
+      'name'    => 'cutlery',
+      'unicode' => 'f0f5'
     ],
     [
-      "name"  => "image"
+      'name'    => 'file-text-o',
+      'unicode' => 'f0f6'
     ],
     [
-      "name"  => "inbox"
+      'name'    => 'building-o',
+      'unicode' => 'f0f7'
     ],
     [
-      "name"  => "industry"
+      'name'    => 'hospital-o',
+      'unicode' => 'f0f8'
     ],
     [
-      "name"  => "info"
+      'name'    => 'ambulance',
+      'unicode' => 'f0f9'
     ],
     [
-      "name"  => "info-circle"
+      'name'    => 'medkit',
+      'unicode' => 'f0fa'
     ],
     [
-      "name"  => "institution"
+      'name'    => 'fighter-jet',
+      'unicode' => 'f0fb'
     ],
     [
-      "name"  => "key"
+      'name'    => 'beer',
+      'unicode' => 'f0fc'
     ],
     [
-      "name"  => "keyboard-o"
+      'name'    => 'h-square',
+      'unicode' => 'f0fd'
     ],
     [
-      "name"  => "language"
+      'name'    => 'plus-square',
+      'unicode' => 'f0fe'
     ],
     [
-      "name"  => "laptop"
+      'name'    => 'angle-double-left',
+      'unicode' => 'f100'
     ],
     [
-      "name"  => "leaf"
+      'name'    => 'angle-double-right',
+      'unicode' => 'f101'
     ],
     [
-      "name"  => "legal"
+      'name'    => 'angle-double-up',
+      'unicode' => 'f102'
     ],
     [
-      "name"  => "lemon-o"
+      'name'    => 'angle-double-down',
+      'unicode' => 'f103'
     ],
     [
-      "name"  => "level-down"
+      'name'    => 'angle-left',
+      'unicode' => 'f104'
     ],
     [
-      "name"  => "level-up"
+      'name'    => 'angle-right',
+      'unicode' => 'f105'
     ],
     [
-      "name"  => "life-bouy"
+      'name'    => 'angle-up',
+      'unicode' => 'f106'
     ],
     [
-      "name"  => "life-buoy"
+      'name'    => 'angle-down',
+      'unicode' => 'f107'
     ],
     [
-      "name"  => "life-ring"
+      'name'    => 'desktop',
+      'unicode' => 'f108'
     ],
     [
-      "name"  => "life-saver"
+      'name'    => 'laptop',
+      'unicode' => 'f109'
     ],
     [
-      "name"  => "lightbulb-o"
+      'name'    => 'tablet',
+      'unicode' => 'f10a'
     ],
     [
-      "name"  => "line-chart"
+      'name'    => 'mobile-phone',
+      'unicode' => 'f10b'
     ],
     [
-      "name"  => "location-arrow"
+      'name'    => 'mobile',
+      'unicode' => 'f10b'
     ],
     [
-      "name"  => "lock"
+      'name'    => 'circle-o',
+      'unicode' => 'f10c'
     ],
     [
-      "name"  => "magic"
+      'name'    => 'quote-left',
+      'unicode' => 'f10d'
     ],
     [
-      "name"  => "magnet"
+      'name'    => 'quote-right',
+      'unicode' => 'f10e'
     ],
     [
-      "name"  => "mail-forward"
+      'name'    => 'spinner',
+      'unicode' => 'f110'
     ],
     [
-      "name"  => "mail-reply"
+      'name'    => 'circle',
+      'unicode' => 'f111'
     ],
     [
-      "name"  => "mail-reply-all"
+      'name'    => 'mail-reply',
+      'unicode' => 'f112'
     ],
     [
-      "name"  => "male"
+      'name'    => 'reply',
+      'unicode' => 'f112'
     ],
     [
-      "name"  => "map"
+      'name'    => 'github-alt',
+      'unicode' => 'f113'
     ],
     [
-      "name"  => "map-marker"
+      'name'    => 'folder-o',
+      'unicode' => 'f114'
     ],
     [
-      "name"  => "map-o"
+      'name'    => 'folder-open-o',
+      'unicode' => 'f115'
     ],
     [
-      "name"  => "map-pin"
+      'name'    => 'smile-o',
+      'unicode' => 'f118'
     ],
     [
-      "name"  => "map-signs"
+      'name'    => 'frown-o',
+      'unicode' => 'f119'
     ],
     [
-      "name"  => "meh-o"
+      'name'    => 'meh-o',
+      'unicode' => 'f11a'
     ],
     [
-      "name"  => "microphone"
+      'name'    => 'gamepad',
+      'unicode' => 'f11b'
     ],
     [
-      "name"  => "microphone-slash"
+      'name'    => 'keyboard-o',
+      'unicode' => 'f11c'
     ],
     [
-      "name"  => "minus"
+      'name'    => 'flag-o',
+      'unicode' => 'f11d'
     ],
     [
-      "name"  => "minus-circle"
+      'name'    => 'flag-checkered',
+      'unicode' => 'f11e'
     ],
     [
-      "name"  => "minus-square"
+      'name'    => 'terminal',
+      'unicode' => 'f120'
     ],
     [
-      "name"  => "minus-square-o"
+      'name'    => 'code',
+      'unicode' => 'f121'
     ],
     [
-      "name"  => "mobile"
+      'name'    => 'mail-reply-all',
+      'unicode' => 'f122'
     ],
     [
-      "name"  => "mobile-phone"
+      'name'    => 'reply-all',
+      'unicode' => 'f122'
     ],
     [
-      "name"  => "money"
+      'name'    => 'star-half-empty',
+      'unicode' => 'f123'
     ],
     [
-      "name"  => "moon-o"
+      'name'    => 'star-half-full',
+      'unicode' => 'f123'
     ],
     [
-      "name"  => "mortar-board"
+      'name'    => 'star-half-o',
+      'unicode' => 'f123'
     ],
     [
-      "name"  => "motorcycle"
+      'name'    => 'location-arrow',
+      'unicode' => 'f124'
     ],
     [
-      "name"  => "mouse-pointer"
+      'name'    => 'crop',
+      'unicode' => 'f125'
     ],
     [
-      "name"  => "music"
+      'name'    => 'code-fork',
+      'unicode' => 'f126'
     ],
     [
-      "name"  => "navicon"
+      'name'    => 'unlink',
+      'unicode' => 'f127'
     ],
     [
-      "name"  => "newspaper-o"
+      'name'    => 'chain-broken',
+      'unicode' => 'f127'
     ],
     [
-      "name"  => "object-group"
+      'name'    => 'question',
+      'unicode' => 'f128'
     ],
     [
-      "name"  => "object-ungroup"
+      'name'    => 'info',
+      'unicode' => 'f129'
     ],
     [
-      "name"  => "paint-brush"
+      'name'    => 'exclamation',
+      'unicode' => 'f12a'
     ],
     [
-      "name"  => "paper-plane"
+      'name'    => 'superscript',
+      'unicode' => 'f12b'
     ],
     [
-      "name"  => "paper-plane-o"
+      'name'    => 'subscript',
+      'unicode' => 'f12c'
     ],
     [
-      "name"  => "paw"
+      'name'    => 'eraser',
+      'unicode' => 'f12d'
     ],
     [
-      "name"  => "pencil"
+      'name'    => 'puzzle-piece',
+      'unicode' => 'f12e'
     ],
     [
-      "name"  => "pencil-square"
+      'name'    => 'microphone',
+      'unicode' => 'f130'
     ],
     [
-      "name"  => "pencil-square-o"
+      'name'    => 'microphone-slash',
+      'unicode' => 'f131'
     ],
     [
-      "name"  => "percent"
+      'name'    => 'shield',
+      'unicode' => 'f132'
     ],
     [
-      "name"  => "phone"
+      'name'    => 'calendar-o',
+      'unicode' => 'f133'
     ],
     [
-      "name"  => "phone-square"
+      'name'    => 'fire-extinguisher',
+      'unicode' => 'f134'
     ],
     [
-      "name"  => "photo"
+      'name'    => 'rocket',
+      'unicode' => 'f135'
     ],
     [
-      "name"  => "picture-o"
+      'name'    => 'maxcdn',
+      'unicode' => 'f136'
     ],
     [
-      "name"  => "plane"
+      'name'    => 'chevron-circle-left',
+      'unicode' => 'f137'
     ],
     [
-      "name"  => "plug"
+      'name'    => 'chevron-circle-right',
+      'unicode' => 'f138'
     ],
     [
-      "name"  => "plus"
+      'name'    => 'chevron-circle-up',
+      'unicode' => 'f139'
     ],
     [
-      "name"  => "plus-circle"
+      'name'    => 'chevron-circle-down',
+      'unicode' => 'f13a'
     ],
     [
-      "name"  => "plus-square"
+      'name'    => 'html5',
+      'unicode' => 'f13b'
     ],
     [
-      "name"  => "plus-square-o"
+      'name'    => 'css3',
+      'unicode' => 'f13c'
     ],
     [
-      "name"  => "power-off"
+      'name'    => 'anchor',
+      'unicode' => 'f13d'
     ],
     [
-      "name"  => "print"
+      'name'    => 'unlock-alt',
+      'unicode' => 'f13e'
     ],
     [
-      "name"  => "puzzle-piece"
+      'name'    => 'bullseye',
+      'unicode' => 'f140'
     ],
     [
-      "name"  => "qrcode"
+      'name'    => 'ellipsis-h',
+      'unicode' => 'f141'
     ],
     [
-      "name"  => "question"
+      'name'    => 'ellipsis-v',
+      'unicode' => 'f142'
     ],
     [
-      "name"  => "question-circle"
+      'name'    => 'rss-square',
+      'unicode' => 'f143'
     ],
     [
-      "name"  => "quote-left"
+      'name'    => 'play-circle',
+      'unicode' => 'f144'
     ],
     [
-      "name"  => "quote-right"
+      'name'    => 'ticket',
+      'unicode' => 'f145'
     ],
     [
-      "name"  => "random"
+      'name'    => 'minus-square',
+      'unicode' => 'f146'
     ],
     [
-      "name"  => "recycle"
+      'name'    => 'minus-square-o',
+      'unicode' => 'f147'
     ],
     [
-      "name"  => "refresh"
+      'name'    => 'level-up',
+      'unicode' => 'f148'
     ],
     [
-      "name"  => "registered"
+      'name'    => 'level-down',
+      'unicode' => 'f149'
     ],
     [
-      "name"  => "remove"
+      'name'    => 'check-square',
+      'unicode' => 'f14a'
     ],
     [
-      "name"  => "reorder"
+      'name'    => 'pencil-square',
+      'unicode' => 'f14b'
     ],
     [
-      "name"  => "reply"
+      'name'    => 'external-link-square',
+      'unicode' => 'f14c'
     ],
     [
-      "name"  => "reply-all"
+      'name'    => 'share-square',
+      'unicode' => 'f14d'
     ],
     [
-      "name"  => "retweet"
+      'name'    => 'compass',
+      'unicode' => 'f14e'
     ],
     [
-      "name"  => "road"
+      'name'    => 'toggle-down',
+      'unicode' => 'f150'
     ],
     [
-      "name"  => "rocket"
+      'name'    => 'caret-square-o-down',
+      'unicode' => 'f150'
     ],
     [
-      "name"  => "rss"
+      'name'    => 'toggle-up',
+      'unicode' => 'f151'
     ],
     [
-      "name"  => "rss-square"
+      'name'    => 'caret-square-o-up',
+      'unicode' => 'f151'
     ],
     [
-      "name"  => "search-minus"
+      'name'    => 'toggle-right',
+      'unicode' => 'f152'
     ],
     [
-      "name"  => "search-plus"
+      'name'    => 'caret-square-o-right',
+      'unicode' => 'f152'
     ],
     [
-      "name"  => "send"
+      'name'    => 'euro',
+      'unicode' => 'f153'
     ],
     [
-      "name"  => "send-o"
+      'name'    => 'eur',
+      'unicode' => 'f153'
     ],
     [
-      "name"  => "server"
+      'name'    => 'gbp',
+      'unicode' => 'f154'
     ],
     [
-      "name"  => "share"
+      'name'    => 'dollar',
+      'unicode' => 'f155'
     ],
     [
-      "name"  => "share-alt"
+      'name'    => 'usd',
+      'unicode' => 'f155'
     ],
     [
-      "name"  => "share-alt-square"
+      'name'    => 'rupee',
+      'unicode' => 'f156'
     ],
     [
-      "name"  => "share-square"
+      'name'    => 'inr',
+      'unicode' => 'f156'
     ],
     [
-      "name"  => "share-square-o"
+      'name'    => 'cny',
+      'unicode' => 'f157'
     ],
     [
-      "name"  => "shield"
+      'name'    => 'rmb',
+      'unicode' => 'f157'
     ],
     [
-      "name"  => "shopping-bag"
+      'name'    => 'yen',
+      'unicode' => 'f157'
     ],
     [
-      "name"  => "shopping-basket"
+      'name'    => 'jpy',
+      'unicode' => 'f157'
     ],
     [
-      "name"  => "sign-in"
+      'name'    => 'ruble',
+      'unicode' => 'f158'
     ],
     [
-      "name"  => "sign-out"
+      'name'    => 'rouble',
+      'unicode' => 'f158'
     ],
     [
-      "name"  => "signal"
+      'name'    => 'rub',
+      'unicode' => 'f158'
     ],
     [
-      "name"  => "sitemap"
+      'name'    => 'won',
+      'unicode' => 'f159'
     ],
     [
-      "name"  => "sliders"
+      'name'    => 'krw',
+      'unicode' => 'f159'
     ],
     [
-      "name"  => "smile-o"
+      'name'    => 'bitcoin',
+      'unicode' => 'f15a'
     ],
     [
-      "name"  => "soccer-ball-o"
+      'name'    => 'btc',
+      'unicode' => 'f15a'
     ],
     [
-      "name"  => "sort"
+      'name'    => 'file',
+      'unicode' => 'f15b'
     ],
     [
-      "name"  => "sort-alpha-asc"
+      'name'    => 'file-text',
+      'unicode' => 'f15c'
     ],
     [
-      "name"  => "sort-alpha-desc"
+      'name'    => 'sort-alpha-asc',
+      'unicode' => 'f15d'
     ],
     [
-      "name"  => "sort-amount-asc"
+      'name'    => 'sort-alpha-desc',
+      'unicode' => 'f15e'
     ],
     [
-      "name"  => "sort-amount-desc"
+      'name'    => 'sort-amount-asc',
+      'unicode' => 'f160'
     ],
     [
-      "name"  => "sort-asc"
+      'name'    => 'sort-amount-desc',
+      'unicode' => 'f161'
     ],
     [
-      "name"  => "sort-desc"
+      'name'    => 'sort-numeric-asc',
+      'unicode' => 'f162'
     ],
     [
-      "name"  => "sort-down"
+      'name'    => 'sort-numeric-desc',
+      'unicode' => 'f163'
     ],
     [
-      "name"  => "sort-numeric-asc"
+      'name'    => 'thumbs-up',
+      'unicode' => 'f164'
     ],
     [
-      "name"  => "sort-numeric-desc"
+      'name'    => 'thumbs-down',
+      'unicode' => 'f165'
     ],
     [
-      "name"  => "sort-up"
+      'name'    => 'youtube-square',
+      'unicode' => 'f166'
     ],
     [
-      "name"  => "space-shuttle"
+      'name'    => 'youtube',
+      'unicode' => 'f167'
     ],
     [
-      "name"  => "spoon"
+      'name'    => 'xing',
+      'unicode' => 'f168'
     ],
     [
-      "name"  => "square"
+      'name'    => 'xing-square',
+      'unicode' => 'f169'
     ],
     [
-      "name"  => "square-o"
+      'name'    => 'youtube-play',
+      'unicode' => 'f16a'
     ],
     [
-      "name"  => "star"
+      'name'    => 'dropbox',
+      'unicode' => 'f16b'
     ],
     [
-      "name"  => "star-half"
+      'name'    => 'stack-overflow',
+      'unicode' => 'f16c'
     ],
     [
-      "name"  => "star-half-empty"
+      'name'    => 'instagram',
+      'unicode' => 'f16d'
     ],
     [
-      "name"  => "star-half-full"
+      'name'    => 'flickr',
+      'unicode' => 'f16e'
     ],
     [
-      "name"  => "star-half-o"
+      'name'    => 'adn',
+      'unicode' => 'f170'
     ],
     [
-      "name"  => "star-o"
+      'name'    => 'bitbucket',
+      'unicode' => 'f171'
     ],
     [
-      "name"  => "sticky-note"
+      'name'    => 'bitbucket-square',
+      'unicode' => 'f172'
     ],
     [
-      "name"  => "sticky-note-o"
+      'name'    => 'tumblr',
+      'unicode' => 'f173'
     ],
     [
-      "name"  => "street-view"
+      'name'    => 'tumblr-square',
+      'unicode' => 'f174'
     ],
     [
-      "name"  => "suitcase"
+      'name'    => 'long-arrow-down',
+      'unicode' => 'f175'
     ],
     [
-      "name"  => "sun-o"
+      'name'    => 'long-arrow-up',
+      'unicode' => 'f176'
     ],
     [
-      "name"  => "support"
+      'name'    => 'long-arrow-left',
+      'unicode' => 'f177'
     ],
     [
-      "name"  => "tablet"
+      'name'    => 'long-arrow-right',
+      'unicode' => 'f178'
     ],
     [
-      "name"  => "tachometer"
+      'name'    => 'apple',
+      'unicode' => 'f179'
     ],
     [
-      "name"  => "tag"
+      'name'    => 'windows',
+      'unicode' => 'f17a'
     ],
     [
-      "name"  => "tags"
+      'name'    => 'android',
+      'unicode' => 'f17b'
     ],
     [
-      "name"  => "tasks"
+      'name'    => 'linux',
+      'unicode' => 'f17c'
     ],
     [
-      "name"  => "taxi"
+      'name'    => 'dribbble',
+      'unicode' => 'f17d'
     ],
     [
-      "name"  => "television"
+      'name'    => 'skype',
+      'unicode' => 'f17e'
     ],
     [
-      "name"  => "terminal"
+      'name'    => 'foursquare',
+      'unicode' => 'f180'
     ],
     [
-      "name"  => "thumb-tack"
+      'name'    => 'trello',
+      'unicode' => 'f181'
     ],
     [
-      "name"  => "thumbs-down"
+      'name'    => 'female',
+      'unicode' => 'f182'
     ],
     [
-      "name"  => "thumbs-o-down"
+      'name'    => 'male',
+      'unicode' => 'f183'
     ],
     [
-      "name"  => "thumbs-o-up"
+      'name'    => 'gittip',
+      'unicode' => 'f184'
     ],
     [
-      "name"  => "thumbs-up"
+      'name'    => 'gratipay',
+      'unicode' => 'f184'
     ],
     [
-      "name"  => "ticket"
+      'name'    => 'sun-o',
+      'unicode' => 'f185'
     ],
     [
-      "name"  => "times"
+      'name'    => 'moon-o',
+      'unicode' => 'f186'
     ],
     [
-      "name"  => "times-circle-o"
+      'name'    => 'archive',
+      'unicode' => 'f187'
     ],
     [
-      "name"  => "tint"
+      'name'    => 'bug',
+      'unicode' => 'f188'
     ],
     [
-      "name"  => "toggle-down"
+      'name'    => 'vk',
+      'unicode' => 'f189'
     ],
     [
-      "name"  => "toggle-left"
+      'name'    => 'weibo',
+      'unicode' => 'f18a'
     ],
     [
-      "name"  => "toggle-off"
+      'name'    => 'renren',
+      'unicode' => 'f18b'
     ],
     [
-      "name"  => "toggle-on"
+      'name'    => 'pagelines',
+      'unicode' => 'f18c'
     ],
     [
-      "name"  => "toggle-right"
+      'name'    => 'stack-exchange',
+      'unicode' => 'f18d'
     ],
     [
-      "name"  => "toggle-up"
+      'name'    => 'arrow-circle-o-right',
+      'unicode' => 'f18e'
     ],
     [
-      "name"  => "trademark"
+      'name'    => 'arrow-circle-o-left',
+      'unicode' => 'f190'
     ],
     [
-      "name"  => "trash"
+      'name'    => 'toggle-left',
+      'unicode' => 'f191'
     ],
     [
-      "name"  => "trash-o"
+      'name'    => 'caret-square-o-left',
+      'unicode' => 'f191'
     ],
     [
-      "name"  => "tree"
+      'name'    => 'dot-circle-o',
+      'unicode' => 'f192'
     ],
     [
-      "name"  => "trophy"
+      'name'    => 'wheelchair',
+      'unicode' => 'f193'
     ],
     [
-      "name"  => "truck"
+      'name'    => 'vimeo-square',
+      'unicode' => 'f194'
     ],
     [
-      "name"  => "tty"
+      'name'    => 'turkish-lira',
+      'unicode' => 'f195'
     ],
     [
-      "name"  => "tv"
+      'name'    => 'try',
+      'unicode' => 'f195'
     ],
     [
-      "name"  => "umbrella"
+      'name'    => 'plus-square-o',
+      'unicode' => 'f196'
     ],
     [
-      "name"  => "university"
+      'name'    => 'space-shuttle',
+      'unicode' => 'f197'
     ],
     [
-      "name"  => "unlock"
+      'name'    => 'slack',
+      'unicode' => 'f198'
     ],
     [
-      "name"  => "unlock-alt"
+      'name'    => 'envelope-square',
+      'unicode' => 'f199'
     ],
     [
-      "name"  => "unsorted"
+      'name'    => 'wordpress',
+      'unicode' => 'f19a'
     ],
     [
-      "name"  => "upload"
+      'name'    => 'openid',
+      'unicode' => 'f19b'
     ],
     [
-      "name"  => "user"
+      'name'    => 'institution',
+      'unicode' => 'f19c'
     ],
     [
-      "name"  => "user-plus"
+      'name'    => 'bank',
+      'unicode' => 'f19c'
     ],
     [
-      "name"  => "user-secret"
+      'name'    => 'university',
+      'unicode' => 'f19c'
     ],
     [
-      "name"  => "user-times"
+      'name'    => 'mortar-board',
+      'unicode' => 'f19d'
     ],
     [
-      "name"  => "users"
+      'name'    => 'graduation-cap',
+      'unicode' => 'f19d'
     ],
     [
-      "name"  => "video-camera"
+      'name'    => 'yahoo',
+      'unicode' => 'f19e'
     ],
     [
-      "name"  => "volume-down"
+      'name'    => 'google',
+      'unicode' => 'f1a0'
     ],
     [
-      "name"  => "volume-off"
+      'name'    => 'reddit',
+      'unicode' => 'f1a1'
     ],
     [
-      "name"  => "volume-up"
+      'name'    => 'reddit-square',
+      'unicode' => 'f1a2'
     ],
     [
-      "name"  => "warning"
+      'name'    => 'stumbleupon-circle',
+      'unicode' => 'f1a3'
     ],
     [
-      "name"  => "wheelchair"
+      'name'    => 'stumbleupon',
+      'unicode' => 'f1a4'
     ],
     [
-      "name"  => "wifi"
+      'name'    => 'delicious',
+      'unicode' => 'f1a5'
     ],
     [
-      "name"  => "wrench"
+      'name'    => 'digg',
+      'unicode' => 'f1a6'
     ],
     [
-      "name"  => "hand-o-down"
+      'name'    => 'pied-piper-pp',
+      'unicode' => 'f1a7'
     ],
     [
-      "name"  => "hand-o-left"
+      'name'    => 'pied-piper-alt',
+      'unicode' => 'f1a8'
     ],
     [
-      "name"  => "hand-o-right"
+      'name'    => 'drupal',
+      'unicode' => 'f1a9'
     ],
     [
-      "name"  => "hand-o-up"
+      'name'    => 'joomla',
+      'unicode' => 'f1aa'
     ],
     [
-      "name"  => "ambulance"
+      'name'    => 'language',
+      'unicode' => 'f1ab'
     ],
     [
-      "name"  => "subway"
+      'name'    => 'fax',
+      'unicode' => 'f1ac'
     ],
     [
-      "name"  => "train"
+      'name'    => 'building',
+      'unicode' => 'f1ad'
     ],
     [
-      "name"  => "genderless"
+      'name'    => 'child',
+      'unicode' => 'f1ae'
     ],
     [
-      "name"  => "intersex"
+      'name'    => 'paw',
+      'unicode' => 'f1b0'
     ],
     [
-      "name"  => "mars"
+      'name'    => 'spoon',
+      'unicode' => 'f1b1'
     ],
     [
-      "name"  => "mars-double"
+      'name'    => 'cube',
+      'unicode' => 'f1b2'
     ],
     [
-      "name"  => "mars-stroke"
+      'name'    => 'cubes',
+      'unicode' => 'f1b3'
     ],
     [
-      "name"  => "mars-stroke-h"
+      'name'    => 'behance',
+      'unicode' => 'f1b4'
     ],
     [
-      "name"  => "mars-stroke-v"
+      'name'    => 'behance-square',
+      'unicode' => 'f1b5'
     ],
     [
-      "name"  => "mercury"
+      'name'    => 'steam',
+      'unicode' => 'f1b6'
     ],
     [
-      "name"  => "neuter"
+      'name'    => 'steam-square',
+      'unicode' => 'f1b7'
     ],
     [
-      "name"  => "transgender"
+      'name'    => 'recycle',
+      'unicode' => 'f1b8'
     ],
     [
-      "name"  => "transgender-alt"
+      'name'    => 'automobile',
+      'unicode' => 'f1b9'
     ],
     [
-      "name"  => "venus-double"
+      'name'    => 'car',
+      'unicode' => 'f1b9'
     ],
     [
-      "name"  => "venus-mars"
+      'name'    => 'cab',
+      'unicode' => 'f1ba'
     ],
     [
-      "name"  => "file"
+      'name'    => 'taxi',
+      'unicode' => 'f1ba'
     ],
     [
-      "name"  => "file-o"
+      'name'    => 'tree',
+      'unicode' => 'f1bb'
     ],
     [
-      "name"  => "file-text"
+      'name'    => 'spotify',
+      'unicode' => 'f1bc'
     ],
     [
-      "name"  => "cc-amex"
+      'name'    => 'deviantart',
+      'unicode' => 'f1bd'
     ],
     [
-      "name"  => "cc-diners-club"
+      'name'    => 'soundcloud',
+      'unicode' => 'f1be'
     ],
     [
-      "name"  => "cc-discover"
+      'name'    => 'database',
+      'unicode' => 'f1c0'
     ],
     [
-      "name"  => "cc-jcb"
+      'name'    => 'file-pdf-o',
+      'unicode' => 'f1c1'
     ],
     [
-      "name"  => "cc-mastercard"
+      'name'    => 'file-word-o',
+      'unicode' => 'f1c2'
     ],
     [
-      "name"  => "cc-paypal"
+      'name'    => 'file-excel-o',
+      'unicode' => 'f1c3'
     ],
     [
-      "name"  => "cc-stripe"
+      'name'    => 'file-powerpoint-o',
+      'unicode' => 'f1c4'
     ],
     [
-      "name"  => "cc-visa"
+      'name'    => 'file-photo-o',
+      'unicode' => 'f1c5'
     ],
     [
-      "name"  => "google-wallet"
+      'name'    => 'file-picture-o',
+      'unicode' => 'f1c5'
     ],
     [
-      "name"  => "paypal"
+      'name'    => 'file-image-o',
+      'unicode' => 'f1c5'
     ],
     [
-      "name"  => "bitcoin"
+      'name'    => 'file-zip-o',
+      'unicode' => 'f1c6'
     ],
     [
-      "name"  => "btc"
+      'name'    => 'file-archive-o',
+      'unicode' => 'f1c6'
     ],
     [
-      "name"  => "cny"
+      'name'    => 'file-sound-o',
+      'unicode' => 'f1c7'
     ],
     [
-      "name"  => "dollar"
+      'name'    => 'file-audio-o',
+      'unicode' => 'f1c7'
     ],
     [
-      "name"  => "eur"
+      'name'    => 'file-movie-o',
+      'unicode' => 'f1c8'
     ],
     [
-      "name"  => "euro"
+      'name'    => 'file-video-o',
+      'unicode' => 'f1c8'
     ],
     [
-      "name"  => "gbp"
+      'name'    => 'file-code-o',
+      'unicode' => 'f1c9'
     ],
     [
-      "name"  => "gg"
+      'name'    => 'vine',
+      'unicode' => 'f1ca'
     ],
     [
-      "name"  => "gg-circle"
+      'name'    => 'codepen',
+      'unicode' => 'f1cb'
     ],
     [
-      "name"  => "ils"
+      'name'    => 'jsfiddle',
+      'unicode' => 'f1cc'
     ],
     [
-      "name"  => "inr"
+      'name'    => 'life-bouy',
+      'unicode' => 'f1cd'
     ],
     [
-      "name"  => "jpy"
+      'name'    => 'life-buoy',
+      'unicode' => 'f1cd'
     ],
     [
-      "name"  => "krw"
+      'name'    => 'life-saver',
+      'unicode' => 'f1cd'
     ],
     [
-      "name"  => "rmb"
+      'name'    => 'support',
+      'unicode' => 'f1cd'
     ],
     [
-      "name"  => "rouble"
+      'name'    => 'life-ring',
+      'unicode' => 'f1cd'
     ],
     [
-      "name"  => "rub"
+      'name'    => 'circle-o-notch',
+      'unicode' => 'f1ce'
     ],
     [
-      "name"  => "ruble"
+      'name'    => 'ra',
+      'unicode' => 'f1d0'
     ],
     [
-      "name"  => "rupee"
+      'name'    => 'resistance',
+      'unicode' => 'f1d0'
     ],
     [
-      "name"  => "shekel"
+      'name'    => 'rebel',
+      'unicode' => 'f1d0'
     ],
     [
-      "name"  => "sheqel"
+      'name'    => 'ge',
+      'unicode' => 'f1d1'
     ],
     [
-      "name"  => "try"
+      'name'    => 'empire',
+      'unicode' => 'f1d1'
     ],
     [
-      "name"  => "turkish-lira"
+      'name'    => 'git-square',
+      'unicode' => 'f1d2'
     ],
     [
-      "name"  => "usd"
+      'name'    => 'git',
+      'unicode' => 'f1d3'
     ],
     [
-      "name"  => "yen"
+      'name'    => 'y-combinator-square',
+      'unicode' => 'f1d4'
     ],
     [
-      "name"  => "align-center"
+      'name'    => 'yc-square',
+      'unicode' => 'f1d4'
     ],
     [
-      "name"  => "align-justify"
+      'name'    => 'hacker-news',
+      'unicode' => 'f1d4'
     ],
     [
-      "name"  => "align-left"
+      'name'    => 'tencent-weibo',
+      'unicode' => 'f1d5'
     ],
     [
-      "name"  => "align-right"
+      'name'    => 'qq',
+      'unicode' => 'f1d6'
     ],
     [
-      "name"  => "bold"
+      'name'    => 'wechat',
+      'unicode' => 'f1d7'
     ],
     [
-      "name"  => "chain"
+      'name'    => 'weixin',
+      'unicode' => 'f1d7'
     ],
     [
-      "name"  => "chain-broken"
+      'name'    => 'send',
+      'unicode' => 'f1d8'
     ],
     [
-      "name"  => "clipboard"
+      'name'    => 'paper-plane',
+      'unicode' => 'f1d8'
     ],
     [
-      "name"  => "columns"
+      'name'    => 'send-o',
+      'unicode' => 'f1d9'
     ],
     [
-      "name"  => "copy"
+      'name'    => 'paper-plane-o',
+      'unicode' => 'f1d9'
     ],
     [
-      "name"  => "cut"
+      'name'    => 'history',
+      'unicode' => 'f1da'
     ],
     [
-      "name"  => "dedent"
+      'name'    => 'circle-thin',
+      'unicode' => 'f1db'
     ],
     [
-      "name"  => "files-o"
+      'name'    => 'header',
+      'unicode' => 'f1dc'
     ],
     [
-      "name"  => "floppy-o"
+      'name'    => 'paragraph',
+      'unicode' => 'f1dd'
     ],
     [
-      "name"  => "font"
+      'name'    => 'sliders',
+      'unicode' => 'f1de'
     ],
     [
-      "name"  => "header"
+      'name'    => 'share-alt',
+      'unicode' => 'f1e0'
     ],
     [
-      "name"  => "indent"
+      'name'    => 'share-alt-square',
+      'unicode' => 'f1e1'
     ],
     [
-      "name"  => "italic"
+      'name'    => 'bomb',
+      'unicode' => 'f1e2'
     ],
     [
-      "name"  => "link"
+      'name'    => 'soccer-ball-o',
+      'unicode' => 'f1e3'
     ],
     [
-      "name"  => "list"
+      'name'    => 'futbol-o',
+      'unicode' => 'f1e3'
     ],
     [
-      "name"  => "list-alt"
+      'name'    => 'tty',
+      'unicode' => 'f1e4'
     ],
     [
-      "name"  => "list-ol"
+      'name'    => 'binoculars',
+      'unicode' => 'f1e5'
     ],
     [
-      "name"  => "list-ul"
+      'name'    => 'plug',
+      'unicode' => 'f1e6'
     ],
     [
-      "name"  => "outdent"
+      'name'    => 'slideshare',
+      'unicode' => 'f1e7'
     ],
     [
-      "name"  => "paperclip"
+      'name'    => 'twitch',
+      'unicode' => 'f1e8'
     ],
     [
-      "name"  => "paragraph"
+      'name'    => 'yelp',
+      'unicode' => 'f1e9'
     ],
     [
-      "name"  => "paste"
+      'name'    => 'newspaper-o',
+      'unicode' => 'f1ea'
     ],
     [
-      "name"  => "repeat"
+      'name'    => 'wifi',
+      'unicode' => 'f1eb'
     ],
     [
-      "name"  => "rotate-left"
+      'name'    => 'calculator',
+      'unicode' => 'f1ec'
     ],
     [
-      "name"  => "rotate-right"
+      'name'    => 'paypal',
+      'unicode' => 'f1ed'
     ],
     [
-      "name"  => "save"
+      'name'    => 'google-wallet',
+      'unicode' => 'f1ee'
     ],
     [
-      "name"  => "scissors"
+      'name'    => 'cc-visa',
+      'unicode' => 'f1f0'
     ],
     [
-      "name"  => "strikethrough"
+      'name'    => 'cc-mastercard',
+      'unicode' => 'f1f1'
     ],
     [
-      "name"  => "subscript"
+      'name'    => 'cc-discover',
+      'unicode' => 'f1f2'
     ],
     [
-      "name"  => "superscript"
+      'name'    => 'cc-amex',
+      'unicode' => 'f1f3'
     ],
     [
-      "name"  => "table"
+      'name'    => 'cc-paypal',
+      'unicode' => 'f1f4'
     ],
     [
-      "name"  => "text-height"
+      'name'    => 'cc-stripe',
+      'unicode' => 'f1f5'
     ],
     [
-      "name"  => "text-width"
+      'name'    => 'bell-slash',
+      'unicode' => 'f1f6'
     ],
     [
-      "name"  => "th"
+      'name'    => 'bell-slash-o',
+      'unicode' => 'f1f7'
     ],
     [
-      "name"  => "th-large"
+      'name'    => 'trash',
+      'unicode' => 'f1f8'
     ],
     [
-      "name"  => "th-list"
+      'name'    => 'copyright',
+      'unicode' => 'f1f9'
     ],
     [
-      "name"  => "underline"
+      'name'    => 'at',
+      'unicode' => 'f1fa'
     ],
     [
-      "name"  => "undo"
+      'name'    => 'eyedropper',
+      'unicode' => 'f1fb'
     ],
     [
-      "name"  => "unlink"
+      'name'    => 'paint-brush',
+      'unicode' => 'f1fc'
     ],
     [
-      "name"  => "angle-double-down"
+      'name'    => 'birthday-cake',
+      'unicode' => 'f1fd'
     ],
     [
-      "name"  => "angle-double-left"
+      'name'    => 'area-chart',
+      'unicode' => 'f1fe'
     ],
     [
-      "name"  => "angle-double-right"
+      'name'    => 'pie-chart',
+      'unicode' => 'f200'
     ],
     [
-      "name"  => "angle-double-up"
+      'name'    => 'line-chart',
+      'unicode' => 'f201'
     ],
     [
-      "name"  => "angle-down"
+      'name'    => 'lastfm',
+      'unicode' => 'f202'
     ],
     [
-      "name"  => "angle-left"
+      'name'    => 'lastfm-square',
+      'unicode' => 'f203'
     ],
     [
-      "name"  => "angle-right"
+      'name'    => 'toggle-off',
+      'unicode' => 'f204'
     ],
     [
-      "name"  => "angle-up"
+      'name'    => 'toggle-on',
+      'unicode' => 'f205'
     ],
     [
-      "name"  => "arrow-circle-down"
+      'name'    => 'bicycle',
+      'unicode' => 'f206'
     ],
     [
-      "name"  => "arrow-circle-left"
+      'name'    => 'bus',
+      'unicode' => 'f207'
     ],
     [
-      "name"  => "arrow-circle-o-down"
+      'name'    => 'ioxhost',
+      'unicode' => 'f208'
     ],
     [
-      "name"  => "arrow-circle-o-left"
+      'name'    => 'angellist',
+      'unicode' => 'f209'
     ],
     [
-      "name"  => "arrow-circle-o-right"
+      'name'    => 'cc',
+      'unicode' => 'f20a'
     ],
     [
-      "name"  => "arrow-circle-o-up"
+      'name'    => 'shekel',
+      'unicode' => 'f20b'
     ],
     [
-      "name"  => "arrow-circle-right"
+      'name'    => 'sheqel',
+      'unicode' => 'f20b'
     ],
     [
-      "name"  => "arrow-circle-up"
+      'name'    => 'ils',
+      'unicode' => 'f20b'
     ],
     [
-      "name"  => "arrow-down"
+      'name'    => 'meanpath',
+      'unicode' => 'f20c'
     ],
     [
-      "name"  => "arrow-left"
+      'name'    => 'buysellads',
+      'unicode' => 'f20d'
     ],
     [
-      "name"  => "arrow-up"
+      'name'    => 'connectdevelop',
+      'unicode' => 'f20e'
     ],
     [
-      "name"  => "arrows-alt"
+      'name'    => 'dashcube',
+      'unicode' => 'f210'
     ],
     [
-      "name"  => "caret-left"
+      'name'    => 'forumbee',
+      'unicode' => 'f211'
     ],
     [
-      "name"  => "caret-right"
+      'name'    => 'leanpub',
+      'unicode' => 'f212'
     ],
     [
-      "name"  => "caret-up"
+      'name'    => 'sellsy',
+      'unicode' => 'f213'
     ],
     [
-      "name"  => "chevron-circle-down"
+      'name'    => 'shirtsinbulk',
+      'unicode' => 'f214'
     ],
     [
-      "name"  => "chevron-circle-left"
+      'name'    => 'simplybuilt',
+      'unicode' => 'f215'
     ],
     [
-      "name"  => "chevron-circle-right"
+      'name'    => 'skyatlas',
+      'unicode' => 'f216'
     ],
     [
-      "name"  => "chevron-circle-up"
+      'name'    => 'cart-plus',
+      'unicode' => 'f217'
     ],
     [
-      "name"  => "chevron-down"
+      'name'    => 'cart-arrow-down',
+      'unicode' => 'f218'
     ],
     [
-      "name"  => "chevron-left"
+      'name'    => 'diamond',
+      'unicode' => 'f219'
     ],
     [
-      "name"  => "chevron-right"
+      'name'    => 'ship',
+      'unicode' => 'f21a'
     ],
     [
-      "name"  => "chevron-up"
+      'name'    => 'user-secret',
+      'unicode' => 'f21b'
     ],
     [
-      "name"  => "long-arrow-down"
+      'name'    => 'motorcycle',
+      'unicode' => 'f21c'
     ],
     [
-      "name"  => "long-arrow-left"
+      'name'    => 'street-view',
+      'unicode' => 'f21d'
     ],
     [
-      "name"  => "long-arrow-right"
+      'name'    => 'heartbeat',
+      'unicode' => 'f21e'
     ],
     [
-      "name"  => "long-arrow-up"
+      'name'    => 'venus',
+      'unicode' => 'f221'
     ],
     [
-      "name"  => "backward"
+      'name'    => 'mars',
+      'unicode' => 'f222'
     ],
     [
-      "name"  => "compress"
+      'name'    => 'mercury',
+      'unicode' => 'f223'
     ],
     [
-      "name"  => "eject"
+      'name'    => 'intersex',
+      'unicode' => 'f224'
     ],
     [
-      "name"  => "expand"
+      'name'    => 'transgender',
+      'unicode' => 'f224'
     ],
     [
-      "name"  => "fast-backward"
+      'name'    => 'transgender-alt',
+      'unicode' => 'f225'
     ],
     [
-      "name"  => "fast-forward"
+      'name'    => 'venus-double',
+      'unicode' => 'f226'
     ],
     [
-      "name"  => "forward"
+      'name'    => 'mars-double',
+      'unicode' => 'f227'
     ],
     [
-      "name"  => "pause"
+      'name'    => 'venus-mars',
+      'unicode' => 'f228'
     ],
     [
-      "name"  => "pause-circle"
+      'name'    => 'mars-stroke',
+      'unicode' => 'f229'
     ],
     [
-      "name"  => "pause-circle-o"
+      'name'    => 'mars-stroke-v',
+      'unicode' => 'f22a'
     ],
     [
-      "name"  => "play"
+      'name'    => 'mars-stroke-h',
+      'unicode' => 'f22b'
     ],
     [
-      "name"  => "play-circle-o"
+      'name'    => 'neuter',
+      'unicode' => 'f22c'
     ],
     [
-      "name"  => "step-backward"
+      'name'    => 'genderless',
+      'unicode' => 'f22d'
     ],
     [
-      "name"  => "step-forward"
+      'name'    => 'facebook-official',
+      'unicode' => 'f230'
     ],
     [
-      "name"  => "stop"
+      'name'    => 'pinterest-p',
+      'unicode' => 'f231'
     ],
     [
-      "name"  => "stop-circle"
+      'name'    => 'whatsapp',
+      'unicode' => 'f232'
     ],
     [
-      "name"  => "stop-circle-o"
+      'name'    => 'server',
+      'unicode' => 'f233'
     ],
     [
-      "name"  => "youtube-play"
+      'name'    => 'user-plus',
+      'unicode' => 'f234'
     ],
     [
-      "name"  => "500px"
+      'name'    => 'user-times',
+      'unicode' => 'f235'
     ],
     [
-      "name"  => "adn"
+      'name'    => 'hotel',
+      'unicode' => 'f236'
     ],
     [
-      "name"  => "amazon"
+      'name'    => 'bed',
+      'unicode' => 'f236'
     ],
     [
-      "name"  => "android"
+      'name'    => 'viacoin',
+      'unicode' => 'f237'
     ],
     [
-      "name"  => "angellist"
+      'name'    => 'train',
+      'unicode' => 'f238'
     ],
     [
-      "name"  => "apple"
+      'name'    => 'subway',
+      'unicode' => 'f239'
     ],
     [
-      "name"  => "behance"
+      'name'    => 'medium',
+      'unicode' => 'f23a'
     ],
     [
-      "name"  => "behance-square"
+      'name'    => 'yc',
+      'unicode' => 'f23b'
     ],
     [
-      "name"  => "bitbucket"
+      'name'    => 'y-combinator',
+      'unicode' => 'f23b'
     ],
     [
-      "name"  => "bitbucket-square"
+      'name'    => 'optin-monster',
+      'unicode' => 'f23c'
     ],
     [
-      "name"  => "black-tie"
+      'name'    => 'opencart',
+      'unicode' => 'f23d'
     ],
     [
-      "name"  => "buysellads"
+      'name'    => 'expeditedssl',
+      'unicode' => 'f23e'
     ],
     [
-      "name"  => "chrome"
+      'name'    => 'battery-4',
+      'unicode' => 'f240'
     ],
     [
-      "name"  => "codepen"
+      'name'    => 'battery-full',
+      'unicode' => 'f240'
     ],
     [
-      "name"  => "codiepie"
+      'name'    => 'battery-3',
+      'unicode' => 'f241'
     ],
     [
-      "name"  => "connectdevelop"
+      'name'    => 'battery-three-quarters',
+      'unicode' => 'f241'
     ],
     [
-      "name"  => "contao"
+      'name'    => 'battery-2',
+      'unicode' => 'f242'
     ],
     [
-      "name"  => "css3"
+      'name'    => 'battery-half',
+      'unicode' => 'f242'
     ],
     [
-      "name"  => "dashcube"
+      'name'    => 'battery-1',
+      'unicode' => 'f243'
     ],
     [
-      "name"  => "delicious"
+      'name'    => 'battery-quarter',
+      'unicode' => 'f243'
     ],
     [
-      "name"  => "deviantart"
+      'name'    => 'battery-0',
+      'unicode' => 'f244'
     ],
     [
-      "name"  => "digg"
+      'name'    => 'battery-empty',
+      'unicode' => 'f244'
     ],
     [
-      "name"  => "dribbble"
+      'name'    => 'mouse-pointer',
+      'unicode' => 'f245'
     ],
     [
-      "name"  => "dropbox"
+      'name'    => 'i-cursor',
+      'unicode' => 'f246'
     ],
     [
-      "name"  => "drupal"
+      'name'    => 'object-group',
+      'unicode' => 'f247'
     ],
     [
-      "name"  => "edge"
+      'name'    => 'object-ungroup',
+      'unicode' => 'f248'
     ],
     [
-      "name"  => "empire"
+      'name'    => 'sticky-note',
+      'unicode' => 'f249'
     ],
     [
-      "name"  => "expeditedssl"
+      'name'    => 'sticky-note-o',
+      'unicode' => 'f24a'
     ],
     [
-      "name"  => "facebook"
+      'name'    => 'cc-jcb',
+      'unicode' => 'f24b'
     ],
     [
-      "name"  => "facebook-f"
+      'name'    => 'cc-diners-club',
+      'unicode' => 'f24c'
     ],
     [
-      "name"  => "facebook-square"
+      'name'    => 'clone',
+      'unicode' => 'f24d'
     ],
     [
-      "name"  => "firefox"
+      'name'    => 'balance-scale',
+      'unicode' => 'f24e'
     ],
     [
-      "name"  => "flickr"
+      'name'    => 'hourglass-o',
+      'unicode' => 'f250'
     ],
     [
-      "name"  => "fonticons"
+      'name'    => 'hourglass-1',
+      'unicode' => 'f251'
     ],
     [
-      "name"  => "forumbee"
+      'name'    => 'hourglass-start',
+      'unicode' => 'f251'
     ],
     [
-      "name"  => "foursquare"
+      'name'    => 'hourglass-2',
+      'unicode' => 'f252'
     ],
     [
-      "name"  => "ge"
+      'name'    => 'hourglass-half',
+      'unicode' => 'f252'
     ],
     [
-      "name"  => "get-pocket"
+      'name'    => 'hourglass-3',
+      'unicode' => 'f253'
     ],
     [
-      "name"  => "git"
+      'name'    => 'hourglass-end',
+      'unicode' => 'f253'
     ],
     [
-      "name"  => "git-square"
+      'name'    => 'hourglass',
+      'unicode' => 'f254'
     ],
     [
-      "name"  => "github"
+      'name'    => 'hand-grab-o',
+      'unicode' => 'f255'
     ],
     [
-      "name"  => "github-alt"
+      'name'    => 'hand-rock-o',
+      'unicode' => 'f255'
     ],
     [
-      "name"  => "github-square"
+      'name'    => 'hand-stop-o',
+      'unicode' => 'f256'
     ],
     [
-      "name"  => "gittip"
+      'name'    => 'hand-paper-o',
+      'unicode' => 'f256'
     ],
     [
-      "name"  => "google"
+      'name'    => 'hand-scissors-o',
+      'unicode' => 'f257'
     ],
     [
-      "name"  => "google-plus"
+      'name'    => 'hand-lizard-o',
+      'unicode' => 'f258'
     ],
     [
-      "name"  => "google-plus-square"
+      'name'    => 'hand-spock-o',
+      'unicode' => 'f259'
     ],
     [
-      "name"  => "gratipay"
+      'name'    => 'hand-pointer-o',
+      'unicode' => 'f25a'
     ],
     [
-      "name"  => "hacker-news"
+      'name'    => 'hand-peace-o',
+      'unicode' => 'f25b'
     ],
     [
-      "name"  => "houzz"
+      'name'    => 'trademark',
+      'unicode' => 'f25c'
     ],
     [
-      "name"  => "html5"
+      'name'    => 'registered',
+      'unicode' => 'f25d'
     ],
     [
-      "name"  => "internet-explorer"
+      'name'    => 'creative-commons',
+      'unicode' => 'f25e'
     ],
     [
-      "name"  => "ioxhost"
+      'name'    => 'gg',
+      'unicode' => 'f260'
     ],
     [
-      "name"  => "joomla"
+      'name'    => 'gg-circle',
+      'unicode' => 'f261'
     ],
     [
-      "name"  => "jsfiddle"
+      'name'    => 'tripadvisor',
+      'unicode' => 'f262'
     ],
     [
-      "name"  => "lastfm"
+      'name'    => 'odnoklassniki',
+      'unicode' => 'f263'
     ],
     [
-      "name"  => "lastfm-square"
+      'name'    => 'odnoklassniki-square',
+      'unicode' => 'f264'
     ],
     [
-      "name"  => "leanpub"
+      'name'    => 'get-pocket',
+      'unicode' => 'f265'
     ],
     [
-      "name"  => "linkedin"
+      'name'    => 'wikipedia-w',
+      'unicode' => 'f266'
     ],
     [
-      "name"  => "linkedin-square"
+      'name'    => 'safari',
+      'unicode' => 'f267'
     ],
     [
-      "name"  => "linux"
+      'name'    => 'chrome',
+      'unicode' => 'f268'
     ],
     [
-      "name"  => "maxcdn"
+      'name'    => 'firefox',
+      'unicode' => 'f269'
     ],
     [
-      "name"  => "meanpath"
+      'name'    => 'opera',
+      'unicode' => 'f26a'
     ],
     [
-      "name"  => "medium"
+      'name'    => 'internet-explorer',
+      'unicode' => 'f26b'
     ],
     [
-      "name"  => "mixcloud"
+      'name'    => 'tv',
+      'unicode' => 'f26c'
     ],
     [
-      "name"  => "modx"
+      'name'    => 'television',
+      'unicode' => 'f26c'
     ],
     [
-      "name"  => "odnoklassniki"
+      'name'    => 'contao',
+      'unicode' => 'f26d'
     ],
     [
-      "name"  => "odnoklassniki-square"
+      'name'    => '500px',
+      'unicode' => 'f26e'
     ],
     [
-      "name"  => "opencart"
+      'name'    => 'amazon',
+      'unicode' => 'f270'
     ],
     [
-      "name"  => "openid"
+      'name'    => 'calendar-plus-o',
+      'unicode' => 'f271'
     ],
     [
-      "name"  => "opera"
+      'name'    => 'calendar-minus-o',
+      'unicode' => 'f272'
     ],
     [
-      "name"  => "optin-monster"
+      'name'    => 'calendar-times-o',
+      'unicode' => 'f273'
     ],
     [
-      "name"  => "pagelines"
+      'name'    => 'calendar-check-o',
+      'unicode' => 'f274'
     ],
     [
-      "name"  => "pied-piper-alt"
+      'name'    => 'industry',
+      'unicode' => 'f275'
     ],
     [
-      "name"  => "pied-piper-pp"
+      'name'    => 'map-pin',
+      'unicode' => 'f276'
     ],
     [
-      "name"  => "pinterest"
+      'name'    => 'map-signs',
+      'unicode' => 'f277'
     ],
     [
-      "name"  => "pinterest-p"
+      'name'    => 'map-o',
+      'unicode' => 'f278'
     ],
     [
-      "name"  => "pinterest-square"
+      'name'    => 'map',
+      'unicode' => 'f279'
     ],
     [
-      "name"  => "product-hunt"
+      'name'    => 'commenting',
+      'unicode' => 'f27a'
     ],
     [
-      "name"  => "qq"
+      'name'    => 'commenting-o',
+      'unicode' => 'f27b'
     ],
     [
-      "name"  => "ra"
+      'name'    => 'houzz',
+      'unicode' => 'f27c'
     ],
     [
-      "name"  => "rebel"
+      'name'    => 'vimeo',
+      'unicode' => 'f27d'
     ],
     [
-      "name"  => "reddit"
+      'name'    => 'black-tie',
+      'unicode' => 'f27e'
     ],
     [
-      "name"  => "reddit-alien"
+      'name'    => 'fonticons',
+      'unicode' => 'f280'
     ],
     [
-      "name"  => "reddit-square"
+      'name'    => 'reddit-alien',
+      'unicode' => 'f281'
     ],
     [
-      "name"  => "renren"
+      'name'    => 'edge',
+      'unicode' => 'f282'
     ],
     [
-      "name"  => "resistance"
+      'name'    => 'credit-card-alt',
+      'unicode' => 'f283'
     ],
     [
-      "name"  => "safari"
+      'name'    => 'codiepie',
+      'unicode' => 'f284'
     ],
     [
-      "name"  => "scribd"
+      'name'    => 'modx',
+      'unicode' => 'f285'
     ],
     [
-      "name"  => "sellsy"
+      'name'    => 'fort-awesome',
+      'unicode' => 'f286'
     ],
     [
-      "name"  => "shirtsinbulk"
+      'name'    => 'usb',
+      'unicode' => 'f287'
     ],
     [
-      "name"  => "simplybuilt"
+      'name'    => 'product-hunt',
+      'unicode' => 'f288'
     ],
     [
-      "name"  => "skyatlas"
+      'name'    => 'mixcloud',
+      'unicode' => 'f289'
     ],
     [
-      "name"  => "skype"
+      'name'    => 'scribd',
+      'unicode' => 'f28a'
     ],
     [
-      "name"  => "slack"
+      'name'    => 'pause-circle',
+      'unicode' => 'f28b'
     ],
     [
-      "name"  => "slideshare"
+      'name'    => 'pause-circle-o',
+      'unicode' => 'f28c'
     ],
     [
-      "name"  => "soundcloud"
+      'name'    => 'stop-circle',
+      'unicode' => 'f28d'
     ],
     [
-      "name"  => "spotify"
+      'name'    => 'stop-circle-o',
+      'unicode' => 'f28e'
     ],
     [
-      "name"  => "stack-exchange"
+      'name'    => 'shopping-bag',
+      'unicode' => 'f290'
     ],
     [
-      "name"  => "stack-overflow"
+      'name'    => 'shopping-basket',
+      'unicode' => 'f291'
     ],
     [
-      "name"  => "steam"
+      'name'    => 'hashtag',
+      'unicode' => 'f292'
     ],
     [
-      "name"  => "steam-square"
+      'name'    => 'bluetooth',
+      'unicode' => 'f293'
     ],
     [
-      "name"  => "stumbleupon"
+      'name'    => 'bluetooth-b',
+      'unicode' => 'f294'
     ],
     [
-      "name"  => "stumbleupon-circle"
+      'name'    => 'percent',
+      'unicode' => 'f295'
     ],
     [
-      "name"  => "tencent-weibo"
+      'name'    => 'gitlab',
+      'unicode' => 'f296'
     ],
     [
-      "name"  => "trello"
+      'name'    => 'wpbeginner',
+      'unicode' => 'f297'
     ],
     [
-      "name"  => "tripadvisor"
+      'name'    => 'wpforms',
+      'unicode' => 'f298'
     ],
     [
-      "name"  => "tumblr"
+      'name'    => 'envira',
+      'unicode' => 'f299'
     ],
     [
-      "name"  => "tumblr-square"
+      'name'    => 'universal-access',
+      'unicode' => 'f29a'
     ],
     [
-      "name"  => "twitch"
+      'name'    => 'wheelchair-alt',
+      'unicode' => 'f29b'
     ],
     [
-      "name"  => "twitter"
+      'name'    => 'question-circle-o',
+      'unicode' => 'f29c'
     ],
     [
-      "name"  => "twitter-square"
+      'name'    => 'blind',
+      'unicode' => 'f29d'
     ],
     [
-      "name"  => "usb"
+      'name'    => 'audio-description',
+      'unicode' => 'f29e'
     ],
     [
-      "name"  => "viacoin"
+      'name'    => 'volume-control-phone',
+      'unicode' => 'f2a0'
     ],
     [
-      "name"  => "vimeo"
+      'name'    => 'braille',
+      'unicode' => 'f2a1'
     ],
     [
-      "name"  => "vimeo-square"
+      'name'    => 'assistive-listening-systems',
+      'unicode' => 'f2a2'
     ],
     [
-      "name"  => "vine"
+      'name'    => 'asl-interpreting',
+      'unicode' => 'f2a3'
     ],
     [
-      "name"  => "vk"
+      'name'    => 'american-sign-language-interpreting',
+      'unicode' => 'f2a3'
     ],
     [
-      "name"  => "wechat"
+      'name'    => 'deafness',
+      'unicode' => 'f2a4'
     ],
     [
-      "name"  => "weibo"
+      'name'    => 'hard-of-hearing',
+      'unicode' => 'f2a4'
     ],
     [
-      "name"  => "weixin"
+      'name'    => 'deaf',
+      'unicode' => 'f2a4'
     ],
     [
-      "name"  => "whatsapp"
+      'name'    => 'glide',
+      'unicode' => 'f2a5'
     ],
     [
-      "name"  => "wikipedia-w"
+      'name'    => 'glide-g',
+      'unicode' => 'f2a6'
     ],
     [
-      "name"  => "windows"
+      'name'    => 'signing',
+      'unicode' => 'f2a7'
     ],
     [
-      "name"  => "wordpress"
+      'name'    => 'sign-language',
+      'unicode' => 'f2a7'
     ],
     [
-      "name"  => "xing"
+      'name'    => 'low-vision',
+      'unicode' => 'f2a8'
     ],
     [
-      "name"  => "xing-square"
+      'name'    => 'viadeo',
+      'unicode' => 'f2a9'
     ],
     [
-      "name"  => "y-combinator"
+      'name'    => 'viadeo-square',
+      'unicode' => 'f2aa'
     ],
     [
-      "name"  => "y-combinator-square"
+      'name'    => 'snapchat',
+      'unicode' => 'f2ab'
     ],
     [
-      "name"  => "yahoo"
+      'name'    => 'snapchat-ghost',
+      'unicode' => 'f2ac'
     ],
     [
-      "name"  => "yc"
+      'name'    => 'snapchat-square',
+      'unicode' => 'f2ad'
     ],
     [
-      "name"  => "yc-square"
+      'name'    => 'pied-piper',
+      'unicode' => 'f2ae'
     ],
     [
-      "name"  => "yelp"
+      'name'    => 'first-order',
+      'unicode' => 'f2b0'
     ],
     [
-      "name"  => "youtube"
+      'name'    => 'yoast',
+      'unicode' => 'f2b1'
     ],
     [
-      "name"  => "youtube-square"
-    ],
-    [
-      "name"  => "h-square"
-    ],
-    [
-      "name"  => "hospital-o"
-    ],
-    [
-      "name"  => "stethoscope"
-    ],
-    [
-      "name"  => "user-md"
+      'name'    => 'themeisle',
+      'unicode' => 'f2b2'
     ]
   ],
 
@@ -2215,39 +2929,39 @@ return [
     [
       'name'            => 'iPhone', 
       'calculator_id'   => 1,
-      'icon_id'         => 597
+      'icon_id'         => 389
     ],
     [
       'name'            => 'iPad',
       'calculator_id'   => 1,
-      'icon_id'         => 597
+      'icon_id'         => 389
     ],
     [
       'name'            => 'Android Phone',
       'calculator_id'   => 1,
-      'icon_id'         => 595
+      'icon_id'         => 391
     ],
     [
       'name'            => 'Android Tablet',
       'calculator_id'   => 1,
-      'icon_id'         => 595
+      'icon_id'         => 391
     ],
     [
       'name'            => 'Web',
       'calculator_id'   => 1,
-      'icon_id'         => 164
+      'icon_id'         => 266
     ],
     [
       'name'            => 'Phonegap',
       'calculator_id'   => 1,
-      'icon_id'         => 290
+      'icon_id'         => 269
     ]
   ],
 
   'items' => [
     [
-      'name'              => 'E-mail Login',
-      'short_description' => 'Inicio de sesión vía E-mail',
+      'name'              => 'Página Informativa',
+      'short_description' => 'Página web sencilla con 5 secciones y formulario de contacto.',
       'section_id'        => 1,
       'icon_id'           => 250,
       'item_platform'     => [
@@ -2285,6 +2999,1150 @@ return [
           'platform_id' => 6,
           'additional'  => [
             'price' => 1650
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Filtros',
+      'short_description' => 'Los filtros son un elemento importante dentro de una búsqueda ya que facilita al usuario el orden y la forma en que se muestran los datos.',
+      'section_id'        => 1,
+      'icon_id'           => 201,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 3300
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Inicio de sesión vía Redes Sociales',
+      'short_description' => 'Es un sistema de ingreso de usuarios por medio de una red social. Permite al usuario el acceso a cualquier interfaz o contenido cuya restricción fue determinada con la finalidad de llevar un mejor control en el tráfico web.',
+      'section_id'        => 1,
+      'icon_id'           => 271,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Perfiles',
+      'short_description' => 'El sistema de perfil de usuarios, en general permite almacenar cualquier tipo de información o configuración relacionada a un usuario, esto con la finalidad de poder acceder a estas características posteriormente. ',
+      'section_id'        => 1,
+      'icon_id'           => 425,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Panel de Control',
+      'short_description' => 'El Dashboard o Panel de control es un software que provee una interfaz gráfica para la gestión de sistemas automatizados así como también para la gestión de contenidos, configuraciones, administración de servicios, privilegios de usuario, etc.',
+      'section_id'        => 1,
+      'icon_id'           => 162,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Chat',
+      'short_description' => 'El Chat es un sistema de comunicación en tiempo real, lo cual permite enviar mensajes de forma instantánea mediante el uso de un software.',
+      'section_id'        => 1,
+      'icon_id'           => 710,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Pagos ',
+      'short_description' => 'Medio de pago online, para transacciones por internet. ',
+      'section_id'        => 1,
+      'icon_id'           => 470,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Geolocalización y brújula con API Google Maps',
+      'short_description' => 'Un geolocalizador permite ubicar la zona geográfica de su dispositivo así como su orientación, las aplicaciones pueden ser diversas dependiendo de la finalidad que se le quiera dar.',
+      'section_id'        => 1,
+      'icon_id'           => 270,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Calificación ',
+      'short_description' => 'El FeedBack es un medio de retroalimentación a través de las redes sociales. Sus principales características son las API’s de publicación de contenidos, comentarios, botones de “me gusta”, botones de “compartir” entre otros.',
+      'section_id'        => 1,
+      'icon_id'           => 376,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Compartir en Redes Sociales',
+      'short_description' => 'El Social sharing es un elemento para compartir contenidos web en las redes sociales con la finalidad de difundir cierta información de tu página web.',
+      'section_id'        => 1,
+      'icon_id'           => 347,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 3000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 3000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 2800
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 2800
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 2300
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 2300
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Integración mensajería SMS',
+      'short_description' => 'La Integración de SMS otorga la posibilidad de enviar SMS de forma automatizada por medio de una interfaz de usuario. Muy útil para las empresas que envian recordatorios a sus clientes de sus pagos vencidos o atrasados. ',
+      'section_id'        => 1,
+      'icon_id'           => 343,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 10500
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 8500
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 8500
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Configuración de Privacidad de Usuarios',
+      'short_description' => 'Las configuraciones de privacidad de usuario permitirán darle un entorno más seguro a la información de tus usuarios en tu sitio web o aplicación.',
+      'section_id'        => 1,
+      'icon_id'           => 427,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Calendario',
+      'short_description' => 'La integración de calendario permitirá informar a los usuarios de aquellos eventos próximos que tienes.',
+      'section_id'        => 1,
+      'icon_id'           => 115,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 5500
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 5500
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Galería de Fotos/Videos',
+      'short_description' => 'Una galería de fotos o video permitirá darle más estilo a tú sitio web o aplicación móvil. ',
+      'section_id'        => 1,
+      'icon_id'           => 312,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Códigos QR',
+      'short_description' => 'Al igual que los códigos de barra, los códigos QR permiten identificar diversos articulos, sin embargo,  incluso su aplicación es más amplia ya que pueden adjuntarse promociones de alguna temporada o sitios web en especifico.',
+      'section_id'        => 1,
+      'icon_id'           => 323,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8450
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8450
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Código de barras',
+      'short_description' => 'Los códigos de barras permiten identificar de manera oficial un producto.',
+      'section_id'        => 1,
+      'icon_id'           => 75,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 5200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 5200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 5000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 4950
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Lista de Tareas',
+      'short_description' => 'Una lista de tareas permite gestionar las distintas acciones a realizar dentro de una aplicación. Sus aplicaciones pueden ser diferentes dependiendo del área.',
+      'section_id'        => 1,
+      'icon_id'           => 514,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 7000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Carrito de Compras',
+      'short_description' => 'Coloca un carrito de compras en tu página web o aplicación móvil. Su principal función es poder almacenar los productos o artículos elegidos por el cliente. Hoy en día millones de tiendas virtuales ponen a disposición este sistema para ser más prácticos.',
+      'section_id'        => 1,
+      'icon_id'           => 23,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 13200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Audio/Musica',
+      'short_description' => 'Coloca cualquier tipo de audio dentro de tú página web o aplicación. Dale un ambiente más agradable e incluso gestiona playlist.',
+      'section_id'        => 1,
+      'icon_id'           => 297,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 3500
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 3500
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Cámara/Video',
+      'short_description' => 'Es un plug-in que permite la disponibilidad de la cámara de cualquier dispositivo para distintos usos.',
+      'section_id'        => 1,
+      'icon_id'           => 430,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8950
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8950
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8600
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8600
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sincronización en todos los dispositvos',
+      'short_description' => 'La sincronización en todos los dispositivos permite potencializar una aplicación dando lugar a nuevas funcionalidades desarrolladas a base de la nube. Un ejemplo simple puede ser la subida de archivos para alojamiento en la nube y total acceso desde pc. ',
+      'section_id'        => 1,
+      'icon_id'           => 541,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 8200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 6600
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Buscador Web',
+      'short_description' => 'Permite realizar búsquedas dentro de su sitio web para mostrar diversos tipos de contenidos ya sea algún tipo de información, fotografías, audio, video, etc. ',
+      'section_id'        => 1,
+      'icon_id'           => 25,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 10450
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 10450
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 12200
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 9900
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de tickets ',
+      'short_description' => 'El Sistema de Tickets permite mostrar datos ordenados de alguna operación realizada. Su aplicación es muy amplia, puede ser desde transacciones por internet, peticiones de usuarios hasta promociones de algún articulo generadas vía web. ',
+      'section_id'        => 2,
+      'icon_id'           => 401,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 26400
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Sistema de Administración de Pagos/Cuentas',
+      'short_description' => 'La administración de pagos ofrece una interfaz mediante la cual se tiene el control sobre las transacciones realizadas, así como la información de quién y en qué momento se realizaron los pagos. ',
+      'section_id'        => 2,
+      'icon_id'           => 292,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Administración por Usuarios con Privilegios',
+      'short_description' => 'El Panel de Control de Usuarios otorga una mayor fiabilidad en cuanto a la gestión de los usuarios teniendo un total control de ellos. Sus principales características son la modificación de información, permisos, bloqueos o baja de usuarios.',
+      'section_id'        => 2,
+      'icon_id'           => 426,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Reportes',
+      'short_description' => 'Reporting es un sistema que permite generar reportes en base a una serie de criterios, cálculos, estadísticas o información de cualquier tipo. Es comunmente utilizado por empresas que requieren obtener datos de sus ventas realizadas en un determinado tiem',
+      'section_id'        => 2,
+      'icon_id'           => 515,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 19800
+          ]
+        ]
+      ]
+    ],
+    [
+      'name'              => 'Aprobación/Moderación',
+      'short_description' => 'El sistema de Moderación es una implementación sobre el Sistema de FeedBack o retroalimentación, en donde se puede determinar que contenidos, comentarios o cualquier tipo de flujo de información puede permitirse en una aplicación. ',
+      'section_id'        => 2,
+      'icon_id'           => 8,
+      'item_platform'     => [
+        [
+          'platform_id' => 1,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 2,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 3,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 4,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 5,
+          'additional'  => [
+            'price' => 33000
+          ]
+        ],
+        [
+          'platform_id' => 6,
+          'additional'  => [
+            'price' => 33000
           ]
         ]
       ]
