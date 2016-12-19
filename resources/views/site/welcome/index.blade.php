@@ -206,10 +206,10 @@
                     <b>Diseño personalizado sobre plantilla premium</b>
                   </li>
                   <li>
-                    Servidor y dominio conjunto.
+                    <b>Servidor y dominio conjunto.</b>
                   </li>
                   <li class="fc-faded">
-                    *Este plan muestra banners de publicidad
+                    <b>*Este plan muestra banners de publicidad</b>
                   </li>
                 </ul>
               </div>
@@ -242,16 +242,13 @@
                     <b>Manual de identidad (Logotipo, paletas de color, mockups de papelería)</b>
                   </li>
                   <li>
-                    Aplicaciones de papelería con archivos para imprimir
+                    <b>Aplicaciones de papelería con archivos para imprimir</b>
                   </li>
                   <li>
-                    Archivo de logotipo (.ai, .eps, .jpg, .png)
+                    <b>Archivo de logotipo (.ai, .eps, .jpg, .png)</b>
                   </li>
                   <li>
-                    Tipografías corporativas listas para instalar en PC / Mac
-                  </li>
-                  <li>
-                    Desarrollo de naming con disponibilidad en IMPI
+                    <b>Tipografías corporativas listas para instalar en PC / Mac</b>
                   </li>
                 </ul>
               </div>
@@ -296,16 +293,13 @@
                     <b>Aplicaciones de papelería con archivos para imprimir</b>
                   </li>
                   <li>
-                    Servidor y dominio conjunto
+                    <b>Servidor y dominio conjunto</b>
                   </li>
                   <li>
-                    Archivo de logotipo (.ai, .eps, .jpg, .png)
+                    <b>Archivo de logotipo (.ai, .eps, .jpg, .png)</b>
                   </li>
                   <li>
-                    Tipografías corporativas listas para instalar en PC / Mac
-                  </li>
-                  <li>
-                    Desarrollo de naming con disponibilidad en IMPI
+                    <b>Tipografías corporativas listas para instalar en PC / Mac<b>
                   </li>
                 </ul>
               </div>
