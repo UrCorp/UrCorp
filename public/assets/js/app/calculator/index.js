@@ -54,6 +54,12 @@ Calculator.prototype.__construct = function($element) {
     $option.prop('selected', true);
   });
 
+  __self.$inputPromotionCode.keyup(function(){
+    var $this = $(this);
+
+    $this.val($.trim($this.val()));
+  })
+
   $.ajax({
     type: 'GET',
     url: 'api/v1/calculator/web/prices',
