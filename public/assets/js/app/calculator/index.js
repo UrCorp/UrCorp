@@ -476,6 +476,7 @@ Calculator.prototype.showCommentsForm = function() {
         });
       },
       success: function(res) {
+        console.log(res);
         if (res.status == 'SUCCESS') {
           __self.$body.loading('stop');
 
@@ -519,6 +520,7 @@ Calculator.prototype.showCommentsForm = function() {
         }
       },
       error: function(res, textstatus, jqxhr) {
+        console.log(res);
         alert("AJAX Error");
       }
     });
@@ -530,6 +532,10 @@ Calculator.prototype.sendByEmailEvent = function() {
 
   __self.$sendByEmailForm.validate({
     rules: {
+      'quote[client-name]': {
+        required: true,
+        maxlength: 60
+      },
       'quote[email]': {
         required: true,
         email: true,
@@ -537,6 +543,9 @@ Calculator.prototype.sendByEmailEvent = function() {
       }
     },
     messages: {
+      'quote[client-name]': {
+        required: "Por favor, introduzca su nombre completo."
+      },
       'quote[email]': {
         required: "Por favor, introduzca su correo electrónico.",
         email: "Correo electrónico inválido.",

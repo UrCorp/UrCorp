@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use Route;
 use Validator;
+use Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Laracasts\Flash\Flash;
+use Carbon\Carbon;
 use App\Item;
 use App\Platform;
+use App\PromotionCode;
+use App\ReferringUser;
+use App\Quote;
 
 class Calculator extends Controller
 {
@@ -82,9 +87,9 @@ class Calculator extends Controller
       'msg'    => 'Existe un error en la conexión ¡Por favor, intente más tarde!'
     ];
 
-    $quote = $request->input('quote');
+    $quote_params = $request->input('quote');
 
-    $validation = Validator::make($quote, [
+    $validation = Validator::make($quote_params, [
       'email'       => 'required|email|max:250',
       'platforms'   => 'required|array',
       'items'       => 'required|array'
@@ -94,25 +99,40 @@ class Calculator extends Controller
       $resp['status'] = 'VALIDATION_ERROR';
       $resp['msg'] = 'Debe seleccionar al menos un servicio y un plataforma (Android, iPhone, PhoneGap, etc) para poder generar la cotización.';
     } else {
-      if (isset($quote['items']) and count($quote['items']) > 0 and
-          isset($quote['platforms']) and count($quote['platforms']) > 0) {
-        $items = $quote['items'];
-        $platforms = $quote['platforms'];
+      if (isset($quote_params['items']) and count($quote_params['items']) > 0 and
+          isset($quote_params['platforms']) and count($quote_params['platforms']) > 0) {
 
-        $mail_sent = true; // recordar borrar
-
-        $price = 0.0;
         $resp['shoppingCart']['items'] = [];
         $resp['shoppingCart']['platforms'] = [];
+        $quote_data = [
+          'email'               => null,
+          'subtotal'            => 0.0,
+          'apply_discount'      => false,
+          'promotion_code'      => null,
+          'discount_percentage' => 0.0,
+          'discount_amount'     => 0.0,
+          'total'               => 0.0,
+          'operation_id'        => null,
+          'operation_code'      => null
+        ];
+        $email_data = [
+          'quote'               => null,
+          'new_promotion_code'  => null
+        ];
 
-        foreach ($items as $itemSlug) {
+        $quote_data['email'] = $quote_params['email'];
+
+        $price = 0.00;
+        foreach ($quote_params['items'] as $itemSlug) {
           $price = 0.0;
           $item = Item::findBySlug($itemSlug);
 
-          foreach ($platforms as $platformSlug) {
+          foreach ($quote_params['platforms'] as $platformSlug) {
             $platform = $item->platforms()->where(['platforms.slug' => $platformSlug])->first();
-            $price += $platform->pivot->price;
+            $price += ((double) $platform->pivot->price);
           }
+
+          $quote_data['subtotal'] += $price; 
 
           array_push($resp['shoppingCart']['items'], [
             'name'        => $item->name,
@@ -121,19 +141,73 @@ class Calculator extends Controller
           ]);
         }
 
-        foreach ($platforms as $platformSlug) {
+        foreach ($quote_params['platforms'] as $platformSlug) {
           $platform = Platform::findBySlug($platformSlug);
 
           array_push($resp['shoppingCart']['platforms'], $platform->name);
         }
 
-        /* 
-        $mail_sent = Mail::send('site.emails.calculator.sendByEmail', ['quote' => $quote], function ($m) use ($quote) {
+        $quote_data['total'] = $quote_data['subtotal'];
+
+        if (isset($quote_params['code']) && !empty($quote_params['code'])) {
+          $code = $quote_params['code'];
+          $promotionCode = PromotionCode::whereCode($code);
+
+          if ($promotionCode->count() == 1) {
+            $promotionCode = $promotionCode->first();
+
+            $quote_data['apply_discount'] = true;
+            $quote_data['promotion_code'] = $code;
+            $quote_data['discount_percentage'] = (double) $promotionCode->percentage;
+            $quote_data['discount_amount'] = (double) ($quote_data['subtotal'] * $quote_data['discount_percentage']) / 100;
+            $quote_data['total'] -= $quote_data['discount_amount'];
+          }
+        }
+
+        $quote = new Quote($quote_data);
+        $quote->save();
+
+        for ($i = 0; $i < count($quote_params['platforms']); ++$i) {
+          $platform = Platform::findBySlug($quote_params['platforms'][$i]);
+
+          $quote->platforms()->attach($platform->id);
+        }
+
+         for ($i = 0; $i < count($quote_params['items']); ++$i) {
+          $item = Item::findBySlug($quote_params['items'][$i]);
+
+          $quote->items()->attach($item->id);
+        }
+
+        $referringUser = ReferringUser::whereEmail($quote_params['email']);
+
+        if ($referringUser->count() == 0) {
+          $referringUser = new ReferringUser([
+            'first_name'  => $quote_params['client-name'],
+            'email'       => $quote_params['email']
+          ]);
+          $referringUser->save();
+        } else if ($referringUser->count() == 1) {
+          $referringUser = $referringUser->first();
+        }
+
+        $promotionCode = new PromotionCode([
+          'code'        => str_random(8),
+          'percentage'  => 10.00
+        ]);
+        $promotionCode->save();
+
+        $referringUser->promotionCodes()->attach($promotionCode);
+
+        $email_data['quote']              = $quote;
+        $email_data['new_promotion_code'] = $promotionCode->code;
+
+        $mail_sent = Mail::send('site.emails.quote', ['email_data' => $email_data], function ($m) use ($quote_params, $quote) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
-          $m->replyTo($contact['email'], $contact['name']);
-          $m->to('contacto@urcorp.mx', 'Contacto UrCorp');
-          $m->subject('[contacto] '.$contact['name'].' | UrCorp');
-        });*/
+          $m->replyTo('ventas@urcorp.mx', 'Contacto UrCorp');
+          $m->to($quote->email, $quote_params['client-name']);
+          $m->subject('Cotización UrCorp | ID de Operación: '. $quote->operation_id);
+        });
 
         if ($mail_sent) {
           $resp['status'] = 'SUCCESS';

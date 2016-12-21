@@ -104,7 +104,12 @@
               </div>
               <div class="panel-body">
                 <div class="form-group">
-                  <label for="quote-email">Enviarme la cotización por email</label>
+                  <label class="text-center">Enviame la cotización por email</label>
+                  <label for="quote-client-name"><sup class="red" style="color:red;">*</sup> Nombre: </label>
+                  <input id="quote-client-name" name="quote[client-name]" type="text" class="form-control" placeholder="Nombre: Juan Peréz">
+                </div>
+                <div class="form-group">
+                  <label for="quote-email"><sup class="red" style="color:red;">*</sup> Correo electrónico: </label>
                   <input id="quote-email" name="quote[email]" type="email" class="form-control" placeholder="E-mail: example@mail.com">
                 </div>
                 <div class="form-group">

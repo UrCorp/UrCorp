@@ -11,7 +11,7 @@ class CalculatorTest extends TestCase {
    * @return void
    */
   public function testExample() {
-    $this->json('POST', '/api/v1/calculator/web/sendByEmail', [
+    $resp = $this->call('POST', '/api/v1/calculator/web/sendByEmail', [
       'quote' => [
         'email'     => 'mikebsg01@gmail.com',
         'platforms' => [
@@ -24,8 +24,8 @@ class CalculatorTest extends TestCase {
           'sistema-de-administracion-de-pagos-cuentas'
         ]
       ]
-    ])->seeJson([
-      0
     ]);
+    
+    echo $resp;
   }
 }

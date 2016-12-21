@@ -93,7 +93,7 @@ class Promotions extends Controller
        * Al pasar a la modalidad de múltiples códigos por usuarios referentes se
        * utilizará el método Attach hasta entonces.
        */
-      $referringUser->promotionCodes()->sync([$promotionCode->id]);
+      $promotionCode->referringUsers()->sync([$referringUser->id]);
     }
 
     Flash::warning('El código de promoción: <b>' . $promotionCode->code . '</b> ha sido actualizado.');

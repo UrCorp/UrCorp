@@ -17,9 +17,14 @@ class CreateQuotesTable extends Migration {
        */
       $table->engine = 'InnoDB';
       $table->increments('id');
+      $table->string('email', 250);
       $table->decimal('subtotal', 17, 4);
+      $table->boolean('apply_discount');
+      $table->string('promotion_code')->nullable();
+      $table->decimal('discount_percentage', 17, 4);
+      $table->decimal('discount_amount', 17, 4);
       $table->decimal('total', 17, 4);
-      $table->string('operation_id', 9);
+      $table->string('operation_id', 11);
       $table->string('operation_code', 8);
       $table->timestamps();
     });
@@ -39,8 +44,8 @@ class CreateQuotesTable extends Migration {
        * ============================================================= //
        */
       $table->foreign('quote_id')
-            ->references('id')->on('quotes');
-            /* ->onDelete('cascade'); */
+            ->references('id')->on('quotes')
+            ->onDelete('cascade');
 
       $table->foreign('platform_id')
             ->references('id')->on('platforms');
@@ -62,8 +67,8 @@ class CreateQuotesTable extends Migration {
        * ============================================================= //
        */
       $table->foreign('quote_id')
-            ->references('id')->on('quotes');
-            /* ->onDelete('cascade'); */
+            ->references('id')->on('quotes')
+            ->onDelete('cascade');
 
       $table->foreign('item_id')
             ->references('id')->on('items');
@@ -85,8 +90,8 @@ class CreateQuotesTable extends Migration {
        * ============================================================= //
        */
       $table->foreign('quote_id')
-            ->references('id')->on('quotes');
-            /* ->onDelete('cascade'); */
+            ->references('id')->on('quotes')
+            ->onDelete('cascade');
 
       $table->foreign('promotion_code_id')
             ->references('id')->on('promotion_codes');
@@ -100,7 +105,7 @@ class CreateQuotesTable extends Migration {
    * @return void
    */
   public function down() {
-    Schema::drop('quotes_promotion_code');
+    Schema::drop('quotes_promotion_codes');
     Schema::drop('quotes_items');
     Schema::drop('quotes_platforms');
     Schema::drop('quotes');

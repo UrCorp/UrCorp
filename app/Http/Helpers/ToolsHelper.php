@@ -39,6 +39,15 @@
     return $random_str;
   }
 
+  function generateRandomStringNumberString($length = 1) {
+    $random_str = "";
+
+    for ($i = 0; $i < $length; ++$i) {
+      $random_str .= rand(0, 9);
+    }
+    return $random_str;
+  }
+
   function generateKey($length = null) {
     
     if (is_null($length)) {

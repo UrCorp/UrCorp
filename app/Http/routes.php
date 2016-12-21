@@ -198,6 +198,11 @@ Route::group(['as' => 'site.'], function () {
       'uses'  => 'Welcome@index',
       'as'    => 'index'
     ]);
+
+    Route::get('/mail', [
+      'uses'  => 'Welcome@mail',
+      'as'    => 'mail'
+    ]);
   });
 
   Route::group(['prefix' => 'contact', 'as' => 'contact.'], function () {
