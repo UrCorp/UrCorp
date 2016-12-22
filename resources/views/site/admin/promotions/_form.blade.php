@@ -16,6 +16,18 @@
     </div>
   </div>
   <div class="form-group">
+    {!! Form::label('promotionCode[start_date]', 'Fehca de Inicio', ['class' => 'col-md-4 control-label']) !!}
+    <div class="col-md-8">
+        {!! Form::date('promotionCode[start_date]', null, ['class' => 'col-md-8 form-control date', 'required' => 'required']) !!}
+    </div>
+  </div>
+  <div class="form-group">
+    {!! Form::label('promotionCode[expiry_date]', 'Fehca de Expiración', ['class' => 'col-md-4 control-label']) !!}
+    <div class="col-md-8">
+        {!! Form::date('promotionCode[expiry_date]', null, ['class' => 'col-md-8 form-control text-right', 'placeholder' => 'required']) !!}
+    </div>
+  </div>
+  <div class="form-group">
     <div class="col-md-12">
       <div class="pull-right">
         <label for="add_referring_user">
