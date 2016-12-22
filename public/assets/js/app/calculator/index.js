@@ -62,7 +62,7 @@ Calculator.prototype.__construct = function($element) {
 
   $.ajax({
     type: 'GET',
-    url: 'api/v1/calculator/web/prices',
+    url: $.fn.origin + '/api/v1/calculator/web/prices',
     dataType: 'json',
     beforeSend: function() {},
     success: function(resp) {
@@ -79,12 +79,6 @@ Calculator.prototype.__construct = function($element) {
       alert("AJAX Error");
     }
   });
-}
-
-Calculator.prototype.init = function(itemNames, prices) {
-  this.itemNames = typeof(itemNames) == "object" ? itemNames : {};
-  this.prices = typeof(prices) == "object" ? prices : {};
-  this.calculate();
 }
 
 Calculator.prototype.calculate = function() {
@@ -108,6 +102,7 @@ Calculator.prototype.calculate = function() {
     this.discount.amount = (this.total * this.discount.percentage) / 100;
     this.total -= this.discount.amount;
   }
+  return this;
 }
 
 Calculator.prototype.addItem = function(id) {
@@ -285,7 +280,7 @@ Calculator.prototype.applyPromotionEvent = function() {
 
     $.ajax({
       type: 'GET',
-      url: 'api/v1/promotion/discount/' + promotionCode,
+      url: $.fn.origin + '/api/v1/promotion/discount/' + promotionCode,
       dataType: 'json',
       beforeSend: function() {
         __self.$body.loading({
@@ -562,6 +557,13 @@ Calculator.prototype.sendByEmailEvent = function() {
       return false;
     }
   });
+}
+
+Calculator.prototype.init = function(itemNames, prices) {
+  this.itemNames = typeof(itemNames) == "object" ? itemNames : {};
+  this.prices = typeof(prices) == "object" ? prices : {};
+
+  this.calculate().showPrice();
 }
 
 $(document).on('ready', function() { 

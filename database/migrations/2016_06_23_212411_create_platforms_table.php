@@ -20,8 +20,8 @@ class CreatePlatformsTable extends Migration
        */
       $table->engine = 'InnoDB';
       $table->increments('id');
-      $table->string('name', 45);
-      $table->string('slug')->nullable();
+      $table->string('name', 60);
+      $table->string('slug', 20)->nullable();
       $table->integer('calculator_id')->unsigned();
       $table->integer('icon_id')->unsigned();
       $table->timestamps();

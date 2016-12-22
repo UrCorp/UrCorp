@@ -11,6 +11,7 @@ class Platform extends Model implements SluggableInterface
   use SluggableTrait;
 
   protected $sluggable = [
+    'max_length'  => 15,
     'build_from'  => 'name',
     'save_to'     => 'slug',
     'on_update'   => true

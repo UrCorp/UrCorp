@@ -17,10 +17,11 @@ class CreateQuotesTable extends Migration {
        */
       $table->engine = 'InnoDB';
       $table->increments('id');
+      $table->string('customer_name', 60);
       $table->string('email', 250);
       $table->decimal('subtotal', 17, 4);
       $table->boolean('apply_discount');
-      $table->string('promotion_code')->nullable();
+      $table->string('promotion_code', 8)->nullable();
       $table->decimal('discount_percentage', 17, 4);
       $table->decimal('discount_amount', 17, 4);
       $table->decimal('total', 17, 4);
