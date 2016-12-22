@@ -244,6 +244,7 @@ class Calculator extends Controller
         if ($mail_sent) {
           $resp['status'] = 'SUCCESS';
           $resp['msg'] = '¡La cotización ha sido enviada exitosamente!';
+          $resp['data']['quotation_link'] = secure_url('/calculator/' . $quote->operation_code);
         } else {
           $resp['status'] = 'ERROR_CONNECTION';
           $resp['msg']    = 'Existe un error en la conexión ¡Por favor, intente más tarde!';
