@@ -94,7 +94,7 @@
         </tr>
       </table>
     </div>
-    @if (isset($email_data['new_promotion_code']) && !empty($email_data['new_promotion_code']))
+    @if (isset($email_data['quote']->apply_discount) && isset($email_data['quote']->promotion_code) && !empty($email_data['quote']->promotion_code))
       <div style="width:92%;display:block;margin:auto;">
         <p style="font-size:14px;">*** Utilizaste el código de promoción: <b>{{ $email_data['quote']->promotion_code }}</b></p>
       </div>

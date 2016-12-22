@@ -45,48 +45,4 @@ class Welcome extends Controller
 
     return view('site.welcome.index')->with($this->params);
   }
-
-  public function mail(Request $request) {
-
-    $quote = [
-      'subtotal'        => 92400,
-      'total'           => 92400,
-      'apply_discount'  => false,
-      'operation_id'    => 'UR1612001',
-      'operation_code'  => 'ab05bcdf',
-    ];
-
-    $quote = new \App\Quote($quote);
-    $quote->save();
-
-    $platforms = [
-      'android-phone',
-      'web'
-    ];
-
-    $items = [
-      'perfiles',
-      'geolocalizacion-y-brujula-con-api-google-maps',
-      'sistema-de-administracion-de-pagos-cuentas'
-    ];
-
-    for ($i = 0; $i < count($platforms); ++$i) {
-      $platform = \App\Platform::findBySlug($platforms[$i]);
-
-      $quote->platforms()->attach($platform->id);
-    }
-
-     for ($i = 0; $i < count($items); ++$i) {
-      $item = \App\Item::findBySlug($items[$i]);
-
-      $quote->items()->attach($item->id);
-    }
-
-    $new_promotion_code = 'gHTr06Xc';
-
-    return view('site.emails.quote')->with([
-      'quote'               => $quote,
-      'new_promotion_code'  => $new_promotion_code
-    ]);
-  }
 }

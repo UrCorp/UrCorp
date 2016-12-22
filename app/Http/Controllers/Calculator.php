@@ -21,6 +21,10 @@ class Calculator extends Controller
   private $contact = null;
 
   public function __construct() {
+    /* Not remove */
+    $this->params['controller'] = appGetController(Route::current());
+    $this->params['view']       = appGetView(Route::current());
+    /* Not remove */
 
     $cookieContact = \Cookie::get('contact');
 
@@ -39,13 +43,38 @@ class Calculator extends Controller
     $this->contact = $results->first();
   }
 
-  public function index(Request $request) {
-    $this->params['controller'] = appGetController(Route::current());
-    $this->params['view']       = appGetView(Route::current());
-    $this->params['calculator'] = \App\Calculator::findBySlug('web');
-    $this->params['p']  = $request->input('p');
+  public function index(Request $request, $operationCode = null) {
+    $calculator       = \App\Calculator::findBySlug('web');
+    $item_params      = $request->input('i') ?: [];
+    $platform_params  = $request->input('p') ?: [];
+    $quote            = null;
 
-    return view('site.calculator.index')->with($this->params);
+    if (!is_null($operationCode)) {
+      $quote = Quote::whereOperationCode($operationCode);
+
+      if ($quote->count() == 1) {
+        $quote            = $quote->first();
+        $item_params      = [];
+        $platform_params  = [];
+
+        foreach ($quote->platforms as $platform) {
+          array_push($platform_params, $platform->slug);
+        }
+
+        foreach ($quote->items as $item) {
+          array_push($item_params, $item->slug);
+        }
+      }
+    }
+
+    return view('site.calculator.index')->with([
+      'controller'      => $this->params['controller'],
+      'view'            => $this->params['view'],
+      'calculator'      => $calculator,
+      'p'               => $platform_params,
+      'i'               => $item_params,
+      'quote'           => $quote
+    ]);
   }
 
   public function prices($calculatorSlug) {
@@ -90,9 +119,10 @@ class Calculator extends Controller
     $quote_params = $request->input('quote');
 
     $validation = Validator::make($quote_params, [
-      'email'       => 'required|email|max:250',
-      'platforms'   => 'required|array',
-      'items'       => 'required|array'
+      'customer-name' => 'required|max:60',
+      'email'         => 'required|email|max:250',
+      'platforms'     => 'required|array',
+      'items'         => 'required|array'
     ]);
 
     if ($validation->fails()) {
@@ -105,6 +135,7 @@ class Calculator extends Controller
         $resp['shoppingCart']['items'] = [];
         $resp['shoppingCart']['platforms'] = [];
         $quote_data = [
+          'customer_name'       => null,
           'email'               => null,
           'subtotal'            => 0.0,
           'apply_discount'      => false,
@@ -120,7 +151,8 @@ class Calculator extends Controller
           'new_promotion_code'  => null
         ];
 
-        $quote_data['email'] = $quote_params['email'];
+        $quote_data['customer_name']  = $quote_params['customer-name'];
+        $quote_data['email']          = $quote_params['email'];
 
         $price = 0.00;
         foreach ($quote_params['items'] as $itemSlug) {
@@ -183,7 +215,7 @@ class Calculator extends Controller
 
         if ($referringUser->count() == 0) {
           $referringUser = new ReferringUser([
-            'first_name'  => $quote_params['client-name'],
+            'first_name'  => $quote_params['customer-name'],
             'email'       => $quote_params['email']
           ]);
           $referringUser->save();
@@ -205,7 +237,7 @@ class Calculator extends Controller
         $mail_sent = Mail::send('site.emails.quote', ['email_data' => $email_data], function ($m) use ($quote_params, $quote) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
           $m->replyTo('ventas@urcorp.mx', 'Contacto UrCorp');
-          $m->to($quote->email, $quote_params['client-name']);
+          $m->to($quote->email, $quote_params['customer-name']);
           $m->subject('Cotización UrCorp | ID de Operación: '. $quote->operation_id);
         });
 

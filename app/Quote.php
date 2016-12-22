@@ -10,6 +10,7 @@ class Quote extends Model {
   protected $table = 'quotes';
 
   protected $fillable = [
+    'customer_name',
     'email',
     'subtotal',
     'apply_discount',
@@ -40,7 +41,7 @@ class Quote extends Model {
     return $this->belongsToMany('App\PromotionCode', 'quotes_promotion_codes')->withTimestamps();
   }
 
-  /*
+  /**
    * Quote - Static Functions
    */
 

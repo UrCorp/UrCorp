@@ -51,7 +51,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('public/assets/css/style.css?v='.time()) }}">
   <!-- END [Cascade Style Sheet Files] -->
 </head>
-<body>
+<body data-origin="{!! URL::to('/') !!}">
   <header>
     <div id="header" class="col-xs-12 app-header no-side-padding">
       <div id="navbar" class="col-xs-12 no-side-padding">

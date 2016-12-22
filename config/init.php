@@ -2960,10 +2960,10 @@ return [
 
   'items' => [
     [
-      'name'              => 'Página Informativa',
-      'short_description' => 'Página web sencilla con 5 secciones y formulario de contacto.',
+      'name'              => 'E-mail login',
+      'short_description' => 'Inicio de sesión por medio de correo electrónico.',
       'section_id'        => 1,
-      'icon_id'           => 250,
+      'icon_id'           => 31,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3007,7 +3007,7 @@ return [
       'name'              => 'Filtros',
       'short_description' => 'Los filtros son un elemento importante dentro de una búsqueda ya que facilita al usuario el orden y la forma en que se muestran los datos.',
       'section_id'        => 1,
-      'icon_id'           => 201,
+      'icon_id'           => 180,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3051,7 +3051,7 @@ return [
       'name'              => 'Inicio de sesión vía Redes Sociales',
       'short_description' => 'Es un sistema de ingreso de usuarios por medio de una red social. Permite al usuario el acceso a cualquier interfaz o contenido cuya restricción fue determinada con la finalidad de llevar un mejor control en el tráfico web.',
       'section_id'        => 1,
-      'icon_id'           => 271,
+      'icon_id'           => 148,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3095,7 +3095,7 @@ return [
       'name'              => 'Perfiles',
       'short_description' => 'El sistema de perfil de usuarios, en general permite almacenar cualquier tipo de información o configuración relacionada a un usuario, esto con la finalidad de poder acceder a estas características posteriormente. ',
       'section_id'        => 1,
-      'icon_id'           => 425,
+      'icon_id'           => 184,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3139,7 +3139,7 @@ return [
       'name'              => 'Panel de Control',
       'short_description' => 'El Dashboard o Panel de control es un software que provee una interfaz gráfica para la gestión de sistemas automatizados así como también para la gestión de contenidos, configuraciones, administración de servicios, privilegios de usuario, etc.',
       'section_id'        => 1,
-      'icon_id'           => 162,
+      'icon_id'           => 229,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3183,7 +3183,7 @@ return [
       'name'              => 'Chat',
       'short_description' => 'El Chat es un sistema de comunicación en tiempo real, lo cual permite enviar mensajes de forma instantánea mediante el uso de un software.',
       'section_id'        => 1,
-      'icon_id'           => 710,
+      'icon_id'           => 232,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3227,7 +3227,7 @@ return [
       'name'              => 'Sistema de Pagos ',
       'short_description' => 'Medio de pago online, para transacciones por internet. ',
       'section_id'        => 1,
-      'icon_id'           => 470,
+      'icon_id'           => 524,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3271,7 +3271,7 @@ return [
       'name'              => 'Geolocalización y brújula con API Google Maps',
       'short_description' => 'Un geolocalizador permite ubicar la zona geográfica de su dispositivo así como su orientación, las aplicaciones pueden ser diversas dependiendo de la finalidad que se le quiera dar.',
       'section_id'        => 1,
-      'icon_id'           => 270,
+      'icon_id'           => 69,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3315,7 +3315,7 @@ return [
       'name'              => 'Sistema de Calificación ',
       'short_description' => 'El FeedBack es un medio de retroalimentación a través de las redes sociales. Sus principales características son las API’s de publicación de contenidos, comentarios, botones de “me gusta”, botones de “compartir” entre otros.',
       'section_id'        => 1,
-      'icon_id'           => 376,
+      'icon_id'           => 294,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3359,7 +3359,7 @@ return [
       'name'              => 'Compartir en Redes Sociales',
       'short_description' => 'El Social sharing es un elemento para compartir contenidos web en las redes sociales con la finalidad de difundir cierta información de tu página web.',
       'section_id'        => 1,
-      'icon_id'           => 347,
+      'icon_id'           => 510,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3403,7 +3403,7 @@ return [
       'name'              => 'Integración mensajería SMS',
       'short_description' => 'La Integración de SMS otorga la posibilidad de enviar SMS de forma automatizada por medio de una interfaz de usuario. Muy útil para las empresas que envian recordatorios a sus clientes de sus pagos vencidos o atrasados. ',
       'section_id'        => 1,
-      'icon_id'           => 343,
+      'icon_id'           => 121,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3447,7 +3447,7 @@ return [
       'name'              => 'Configuración de Privacidad de Usuarios',
       'short_description' => 'Las configuraciones de privacidad de usuario permitirán darle un entorno más seguro a la información de tus usuarios en tu sitio web o aplicación.',
       'section_id'        => 1,
-      'icon_id'           => 427,
+      'icon_id'           => 569,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3491,7 +3491,7 @@ return [
       'name'              => 'Calendario',
       'short_description' => 'La integración de calendario permitirá informar a los usuarios de aquellos eventos próximos que tienes.',
       'section_id'        => 1,
-      'icon_id'           => 115,
+      'icon_id'           => 661,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3535,7 +3535,7 @@ return [
       'name'              => 'Galería de Fotos/Videos',
       'short_description' => 'Una galería de fotos o video permitirá darle más estilo a tú sitio web o aplicación móvil. ',
       'section_id'        => 1,
-      'icon_id'           => 312,
+      'icon_id'           => 65,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3579,7 +3579,7 @@ return [
       'name'              => 'Códigos QR',
       'short_description' => 'Al igual que los códigos de barra, los códigos QR permiten identificar diversos articulos, sin embargo,  incluso su aplicación es más amplia ya que pueden adjuntarse promociones de alguna temporada o sitios web en especifico.',
       'section_id'        => 1,
-      'icon_id'           => 323,
+      'icon_id'           => 43,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3623,7 +3623,7 @@ return [
       'name'              => 'Código de barras',
       'short_description' => 'Los códigos de barras permiten identificar de manera oficial un producto.',
       'section_id'        => 1,
-      'icon_id'           => 75,
+      'icon_id'           => 44,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3667,7 +3667,7 @@ return [
       'name'              => 'Lista de Tareas',
       'short_description' => 'Una lista de tareas permite gestionar las distintas acciones a realizar dentro de una aplicación. Sus aplicaciones pueden ser diferentes dependiendo del área.',
       'section_id'        => 1,
-      'icon_id'           => 514,
+      'icon_id'           => 60,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3711,7 +3711,7 @@ return [
       'name'              => 'Carrito de Compras',
       'short_description' => 'Coloca un carrito de compras en tu página web o aplicación móvil. Su principal función es poder almacenar los productos o artículos elegidos por el cliente. Hoy en día millones de tiendas virtuales ponen a disposición este sistema para ser más prácticos.',
       'section_id'        => 1,
-      'icon_id'           => 23,
+      'icon_id'           => 126,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3755,7 +3755,7 @@ return [
       'name'              => 'Audio/Musica',
       'short_description' => 'Coloca cualquier tipo de audio dentro de tú página web o aplicación. Dale un ambiente más agradable e incluso gestiona playlist.',
       'section_id'        => 1,
-      'icon_id'           => 297,
+      'icon_id'           => 2,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3799,7 +3799,7 @@ return [
       'name'              => 'Cámara/Video',
       'short_description' => 'Es un plug-in que permite la disponibilidad de la cámara de cualquier dispositivo para distintos usos.',
       'section_id'        => 1,
-      'icon_id'           => 430,
+      'icon_id'           => 50,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3887,7 +3887,7 @@ return [
       'name'              => 'Buscador Web',
       'short_description' => 'Permite realizar búsquedas dentro de su sitio web para mostrar diversos tipos de contenidos ya sea algún tipo de información, fotografías, audio, video, etc. ',
       'section_id'        => 1,
-      'icon_id'           => 25,
+      'icon_id'           => 3,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3931,7 +3931,7 @@ return [
       'name'              => 'Sistema de tickets ',
       'short_description' => 'El Sistema de Tickets permite mostrar datos ordenados de alguna operación realizada. Su aplicación es muy amplia, puede ser desde transacciones por internet, peticiones de usuarios hasta promociones de algún articulo generadas vía web. ',
       'section_id'        => 2,
-      'icon_id'           => 401,
+      'icon_id'           => 327,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -3975,7 +3975,7 @@ return [
       'name'              => 'Sistema de Administración de Pagos/Cuentas',
       'short_description' => 'La administración de pagos ofrece una interfaz mediante la cual se tiene el control sobre las transacciones realizadas, así como la información de quién y en qué momento se realizaron los pagos. ',
       'section_id'        => 2,
-      'icon_id'           => 292,
+      'icon_id'           => 523,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -4019,7 +4019,7 @@ return [
       'name'              => 'Administración por Usuarios con Privilegios',
       'short_description' => 'El Panel de Control de Usuarios otorga una mayor fiabilidad en cuanto a la gestión de los usuarios teniendo un total control de ellos. Sus principales características son la modificación de información, permisos, bloqueos o baja de usuarios.',
       'section_id'        => 2,
-      'icon_id'           => 426,
+      'icon_id'           => 591,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -4063,7 +4063,7 @@ return [
       'name'              => 'Reportes',
       'short_description' => 'Reporting es un sistema que permite generar reportes en base a una serie de criterios, cálculos, estadísticas o información de cualquier tipo. Es comunmente utilizado por empresas que requieren obtener datos de sus ventas realizadas en un determinado tiem',
       'section_id'        => 2,
-      'icon_id'           => 515,
+      'icon_id'           => 541,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -4107,7 +4107,7 @@ return [
       'name'              => 'Aprobación/Moderación',
       'short_description' => 'El sistema de Moderación es una implementación sobre el Sistema de FeedBack o retroalimentación, en donde se puede determinar que contenidos, comentarios o cualquier tipo de flujo de información puede permitirse en una aplicación. ',
       'section_id'        => 2,
-      'icon_id'           => 8,
+      'icon_id'           => 592,
       'item_platform'     => [
         [
           'platform_id' => 1,
@@ -4146,6 +4146,6 @@ return [
           ]
         ]
       ]
-    ]
+    ],
   ]
 ];

@@ -20,9 +20,9 @@ class CreateItemsTable extends Migration
        */
       $table->engine = 'InnoDB';
       $table->increments('id');
-      $table->string('name', 45);
-      $table->string('slug')->nullable();
-      $table->string('short_description');
+      $table->string('name', 60);
+      $table->string('slug', 20)->nullable();
+      $table->string('short_description', 250);
       $table->integer('section_id')->unsigned();
       $table->integer('icon_id')->unsigned();
       $table->timestamps();

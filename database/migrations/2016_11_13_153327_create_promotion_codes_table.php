@@ -19,7 +19,7 @@ class CreatePromotionCodesTable extends Migration
        */
       $table->engine = 'InnoDB';
       $table->increments('id');
-      $table->string('code');
+      $table->string('code', 8);
       $table->decimal('percentage', 17, 4);
       $table->timestamps();
     });

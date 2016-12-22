@@ -22,9 +22,9 @@
             <h2 class="text-center">{{ $section->name }}</h2>
           </div>
           <div class="col-xs-12 no-side-padding">
-            @foreach ($calculator->items()->where(['items.section_id' => $section->id])->get() as $item)
+            @foreach ($section->items as $item)
               <div class="col-sm-3 col-xs-4 no-side-padding">
-                <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
+                <div class="item animated {!! (isset($i) and is_array($i) and in_array($item->slug, $i)) ? 'bounceIn active': 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
                   <div class="name">
                     <h3 class="text-center noselect">
                       <span class="icon fa">{!! '&#x'.$item->icon->unicode.';' !!}</span>
@@ -65,11 +65,11 @@
             <div class="panel-body">
               <div class="col-xs-12 no-side-padding">
                 {!! Form::open(['method' => 'POST', 'id' => 'form-apply-promotion', 'class' => 'calculator-form-promotion']) !!}
-                  {!! Form::hidden('quote[code]', null, ['class' => 'calculator-input-applied-promotion-code']) !!}
+                  {!! Form::hidden('quote[code]', (isset($quote) && isset($quote->promotion_code) && !empty($quote->promotion_code)) ? $quote->promotion_code : null, ['class' => 'calculator-input-applied-promotion-code']) !!}
                   <div class="form-group">
                     <label>Código de promoción</label>
                     <div class="input-group">
-                      {!! Form::text('code', null, ['id' => 'promotion-code', 'class' => 'calculator-input-promotion-code form-control']) !!}
+                      {!! Form::text('code', null, ['id' => 'promotion-code', 'class' => 'calculator-input-promotion-code form-control', 'placeholder' => 'Ej. xXxXxXxX']) !!}
                       <span class="input-group-btn">
                         <button type="submit" id="btn-apply-promo" class="btnApplyPromo btn btn-warning" type="button">Aplicar</button>
                       </span>
@@ -105,12 +105,12 @@
               <div class="panel-body">
                 <div class="form-group">
                   <label class="text-center">Enviame la cotización por email</label>
-                  <label for="quote-client-name"><sup class="red" style="color:red;">*</sup> Nombre: </label>
-                  <input id="quote-client-name" name="quote[client-name]" type="text" class="form-control" placeholder="Nombre: Juan Peréz">
+                  <label for="quote-customer-name"><sup class="red" style="color:red;">*</sup> Nombre: </label>
+                  {!! Form::text('quote[customer-name]', (isset($quote) && isset($quote->customer_name) && !empty($quote->customer_name)) ? $quote->customer_name : null, ['id' => 'quote-customer-name', 'class' => 'form-control', 'placeholder' => 'Ej: Juan Peréz ']) !!}
                 </div>
                 <div class="form-group">
                   <label for="quote-email"><sup class="red" style="color:red;">*</sup> Correo electrónico: </label>
-                  <input id="quote-email" name="quote[email]" type="email" class="form-control" placeholder="E-mail: example@mail.com">
+                  {!! Form::email('quote[email]', (isset($quote) && isset($quote->email) && !empty($quote->email)) ? $quote->email : null, ['id' => 'quote-email', 'class' => 'form-control', 'placeholder' => 'Ej: example@mail.com']) !!}
                 </div>
                 <div class="form-group">
                   <button type="submit" class="calculator-email-send btn btn-success btn-block">
