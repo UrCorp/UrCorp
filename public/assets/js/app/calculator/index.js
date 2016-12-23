@@ -58,7 +58,7 @@ Calculator.prototype.__construct = function($element) {
     var $this = $(this);
 
     $this.val($.trim($this.val()));
-  })
+  });
 
   $.ajax({
     type: 'GET',
@@ -79,6 +79,35 @@ Calculator.prototype.__construct = function($element) {
       alert("AJAX Error");
     }
   });
+
+  if ($.fn.isMobile) {
+    $('[data-toggle="tooltip"]').tooltip('destroy');
+
+    $('.item', $element).mousedown(function(e) {
+      var $this = $(this);
+      clearTimeout(this.downTimer);
+
+      this.downTimer = setTimeout(function() {
+        __self.showModal({
+          title: $this.data('name'),
+          body: (
+            '<div class="container-fluid>'+
+            '\t<div class="col-xs-12">'+
+            '\t\t<p>'+$this.data('original-title')+'</p>'+
+            '\t</div>'+
+            '</div>'
+          ),
+          footer: [
+            '<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>'
+          ]
+        });
+      }, 200);
+    }).mouseup(function(e) {
+      clearTimeout(this.downTimer);
+    });
+  } else {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
 }
 
 Calculator.prototype.calculate = function() {
@@ -427,13 +456,10 @@ Calculator.prototype.showCommentsForm = function() {
         '\t</div>'+
         '\t<div class="col-xs-12 no-side-padding">'+
         '\t\t<form class="calculator-form-extras">'+
-        '\t\t\t<textarea name="quote[comment]" class="calculator-input-comments form-control" rows="7" autofocus></textarea>'+
+        '\t\t\t<textarea name="quote[comments]" maxlength="250" class="calculator-input-comments form-control" rows="7" autofocus></textarea>'+
         '\t\t</form>'+
         '\t</div>'+
         '</div>'
-      ),
-      $btnSkipAndSend = $(
-        '<button type="button" class="calculator-quote-skip-and-send btn btn-primary">Omitir</button>'
       ),
       $btnSend = $(
         '<button type="button" class="calculator-quote-send btn btn-primary">Enviar</button>'
@@ -444,7 +470,6 @@ Calculator.prototype.showCommentsForm = function() {
     body: $modalBody,
     footer: [
       '<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>',
-      $btnSkipAndSend,
       $btnSend
     ]
   });
@@ -456,13 +481,13 @@ Calculator.prototype.showCommentsForm = function() {
   $btnSend.click(function(event) {
     event.preventDefault();
     var serializedCommentsForm = $('.calculator-form-extras', $modalBody).serialize();
-
+    
     __self.$appModal.modal('hide');
 
     $.ajax({
       type: "POST",
       url: __self.$sendByEmailForm.attr('action'),
-      data:  __self.getSerializedQuote(),
+      data:  __self.getSerializedQuote(serializedCommentsForm),
       dataType : 'json',
       beforeSend: function() {
         __self.$body.loading({

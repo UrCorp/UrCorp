@@ -48,9 +48,9 @@ class CreateQuotesTable extends Migration {
             ->references('id')->on('quotes')
             ->onDelete('cascade');
 
-      $table->foreign('platform_id')
+      /*$table->foreign('platform_id')
             ->references('id')->on('platforms');
-            /* ->onDelete('cascade'); */
+            ->onDelete('cascade'); */
     });
 
     /**
@@ -71,9 +71,9 @@ class CreateQuotesTable extends Migration {
             ->references('id')->on('quotes')
             ->onDelete('cascade');
 
-      $table->foreign('item_id')
+      /*$table->foreign('item_id')
             ->references('id')->on('items');
-            /* ->onDelete('cascade'); */
+            ->onDelete('cascade'); */
     });
 
     /**
@@ -94,9 +94,9 @@ class CreateQuotesTable extends Migration {
             ->references('id')->on('quotes')
             ->onDelete('cascade');
 
-      $table->foreign('promotion_code_id')
+      /*$table->foreign('promotion_code_id')
             ->references('id')->on('promotion_codes');
-            /* ->onDelete('cascade'); */
+            ->onDelete('cascade'); */
     });
   }
 

@@ -19,7 +19,8 @@ class Quote extends Model {
     'discount_amount',
     'total',
     'operation_id',
-    'operation_code'
+    'operation_code',
+    'comments'
   ];
 
   public function __construct($attributes = []) {

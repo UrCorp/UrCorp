@@ -198,48 +198,6 @@ Route::group(['as' => 'site.'], function () {
       'uses'  => 'Welcome@index',
       'as'    => 'index'
     ]);
-
-    Route::get('/other', function () {
-      echo '<textarea style="width:768px;height:480px;">';
-      echo "\t'items' => [\n";
-
-      $items = \App\Item::all();
-      $j = 0;
-
-      foreach ($items as $item) {
-
-        //if ($j < 10) {
-          echo "\t\t[\n".
-               "\t\t\t'name'\t\t\t\t\t\t\t=> '". $item->name ."',\n".
-               "\t\t\t'short_description'\t=> '". $item->short_description ."',\n".
-               "\t\t\t'section_id'\t\t\t\t=> ". ((int) $item->section_id) .",\n".
-               "\t\t\t'icon_id'\t\t\t\t\t\t=> ". ((int) $item->icon_id) .",\n".
-               "\t\t\t'item_platform'\t\t\t=> [\n";
-
-          $i = 1;
-
-          foreach ($item->platforms as $platform) {
-            echo "\t\t\t\t[\n".
-                 "\t\t\t\t\t'platform_id'\t=> ". ((int) $platform->id) . ",\n".
-                 "\t\t\t\t\t'additional'\t=> [\n".
-                 "\t\t\t\t\t\t'price'\t=> ". ((double) $platform->pivot->price) . "\n".
-                 "\t\t\t\t\t]\n";
-            if ($i < $item->platforms->count()) {
-              echo "\t\t\t\t],\n";
-            } else {
-              echo "\t\t\t\t]\n";
-            }
-
-            ++$i;
-          }
-
-          echo "\t\t\t]\n".
-               "\t\t],\n";
-        //}
-      }
-      echo "\t]\n";
-      echo "</textarea>";
-    });
   });
 
   Route::group(['prefix' => 'contact', 'as' => 'contact.'], function () {
