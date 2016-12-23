@@ -27,7 +27,7 @@ class Promotions extends Controller
     $tmp_code = null;
     $promotionCodeData = $request->input('promotionCode');
 
-    $promotionCode = new PromotionCode(['percentage' => $promotionCodeData['percentage']]);
+    $promotionCode = new PromotionCode(['percentage' => $promotionCodeData['percentage'],'start_date' => $promotionCodeData['start_date'],'expiry_date' => $promotionCodeData['expiry_date']]);
 
     do {
       $tmp_code = str_random(8);
