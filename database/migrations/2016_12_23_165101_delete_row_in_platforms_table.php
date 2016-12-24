@@ -51,5 +51,12 @@ class DeleteRowInPlatformsTable extends Migration {
       $platform = new Platform($platformData);
       $platform->save();
     }
+
+    /**
+     * Falta hacer las respectivas relaciones con los items para poder obtener el precio
+     * por plataforma, mientras tanto en la parte del FrontEnd con JavaScript
+     * el resultado será el valor NaN (Error producido por hacer operaciones
+     * con cualquier valor distinto a un Número, como por ejemplo, un string, char o null).
+     */
   }
 }
