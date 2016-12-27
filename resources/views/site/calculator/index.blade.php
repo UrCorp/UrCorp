@@ -19,7 +19,7 @@
             @endforeach
           </select>
         {!! Form::close() !!}
-        @foreach ($calculator->sections as $section)
+        @foreach ($calculator->sections()->orderBy('priority', 'ASC')->get() as $section)
           <div class="section-name col-xs-12 no-side-padding">
             <h2 class="text-center">{{ $section->name }}</h2>
           </div>
@@ -41,7 +41,7 @@
       </div>
       <div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
         <div id="platforms-container" class="platforms-container col-xs-12 no-side-padding">
-          @foreach ($calculator->platforms as $platform)
+          @foreach ($calculator->platforms()->orderBy('priority', 'ASC')->get() as $platform)
             <div class="col-xs-4 no-side-padding">
               <div class="platform animated {!! (isset($p) and is_array($p) and in_array($platform->slug, $p)) ? 'bounceIn active' : 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
                 <h3 class="text-center">

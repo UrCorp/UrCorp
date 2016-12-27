@@ -21,6 +21,7 @@ class Section extends Model implements SluggableInterface
   protected $fillable = [
     'name',
     'slug',
+    'priority',
     'calculator_id'
   ];
 

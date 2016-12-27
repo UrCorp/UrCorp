@@ -206,7 +206,7 @@
                           ?>
                           @if (!is_null($platform))
                             <div class="col-sm-6 col-xs-12 no-side-padding">
-                              <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                              <div class="item animated bounce col-xs-6 col-xs-offset-3" data-id="{{ $platform->slug }}">
                                 <h3 class="text-center">
                                   <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
                                   {!! $platform->name !!}

@@ -13,12 +13,13 @@
       <tr>
         <th># ID</th>
         <th class="text-center">Icono</th>
-        <th class="text-center">Nombre</th>
+        <th>Nombre</th>
+        <th class="text-center">Orden</th>
         <th class="text-center">Opciones</th>
       </tr>
     </thead>
     <tbody>
-      @forelse ($calculator->platforms as $platform)
+      @forelse ($calculator->platforms()->orderBy('priority', 'ASC')->get() as $platform)
         <tr>
           <th scope="row">
             {{ $platform->id }}
@@ -28,6 +29,9 @@
           </td>
           <td>
             {{ $platform->name }}
+          </td>
+          <td class="text-center">
+            {{ $platform->priority }}
           </td>
           <td class="text-center">
             <a href="{{ route('site.admin.panel.calculator.platforms.edit', [$calculator->slug, $platform->slug]) }}" class="btn btn-warning">
@@ -60,18 +64,22 @@
     <thead>
       <tr>
         <th># ID</th>
-        <th class="text-center">Nombre</th>
+        <th>Nombre</th>
+        <th class="text-center">Orden</th>
         <th class="text-center">Opciones</th>
       </tr>
     </thead>
     <tbody>
-      @forelse ($calculator->sections as $section)
+      @forelse ($calculator->sections()->orderBy('priority', 'ASC')->get() as $section)
         <tr>
           <th scope="row">
             {{ $section->id }}
           </th>
           <td>
             {{ $section->name }}
+          </td>
+          <td class="text-center">
+            {{ $section->priority }}
           </td>
           <td class="text-center">
             <a href="{{ route('site.admin.panel.calculator.sections.edit', [$calculator->slug, $section->slug]) }}" class="btn btn-warning">

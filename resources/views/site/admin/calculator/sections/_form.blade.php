@@ -5,6 +5,12 @@
       {!! Form::text('name', isset($section) ? $section->name : null, ['class' => 'col-md-8 form-control', 'required' => 'required']) !!}
     </div>
   </div>
+  <div class="form-group">
+    {!! Form::label('priority', 'Orden', ['class' => 'col-md-2 control-label']) !!}
+    <div class="col-md-10">
+      {!! Form::number('priority', isset($section) ? $section->priority : 0, ['class' => 'col-md-8 form-control text-right', 'step' => '1', 'min' => '0', 'required' => 'required']) !!}
+    </div>
+  </div>
   <div class="form-group text-center">
     <button class="btn btn-primary">
       {!! isset($section) ? 'Actualizar' : 'Guardar' !!}
