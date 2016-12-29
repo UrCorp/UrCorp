@@ -1,5 +1,7 @@
 @extends('site.layouts.calculator')
 
+@section('title', 'Cotizador de Web Apps | UrCorp')
+
 @section('content')
 <div  class="container calculator-container">
   <div class="row navbar-margin">

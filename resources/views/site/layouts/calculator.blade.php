@@ -16,8 +16,21 @@
   <meta charset="UTF-8">
   <title>@yield('title', 'UrCorp')</title>
   <!-- START [META TAGS] -->
-  <meta name="description" content="Creamos páginas web pensando en las necesidades de tu negocio, con una gran calidad en diseño 100% adaptables a dispositivos móviles, desarrollamos plataformas de comercio electrónico, marketing dígital e imagen corporativa, todo para tu negocio.">
+  <meta name="description" content="¿Deseas tener tu propia app o sitio web para tu negocio? Entonces prueba el cotizador más intuitivo del mercado con UrCorp.">
   <meta name="keywords" content="Páginas web, Páginas web en Querétaro, Aplicaciones web y móviles, E-Commerce, Diseño gráfico, Imagen Corporativa, Negocios, SEO, UrCorp">
+    <!-- START [OPEN GRAPH] -->
+    <meta property="og:title" content="Cotizador de Web Apps | UrCorp">
+    <meta property="og:description" content="¿Deseas tener tu propia app o sitio web para tu negocio? Entonces prueba el cotizador más intuitivo del mercado con UrCorp.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UrCorp">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="{!! URL::to('/calculator') !!}">
+    <meta property="og:image" content="{!! asset('public/assets/img/v2/urcorp-calculator-ogimage.png') !!}">
+    <meta property="og:image:url" content="{!! asset('public/assets/img/v2/urcorp-calculator-ogimage.png') !!}">
+    <meta property="og:image:secure_url" content="{!! secure_asset('public/assets/img/v2/urcorp-calculator-ogimage.png') !!}">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <!-- END [OPEN GRAPH] -->
   <!-- END [META TAGS] -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

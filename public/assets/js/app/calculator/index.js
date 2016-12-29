@@ -58,7 +58,7 @@ Calculator.prototype.__construct = function($element) {
     var $this = $(this);
 
     $this.val($.trim($this.val()));
-  })
+  });
 
   $.ajax({
     type: 'GET',
@@ -79,6 +79,35 @@ Calculator.prototype.__construct = function($element) {
       alert("AJAX Error");
     }
   });
+
+  if ($.fn.isMobile) {
+    $('[data-toggle="tooltip"]').tooltip('destroy');
+
+    $('.item', $element).mousedown(function(e) {
+      var $this = $(this);
+      clearTimeout(this.downTimer);
+
+      this.downTimer = setTimeout(function() {
+        __self.showModal({
+          title: $this.data('name'),
+          body: (
+            '<div class="container-fluid>'+
+            '\t<div class="col-xs-12">'+
+            '\t\t<p>'+$this.data('original-title')+'</p>'+
+            '\t</div>'+
+            '</div>'
+          ),
+          footer: [
+            '<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>'
+          ]
+        });
+      }, 200);
+    }).mouseup(function(e) {
+      clearTimeout(this.downTimer);
+    });
+  } else {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
 }
 
 Calculator.prototype.calculate = function() {
@@ -427,13 +456,10 @@ Calculator.prototype.showCommentsForm = function() {
         '\t</div>'+
         '\t<div class="col-xs-12 no-side-padding">'+
         '\t\t<form class="calculator-form-extras">'+
-        '\t\t\t<textarea name="quote[comment]" class="calculator-input-comments form-control" rows="7" autofocus></textarea>'+
+        '\t\t\t<textarea name="quote[comments]" maxlength="250" class="calculator-input-comments form-control" rows="7" autofocus></textarea>'+
         '\t\t</form>'+
         '\t</div>'+
         '</div>'
-      ),
-      $btnSkipAndSend = $(
-        '<button type="button" class="calculator-quote-skip-and-send btn btn-primary">Omitir</button>'
       ),
       $btnSend = $(
         '<button type="button" class="calculator-quote-send btn btn-primary">Enviar</button>'
@@ -444,7 +470,6 @@ Calculator.prototype.showCommentsForm = function() {
     body: $modalBody,
     footer: [
       '<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>',
-      $btnSkipAndSend,
       $btnSend
     ]
   });
@@ -456,13 +481,13 @@ Calculator.prototype.showCommentsForm = function() {
   $btnSend.click(function(event) {
     event.preventDefault();
     var serializedCommentsForm = $('.calculator-form-extras', $modalBody).serialize();
-
+    
     __self.$appModal.modal('hide');
 
     $.ajax({
       type: "POST",
       url: __self.$sendByEmailForm.attr('action'),
-      data:  __self.getSerializedQuote(),
+      data:  __self.getSerializedQuote(serializedCommentsForm),
       dataType : 'json',
       beforeSend: function() {
         __self.$body.loading({
@@ -493,7 +518,7 @@ Calculator.prototype.showCommentsForm = function() {
               '\t\t\t<div class="form-group">'+
               '\t\t\t\t<label class="col-xs-3 h4">Enlance <small><span class="fa fa-link"></span></small></label>'+
               '\t\t\t\t<div class="col-xs-9 no-side-padding">'+
-              '\t\t\t\t\t<input name="quote[link]" class="form-control" placeholder="http://www.example.com/">'+
+              '\t\t\t\t\t<input name="quote[link]" value="'+res.data.quotation_link+'" class="form-control" placeholder="http://www.example.com/">'+
               '\t\t\t\t</div>'+
               '\t\t\t</div>'+
               '\t\t</div>'+
@@ -505,13 +530,13 @@ Calculator.prototype.showCommentsForm = function() {
               '\t\t</div>'+
               '\t\t<div class="col-xs-12 no-side-padding bottom-margin text-center">'+
               '\t\t\t<div class="inline-block">'+
-              '\t\t\t\t<span class="fa fa-facebook-square share share-with-facebook"></span>'+
+              '\t\t\t\t<a href="https://www.facebook.com/sharer/sharer.php?u='+res.data.quotation_link+'" onclick="popupWindow(this, event);"><span class="fa fa-facebook-square share share-with-facebook"></span></a>'+
               '\t\t\t</div>'+
               '\t\t\t<div class="inline-block">'+
-              '\t\t\t\t<span class="fa fa-twitter-square share share-with-twitter"></span>'+
+              '\t\t\t\t<a href="https://twitter.com/intent/tweet?'+$.param({text: 'Por fin he encontrado una herramienta que me ayudará a hacer crecer mi negocio! Los invito a probarla: ' + res.data.quotation_link })+'&via=urcorpmx" onclick="popupWindow(this, event);"><span class="fa fa-twitter-square share share-with-twitter"></span></a>'+
               '\t\t\t</div>'+
               '\t\t\t<div class="inline-block">'+
-              '\t\t\t\t<span class="fa fa-google-plus-square share share-with-google-plus"></span>'+
+              '\t\t\t\t<a href="https://plus.google.com/share?url='+res.data.quotation_link+'" onclick="popupWindow(this, event);"><span class="fa fa-google-plus-square share share-with-google-plus"></span></a>'+
               '\t\t\t</div>'+
               '\t\t</div>'+
               '\t</div>'+
@@ -519,10 +544,42 @@ Calculator.prototype.showCommentsForm = function() {
             )
           });
         }
+        else if (res.status == 'VALIDATION_ERROR') {
+          __self.$body
+            .loading('toggle')
+            .loading({
+              message: res.msg,
+              theme: 'light',
+              onStart: function(loading) {
+                loading.overlay.slideDown(400);
+              },
+              onStop: function(loading) {
+                loading.overlay.slideUp(400);
+              }
+            });
+          setTimeout( function ( ) { 
+            __self.$body.loading('stop'); 
+          }, 5000);
+        }
       },
       error: function(res, textstatus, jqxhr) {
         console.log(res);
-        alert("AJAX Error");
+
+        __self.$body
+          .loading('toggle')
+          .loading({
+            message: 'Existe un error en la conexión <br/>¡Por favor, intente más tarde!',
+            theme: 'light',
+            onStart: function(loading) {
+              loading.overlay.slideDown(400);
+            },
+            onStop: function(loading) {
+              loading.overlay.slideUp(400);
+            }
+          });
+        setTimeout( function ( ) { 
+          __self.$body.loading('stop'); 
+        }, 5000);
       }
     });
   });
@@ -533,7 +590,7 @@ Calculator.prototype.sendByEmailEvent = function() {
 
   __self.$sendByEmailForm.validate({
     rules: {
-      'quote[client-name]': {
+      'quote[customer-name]': {
         required: true,
         maxlength: 60
       },
@@ -544,7 +601,7 @@ Calculator.prototype.sendByEmailEvent = function() {
       }
     },
     messages: {
-      'quote[client-name]': {
+      'quote[customer-name]': {
         required: "Por favor, introduzca su nombre completo."
       },
       'quote[email]': {

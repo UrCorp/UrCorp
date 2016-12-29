@@ -37,16 +37,6 @@ class CreatePlatformsTable extends Migration
             ->references('id')->on('icons')
             ->onDelete('cascade');
     });
-
-    /**
-      * Platforms - Seeders
-      * ============================================================= //
-      */
-    $platforms = config('init.platforms');
-
-    foreach ($platforms as $platform) {
-      Platform::create($platform);
-    }
   }
 
   /**

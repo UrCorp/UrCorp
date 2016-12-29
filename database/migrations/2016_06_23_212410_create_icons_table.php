@@ -25,16 +25,6 @@ class CreateIconsTable extends Migration
       $table->string('unicode', 4);
       $table->timestamps();
     });
-    
-    /**
-     * Icons - Seeders
-     * ============================================================= //
-     */
-    $icons = config('init.icons');
-
-    foreach ($icons as $icon) {
-      Icon::create($icon);
-    }
   }
 
   /**

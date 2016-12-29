@@ -8,7 +8,9 @@ class PromotionCode extends Model
 {
   protected $fillable = [
     'code',
-    'percentage'
+    'percentage',
+    'start_date',
+    'expiry_date'
   ];
 
   public function referringUsers() {

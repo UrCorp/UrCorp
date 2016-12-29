@@ -259,16 +259,8 @@
   margin-bottom: 28.8px;
 }
 
-.app-calculators-container .calculator-wrap {
-  background-color: #EDEDED;
-}
-
 .app-calculators-container .calculator-wrap .calculator {
   padding: 15px;
-}
-
-.app-calculators-container .calculator-wrap .calculator-1 {
-  background-color: #FFFFFF;
 }
 
 .app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
@@ -276,7 +268,8 @@
   min-height: 116px;
   max-height: 116px;
   overflow: hidden;
-  margin-top: 16px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {

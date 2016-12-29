@@ -61,29 +61,6 @@ class CreateItemsTable extends Migration
             ->references('id')->on('platforms')
             ->onDelete('cascade');
     });
-
-    /**
-     * Item/Platform - Seeders
-     * ============================================================= //
-     */
-    $items = config('init.items');
-
-    foreach($items as $item) {
-      $item_platform = null;
-
-      if (isset($item['item_platform']) and !empty($item['item_platform'])) {
-        $item_platform = $item['item_platform'];
-        unset($item['item_platform']);
-      }
-
-      $tmp_item = Item::create($item);
-
-      if (!is_null($item_platform)) {
-        for ($i = 0; $i < count($item_platform); ++$i) {
-          $tmp_item->platforms()->attach($item_platform[$i]['platform_id'], $item_platform[$i]['additional']);
-        }
-      }
-    }
   }
 
   /**

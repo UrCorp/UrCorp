@@ -11,6 +11,13 @@ Number.prototype.toCurrency = function() {
   return this.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }
 
+function popupWindow(element, event) {
+  event.preventDefault();
+  var $element = $(element);
+
+  window.open($element.attr('href'), $element.data('title'), 'width=500px,height=400px');
+}
+
 $(function() {
   var $window = $(window),
       $body = $('body'),

@@ -64,7 +64,7 @@
      * target's z-index
      * Has no effect if a custom overlay is defined
      */
-    zIndex: undefined,
+    zIndex: 9999998,
 
     /**
      * Message to be rendered on the overlay content
