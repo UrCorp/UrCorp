@@ -10,9 +10,10 @@ use App\Calculator;
 use App\Section;
 use App\Platform;
 use App\Item;
+use App\Quote;
+use App\PromotionCode;
 
-class Welcome extends Controller
-{
+class Welcome extends Controller {
   private $params = [];
 
   public function index(Request $request) {

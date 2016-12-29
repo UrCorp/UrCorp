@@ -19,11 +19,25 @@
       <img src="{!! asset('public/assets/img/logourcorp.png') !!}" alt="UrCorp" title="UrCorp" style="display:inline-block;width:252px;height:94px;margin:45px auto 30px auto;" />
     </div>
     <div style="width:92%;display:block;margin:auto;font-weight:400;font-size:16px;text-align:justify; ">
-      <p>Gracias por darnos la oportunidad de ayudar a crecer tu negocio en la era digital. Recibimos tu solicitud, adjunta viene un resumen de nuestra propuesta. </p>
-      @if (isset($email_data['new_promotion_code']) && !empty($email_data['new_promotion_code']))
-        <p>Queremos también compartirte un código de promoción del 10% de descuento para futuras cotizaciones con UrCorp que podrás compartir con tus amigos:</p>
-        <p>Código: <b>{{ $email_data['new_promotion_code'] }}</b></p>
+      @if (isset($email_data['quote']->apply_discount) && $email_data['quote']->apply_discount)
+        <p>Le notificamos que el promotor <b>{!! $email_data['referring_user']->full_name !!}</b> con el código:</p>
+        <p><b>{!! $email_data['quote']->promotion_code !!}</b></p>
+        <p>ha promovido una venta al cliente <b>{!! $email_data['quote']->customer_name !!}</b>, con el ID de Operación: </p>
+        <p><b>{!! $email_data['quote']->operation_id !!}</b></p>
+      @else
+        <p>El cliente <b>{!! $email_data['quote']->customer_name !!}</b> con correo electrónico:</p>
+        <p>
+          <a href="mailto:{{ $email_data['quote']->email }}">
+            {{ $email_data['quote']->email }}
+          </a>
+        </p>
+        <p>
+          ha generado una nueva cotización con el ID de Operación: 
+          <b>{!! $email_data['quote']->operation_id !!}</b>
+        </p>
       @endif
+      <p>Adjunto viene un resumen de la propuesta.</p>
+      <p>Favor de ponerse en contacto con el cliente lo antes posible para dar seguimiento al proyecto.</p>
     </div>
     <br/>
     <div style="width:92%; margin:auto; font-size:16px; border-top: 1px solid #000;padding-top: 15px;">
@@ -88,7 +102,7 @@
         </tr>
         <tr style="padding-top: 20px;">
           <td colspan="2" style="padding: 8px;text-align: right;font-weight:500;">
-            <span>Descuento ({{ $email_data['quote']->discount_percentage.'%' }}):</span>
+            <span>Descuento ({{ number_format($email_data['quote']->discount_percentage, 2, '.', ',').'%' }}):</span>
           </td>
           <td style="padding: 8px;text-align: right;font-weight: 400;">
             <span>{{ '$'.number_format($email_data['quote']->discount_amount, 2, '.', ',').' MXN' }}</span>
@@ -102,13 +116,19 @@
     </div>
     @if (isset($email_data['quote']->apply_discount) && isset($email_data['quote']->promotion_code) && !empty($email_data['quote']->promotion_code))
       <div style="width:92%;display:block;margin:auto;">
-        <p style="font-size:14px;">*** Utilizaste el código de promoción: <b>{{ $email_data['quote']->promotion_code }}</b></p>
+        <p style="font-size:16px;">*** Ha utilizado el código de promoción: <b>{{ $email_data['quote']->promotion_code }}</b></p>
+      </div>
+    @endif
+    @if (isset($email_data['quote']->comments) && !empty($email_data['quote']->comments))
+      <div style="width:92%;display:block;margin:auto;">
+        <p style="border-top:1px solid #000;padding-top:13px;"><b>Comentarios: </b></p>
+        <p style="font-size:18px;line-height: 28px; border-bottom: 1px solid #000000;padding-bottom:10px;">
+          {!! nl2br($email_data['quote']->comments) !!}
+        </p>
       </div>
     @endif
     <div style="width:92%;display:block;margin:30px auto 0 auto;">
-      <p><b>Atentanmente</b><br/>
-      <a href="mailto:ventas@urcorp.mx">ventas@urcorp.mx</a><br/>
-      Teléfono: <a href="tel:+524422175369" style="color:#000;text-decoration:none;">+52 (1) 442 217 5369</a><br/></p>
+      <p><b>Mensaje automático generado por el servidor de UrCorp.</b><br/>
     </div>
     <br/>
     <!--hr style="width: 95%; height: 2pt; background-color: black;"-->

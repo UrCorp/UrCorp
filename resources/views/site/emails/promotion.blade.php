@@ -19,11 +19,19 @@
       <img src="{!! asset('public/assets/img/logourcorp.png') !!}" alt="UrCorp" title="UrCorp" style="display:inline-block;width:252px;height:94px;margin:45px auto 30px auto;" />
     </div>
     <div style="width:92%;display:block;margin:auto;font-weight:400;font-size:16px;text-align:justify; ">
-      <p>Gracias por darnos la oportunidad de ayudar a crecer tu negocio en la era digital. Recibimos tu solicitud, adjunta viene un resumen de nuestra propuesta. </p>
-      @if (isset($email_data['new_promotion_code']) && !empty($email_data['new_promotion_code']))
-        <p>Queremos también compartirte un código de promoción del 10% de descuento para futuras cotizaciones con UrCorp que podrás compartir con tus amigos:</p>
-        <p>Código: <b>{{ $email_data['new_promotion_code'] }}</b></p>
-      @endif
+      <p>Gracias por ayudar a que cada vez sean más las empresas que crecen con su negocio en el mundo digital. Por su apoyo se ha generado una solicitud para la realización de un nuevo proyecto.</p>
+      <p>Una vez cerrada la venta del proyecto, <b>recibirás el {!! number_format($email_data['promotion_code']->percentage, 2, '.', ',').'%' !!} del monto total de la venta.</b></p>
+      <p>Sigue compartiendo tu código de promoción para continuar recibiendo grandes recompensas.</p>
+      <p>Para mas información contactenos a <a href="mailto:ventas@urcorp.mx?subject=Info Ventas | UrCorp">ventas@urcorp.mx</a></p>
+    </div>
+    <br/>
+    <div style="width:92%;margin:auto;font-size:16px;border-top:1px solid #000;padding-top:15px;">
+      <p>Cliente: {!! cstrtoupper($email_data['quote']->customer_name) !!}</p>
+      <p>Correo electrónico: 
+        <a href="mailto:{!! $email_data['quote']->email !!}">
+          {!! $email_data['quote']->email !!}
+        </a>
+      </p>
     </div>
     <br/>
     <div style="width:92%; margin:auto; font-size:16px; border-top: 1px solid #000;padding-top: 15px;">
@@ -34,7 +42,7 @@
             <?php
               $dt = \Carbon\Carbon::parse($email_data['quote']->created_at);
             ?>
-            <td style="text-align: right;">FECHA: {{ $dt->format('d/m/Y') }}</td>
+            <td style="text-align: right;">FECHA: {{ $dt->format('d/m/Y h:i A') }}</td>
           </tr>
           <tr>
             <td></td>
@@ -88,7 +96,7 @@
         </tr>
         <tr style="padding-top: 20px;">
           <td colspan="2" style="padding: 8px;text-align: right;font-weight:500;">
-            <span>Descuento ({{ $email_data['quote']->discount_percentage.'%' }}):</span>
+            <span>Descuento ({{ number_format($email_data['quote']->discount_percentage, 2, '.', ',').'%' }}):</span>
           </td>
           <td style="padding: 8px;text-align: right;font-weight: 400;">
             <span>{{ '$'.number_format($email_data['quote']->discount_amount, 2, '.', ',').' MXN' }}</span>
@@ -100,15 +108,8 @@
         </tr>
       </table>
     </div>
-    @if (isset($email_data['quote']->apply_discount) && isset($email_data['quote']->promotion_code) && !empty($email_data['quote']->promotion_code))
-      <div style="width:92%;display:block;margin:auto;">
-        <p style="font-size:14px;">*** Utilizaste el código de promoción: <b>{{ $email_data['quote']->promotion_code }}</b></p>
-      </div>
-    @endif
     <div style="width:92%;display:block;margin:30px auto 0 auto;">
-      <p><b>Atentanmente</b><br/>
-      <a href="mailto:ventas@urcorp.mx">ventas@urcorp.mx</a><br/>
-      Teléfono: <a href="tel:+524422175369" style="color:#000;text-decoration:none;">+52 (1) 442 217 5369</a><br/></p>
+      <p><b>Mensaje automático generado por el servidor de UrCorp.</b><br/>
     </div>
     <br/>
     <!--hr style="width: 95%; height: 2pt; background-color: black;"-->
@@ -117,7 +118,7 @@
         Este correo electrónico y cualquiera de sus anexos podrían contener información confidencial. Si usted no es el destinatario, por el presente se le notifica que cualquier difusión y copiado de este correo electrónico y cualquiera de sus anexos o uso de su contenido por cualquier medio está estrictamente prohibido. Si usted recibió este correo electrónico equivocadamente o por error, por favor notifíquelo al remitente inmediatamente y cancele este correo electrónico y todos sus anexos de su ordenador (computadora).
       </p>
       <div style="width:92%;display:block;margin:auto;">
-        <img src="{!! asset('public/assets/img/v2/urcorp-logo.svg') !!}" style="width:168px;height:40px;display:block;margin: 20px 0 0 auto;" />
+        <img src="{!! asset('public/assets/img/v2/urcorp-logo.png') !!}" style="width:120px;height:40px;display:block;margin: 20px 0 0 auto;" />
       </div>
     </div>
   </div>

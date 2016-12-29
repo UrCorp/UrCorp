@@ -144,7 +144,8 @@ class Calculator extends Controller
           'discount_amount'     => 0.0,
           'total'               => 0.0,
           'operation_id'        => null,
-          'operation_code'      => null
+          'operation_code'      => null,
+          'comments'            => null
         ];
         $email_data = [
           'quote'               => null,
@@ -153,6 +154,7 @@ class Calculator extends Controller
 
         $quote_data['customer_name']  = $quote_params['customer-name'];
         $quote_data['email']          = $quote_params['email'];
+        $quote_data['comments']       = $quote_params['comments'];
 
         $price = 0.00;
         foreach ($quote_params['items'] as $itemSlug) {
@@ -234,16 +236,56 @@ class Calculator extends Controller
         $email_data['quote']              = $quote;
         $email_data['new_promotion_code'] = $promotionCode->code;
 
-        $mail_sent = Mail::send('site.emails.quote', ['email_data' => $email_data], function ($m) use ($quote_params, $quote) {
+        $mail_sent = [];
+        $mail_sent[0] = Mail::send('site.emails.quote', ['email_data' => $email_data], function ($m) use ($quote) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
-          $m->replyTo('ventas@urcorp.mx', 'Contacto UrCorp');
-          $m->to($quote->email, $quote_params['customer-name']);
+          $m->replyTo('ventas@urcorp.mx', 'UrCorp Ventas');
+          $m->to($quote->email, $quote->customer_name);
           $m->subject('Cotización UrCorp | ID de Operación: '. $quote->operation_id);
         });
 
-        if ($mail_sent) {
+        $promotion_code = null;
+        $referring_user = null;
+
+        if ($quote->apply_discount) {
+          $promotion_code = PromotionCode::whereCode($email_data['quote']->promotion_code);
+
+          if ($promotion_code->count() == 1) {
+            $promotion_code  = $promotion_code->first();
+
+            if ($promotion_code->referringUsers->count() == 1) {
+              $referring_user = $promotion_code->referringUsers->first();
+
+              $email_data['referring_user'] = $referring_user;
+            }
+          }
+        }
+
+        unset($email_data['new_promotion_code']);
+
+        $mail_sent[1] = Mail::send('site.emails.sales', ['email_data' => $email_data], function ($m) use ($quote) {
+          $m->from('urcorp@urcorp.mx', 'UrCorp Server');
+          $m->replyTo('no-reply@urcorp.mx', 'UrCorp No Reply');
+          $m->to('ventas@urcorp.mx', 'UrCorp Ventas');
+          $m->subject('Nueva Cotización UrCorp | ID de Operación: '. $quote->operation_id);
+        });
+
+        if ($quote->apply_discount) {
+          $email_data['promotion_code'] = $promotion_code;
+
+          $mail_sent[2] = Mail::send('site.emails.promotion', ['email_data' => $email_data], function ($m) use ($quote, $referring_user) {
+            $m->from('urcorp@urcorp.mx', 'UrCorp Server');
+            $m->replyTo('ventas@urcorp.mx', 'UrCorp Ventas');
+            $m->to($referring_user->email, $referring_user->full_name);
+            $m->subject('Cotización Recibida | ID de Operación: '. $quote->operation_id);
+          });
+        }
+
+        if ((!$quote->apply_discount && $mail_sent[0] && $mail_sent[1]) ||
+            ($quote->apply_discount && $mail_sent[0] && $mail_sent[1] && $mail_sent[2])) {
           $resp['status'] = 'SUCCESS';
           $resp['msg'] = '¡La cotización ha sido enviada exitosamente!';
+          $resp['data']['quotation_link'] = secure_url('/calculator/' . $quote->operation_code);
         } else {
           $resp['status'] = 'ERROR_CONNECTION';
           $resp['msg']    = 'Existe un error en la conexión ¡Por favor, intente más tarde!';

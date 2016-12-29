@@ -43,13 +43,13 @@
   <div class="form-group">
     {!! Form::label('promotionCode[start_date]', 'Fecha de Inicio', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::text('promotionCode[start_date]', !is_null($addExpiringDate) ? $promotionCode->start_date : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
+      {!! Form::date('promotionCode[start_date]', !is_null($addExpiringDate) ? $promotionCode->start_date : null, ['class' => 'col-md-8 form-control expiringDateField startingdate', 'required' => 'required', 'disabled' => 'disabled']) !!}
     </div>
   </div>
   <div class="form-group">
     {!! Form::label('promotionCode[expiry_date]', 'Fecha de expiración', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::text('promotionCode[expiry_date]', !is_null($addExpiringDate) ? $promotionCode->expiry_date : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
+      {!! Form::date('promotionCode[expiry_date]', !is_null($addExpiringDate) ? $promotionCode->expiry_date : null, ['class' => 'col-md-8 form-control expiringDateField expiringdate', 'required' => 'required', 'disabled' => 'disabled']) !!}
     </div>
   </div>
   

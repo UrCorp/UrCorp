@@ -135,9 +135,6 @@
         <section>
           <div class="col-md-12 col-xs-12 calculator calculator-1">
             <div class="header">
-              <header>
-                <h3 class="title">COTIZA DISEÑO WEB</h3>
-              </header>
               <div id="items-container" class="items-container col-xs-12 no-side-padding">
                 {!! Form::open(['route' => 'site.calculator.index', 'id' => 'web-calculator', 'method' => 'GET']) !!}
                   <select id="items-selector" name="p[]" class="hidden" multiple>
@@ -148,21 +145,83 @@
                     @endif
                   </select>
                   <div class="col-xs-12 no-side-padding">
-                    @if (!is_null($calculator))
-                      @foreach ($calculator->platforms as $platform)
-                        <div class="col-sm-4 col-xs-6 no-side-padding">
-                          <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
-                            <h3 class="text-center">
-                              <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
-                              {!! $platform->name !!}
-                            </h3>
-                          </div>
+                    <div class="calculator-container col-sm-5 col-xs-12 no-side-padding">
+                      <div class="col-xs-12">
+                        <h3 class="title">COTIZA DISEÑO WEB</h3>
+                      </div>
+                      @if (!is_null($calculator))
+                        <?php 
+                          $platformSlugs = [
+                            'web'
+                          ];
+                        ?>
+                        @foreach ($platformSlugs as $platformSlug)
+                          <?php 
+                            $platform = $calculator->platforms()->where('slug', '=', $platformSlug);
+
+                            if ($platform->count() == 1) {
+                              $platform = $platform->first();
+                            } else {
+                              $platform = null;
+                            }
+                          ?>
+                          @if (!is_null($platform))
+                            <div class="col-sm-6 col-sm-offset-3 col-xs-12 no-side-padding">
+                              <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                                <h3 class="text-center">
+                                  <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
+                                  {!! $platform->name !!}
+                                </h3>
+                              </div>
+                            </div>
+                          @endif
+                        @endforeach
+                      @endif
+                      <div class="col-xs-12">
+                        <div class="text-center">
+                          <button class="btn-choose">ELEGIR</button>
                         </div>
-                      @endforeach
-                    @endif
-                  </div>
-                  <div class="text-center">
-                    <button class="btn-choose">ELEGIR</button>
+                      </div>
+                    </div>
+                    <div class="calculator-container col-sm-6 col-sm-offset-1 col-xs-12 no-side-padding">
+                      <div class="col-xs-12">
+                        <h3 class="title">COTIZA DISEÑO DE APPS</h3>
+                      </div>
+                      @if (!is_null($calculator))
+                        <?php 
+                          $platformSlugs = [
+                            'ios',
+                            'android'
+                          ];
+                        ?>
+                        @foreach ($platformSlugs as $platformSlug)
+                          <?php 
+                            $platform = $calculator->platforms()->where('slug', '=', $platformSlug);
+
+                            if ($platform->count() == 1) {
+                              $platform = $platform->first();
+                            } else {
+                              $platform = null;
+                            }
+                          ?>
+                          @if (!is_null($platform))
+                            <div class="col-sm-6 col-xs-12 no-side-padding">
+                              <div class="item animated bounce col-xs-10 col-xs-offset-1" data-id="{{ $platform->slug }}">
+                                <h3 class="text-center">
+                                  <span class="icon fa fa-{!! $platform->icon->name !!}"></span>
+                                  {!! $platform->name !!}
+                                </h3>
+                              </div>
+                            </div>
+                          @endif
+                        @endforeach
+                      @endif
+                      <div class="col-xs-12">
+                        <div class="text-center">
+                          <button class="btn-choose">ELEGIR</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 {!! Form::close() !!}
               </div>

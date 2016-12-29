@@ -15,7 +15,7 @@ class CreateCalculatorsTable extends Migration
   {
     Schema::create('calculators', function(Blueprint $table) {
       /**
-      * Calculators - Seeders
+      * Calculators - Fields
       * ============================================================= //
       */
       $table->engine = 'InnoDB';
@@ -24,15 +24,6 @@ class CreateCalculatorsTable extends Migration
       $table->string('slug', 20)->nullable();
       $table->timestamps();
     });
-    /**
-      * Calculators - Seeders
-      * ============================================================= //
-      */
-     $calculators = config('init.calculators');
-
-     foreach ($calculators as $calculator) {
-       Calculator::create($calculator);
-    }
   }
 
   /**
