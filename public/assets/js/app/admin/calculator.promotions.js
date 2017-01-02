@@ -10,8 +10,9 @@ function checkedInputs($checkbox, $elements) {
 
 $(function() {
   var $addReferringUser = $('#add_referring_user'),
-      $referringUserFields = $('.referringUserField');
-
+      $referringUserFields = $('.referringUserField'),
+      $addExpiringDate = $('#add_expiring_date'),
+      $expiringDateFields = $('.expiringDateField');
 
   checkedInputs($addReferringUser, $referringUserFields);
 
@@ -20,12 +21,6 @@ $(function() {
 
     checkedInputs($this, $referringUserFields);
   });
-});
-
-$(function() {
-  var $addExpiringDate = $('#add_expiring_date'),
-      $expiringDateFields = $('.expiringDateField');
-
 
   checkedInputs($addExpiringDate, $expiringDateFields);
 
@@ -35,4 +30,3 @@ $(function() {
     checkedInputs($this, $expiringDateFields);
   });
 });
-

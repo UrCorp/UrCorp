@@ -7,5 +7,5 @@
 </div>
 @endsection
 @section('scripts')
-<script type="text/javascript" src="{!! asset('public/assets/js/app/admin/promotions.js?v='.time()) !!}"></script>
+<script type="text/javascript" src="{!! asset('public/assets/js/app/admin/calculator.promotions.js?v='.time()) !!}"></script>
 @endsection
