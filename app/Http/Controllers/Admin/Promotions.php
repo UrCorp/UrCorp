@@ -41,7 +41,7 @@ class Promotions extends Controller
     
     if (isset($promotionCodeData['add_expiring_date']) and 
         $promotionCodeData['add_expiring_date'] == "true" and
-        $promotionCode->expiry_date <= $promotionCode->start_date) {
+        $promotionCode->expiry_date < $promotionCode->start_date) {
       Flash::error('El código de promoción no pudo ser generado debido a que la fecha de expiración es menor a la de inicio.');
       return redirect()->route('site.admin.panel.promotions.index');
     } else {
@@ -144,7 +144,7 @@ class Promotions extends Controller
         $resp['msg'] = '¡Promoción aplicada exitosamente!';
         $resp['status'] = 'SUCCESS';
       }
-      else {
+      else if (!is_null($promotionCode->start_date) and !is_null($promotionCode->expiry_date)) {
         if ($tmp_date < $promotionCode->start_date) {
           $resp['msg'] = 'El código de promoción aún no es válido.';
           $resp['status'] = 'VALIDATION_ERROR';

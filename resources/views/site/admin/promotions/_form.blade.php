@@ -29,11 +29,11 @@
           ¿Desea añadir vigencia al código de promoción?
           <?php
             $addExpiringDate = false;
-            if (!is_null($promotionCode->start_date) and !is_null($promotionCode->expiry_date)) { 
+            if (isset($promotionCode) and !is_null($promotionCode->start_date) and !is_null($promotionCode->expiry_date)) { 
               $addExpiringDate = true;
             }
           ?>
-          {!! Form::checkbox('promotionCode[add_expiring_date]', $addExpiringDate, $addExpiringDate ? $addExpiringDate : false, ['id' => 'add_expiring_date', 'style' => 'width:22px;height:22px;vertical-align:middle;margin-left:8px;']) !!}
+          {!! Form::checkbox('promotionCode[add_expiring_date]', 'true', $addExpiringDate, ['id' => 'add_expiring_date', 'style' => 'width:22px;height:22px;vertical-align:middle;margin-left:8px;']) !!}
         </label>
       </div>
     </div>
@@ -63,13 +63,13 @@
         <label for="add_referring_user">
           ¿Desea añadir un referente?
           <?php
-            $addReferringUser = null;
+            $addReferringUser = false;
             if (isset($promotionCode) and $promotionCode->referringUsers->count() > 0) {
               $addReferringUser = true;
               $referringUser = $promotionCode->referringUsers->first();
             }
           ?>
-          {!! Form::checkbox('promotionCode[add_referring_user]', 'true', !is_null($addReferringUser) ? $addReferringUser : false, ['id' => 'add_referring_user', 'style' => 'width:22px;height:22px;vertical-align:middle;margin-left:8px;']) !!}
+          {!! Form::checkbox('promotionCode[add_referring_user]', 'true', $addReferringUser, ['id' => 'add_referring_user', 'style' => 'width:22px;height:22px;vertical-align:middle;margin-left:8px;']) !!}
         </label>
       </div>
     </div>
@@ -77,19 +77,19 @@
   <div class="form-group">
     {!! Form::label('promotionCode[referring_user][first_name]', 'Nombre(s)', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::text('promotionCode[referring_user][first_name]', !is_null($addReferringUser) ? $referringUser->first_name : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
+      {!! Form::text('promotionCode[referring_user][first_name]', $addReferringUser ? $referringUser->first_name : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
     </div>
   </div>
   <div class="form-group">
     {!! Form::label('referring_user[last_name]', 'Apellido(s)', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::text('promotionCode[referring_user][last_name]', !is_null($addReferringUser) ? $referringUser->last_name : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
+      {!! Form::text('promotionCode[referring_user][last_name]', $addReferringUser ? $referringUser->last_name : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
     </div>
   </div>
   <div class="form-group">
     {!! Form::label('promotionCode[referring_user][email]', 'E-mail', ['class' => 'col-md-4 control-label']) !!}
     <div class="col-md-8">
-      {!! Form::email('promotionCode[referring_user][email]', !is_null($addReferringUser) ? $referringUser->email : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
+      {!! Form::email('promotionCode[referring_user][email]', $addReferringUser ? $referringUser->email : null, ['class' => 'col-md-8 form-control referringUserField', 'required' => 'required', 'disabled' => 'disabled']) !!}
     </div>
   </div>
   <div class="form-group text-center">
