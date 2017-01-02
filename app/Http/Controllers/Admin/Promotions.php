@@ -85,8 +85,8 @@ class Promotions extends Controller
     $promotionCode = PromotionCode::whereCode($code)->first();
 
     $promotionCode->percentage = $promotionCodeData['percentage'];
-    $promotionCode->start_date = isset($promotionCodeData['start_date']) ? $promotionCodeData['start_date'] : "null";
-    $promotionCode->expiry_date = isset($promotionCodeData['expiry_date']) ? $promotionCodeData['expiry_date'] : "null";
+    $promotionCode->start_date = isset($promotionCodeData['start_date']) ? $promotionCodeData['start_date'] : null;
+    $promotionCode->expiry_date = isset($promotionCodeData['expiry_date']) ? $promotionCodeData['expiry_date'] : null;
     $promotionCode->update();
 
     if (isset($promotionCodeData['add_referring_user']) and 
