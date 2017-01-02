@@ -29,6 +29,10 @@ class Section extends Model implements SluggableInterface
     return $this->belongsTo('App\Calculator');
   }
 
+  public function packages() {
+    return $this->hasMany('App\Package');
+  }
+
   public function items() {
     return $this->hasMany('App\Item');
   }

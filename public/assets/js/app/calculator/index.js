@@ -3,6 +3,7 @@ $.fn.calculator = function() {
 }
 
 function Calculator($element) {
+  this.$calculator = $element;
   this.items = [],
   this.platforms = [],
   this.itemNames = {},
@@ -10,49 +11,31 @@ function Calculator($element) {
   this.shoppingCart = {},
   this.subtotal = 0.00,
   this.applyDiscount = false,
-  this.discount = { 
+  this.discount = {
     percentage: 0.00, 
     amount: 0.00 
   },
   this.total = 0.00,
   this.$body = $('body'),
   this.$appModal = $('#app-modal'),
-  this.$calculatorForm = $('.calculator-form', $element),
+  this.$calculatorForm = $('.calculator-form', this.$calculator),
   this.$selectItems = $('.calculator-select-items', this.$calculatorForm),
   this.$selectPlatforms = $('.calculator-select-platforms', this.$calculatorForm),
-  this.$platformsContainer = $('.platforms-container', $element),
-  this.$itemsContainer = $('.items-container', $element),
-  this.$shoppingCart = $('.calculator-shoppingcart', $element),
-  this.$priceContainer = $('.calculator-price-container', $element),
-  this.$promotionForm = $('.calculator-form-promotion', $element),
-  this.$inputAppliedPromotionCode = $('.calculator-input-applied-promotion-code', $element),
-  this.$inputPromotionCode = $('.calculator-input-promotion-code', $element),
+  this.$platformsContainer = $('.platforms-container', this.$calculator),
+  this.$itemsContainer = $('.items-container', this.$calculator),
+  this.$shoppingCart = $('.calculator-shoppingcart', this.$calculator),
+  this.$priceContainer = $('.calculator-price-container', this.$calculator),
+  this.$promotionForm = $('.calculator-form-promotion', this.$calculator),
+  this.$inputAppliedPromotionCode = $('.calculator-input-applied-promotion-code', this.$calculator),
+  this.$inputPromotionCode = $('.calculator-input-promotion-code', this.$calculator),
   this.$subtotalContainer = $('.calculator-subtotal-container', this.$priceContainer),
-  this.$sendByEmailForm = $('.calculator-form-email-send', $element);
+  this.$sendByEmailForm = $('.calculator-form-email-send', this.$calculator);
 
   return this.__construct($element);
 }
 
 Calculator.prototype.__construct = function($element) {
   var __self = this;
-
-  $('.item.active', $element).each(function() {
-    var $this = $(this),
-        id = $this.data('id'),
-        $option = $('option#item-' + id, __self.$selectItems);
-    
-    __self.items.push(id);
-    $option.prop('selected', true);
-  });
-
-  $('.platform.active', $element).each(function() {
-    var $this = $(this),
-        id = $this.data('id'),
-        $option = $('option#platform-' + id, __self.$selectPlatforms);
-    
-    __self.platforms.push(id);
-    $option.prop('selected', true);
-  });
 
   __self.$inputPromotionCode.keyup(function(){
     var $this = $(this);
@@ -71,6 +54,26 @@ Calculator.prototype.__construct = function($element) {
 
         $('.platform', __self.$platformsContainer).click(__self.platformClickEvent());
         $('.item', __self.$itemsContainer).click(__self.itemClickEvent());
+
+
+        $('.package', __self.$itemsContainer).each(function() {
+          var $this = $(this);
+
+          $.ajax({
+            type: 'GET',
+            url: $.fn.origin + '/api/v1/calculator/web/' + $this.data('id') + '/items',
+            dataType: 'json',
+            beforeSend: function() {},
+            success: function(resp) {
+              if (resp.status == 'SUCCESS') {
+                $this.click(__self.packageClickEvent(resp.data.items));
+              }
+            },
+            error: function(res, textStatus, jqxhr) {
+              alert("AJAX Error");
+            }
+          });
+        });
         __self.$promotionForm.submit(__self.applyPromotionEvent());
         __self.sendByEmailEvent();
       }
@@ -120,8 +123,11 @@ Calculator.prototype.calculate = function() {
 
     for (var j = 0; j < this.platforms.length; ++j) {
       var platform = this.platforms[j];
-      this.shoppingCart[item] += this.prices[item][platform];
-      this.subtotal += this.prices[item][platform];
+
+      if (typeof this.prices[item][platform] !== "undefined") {
+        this.shoppingCart[item] += this.prices[item][platform];
+        this.subtotal += this.prices[item][platform];
+      }
     }
   }
 
@@ -135,15 +141,19 @@ Calculator.prototype.calculate = function() {
 }
 
 Calculator.prototype.addItem = function(id) {
-  this.items.push(id);
-  this.calculate();
+  if (typeof this.prices[id] !== "undefined") {
+    this.items.push(id);
+    this.calculate();
+  }
   return this;
 }
 
 Calculator.prototype.removeItem = function(id) {
-  var index = this.items.indexOf(id);
-  this.items.splice(index, 1);
-  this.calculate();
+  if (typeof this.prices[id] !== "undefined") {
+    var index = this.items.indexOf(id);
+    this.items.splice(index, 1);
+    this.calculate();
+  }
   return this;
 }
 
@@ -282,8 +292,7 @@ Calculator.prototype.itemClickEvent = function() {
 
     var $this = $(this),
         id = $this.data('id'),
-        $option = null,
-        price = 0.00;
+        $option = null;
 
     $this.toggleClass('bounce bounceIn active');
     $option = $('option#item-' + id, __self.$selectItems);
@@ -296,6 +305,49 @@ Calculator.prototype.itemClickEvent = function() {
       $option.prop('selected', true);
     }
 
+    __self.showPrice();
+  }
+}
+
+Calculator.prototype.packageClickEvent = function(items) {
+  var i,
+      __self  = this;
+
+  return function(event) {
+    event.preventDefault();
+
+    var $this = $(this),
+        id = $this.data('id'),
+        $option = null;
+
+    var $packages = $('.package.active', __self.$itemsContainer);
+
+    if ($packages.length == 1) {
+      var $package = $packages.first();
+
+      if ($this.data('id') != $package.data('id')) {
+        $package.removeClass('active');
+      }
+
+      $('.item.active', __self.$itemsContainer).each(function() {
+        $(this).click();
+      });
+    }
+
+    $this.toggleClass('bounce bounceIn active');
+
+    if ((($packages.length == 1 && $this.data('id') != $package.data('id')) ||
+          $packages.length == 0) && $.isArray(items)) {
+      for (i = 0; i < items.length; ++i) {
+        if (typeof(items[i].slug) !== "undefined") {
+          var $item  = $('.item[data-id=\"' + items[i].slug + '\"]', __self.$itemsContainer);
+
+          if ($item.length == 1) {
+            $item.click();
+          }
+        }
+      }
+    }
     __self.showPrice();
   }
 }
@@ -617,8 +669,28 @@ Calculator.prototype.sendByEmailEvent = function() {
 }
 
 Calculator.prototype.init = function(itemNames, prices) {
-  this.itemNames = typeof(itemNames) == "object" ? itemNames : {};
-  this.prices = typeof(prices) == "object" ? prices : {};
+  var __self = this;
+
+  __self.itemNames = typeof(itemNames) == "object" ? itemNames : {};
+  __self.prices = typeof(prices) == "object" ? prices : {};
+
+  $('.item.active', __self.$calculator).each(function() {
+    var $this = $(this),
+        id = $this.data('id'),
+        $option = $('option#item-' + id, __self.$selectItems);
+    
+    __self.addItem(id);
+    $option.prop('selected', true);
+  });
+
+  $('.platform.active', __self.$calculator).each(function() {
+    var $this = $(this),
+        id = $this.data('id'),
+        $option = $('option#platform-' + id, __self.$selectPlatforms);
+    
+    __self.addPlatform(id);
+    $option.prop('selected', true);
+  });
 
   this.calculate().showPrice();
 }

@@ -268,7 +268,8 @@
   padding: 15px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package {
   cursor: pointer;
   min-height: 116px;
   max-height: 116px;
@@ -277,22 +278,25 @@
   margin-bottom: 30px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item.active,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package.active {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
-  -ms-transition: all .2s;
+  -ms-transition: all .2s; /* Michael Serrato */
   -o-transition: all .2s;
   transition: all .2s;
   background-color: #039be5;
   color: #FFFFFF;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 {
   font-size: 14px;
   line-height: 20px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon, 
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 .icon {
   display: block;
   margin: auto;
   font-size: 32px;
@@ -605,13 +609,15 @@
   font-size: 24px;
 }
 
-.app-calculator .items-container .item {
+.app-calculator .items-container .item,
+.app-calculator .items-container .package {
   min-height: 144px;
   max-height: 144px;
   margin-top: 10px;
 }
 
-.app-calculator .items-container .item.active {
+.app-calculator .items-container .item.active,
+.app-calculator .items-container .package.active {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   -ms-transition: all .2s;
@@ -621,13 +627,15 @@
   color: #FFFFFF;
 }
 
-.app-calculator .items-container .item h3 {
+.app-calculator .items-container .item h3,
+.app-calculator .items-container .package h3 {
   font-size: 13px;
   line-height: 18px;
   margin-top: 20px;
 }
 
-.app-calculator .items-container .item h3 .icon {
+.app-calculator .items-container .item h3 .icon,
+.app-calculator .items-container .package h3 .icon {
   display: block;
   font-size: 36px;
   margin: 5px auto 10px auto;

@@ -33,6 +33,10 @@ class Calculator extends Model implements SluggableInterface
     return $this->hasMany('App\Platform');
   }
 
+  public function packages() {
+    return $this->hasManyThrough('App\Package', 'App\Section');
+  }
+
   public function items() {
     return $this->hasManyThrough('App\Item', 'App\Section');
   }

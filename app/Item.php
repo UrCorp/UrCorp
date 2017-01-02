@@ -27,6 +27,13 @@ class Item extends Model implements SluggableInterface
     'icon_id'
   ];
 
+  protected $hidden = [
+    'id',
+    'section_id',
+    'icon_id',
+    'pivot',
+  ];
+
   public function section() {
     return $this->belongsTo('App\Section');
   }
@@ -41,6 +48,10 @@ class Item extends Model implements SluggableInterface
 
   public function quotes() {
     return $this->belongsToMany('App\Quote', 'quotes_items')->withTimestamps();
+  }
+
+  public function packages() {
+    return $this->belongsToMany('App\Package', 'packages_items')->withTimestamps();
   }
 
   /**

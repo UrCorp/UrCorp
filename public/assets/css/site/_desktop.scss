@@ -178,7 +178,8 @@
   padding: 15px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package {
   min-height: 125px;
   max-height: 125px;
   overflow: hidden;
@@ -186,12 +187,14 @@
   margin-bottom: 45px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 {
   font-size: 14px;
   line-height: 20px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 .icon {
   display: block;
   margin: auto;
   font-size: 38px;
@@ -451,19 +454,22 @@
   font-size: 26px;
 }
 
-.app-calculator .items-container .item {
+.app-calculator .items-container .item,
+.app-calculator .items-container .package {
   min-height: 144px;
   max-height: 144px;
   margin-top: 10px;
 }
 
-.app-calculator .items-container .item h3 {
+.app-calculator .items-container .item h3,
+.app-calculator .items-container .package h3 {
   font-size: 15px;
   line-height: 18px;
   margin-top: 20px;
 }
 
-.app-calculator .items-container .item h3 .icon {
+.app-calculator .items-container .item h3 .icon,
+.app-calculator .items-container .package h3 .icon {
   font-size: 36px;
   margin: 5px auto 10px auto;
 }

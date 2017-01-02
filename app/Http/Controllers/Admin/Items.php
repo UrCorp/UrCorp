@@ -31,7 +31,7 @@ class Items extends Controller
   public function create($calculatorSlug)
   { 
     $calculator = Calculator::findBySlug($calculatorSlug);
-    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
+    $icons      = Icon::orderBy('name', 'ASC');
 
     return view('site.admin.calculator.items.create')->with([
       'calculator'  => $calculator,
@@ -45,10 +45,9 @@ class Items extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  public function store(Request $request, $calculatorSlug)
-  {
+  public function store(Request $request, $calculatorSlug) {
     $calculator = Calculator::findBySlug($calculatorSlug);
-
+    
     $item = new Item($request->all());
 
     if ($item->save()) {
@@ -76,9 +75,8 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
-  {
-      //
+  public function show($id) {
+    //
   }
 
   /**
@@ -87,17 +85,16 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function edit($calculatorSlug, $itemSlug)
-  {
+  public function edit($calculatorSlug, $itemSlug) {
     $calculator = Calculator::findBySlug($calculatorSlug);
     $item       = Item::findBySlug($itemSlug);
-    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
+    $icons      = Icon::orderBy('name', 'ASC');
 
     return view('site.admin.calculator.items.edit')->with([
       'calculator'  => $calculator,
       'item'        => $item,
       'icons'       => $icons
-    ]); 
+    ]);
   }
 
   /**
@@ -107,8 +104,7 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function update(Request $request, $calculatorSlug, $itemSlug)
-  {
+  public function update(Request $request, $calculatorSlug, $itemSlug) {
     $calculator = Calculator::findBySlug($calculatorSlug);
     $item       = Item::findBySlug($itemSlug);
 
@@ -140,8 +136,7 @@ class Items extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function destroy($calculatorSlug, $itemSlug)
-  {
+  public function destroy($calculatorSlug, $itemSlug) {
     $calculator = Calculator::findBySlug($calculatorSlug);
     $item       = Item::findBySlug($itemSlug);
 

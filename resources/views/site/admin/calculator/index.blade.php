@@ -14,6 +14,7 @@
       <th class="text-center">Nombre</th>
       <th class="text-center"># Secciones</th>
       <th class="text-center"># Plataformas</th>
+      <th class="text-center"># Paquetes </th>
       <th class="text-center"># Artículos</th>
       <th class="text-center">Opciones</th>
     </tr>
@@ -32,6 +33,9 @@
         </td>
         <td class="text-center">
           {{ $calculator->platforms->count() }}
+        </td>
+        <td class="text-center">
+          {{ $calculator->packages->count() }}
         </td>
         <td class="text-center">
           {{ $calculator->items->count() }}

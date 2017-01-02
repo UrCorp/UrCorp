@@ -348,7 +348,8 @@ body {
   padding: 15px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package {
   cursor: pointer;
   min-height: 116px;
   max-height: 116px;
@@ -372,12 +373,14 @@ body {
   color: #FFFFFF;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 {
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 {
   font-size: 14px;
   line-height: 20px;
 }
 
-.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon{
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .item h3 .icon,
+.app-calculators-container .calculator-wrap .calculator-1 .items-container .package h3 .icon {
   display: block;
   margin: auto;
   font-size: 32px;
@@ -716,7 +719,8 @@ body {
   font-size: 24px;
 }
 
-.app-calculator .items-container .item {
+.app-calculator .items-container .item,
+.app-calculator .items-container .package {
   cursor: pointer;
   min-height: 110px;
   max-height: 110px;
@@ -726,11 +730,13 @@ body {
   padding-right: 4px;
 }
 
-.app-calculator .items-container .item:hover {
+.app-calculator .items-container .item:hover,
+.app-calculator .items-container .package:hover {
   background-color: $grayLight;
 }
 
-.app-calculator .items-container .item.active {
+.app-calculator .items-container .item.active,
+.app-calculator .items-container .package.active {
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
   -ms-transition: all .2s;
@@ -740,7 +746,8 @@ body {
   color: #FFFFFF;
 }
 
-.app-calculator .items-container .item h3 {
+.app-calculator .items-container .item h3,
+.app-calculator .items-container .package h3 {
   font-size: 13px;
   line-height: 18px;
   margin-top: 10px;
@@ -752,7 +759,8 @@ body {
   line-height: 16px;
 }
 
-.app-calculator .items-container .item h3 .icon {
+.app-calculator .items-container .item h3 .icon,
+.app-calculator .items-container .package h3 .icon {
   display: block;
   font-size: 36px;
   margin: 5px auto 10px auto;

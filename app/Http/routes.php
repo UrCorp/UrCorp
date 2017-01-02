@@ -127,6 +127,34 @@ Route::group(['as' => 'site.'], function () {
             ]);
           });
 
+          Route::group(['prefix' => '{calculator}/packages', 'as' => 'packages.'], function() {
+
+            Route::get('/create',  [
+              'uses'  => 'Admin\PackagesController@create',
+              'as'    => 'create'
+            ]);
+
+            Route::post('/store',  [
+              'uses'  => 'Admin\PackagesController@store',
+              'as'    => 'store'
+            ]);
+
+            Route::get('{packageSlug}/edit', [
+              'uses'  => 'Admin\PackagesController@edit',
+              'as'    => 'edit'
+            ]);
+
+            Route::put('{packageSlug}', [
+              'uses'  => 'Admin\PackagesController@update',
+              'as'    => 'update'
+            ]);
+
+            Route::get('/{packageSlug}/destroy', [
+              'uses'  => 'Admin\PackagesController@destroy',
+              'as'    => 'destroy'
+            ]);
+          });
+
           Route::group(['prefix' => '{calculator}/items', 'as' => 'items.'], function() {
 
             Route::get('/create', [
@@ -242,6 +270,11 @@ Route::group(['as' => 'site.'], function () {
           Route::get('{item}/price', [
             'uses'  => 'Calculator@itemPriceByPlatform',
             'as'    => 'getPriceByPlatforms'
+          ]);
+
+          Route::get('{packageSlug}/items', [
+            'uses'  => 'Calculator@packageItems',
+            'as'    => 'getPackageItems'
           ]);
         });
       });

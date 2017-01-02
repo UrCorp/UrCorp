@@ -21,11 +21,6 @@ class Calculator extends Controller
   private $contact = null;
 
   public function __construct() {
-    /* Not remove */
-    $this->params['controller'] = appGetController(Route::current());
-    $this->params['view']       = appGetView(Route::current());
-    /* Not remove */
-
     $cookieContact = \Cookie::get('contact');
 
     if (is_null($cookieContact)) {
@@ -33,7 +28,6 @@ class Calculator extends Controller
     }
 
     $cookieContact = json_decode($cookieContact, true);
-
     $results = \App\Contact::whereIdSession($cookieContact["id_session"])->get();
 
     if ($results->count() != 1 ) {
@@ -44,8 +38,11 @@ class Calculator extends Controller
   }
 
   public function index(Request $request, $operationCode = null) {
+    $controller       = appGetController(Route::current());
+    $view             = appGetView(Route::current());
     $calculator       = \App\Calculator::findBySlug('web');
     $item_params      = $request->input('i') ?: [];
+    $package_params   = $request->input('packs') ?: [];
     $platform_params  = $request->input('p') ?: [];
     $quote            = null;
 
@@ -55,6 +52,7 @@ class Calculator extends Controller
       if ($quote->count() == 1) {
         $quote            = $quote->first();
         $item_params      = [];
+        $package_params   = [];
         $platform_params  = [];
 
         foreach ($quote->platforms as $platform) {
@@ -68,11 +66,12 @@ class Calculator extends Controller
     }
 
     return view('site.calculator.index')->with([
-      'controller'      => $this->params['controller'],
-      'view'            => $this->params['view'],
+      'controller'      => $controller,
+      'view'            => $view,
       'calculator'      => $calculator,
       'p'               => $platform_params,
       'i'               => $item_params,
+      'packs'           => $package_params,
       'quote'           => $quote
     ]);
   }
@@ -300,7 +299,6 @@ class Calculator extends Controller
   }
 
   public function itemPriceByPlatform($calculatorSlug, $itemSlug, Request $request) {
-    
     $data = [];
     $calculator = \App\Calculator::findBySlug($calculatorSlug);
     $results = $calculator->items()->where(['items.slug' => $itemSlug]);
@@ -316,6 +314,28 @@ class Calculator extends Controller
       }
     }
     return response()->json($data);
+  }
+
+  public function packageItems($calculatorSlug, $packageSlug, Request $request) {
+    $resp = [
+      'status' => 'ERROR_CONNECTION',
+      'msg'    => 'Existe un error en la conexión ¡Por favor, intente más tarde!'
+    ];
+
+    $calculator = \App\Calculator::findBySlug($calculatorSlug);
+    $package    = $calculator->packages()->where('packages.slug', '=', $packageSlug);
+
+    if ($package->count() == 1) {
+      $package = $package->first();
+
+      $resp['status']         = 'SUCCESS';
+      $resp['msg']            = 'Datos obtenidos exitosamente!';
+      $resp['data']['items']  = $package->items;
+    } else {
+      $resp['status'] = 'VALIDATION_ERROR';
+      $resp['msg']    = 'No se encontró ningún paquete que coincida con los datos proporcionados.';
+    }
+    return response()->json($resp);
   }
 
   public function features() {

@@ -24,18 +24,33 @@
             <h2 class="text-center">{{ $section->name }}</h2>
           </div>
           <div class="col-xs-12 no-side-padding">
-            @foreach ($section->items as $item)
-              <div class="col-sm-3 col-xs-4 no-side-padding">
-                <div class="item animated {!! (isset($i) and is_array($i) and in_array($item->slug, $i)) ? 'bounceIn active': 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
-                  <div class="name">
-                    <h3 class="text-center noselect">
-                      <span class="icon fa">{!! '&#x'.$item->icon->unicode.';' !!}</span>
-                      {!! str_limit($item->name, 15) !!}
-                    </h3>
+            @if ($section->packages->count() > 0)
+              @foreach ($section->packages as $package)
+                <div class="col-sm-3 col-xs-4 no-side-padding">
+                  <div class="package animated {!! (isset($packs) and is_array($packs) and in_array($package->slug, $packs)) ? 'bounceIn active': 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $package->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $package->short_description !!}" data-name="{!! $package->name !!}">
+                    <div class="name">
+                      <h3 class="text-center noselect">
+                        <span class="icon fa">{!! '&#x'.$package->icon->unicode.';' !!}</span>
+                        {!! str_limit($package->name, 15) !!}
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            @endforeach
+              @endforeach
+            @elseif ($section->items->count() > 0)
+              @foreach ($section->items as $item)
+                <div class="col-sm-3 col-xs-4 no-side-padding">
+                  <div class="item animated {!! (isset($i) and is_array($i) and in_array($item->slug, $i)) ? 'bounceIn active': 'bounce' !!} col-xs-10 col-xs-offset-1" data-id="{{ $item->slug }}" data-toggle="tooltip" data-placement="bottom" title="{!! $item->short_description !!}" data-name="{!! $item->name !!}">
+                    <div class="name">
+                      <h3 class="text-center noselect">
+                        <span class="icon fa">{!! '&#x'.$item->icon->unicode.';' !!}</span>
+                        {!! str_limit($item->name, 15) !!}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              @endforeach
+            @endif
           </div>
         @endforeach
       </div>

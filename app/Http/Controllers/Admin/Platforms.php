@@ -30,7 +30,7 @@ class Platforms extends Controller
   public function create($calculatorSlug)
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
-    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
+    $icons      = Icon::orderBy('name', 'ASC');
 
     return view('site.admin.calculator.platforms.create')->with([
       'calculator' => $calculator,
@@ -76,7 +76,7 @@ class Platforms extends Controller
   {
     $calculator = Calculator::findBySlug($calculatorSlug);
     $platform   = Platform::findBySlug($platformSlug);
-    $icons      = Icon::orderBy('name', 'ASC')->where('id', '>', 1);
+    $icons      = Icon::orderBy('name', 'ASC');
 
     return view('site.admin.calculator.platforms.edit')->with([
       'calculator'  => $calculator,
