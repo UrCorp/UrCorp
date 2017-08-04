@@ -35,7 +35,7 @@ Route::group(['as' => 'site.'], function () {
         ]);
 
         Route::group(['prefix' => 'calculator', 'as' => 'calculator.'], function() {
-          
+
           Route::get('/', [
             'uses'  => 'Admin\CalculatorManagement@index',
             'as'    => 'index'
@@ -226,6 +226,10 @@ Route::group(['as' => 'site.'], function () {
       'uses'  => 'Welcome@index',
       'as'    => 'index'
     ]);
+
+    Route::get('/Concurso', function () {
+		    return view('site.welcome.concurso');
+		});
   });
 
   Route::group(['prefix' => 'contact', 'as' => 'contact.'], function () {
@@ -264,7 +268,7 @@ Route::group(['as' => 'site.'], function () {
           'uses'  => 'Calculator@sendByEmail',
           'as'    => 'sendByEmail'
         ]);
-      
+
         Route::group(['prefix' => '{calculator}', 'as' => 'item.'], function () {
 
           Route::get('{item}/price', [
@@ -280,7 +284,7 @@ Route::group(['as' => 'site.'], function () {
       });
 
       Route::group(['prefix' => 'promotion', 'as' => 'promotion.'], function () {
-        
+
         Route::get('/discount/{promotionCode}', [
           'uses'    => 'Admin\Promotions@getDiscount',
           'as'      => 'getDiscount'
