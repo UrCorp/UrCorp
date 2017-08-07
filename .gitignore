@@ -9,5 +9,6 @@ Homestead.json
 /motorworld.com.mx
 /motorworld.mx
 /wtcqro
-.env
 composer.lock
+.DS_Store
+.env
