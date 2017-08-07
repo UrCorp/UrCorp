@@ -178,7 +178,7 @@
             <input type="checkbox" id="test" />
             <label for="test">Acepto términos y condiciones.</label>
             <div class="w3-section center">
-              <button class="btn w3-center" style="background-color: #1dade4; margin:auto; height:80px">
+              <button class="btn w3-center" style="background-color: #1dade4; margin:auto;">
                 ¡PARTICIPAR YA!
               </button>
             </div>
