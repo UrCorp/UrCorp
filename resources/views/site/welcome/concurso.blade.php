@@ -44,13 +44,13 @@
       html, body {
           height: 100%;
           margin: 0;
-          background-image: url('./public/assets/img/v2/landing.jpg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
         }
 
       #wrapper{
+        background-image: url('./public/assets/img/v2/landing.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       		min-height: 100%;
         }
   </style>
@@ -135,6 +135,64 @@
             {!! Form::close() !!}
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="hide-on-med-and-up">
+    <div class="w3-content">
+      <div class="w3-display-container" style="height: 300px">
+        <img src="{{ asset('public/assets/img/v2/landing.jpg') }}" style="height:100%;width:100%">
+        <div class="w3-display-middle" style="background-color: rgba(0, 0, 0, 0.6); width:100%; height:100%"></div>
+        <div class="w3-display-middle center" style="width: 100%; margin: auto">
+          <h5 class="white-text">TU PROPIA PÁGINA WEB <span style="color: yellowgreen">GRATIS</span></h5>
+          <h5 class="white-text condensed">¡PARTICIPA Y GANA!</h5>
+        </div>
+      </div>
+      <div class="w3-container w3-block center" style="background-color: orangered">
+        <h6 class="white-text">¡Ya sé que plataforma digítal quiero!</h6>
+        <h5 class="white-text">¡COMENZAR AHORA!</h5>
+      </div>
+      <div class="w3-panel center">
+        <h6 class="grey-text">Gana una página web con valor de $30,000.00</h6>
+        <h5 style="color:yellowgreen">¡TOTALMENTE GRATIS!</h5>
+      </div>
+      <div class="w3-panel center">
+        <button class="btn" style="background-color:#3b5a9a; width: 80%; margin:auto">
+          <i class="fa fa-facebook white-text" aria-hidden="true" style="margin-right: 20px"></i>Like y Comparte
+        </button>
+      </div>
+      <div class="w3-panel">
+        {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
+        <div class="input-field">
+          <input id="name" type="text" class="validate white-text" name="contact[name]">
+          <label for="name">Nombre *</label>
+        </div>
+        <div class="input-field">
+          <input id="email" type="email" class="validate white-text" name="contact[email]">
+          <label for="email">Email *</label>
+        </div>
+        <div class="input-field">
+          <input id="name" type="text" class="validate white-text" name="contact[phone]">
+          <label for="name">Teléfno *</label>
+        </div>
+            <input type="checkbox" id="test" />
+            <label for="test">Acepto términos y condiciones.</label>
+            <div class="w3-section center">
+              <button class="btn w3-center" style="background-color: #1dade4; margin:auto; height:80px">
+                ¡PARTICIPAR YA!
+              </button>
+            </div>
+        {!! Form::close() !!}
+      </div>
+      <div class="w3-section w3-panel">
+        <h1 class="w3-text-gray">¡GANA Y ELIJE!</h1>
+        <p class="grey-text thin">PÁGINA PERSONAL, LANDING PAGE, TIENDA VIRTUAL, BLOG, GALERÍA</p>
+        <ol class="w3-left grey-text">
+          <li class="w3-left">Diseño personalizado y responsivo</li>
+          <li class="w3-left">Programación desde cero</li>
+          <li class="w3-left">Tecnologías personalizadas</li>
+        </ol>
+        <p class="grey-text">Y MÁS...</p>
       </div>
     </div>
   </div>
