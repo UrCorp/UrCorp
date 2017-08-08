@@ -42,16 +42,17 @@
   <!-- Style -->
   <style type="text/css">
       html, body {
-          height: 100%;
+          height: 110%;
           margin: 0;
         }
 
       #wrapper{
+        background-color: rgba(0, 0, 0, 0.6);
         background-image: url('./public/assets/img/v2/landing.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-      		min-height: 100%;
+    		min-height: 100%;
         }
   </style>
   <!-- Style -->
@@ -76,63 +77,65 @@
 
 </head>
 <body data-origin="{!! URL::to('/') !!}">
-  <div id="wrapper" class="w3-container hide-on-small-only" style="background-color: rgba(0, 0, 0, 0.6); padding: 2%">
-    <div class="w3-panel w3-center w3-round-xlarge" style="width: 40%; margin:auto; background-color:orangered">
-      <h5 class="white-text">¡Ya sé que plataforma digítal quiero!</h5>
-      <h5 class="white-text"><b>¡COMENZAR AHORA!</b></h5>
-    </div>
-    <div class="w3-panel w3-center">
-      <h4 class="white-text thin">TU PROPIA PÁGINA WEB <span style="color: yellowgreen"><b>GRATIS</b></span></h4>
-      <h4 class="white-text"><b>¡PARTICIPA Y GANA!</b></h4>
-    </div>
-    <div class="w3-panel">
-      <div class="row">
-        <div class="col l4 offset-l2 m6 w3-center">
-          <div class="w3-panel">
-            <h4 class="white-text">Gana un página WEB con el valor de $30,000.00</h4>
-            <h5 style="color:yellowgreen">¡TOTALMENTE GRATIS!</h5>
-          </div>
-          <div class="w3-panel">
-            <h4 class="white-text">¡GANA Y ELIJE!</h4>
-            <p class="grey-text">PÁGINA PERSONAL, LANDING PAGE, TIENDA VIRTUAL, BLOG, GALERÍA</p>
-            <ol class="w3-left grey-text">
-              <li class="w3-left">Diseño personalizado y responsivo</li>
-              <li class="w3-left">Programación desde cero</li>
-              <li class="w3-left">Tecnologías personalizadas</li>
-            </ol>
-            <ul class="w3-left white-text">
-              <li class="w3-left">Y MÁS...</li>
-            </ul>
-          </div>
-        </div>
-        <div class="w3-col l4 m6">
-          <div class="w3-panel">
-            <button class="btn" style="background-color:#3b5a9a; width: 100%">
-              <i class="fa fa-facebook white-text" aria-hidden="true" style="margin-right: 20px"></i>Like y Comparte
-            </button>
-          </div>
-          <div class="w3-panel">
-            {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
-            <div class="input-field">
-              <input id="name" type="text" class="validate white-text" name="contact[name]">
-              <label for="name">Nombre *</label>
+  <div id="wrapper" class="w3-display-container w3-center hide-on-small-only">
+    <div class="w3-display-middle w3-padding-32" style="background-color: rgba(0,0,0,0.6); width:100%; height:100%">
+      <a target="_blank" href="http://urcorp.mx/calculator?p%5B%5D=web" class="w3-btn w3-panel w3-center w3-round-xlarge" style="width: 40%; margin:auto; background-color:orangered">
+        <h5 class="white-text">¡Ya sé que plataforma digítal quiero!</h5>
+        <h5 class="white-text"><b>¡COMENZAR AHORA!</b></h5>
+      </a>
+      <div class="w3-panel w3-center">
+        <h4 class="white-text thin">TU PROPIA PÁGINA WEB <span style="color: yellowgreen"><b>GRATIS</b></span></h4>
+        <h4 class="white-text"><b>¡PARTICIPA Y GANA!</b></h4>
+      </div>
+      <div class="w3-panel">
+        <div class="row">
+          <div class="col l4 offset-l2 m6 w3-center">
+            <div class="w3-panel">
+              <h4 class="white-text">Gana un página WEB con el valor de $30,000.00</h4>
+              <h5 style="color:yellowgreen">¡TOTALMENTE GRATIS!</h5>
             </div>
-            <div class="input-field">
-              <input id="email" type="email" class="validate white-text" name="contact[email]">
-              <label for="email">Email *</label>
+            <div class="w3-panel">
+              <h4 class="white-text">¡GANA Y ELIJE!</h4>
+              <p class="grey-text">PÁGINA PERSONAL, LANDING PAGE, TIENDA VIRTUAL, BLOG, GALERÍA</p>
+              <ol class="w3-left grey-text">
+                <li class="w3-left">Diseño personalizado y responsivo</li>
+                <li class="w3-left">Programación desde cero</li>
+                <li class="w3-left">Tecnologías personalizadas</li>
+              </ol>
+              <ul class="w3-left white-text">
+                <li class="w3-left">Y MÁS...</li>
+              </ul>
             </div>
-            <div class="input-field">
-              <input id="name" type="text" class="validate white-text" name="contact[phone]">
-              <label for="name">Teléfno *</label>
+          </div>
+          <div class="w3-col l4 m6">
+            <div class="w3-panel">
+              <a target="_blank" href="https://www.facebook.com/urcorpmx/" class="btn" style="background-color:#3b5a9a; width: 100%">
+                <i class="fa fa-facebook white-text" aria-hidden="true" style="margin-right: 20px"></i>Like y Comparte
+              </a>
             </div>
-                <input type="checkbox" id="test5" />
-                <label for="test5">Acepto términos y condiciones.</label>
-                <div class="w3-section">
-                  <button class="btn w3-right" style="background-color: #1dade4">
-                    ¡PARTICIPAR YA!
-                  </button>
-                </div>
-            {!! Form::close() !!}
+            <div class="w3-container">
+              {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
+              <div class="input-field">
+                <input id="name" type="text" class="validate white-text" name="contact[name]">
+                <label for="name">Nombre *</label>
+              </div>
+              <div class="input-field">
+                <input id="email" type="email" class="validate white-text" name="contact[email]">
+                <label for="email">Email *</label>
+              </div>
+              <div class="input-field">
+                <input id="name" type="text" class="validate white-text" name="contact[phone]">
+                <label for="name">Teléfno *</label>
+              </div>
+                  <input type="checkbox" id="test5" />
+                  <label for="test5">Acepto términos y condiciones.</label>
+                  <div class="w3-section">
+                    <a target="_blank" href="" class="btn w3-right" style="background-color: #1dade4">
+                      ¡PARTICIPAR YA!
+                    </a>
+                  </div>
+              {!! Form::close() !!}
+            </div>
           </div>
         </div>
       </div>
@@ -148,18 +151,18 @@
           <h5 class="white-text condensed">¡PARTICIPA Y GANA!</h5>
         </div>
       </div>
-      <div class="w3-container w3-block center" style="background-color: orangered">
+      <a class="w3-btn w3-block center" href="http://urcorp.mx/calculator?p%5B%5D=web" target="_blank" style="background-color: orangered">
         <h6 class="white-text">¡Ya sé que plataforma digítal quiero!</h6>
         <h5 class="white-text">¡COMENZAR AHORA!</h5>
-      </div>
+      </a>
       <div class="w3-panel center">
         <h6 class="grey-text">Gana una página web con valor de $30,000.00</h6>
         <h5 style="color:yellowgreen">¡TOTALMENTE GRATIS!</h5>
       </div>
       <div class="w3-panel center">
-        <button class="btn" style="background-color:#3b5a9a; width: 80%; margin:auto">
+        <a target="_blank" href="https://www.facebook.com/urcorpmx/" class="btn" style="background-color:#3b5a9a; width: 80%; margin:auto">
           <i class="fa fa-facebook white-text" aria-hidden="true" style="margin-right: 20px"></i>Like y Comparte
-        </button>
+        </a>
       </div>
       <div class="w3-panel">
         {!! Form::open(['route' => 'site.contact.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
@@ -178,9 +181,9 @@
             <input type="checkbox" id="test" />
             <label for="test">Acepto términos y condiciones.</label>
             <div class="w3-section center">
-              <button class="btn w3-center" style="background-color: #1dade4; margin:auto;">
+              <a target="_blank" href="" class="btn w3-center" style="background-color: #1dade4; margin:auto;">
                 ¡PARTICIPAR YA!
-              </button>
+              </a>
             </div>
         {!! Form::close() !!}
       </div>
