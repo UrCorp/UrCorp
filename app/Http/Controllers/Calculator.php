@@ -24,7 +24,7 @@ class Calculator extends Controller
     $cookieContact = \Cookie::get('contact');
 
     if (is_null($cookieContact)) {
-      return redirect()->route('site.welcome.index');  
+      return redirect()->route('site.welcome.index');
     }
 
     $cookieContact = json_decode($cookieContact, true);
@@ -165,7 +165,7 @@ class Calculator extends Controller
             $price += ((double) $platform->pivot->price);
           }
 
-          $quote_data['subtotal'] += $price; 
+          $quote_data['subtotal'] += $price;
 
           array_push($resp['shoppingCart']['items'], [
             'name'        => $item->name,
@@ -359,11 +359,11 @@ class Calculator extends Controller
 
     $featuresType = [
       [
-        'items' => $features, 
+        'items' => $features,
         'name' => 'platform_features'
       ],
       [
-        'items' => $adminFeatures, 
+        'items' => $adminFeatures,
         'name' => 'admin_features'
       ]
     ];
@@ -375,7 +375,7 @@ class Calculator extends Controller
     for ($k = 0; $k < $l; ++$k) {
 
       $tmpFeatures = $featuresType[$k]['items'];
-      $n = count($tmpFeatures);   
+      $n = count($tmpFeatures);
       $arrFeatures = $arrCalculator[$featuresType[$k]['name']];
 
       for ($i = 0; $i < $n; ++$i) {
@@ -418,7 +418,7 @@ class Calculator extends Controller
       });
 
       foreach ($objPlatform as $key => $value) {
-        
+
         array_push($list_platforms, $objPlatform[$key]['text']);
       }
     }
@@ -433,24 +433,24 @@ class Calculator extends Controller
     if ($this->contact->quotation == "") {
 
       $tmpQuotation = [];
-      
+
     } else {
 
-      $tmpQuotation = json_decode($this->contact->quotation);     
+      $tmpQuotation = json_decode($this->contact->quotation);
     }
 
     array_push($tmpQuotation, $quotation);
     $this->contact->quotation = json_encode($tmpQuotation);
 
     $this->contact->update();
-    
+
     $email_sent = \Mail::send('site.emails.calculator', ['q' => $quotation], function ($m) use ($quotation) {
       $m->from('urcorp@urcorp.mx', 'UrCorp Server');
       $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
 
       $m->to($quotation['contact']['email'], $quotation['contact']['name'])
         ->cc('contacto@urcorp.mx', 'Contacto UrCorp');
-        
+
       $m->subject('Cotización de Aplicaciones | UrCorp');
     });
 
