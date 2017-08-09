@@ -230,6 +230,10 @@ Route::group(['as' => 'site.'], function () {
     Route::get('/Concurso', function () {
 		    return view('site.welcome.concurso');
 		});
+
+    /*Route::get('/contest', function () {
+		    return view('site.emails.contest');
+		});*/
   });
 
   Route::group(['prefix' => 'contact', 'as' => 'contact.'], function () {
@@ -244,6 +248,16 @@ Route::group(['as' => 'site.'], function () {
       'as'    => 'save'
     ]);
   });
+
+  /* Routs created by Eduardo Vera */
+  Route::group(['prefix' => 'contest', 'as' => 'contest.'], function () {
+
+    Route::post('/send', [
+      'uses'  => 'Contest@send',
+      'as'    => 'send'
+    ]);
+  });
+  /* End routes by Eduardo Vera */
 
   Route::group(['prefix' => 'calculator', 'as' => 'calculator.'], function () {
 
