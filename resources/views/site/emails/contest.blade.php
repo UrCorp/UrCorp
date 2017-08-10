@@ -1,10 +1,3 @@
-<?php
-  $contact['kit']="BRANDING";
-  $contact['name']="Eduardo Vera";
-  $contact['phone']="Eduardo Vera";
-  $contact['email']="vera@gmail.com";
-  $contact['message']="";
-?>
 <!DOCTYPE html>
 <html>
 <head>

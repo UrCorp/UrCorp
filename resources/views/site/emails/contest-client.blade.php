@@ -1,9 +1,9 @@
 <?php
-  $contact['kit']="BRANDING";
-  $contact['name']="Eduardo Vera";
-  $contact['phone']="Eduardo Vera";
-  $contact['email']="vera@gmail.com";
-  $contact['message']="";
+  /*
+  $contact['name']="Eduardo Vera - Web Developer";
+  $contact['phone']="442·377·35·81";
+  $contact['email']="eduardo.vera.pineda@gmail.com";
+  */
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body style="font-family: 'Open sans',helvetica, arial, sans-serif;margin:0;background-color: #F5F5F5; color: #909090">
-<div style="display:block;margin:auto;width:996px;background-color:#FFFFFF;">
+<div style="display:block;margin:auto;width:640px;background-color:#FFFFFF;">
   <div style="width:92%;display:block;margin:auto;padding:60px 25px;">
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
       <img src="{{ asset('public/assets/img/v2/check.png') }}" alt="UrCorp" title="UrCorp" style="display:inline-block;width:128px;height:128px;margin-bottom:30px;" />
@@ -44,7 +44,7 @@
       <hr style="width: 50%; margin-top: 4%">
       <div style="width:100%;display:inline-block;margin-top:4%">
         <center>
-          <h2 style="">Mantente al tanto en redes para más noticias del concurso.</h2>
+          <h2>Mantente al tanto en redes para más noticias del concurso.</h2>
           <h3><b>¡MUCHA SUERTE!</b></h3>
           <h3>¡Gracias por Participar!</h3>
         </center>
