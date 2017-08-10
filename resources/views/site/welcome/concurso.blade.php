@@ -42,7 +42,7 @@
   <!-- Style -->
   <style type="text/css">
       html, body {
-          height: 110%;
+          height: 100%;
           margin: 0;
         }
 
@@ -54,6 +54,10 @@
         background-size: cover;
     		min-height: 100%;
         }
+        h1, h2, h3, h4, h5, h6{
+  margin-top:5px;
+  margin-bottom:5px;
+}
   </style>
   <!-- Style -->
 
