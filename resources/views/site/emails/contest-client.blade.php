@@ -24,21 +24,25 @@
     <div style="width:100%;display:inline-block;margin:auto;font-weight:400;font-size:18px;text-align:center;">
       <hr style="width: 50%; margin-top: 4%">
       <div style="margin-top: 4%">
-        <table width="60%" style="margin:auto">
+        <table width="30%" style="margin:auto">
           <tr>
             <th style="border-bottom: 2px solid; text-align: left; color:#a7a6a6; font-weight:100">Nombre</th>
+          </tr>
+          <tr>
+            <td style="text-align:left;font-size:14px">{{ $contact['name'] }}</td>
+          </tr>
+          <tr>
             <th style="border-bottom: 2px solid; text-align: left; color:#a7a6a6; font-weight:100">Telefono</th>
           </tr>
           <tr>
-            <td style="text-align:left;">{{ $contact['name'] }}</td>
-            <td style="text-align:left;">{{ $contact['phone'] }}</td>
+            <td style="text-align:left;font-size:14px">{{ $contact['phone'] }}</td>
           </tr>
-            <tr style="padding-top: 210px">
-              <th style="border-bottom: 2px solid; text-align: left; color:#a7a6a6; font-weight:100">Correo</th>
-            </tr>
-            <tr>
-              <td style="text-align:left;">{{ $contact['email'] }}</td>
-            </tr>
+          <tr>
+            <th style="border-bottom: 2px solid; text-align: left; color:#a7a6a6; font-weight:100">Correo</th>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-size:14px">{{ $contact['email'] }}</td>
+          </tr>
         </table>
       </div>
       <hr style="width: 50%; margin-top: 4%">
@@ -55,9 +59,9 @@
       Este correo electrónico y cualquiera de sus anexos podrían contener información confidencial. Si usted no es el destinatario, por el presente se le notifica que cualquier difusión y copiado de este correo electrónico y cualquiera de sus anexos o uso de su contenido por cualquier medio está estrictamente prohibido. Si usted recibió este correo electrónico equivocadamente o por error, por favor notifíquelo al remitente inmediatamente y cancele este correo electrónico y todos sus anexos de su ordenador (computadora).
       </div>
     </div>
-  <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
-    <img src="{{ asset('public/assets/img/urcorp-gris.png') }}" alt="UrCorp" title="UrCorp" style="display:inline-block;width:300px;margin-bottom:30px;" />
-  </div>
+    <div style="width:80%; margin:auto">
+      <img src="{{ asset('public/assets/img/urcorp-gris.png') }}" alt="UrCorp" title="UrCorp" style="width:100%;" />
+    </div>
   </div>
 </div>
 </body>
