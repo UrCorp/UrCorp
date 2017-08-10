@@ -34,7 +34,7 @@ class Contest extends Controller
         $mail_sent = Mail::send('site.emails.contest', ['contact' => $contact], function ($m) use ($contact) {
           $m->from('urcorp@urcorp.mx', 'UrCorp Server');
           $m->replyTo($contact['email'], $contact['name']);
-          $m->to('eduardo.vera.pineda@gmail.com', 'Contacto UrCorp');
+          $m->to('mbringas@urcorp.mx', 'Contacto UrCorp');
           $m->subject('Concurso | UrCorp');
         });
 
