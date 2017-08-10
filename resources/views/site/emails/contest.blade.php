@@ -1,3 +1,10 @@
+<?php
+  /*
+  $contact['name']="Eduardo Vera - Web Developer";
+  $contact['phone']="442·377·35·81";
+  $contact['email']="eduardo.vera.pineda@gmail.com";
+  */
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +13,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body style="font-family: 'Open sans',helvetica, arial, sans-serif;margin:0;background-color: #F5F5F5; color: #79888e">
-<div style="display:block;margin:auto;width:996px;background-color:#FFFFFF;">
+<div style="display:block;margin:auto;width:640px;background-color:#FFFFFF;">
   <div style="width:92%;display:block;margin:auto;padding:60px 25px;">
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
       <h1 style="font-weight:bold;margin-bottom:30px;">¡Se ha registrado un nuevo concursante!</h1>
