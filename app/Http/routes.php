@@ -227,9 +227,10 @@ Route::group(['as' => 'site.'], function () {
       'as'    => 'index'
     ]);
 
-    Route::get('/Concurso', function () {
-		    return view('site.welcome.concurso');
-		});
+    Route::get('/Concurso', [
+      'uses'  => 'Contest@index',
+      'as'    => 'contest'
+    ]);
 
     /*Route::get('/contest', function () {
 		    return view('site.emails.contest');

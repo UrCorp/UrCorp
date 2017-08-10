@@ -11,6 +11,11 @@ use Mail;
 
 class Contest extends Controller
 {
+  public function index(Request $request) {
+
+    return view('site.welcome.concurso');
+  }
+
   public function send(Request $request) {
     $res = [
       'status' => 'ERROR_CONNECTION',
@@ -51,6 +56,7 @@ class Contest extends Controller
         }
       }
     }
-    echo json_encode($res);
+    \Session::flash('flash_message','Gracias por Participar!'); //<--FLASH MESSAGE
+    return redirect()->route('site.welcome.contest');
   }
 }

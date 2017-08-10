@@ -144,6 +144,12 @@
         </div>
       </div>
     </div>
+    @if(Session::has('flash_message'))
+      <div class="w3-display-middle w3-padding-32 w3-animate-opacity" style="background-color: rgba(0,0,0,0.8); width:100%; height:100%">
+        <h1 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h1>
+        <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
+      </div>
+    @endif
   </div>
   <div class="hide-on-med-and-up">
     <div class="w3-content">
