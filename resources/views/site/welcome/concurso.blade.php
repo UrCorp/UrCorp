@@ -82,7 +82,7 @@
 </head>
 <body data-origin="{!! URL::to('/') !!}">
   <div id="wrapper" class="w3-display-container w3-center hide-on-small-only">
-    <div class="w3-display-middle w3-padding-32" style="background-color: rgba(0,0,0,0.6); width:100%; height:100%">
+    <div class="w3-display-middle w3-padding-32" style="background-color: rgba(0,0,0,0.6); width:100%; height:100%;position: fixed">
       <a target="_blank" href="http://urcorp.mx/calculator?p%5B%5D=web" class="w3-btn w3-panel w3-center w3-round-xlarge" style="width: 40%; margin:auto; background-color:orangered">
         <h5 class="white-text">¡Ya sé que plataforma digítal quiero!</h5>
         <h5 class="white-text"><b>¡COMENZAR AHORA!</b></h5>
@@ -150,6 +150,11 @@
         <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
       </div>
     @endif
+      <div class="w3-display-middle w3-padding-32 w3-animate-opacity" style="background-color: rgba(0,0,0,0.9); width:100%; height:100%; position: fixed">
+        <h1 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h1>
+        <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
+        <a href="https://urcorp.mx" class="w3-display-bottommiddle" style="color:lightgray; width:100%; margin-bottom:3%">Seguir navegando urcorp.mx >></a>
+      </div>
   </div>
   <div class="hide-on-med-and-up">
     <div class="w3-content">
@@ -212,6 +217,7 @@
       <div class="w3-display-middle w3-padding-32 w3-animate-opacity center" style="background-color: rgba(0,0,0,0.9); width:100%; height:100%; position:fixed">
         <h5 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h5>
         <h6 class="w3-display-middle" style="color:lightgray; width:100%; margin-top: 55px">Tus datos han sido registrados.</h6>
+        <a href="https://urcorp.mx" class="w3-display-bottommiddle" style="color:lightgray; width:100%; margin-bottom:3%">Seguir navegando urcorp.mx >></a>
       </div>
     @endif
   </div>
