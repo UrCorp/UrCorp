@@ -128,8 +128,8 @@
                 <label for="email">Email *</label>
               </div>
               <div class="input-field">
-                <input id="name" type="text" class="validate white-text" name="contact[phone]" required="required">
-                <label for="name">Teléfono *</label>
+                <input id="phone" type="text" class="validate white-text" name="contact[phone]" required="required">
+                <label for="phone">Teléfono *</label>
               </div>
                   <input type="checkbox" id="test5" required="required" class="box" />
                   <label for="test5">Acepto </label><a href="#modal1" style="color:white"> términos y condiciones.</a>
@@ -177,15 +177,15 @@
       <div class="w3-panel">
         {!! Form::open(['route' => 'site.contest.send', 'id' => 'form-contact', 'method' => 'POST']) !!}
         <div class="input-field">
-          <input id="name" type="text" class="validate white-text" name="contact[name]" required="required">
+          <input id="name" type="text" class="validate" name="contact[name]" required="required">
           <label for="name">Nombre *</label>
         </div>
         <div class="input-field">
-          <input id="email" type="email" class="validate white-text" name="contact[email]" required="required">
+          <input id="email" type="email" class="validate" name="contact[email]" required="required">
           <label for="email">Email *</label>
         </div>
         <div class="input-field">
-          <input id="phone" type="text" class="validate white-text" name="contact[phone]" required="required">
+          <input id="phone" type="text" class="validate" name="contact[phone]" required="required">
           <label for="phone">Teléfono *</label>
         </div>
             <input type="checkbox" id="test" class="boxmovil" />
