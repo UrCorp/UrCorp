@@ -135,7 +135,7 @@
                   <label for="test5">Acepto </label><a href="#modal1" style="color:white"> términos y condiciones.</a>
                   <div class="w3-section">
                     <button class="btn w3-right disabled mandar" style="background-color: #1dade4">
-                      participar YA!
+                      ¡Participar YA!
                     </button>
                   </div>
               {!! Form::close() !!}
@@ -191,9 +191,9 @@
             <input type="checkbox" id="test" class="boxmovil" />
             <label for="test">Acepto </label><a href="#modal1" style="color:gray"> términos y condiciones.</a>
             <div class="w3-section center">
-              <a target="_blank" href="" class="btn w3-center mandarmovil disabled" style="background-color: #1dade4; margin:auto;">
+              <button class="btn w3-center mandarmovil disabled" style="background-color: #1dade4; margin:auto;">
                 ¡PARTICIPAR YA!
-              </a>
+              </button>
             </div>
         {!! Form::close() !!}
       </div>
