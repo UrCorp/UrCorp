@@ -145,7 +145,7 @@
       </div>
     </div>
     @if(Session::has('flash_message'))
-      <div class="w3-display-middle w3-padding-32 w3-animate-opacity" style="background-color: rgba(0,0,0,0.8); width:100%; height:100%">
+      <div class="w3-display-middle w3-padding-32 w3-animate-opacity" style="background-color: rgba(0,0,0,0.9); width:100%; height:100%">
         <h1 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h1>
         <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
       </div>
@@ -153,7 +153,7 @@
   </div>
   <div class="hide-on-med-and-up">
     <div class="w3-content">
-      <div class="w3-display-container" style="height: 300px">
+      <div class="w3-display-container" style="height: 220px">
         <img src="{{ asset('public/assets/img/v2/landing.jpg') }}" style="height:100%;width:100%">
         <div class="w3-display-middle" style="background-color: rgba(0, 0, 0, 0.6); width:100%; height:100%"></div>
         <div class="w3-display-middle center" style="width: 100%; margin: auto">
@@ -186,19 +186,19 @@
         </div>
         <div class="input-field">
           <input id="name" type="text" class="validate white-text" name="contact[phone]" required="required">
-          <label for="name">Teléfno *</label>
+          <label for="name">Teléfono *</label>
         </div>
-            <input type="checkbox" id="test" required />
-            <label for="test">Acepto </label><a href="#modal1" style="color:white"> términos y condiciones.</a>
+            <input type="checkbox" id="test" class="boxmovil" />
+            <label for="test">Acepto </label><a href="#modal1" style="color:gray"> términos y condiciones.</a>
             <div class="w3-section center">
-              <a target="_blank" href="" class="btn w3-center" style="background-color: #1dade4; margin:auto;">
+              <a target="_blank" href="" class="btn w3-center mandarmovil disabled" style="background-color: #1dade4; margin:auto;">
                 ¡PARTICIPAR YA!
               </a>
             </div>
         {!! Form::close() !!}
       </div>
       <div class="w3-section w3-panel">
-        <h1 class="w3-text-gray">¡GANA Y ELIJE!</h1>
+        <h4 class="w3-text-gray center">¡GANA Y ELIJE!</h4>
         <p class="grey-text thin">PÁGINA PERSONAL, LANDING PAGE, TIENDA VIRTUAL, BLOG, GALERÍA</p>
         <ol class="w3-left grey-text">
           <li class="w3-left">Diseño personalizado y responsivo</li>
@@ -208,6 +208,12 @@
         <p class="grey-text">Y MÁS...</p>
       </div>
     </div>
+    @if(Session::has('flash_message'))
+      <div class="w3-display-middle w3-padding-32 w3-animate-opacity center" style="background-color: rgba(0,0,0,0.9); width:100%; height:100%; position:fixed">
+        <h5 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h5>
+        <h6 class="w3-display-middle" style="color:lightgray; width:100%; margin-top: 55px">Tus datos han sido registrados.</h6>
+      </div>
+    @endif
   </div>
 
   <!--Modales-->
@@ -217,60 +223,59 @@
         <h4 class="center">Términos y Condiciones</h4>
         <h5>CONCURSO “tu propia página web gratis”</h5>
  
-<h6>1. DESCRIPCIÓN DEL CONCURSO</h6>
-<p class="w3-justify">El concurso titulado “tu propia página WEB gratis” (en adelante “Concurso”) es patrocinado por URCORP S. de C.L. (en adelante “Patrocinador”), y podrán participar los habitantes México; y comienza el  9 de Agosto de 2017 a las 12:00 h tiempo de la Ciudad de México.</p>
-<p class="w3-justify">La finalización del concurso es el  9 de Septiembre de 2017 a las 12:00 pm tiempo de la Ciudad de México. La notificación del Ganador (a) se realizará dentro de un plazo máximo de cinco (5) días hábiles posteriores al cierre del Concurso.</p>
+        <h6>1. DESCRIPCIÓN DEL CONCURSO</h6>
+        <p class="w3-justify">El concurso titulado “tu propia página WEB gratis” (en adelante “Concurso”) es patrocinado por URCORP S. de C.L. (en adelante “Patrocinador”), y podrán participar los habitantes México; y comienza el  9 de Agosto de 2017 a las 12:00 h tiempo de la Ciudad de México.</p>
+        <p class="w3-justify">La finalización del concurso es el  9 de Septiembre de 2017 a las 12:00 pm tiempo de la Ciudad de México. La notificación del Ganador (a) se realizará dentro de un plazo máximo de cinco (5) días hábiles posteriores al cierre del Concurso.</p>
+         
+        <h6>2. OBLIGACIÓN DE COMPRA</h6>
+        No es necesario comprar un producto o hacer un pago de algún tipo para participar o ganar este concurso.
+         
+        <h6>3. ELEGIBILIDAD</h6>
+        <p class="w3-justify">Sólo pueden participar en este Concurso los residentes de México, jóvenes de 18 años de edad en adelante.</p>
+        <p class="w3-justify">No pueden participar empleados del Patrocinador, su casa matriz, filiales, subsidiarias, agencias de publicidad / promociones, ni los empleados, funcionarios, directores y apoderados y/o sus familiares directos. El término "familiar directo" incluye cónyuges, hermanos, padres, hijos, abuelos y nietos o aquellas personas que residan en el mismo hogar que dichos individuos independientemente de su relación de parentesco.</p>
+        <p class="w3-justify">Para poder participar en este concurso, el participante debe estar inscrito en Facebook, hacer clic en "Me Gusta" a la página de Urcorpmx, aceptar seguir las reglas del concurso y suministrar la información solicitada, misma que deberá ser veraz, sin falsificación o suplantación de cuentas.</p>
+        <p class="w3-justify">Para ser un usuario de Facebook, los individuos deben crear una cuenta y aceptar los "términos" y la Política de Privacidad de Facebook, como se dispone en el sitio de Facebook aplicable a su jurisdicción local.</p>
+         
+        <h6>4. ACEPTACIÓN DE LAS REGLAS OFICIALES</h6>
+        <p class="w3-justify">La participación en el presente Concurso constituye la aceptación total e incondicional de las presentes Reglas Oficiales y de las decisiones del Patrocinador, las cuales resultan definitivas, vinculantes y a exclusivo criterio de éste, sobre todos los temas relacionados al presente Concurso. El hecho de hacerse acreedor de un premio, como se describe a continuación, está sujeto al cumplimiento de todos los requerimientos establecidos en el presente.</p>
  
-<h6>2. OBLIGACIÓN DE COMPRA</h6>
-No es necesario comprar un producto o hacer un pago de algún tipo para participar o ganar este concurso.
+        <h6>5. CÓMO PARTICIPAR</h6>
+        <p class="w3-justify">Para participar, los participantes deberán visitar www.facebook.com/urcorpmx</p>
+        <p class="w3-justify">Para participar en este concurso es una condición esencial ser mayor de 18 años de edad, registrarse haciendo "Clic" en "Me Gusta", aceptar los términos y condiciones, e ingresar los datos que se le soliciten en pantalla. En el caso de los menores de 18 años, un adulto responsable (madre, padre y/o acudiente), deberá presentar cédula de identidad personal y presentarse personalmente con el ganador para retirar su premio.</p>
+        <p class="w3-justify">Para participar usted deberá:</p>
+        	•	El participante debe estar inscrito en la página de Facebook de Urcorp y hacer clic en "Me Gusta".
+        	•	 Gana el registro que elegido al azar en un sorteo posterior al día 9 de septiembre. Proveyendo que haya dado ¨me gusta¨ a las páginas indicadas, y haya compartido el concurso en El Patrocinador se reserva el derecho de someter a revisión la metodología de obtención de para garantizar que cumple con los términos y condiciones aquí descritos.  Los concursantes podrán participar una vez con sus datos registrados. Todas las inscripciones deberán ser completas, veraces y ser enviadas por participantes con un perfil válido de Facebook. Si el participante no cumple con lo establecido en estos términos y condiciones podrá ser eliminada por el Patrocinador sin la obligación para éste de realizar alguna notificación o dar alguna indemnización al participante.
+        <p class="w3-justify">Para los fines de los presentes Términos y Condiciones, la recepción de un registro de participación al concurso tiene lugar cuando el participante ha aceptado los términos e ingresado sus datos en la dirección que aparece en la descripción de la publicación en redes.</p>
+        <p class="w3-justify">El Patrocinador no es responsable por registros tardíos, perdidos, mal dirigidos, incompletos, ni por cualquier otro inconveniente o error relacionado con el presente Concurso, incluyendo su cancelación como consecuencia de un hecho de fuerza mayor o de cualquier otra circunstancia que exceda el control por parte del Patrocinador.  </p>
+         
+        <h6>6. SELECCIÓN DE GANADORES</h6>
+        <p class="w3-justify">El día lunes 9 de septiembre de 2017 a una hora determinada por medio de una publicación en la página de facebook de urcorpmx  se anunciara el cierre del concurso . Se seleccionará inmediatamente al participante seleccionado al azar de la base de datos del concuros y que cumpla todos los requisitos.  El patrocinador se encargará de revisar que la obtención del primer lugar haya sido cumpliendo los términos y condiciones antes descritos.</p>
+        <p class="w3-justify">En caso de que el primero que haya sido registrado no cumpla con un registro fidedigno,  lo sucederá el que sea el segundo que se elija al azar y que si haya cumplido con la pautas, y así sucesivamente; realizando el mismo proceso antes descrito de avisaje y revisión de los termino el patrocinador se reserva el derecho de declarar desierto el concurso si ninguno(a) de las tres primeras personas no cumplen con lo antes descrito, salvo que exista disposición legal aplicable..  </p>
+        <p class="w3-justify"> El resultado y decisión que arroje el patrocinador será final e inapelable.</p>
  
-<h6>3. ELEGIBILIDAD</h6>
-<p class="w3-justify">Sólo pueden participar en este Concurso los residentes de México, jóvenes de 18 años de edad en adelante.</p>
-<p class="w3-justify">No pueden participar empleados del Patrocinador, su casa matriz, filiales, subsidiarias, agencias de publicidad / promociones, ni los empleados, funcionarios, directores y apoderados y/o sus familiares directos. El término "familiar directo" incluye cónyuges, hermanos, padres, hijos, abuelos y nietos o aquellas personas que residan en el mismo hogar que dichos individuos independientemente de su relación de parentesco.</p>
-<p class="w3-justify">Para poder participar en este concurso, el participante debe estar inscrito en Facebook, hacer clic en "Me Gusta" a la página de Urcorpmx, aceptar seguir las reglas del concurso y suministrar la información solicitada, misma que deberá ser veraz, sin falsificación o suplantación de cuentas.</p>
-<p class="w3-justify">Para ser un usuario de Facebook, los individuos deben crear una cuenta y aceptar los "términos" y la Política de Privacidad de Facebook, como se dispone en el sitio de Facebook aplicable a su jurisdicción local.</p>
+        <h6>7. NOTIFICACIÓN A LOS GANADORES</h6>
+        <p class="w3-justify">Los ganadores serán notificados de su selección a través de la página de Facebook, y en la dirección web del concurso alrededor del 11 al 15 de Septiembre del 2017, y deberán firmar y completar correctamente la forma de liberación de responsabilidad (“Constancia de Liberación de Responsabilidad”), los documentos de recibo del premio y/o los demás documentos que requiera el Patrocinador.  Se les indicará a los ganadores la forma como podrán reclamar su premio una vez que el Patrocinador verifique que el Ganador envió toda la información requerida y que cumplió con estos términos y condiciones.</p>
+         
+        <h6>8. PREMIOS</h6>
+        <p class="w3-justify">Los Ganadores se hará acreedores del siguiente premio:</p>
+        - Diseño y Programación de una página WEB
+         
+        <p class="w3-justify">El patrocinador se deslinda del pago del dominio y host, a menos que el ganador elija que el tramite lo haga el patrocinador. Ningún premio es transferible ni intercambiable. No se entregarán premios en dinero. El Patrocinador se reserva el derecho de reemplazar los premios total o parcialmente por premios de valor comparable.  Es responsabilidad del Ganador comunicarse de la forma que le indique el Patrocinador a recibir su premio</p>
+        <p class="w3-justify">El valor de los Premios puede ser gravable como ingreso. Una vez recibido el premio, cada ganador debe cumplir con todos los impuestos aplicables debidos en relación con dichos premios. Mediante la aceptación de estos términos y condiciones el Ganador acepta que será exclusivamente responsable por el pago de todos los impuestos, erogaciones, cargos por licencia, aranceles aduaneros, registros y/o demás costos, gastos o requerimientos relativos a la recepción del premio, salvo que exista disposición legal aplicable en contrario en alguno de los países participantes.</p>
+        <p class="w3-justify">Los Premios otorgados a un Participante que no resulte elegible quedarán vacantes y serán otorgados a un Participante suplente.</p>
+        <p class="w3-justify">El lugar de entrega de los premios será indicado en la página de facebook, sin embargo, el Patrocinador se reserva el derecho de cambiar dicho lugar de entrega, previa notificación a los ganadores.</p>
+         
+        <h6>9. DERECHOS PUBLICITARIOS</h6>
+        <p class="w3-justify">Mediante el ingreso al presente Concurso, salvo prohibición legal, cada Participante otorga al Patrocinador un permiso exclusivo de uso de sus nombres, personajes, fotografías, voces y retratos, videos y testimonio en relación con el presente Concurso en los medios y formas que el Patrocinador considere conveniente. Asimismo, renuncia a todo reclamo de regalías, derechos o remuneración por dicho uso.  Urcorp por su parte se compromete a no utilizar ninguna acción realizada por los participantes para actividades de publicidad ajenas al presente concurso salvo acuerdo en contrario.</p>
+         
+        <h6>10. INFORMACIÓN PERSONAL Y CONFIDENCIALIDAD</h6>
+        <p class="w3-justify">Toda información personal incluyendo a mero título enunciativo, el nombre, la imagen, la edad, el domicilio, el número telefónico y/o la dirección de correo electrónico (en adelante "Información Personal") de un Participante se utilizará (1) con relación al presente Concurso, (2) del modo dispuesto en los presentes Términos y Condiciones, La Información Personal no se divulgará a terceros, salvo con el propósito de realizar la entrega del Premio al Ganador. </p>
  
-<h6>4. ACEPTACIÓN DE LAS REGLAS OFICIALES</h6>
-<p class="w3-justify">La participación en el presente Concurso constituye la aceptación total e incondicional de las presentes Reglas Oficiales y de las decisiones del Patrocinador, las cuales resultan definitivas, vinculantes y a exclusivo criterio de éste, sobre todos los temas relacionados al presente Concurso. El hecho de hacerse acreedor de un premio, como se describe a continuación, está sujeto al cumplimiento de todos los requerimientos establecidos en el presente.</p>
- 
-<h6>5. CÓMO PARTICIPAR</h6>
-<p class="w3-justify">Para participar, los participantes deberán visitar www.facebook.com/urcorpmx</p>
-<p class="w3-justify">Para participar en este concurso es una condición esencial ser mayor de 18 años de edad, registrarse haciendo "Clic" en "Me Gusta", aceptar los términos y condiciones, e ingresar los datos que se le soliciten en pantalla. En el caso de los menores de 18 años, un adulto responsable (madre, padre y/o acudiente), deberá presentar cédula de identidad personal y presentarse personalmente con el ganador para retirar su premio.</p>
-<p class="w3-justify">Para participar usted deberá:</p>
-	•	El participante debe estar inscrito en la página de Facebook de Urcorp y hacer clic en "Me Gusta".
-	•	 Gana el registro que elegido al azar en un sorteo posterior al día 9 de septiembre. Proveyendo que haya dado ¨me gusta¨ a las páginas indicadas, y haya compartido el concurso en El Patrocinador se reserva el derecho de someter a revisión la metodología de obtención de para garantizar que cumple con los términos y condiciones aquí descritos.  Los concursantes podrán participar una vez con sus datos registrados. Todas las inscripciones deberán ser completas, veraces y ser enviadas por participantes con un perfil válido de Facebook. Si el participante no cumple con lo establecido en estos términos y condiciones podrá ser eliminada por el Patrocinador sin la obligación para éste de realizar alguna notificación o dar alguna indemnización al participante.
-<p class="w3-justify">Para los fines de los presentes Términos y Condiciones, la recepción de un registro de participación al concurso tiene lugar cuando el participante ha aceptado los términos e ingresado sus datos en la dirección que aparece en la descripción de la publicación en redes.</p>
-<p class="w3-justify">El Patrocinador no es responsable por registros tardíos, perdidos, mal dirigidos, incompletos, ni por cualquier otro inconveniente o error relacionado con el presente Concurso, incluyendo su cancelación como consecuencia de un hecho de fuerza mayor o de cualquier otra circunstancia que exceda el control por parte del Patrocinador.  </p>
- 
-<h6>6. SELECCIÓN DE GANADORES</h6>
-<p class="w3-justify">El día lunes 9 de septiembre de 2017 a una hora determinada por medio de una publicación en la página de facebook de urcorpmx  se anunciara el cierre del concurso . Se seleccionará inmediatamente al participante seleccionado al azar de la base de datos del concuros y que cumpla todos los requisitos.  El patrocinador se encargará de revisar que la obtención del primer lugar haya sido cumpliendo los términos y condiciones antes descritos.</p>
-<p class="w3-justify">En caso de que el primero que haya sido registrado no cumpla con un registro fidedigno,  lo sucederá el que sea el segundo que se elija al azar y que si haya cumplido con la pautas, y así sucesivamente; realizando el mismo proceso antes descrito de avisaje y revisión de los termino el patrocinador se reserva el derecho de declarar desierto el concurso si ninguno(a) de las tres primeras personas no cumplen con lo antes descrito, salvo que exista disposición legal aplicable..  </p>
-<p class="w3-justify"> El resultado y decisión que arroje el patrocinador será final e inapelable.</p>
- 
-<h6>7. NOTIFICACIÓN A LOS GANADORES</h6>
-<p class="w3-justify">Los ganadores serán notificados de su selección a través de la página de Facebook, y en la dirección web del concurso alrededor del 11 al 15 de Septiembre del 2017, y deberán firmar y completar correctamente la forma de liberación de responsabilidad (“Constancia de Liberación de Responsabilidad”), los documentos de recibo del premio y/o los demás documentos que requiera el Patrocinador.  Se les indicará a los ganadores la forma como podrán reclamar su premio una vez que el Patrocinador verifique que el Ganador envió toda la información requerida y que cumplió con estos términos y condiciones.</p>
- 
-<h6>8. PREMIOS</h6>
-<p class="w3-justify">Los Ganadores se hará acreedores del siguiente premio:</p>
-- Diseño y Programación de una página WEB
- 
-<p class="w3-justify">El patrocinador se deslinda del pago del dominio y host, a menos que el ganador elija que el tramite lo haga el patrocinador. Ningún premio es transferible ni intercambiable. No se entregarán premios en dinero. El Patrocinador se reserva el derecho de reemplazar los premios total o parcialmente por premios de valor comparable.  Es responsabilidad del Ganador comunicarse de la forma que le indique el Patrocinador a recibir su premio</p>
-<p class="w3-justify">El valor de los Premios puede ser gravable como ingreso. Una vez recibido el premio, cada ganador debe cumplir con todos los impuestos aplicables debidos en relación con dichos premios. Mediante la aceptación de estos términos y condiciones el Ganador acepta que será exclusivamente responsable por el pago de todos los impuestos, erogaciones, cargos por licencia, aranceles aduaneros, registros y/o demás costos, gastos o requerimientos relativos a la recepción del premio, salvo que exista disposición legal aplicable en contrario en alguno de los países participantes.</p>
-<p class="w3-justify">Los Premios otorgados a un Participante que no resulte elegible quedarán vacantes y serán otorgados a un Participante suplente.</p>
-<p class="w3-justify">El lugar de entrega de los premios será indicado en la página de facebook, sin embargo, el Patrocinador se reserva el derecho de cambiar dicho lugar de entrega, previa notificación a los ganadores.</p>
- 
-<h6>9. DERECHOS PUBLICITARIOS</h6>
-<p class="w3-justify">Mediante el ingreso al presente Concurso, salvo prohibición legal, cada Participante otorga al Patrocinador un permiso exclusivo de uso de sus nombres, personajes, fotografías, voces y retratos, videos y testimonio en relación con el presente Concurso en los medios y formas que el Patrocinador considere conveniente. Asimismo, renuncia a todo reclamo de regalías, derechos o remuneración por dicho uso.  Urcorp por su parte se compromete a no utilizar ninguna acción realizada por los participantes para actividades de publicidad ajenas al presente concurso salvo acuerdo en contrario.</p>
- 
-<h6>10. INFORMACIÓN PERSONAL Y CONFIDENCIALIDAD</h6>
-<p class="w3-justify">Toda información personal incluyendo a mero título enunciativo, el nombre, la imagen, la edad, el domicilio, el número telefónico y/o la dirección de correo electrónico (en adelante "Información Personal") de un Participante se utilizará (1) con relación al presente Concurso, (2) del modo dispuesto en los presentes Términos y Condiciones, La Información Personal no se divulgará a terceros, salvo con el propósito de realizar la entrega del Premio al Ganador. </p>
- 
-<h6>11. RENUNCIA DEL PREMIO</h6>
-<p class="w3-justify">El Patrocinador no será responsable si el Ganador no puede recibir su Premio por causas distintas o acontecimientos de fuerza mayor o si renuncia al derecho de aceptarlo, perdiendo en ambos casos todos los derechos que pudiera tener en relación con su premio.</p>
- 
-<h6>12. CONDICIONES OFICIALES Y RESPONSABILIDAD</h6>
-<p class="w3-justify">Los tribunales de la Ciudad de México tendrán jurisdicción exclusiva sobre toda controversia relacionada con el presente Concurso, que se regirá en virtud de las leyes de la República de Mexicana, atento a que el promotor o patrocinador del Concurso es Urcorp S de CL. En caso de que alguna disposición de las presentes Reglas Oficiales fuera inválida en virtud de la ley, las normas o reglamentaciones de un país en particular, sólo se aplicarán en la medida permitida.</p>
-
+        <h6>11. RENUNCIA DEL PREMIO</h6>
+        <p class="w3-justify">El Patrocinador no será responsable si el Ganador no puede recibir su Premio por causas distintas o acontecimientos de fuerza mayor o si renuncia al derecho de aceptarlo, perdiendo en ambos casos todos los derechos que pudiera tener en relación con su premio.</p>
+         
+        <h6>12. CONDICIONES OFICIALES Y RESPONSABILIDAD</h6>
+        <p class="w3-justify">Los tribunales de la Ciudad de México tendrán jurisdicción exclusiva sobre toda controversia relacionada con el presente Concurso, que se regirá en virtud de las leyes de la República de Mexicana, atento a que el promotor o patrocinador del Concurso es Urcorp S de CL. En caso de que alguna disposición de las presentes Reglas Oficiales fuera inválida en virtud de la ley, las normas o reglamentaciones de un país en particular, sólo se aplicarán en la medida permitida.</p>
 
       </div>
     </div>
@@ -278,7 +283,6 @@ No es necesario comprar un producto o hacer un pago de algún tipo para particip
         <a href="#" class="btn modal-close">Aceptar</a>
     </div>
   </div>
-
 
   <!-- START [JavaScript Files] -->
   <script type="text/javascript" src="{{ asset('public/assets/js/jquery.js?v='.time()) }}"></script>
@@ -288,13 +292,20 @@ No es necesario comprar un producto o hacer un pago de algún tipo para particip
   <script src="{{ asset('public/plugins/materialize/js/init.js') }}"></script>
   <script src="{{ asset('js/home.js') }}"></script>
   <script type="text/javascript">
-  $('.box').on('change',function(e) {
-  if ($(this).prop('checked')) {
-      $('.mandar').removeClass('disabled');
-  } else {
-      $('.mandar').addClass('disabled');
-  };
-});
+    $('.box').on('change',function(e) {
+      if ($(this).prop('checked')) {
+          $('.mandar').removeClass('disabled');
+      } else {
+          $('.mandar').addClass('disabled');
+      };
+    });
+    $('.boxmovil').on('change',function(e) {
+      if ($(this).prop('checked')) {
+          $('.mandarmovil').removeClass('disabled');
+      } else {
+          $('.mandarmovil').addClass('disabled');
+      };
+    });
   </script>
   <!-- END [JavaScript Files] -->
 
