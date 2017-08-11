@@ -185,8 +185,8 @@
           <label for="email">Email *</label>
         </div>
         <div class="input-field">
-          <input id="name" type="text" class="validate white-text" name="contact[phone]" required="required">
-          <label for="name">Teléfono *</label>
+          <input id="phone" type="text" class="validate white-text" name="contact[phone]" required="required">
+          <label for="phone">Teléfono *</label>
         </div>
             <input type="checkbox" id="test" class="boxmovil" />
             <label for="test">Acepto </label><a href="#modal1" style="color:gray"> términos y condiciones.</a>
