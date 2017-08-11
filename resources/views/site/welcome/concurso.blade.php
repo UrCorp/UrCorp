@@ -150,11 +150,6 @@
         <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
       </div>
     @endif
-      <div class="w3-display-middle w3-padding-32 w3-animate-opacity" style="background-color: rgba(0,0,0,0.9); width:100%; height:100%; position: fixed">
-        <h1 class="w3-display-middle" style="color:white; width:100%">¡Gracias por Participar!</h1>
-        <h4 class="w3-display-middle" style="color:lightgray; width:100%; margin-top:6%">Tus datos han sido registrados.</h4>
-        <a href="https://urcorp.mx" class="w3-display-bottommiddle" style="color:lightgray; width:100%; margin-bottom:3%">Seguir navegando urcorp.mx >></a>
-      </div>
   </div>
   <div class="hide-on-med-and-up">
     <div class="w3-content">
