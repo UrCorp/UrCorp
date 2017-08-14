@@ -55,9 +55,9 @@
     		min-height: 100%;
         }
         h1, h2, h3, h4, h5, h6{
-  margin-top:5px;
-  margin-bottom:5px;
-}
+          margin-top:5px;
+          margin-bottom:5px;
+        }
   </style>
   <!-- Style -->
 
@@ -226,8 +226,8 @@
         <h5>CONCURSO “tu propia página web gratis”</h5>
  
         <h6>1. DESCRIPCIÓN DEL CONCURSO</h6>
-        <p class="w3-justify">El concurso titulado “tu propia página WEB gratis” (en adelante “Concurso”) es patrocinado por URCORP S. de C.L. (en adelante “Patrocinador”), y podrán participar los habitantes México; y comienza el  9 de Agosto de 2017 a las 12:00 h tiempo de la Ciudad de México.</p>
-        <p class="w3-justify">La finalización del concurso es el  9 de Septiembre de 2017 a las 12:00 pm tiempo de la Ciudad de México. La notificación del Ganador (a) se realizará dentro de un plazo máximo de cinco (5) días hábiles posteriores al cierre del Concurso.</p>
+        <p class="w3-justify">El concurso titulado “tu propia página WEB gratis” (en adelante “Concurso”) es patrocinado por URCORP S. de C.L. (en adelante “Patrocinador”), y podrán participar los habitantes México; y comienza el  14 de Agosto de 2017 a las 12:00 h tiempo de la Ciudad de México.</p>
+        <p class="w3-justify">La finalización del concurso es el  14 de Septiembre de 2017 a las 12:00 pm tiempo de la Ciudad de México. La notificación del Ganador (a) se realizará dentro de un plazo máximo de cinco (5) días hábiles posteriores al cierre del Concurso.</p>
          
         <h6>2. OBLIGACIÓN DE COMPRA</h6>
         No es necesario comprar un producto o hacer un pago de algún tipo para participar o ganar este concurso.
